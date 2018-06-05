@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# coding: utf-8
 from psychopy import visual, event, core
 
 # create a window to draw in

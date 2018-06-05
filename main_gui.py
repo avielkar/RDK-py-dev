@@ -1,3 +1,4 @@
+# coding: utf-8
 from psychopy import gui
 
 info = {
@@ -25,13 +26,13 @@ tipDictionary = {
         'FieldPosition': 'Specifying the location of the centre of the stimulus [x,y].',
         'FieldSize': 'Specifying the diameter of the field (Sizes can be negative and can extend beyond the window).',
         'DotLife': 'Number of frames each dot lives for (-1=infinite).',
-        'SignalDots': 'If ‘same’ then the signal and noise dots are constant. If different then the choice of which '
-                      'is signal and which is noise gets randomised on each frame. This corresponds to Scase et al’s '
-                      '(1996) categories of RDK.',
-        'NoiseDots': 'Determines the behaviour of the noise dots, taken directly from Scase et al’s (1996) '
-                     'categories. For ‘position’, noise dots take a random position every frame. For ‘direction’ '
-                     'noise dots follow a random, but constant direction. For ‘walk’ noise dots vary their direction '
-                     'every frame, but keep a constant speed.',
+        'SignalDots': 'If ‘same’ then the signal and noise dots are constant. If different then the choice of which \
+                        is signal and which is noise gets randomised on each frame. This corresponds to Scase et al’s \
+                        (1996) categories of RDK.',
+        'NoiseDots': 'Determines the behaviour of the noise dots, taken directly from Scase et al’s (1996) \
+                        categories. For ‘position’, noise dots take a random position every frame. For ‘direction’ \
+                        noise dots follow a random, but constant direction. For ‘walk’ noise dots vary their direction \
+                        every frame, but keep a constant speed.',
         'Speed': 'Speed of the dots (in units per frame).',
         'Coherence': 'The dots coherence'
         }
