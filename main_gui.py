@@ -19,7 +19,8 @@ info = {
         }
 dictDlg = gui.DlgFromDict(dictionary=info,
                           title="RDK",
-                          fixed=['ExpVersion'])
+                          fixed=['ExpVersion'],
+                          sort_keys=False)
 
 if dictDlg.OK:
     print(info)
