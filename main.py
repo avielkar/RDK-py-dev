@@ -10,6 +10,7 @@ myWin = visual.Window((600, 600),
 
 # INITIALISE SOME STIMULI
 dotPatch = visual.DotStim(win=myWin,
+                          units=None,
                           color=(1.0, 1.0, 1.0),
                           dir=270,
                           nDots=500,
