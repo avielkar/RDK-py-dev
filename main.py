@@ -1,7 +1,11 @@
 # coding: utf-8
 from psychopy import visual, event, core
+from cntrlloop import CntrlLoop
 
-# create a window to draw in
+cntrlLoop = CntrlLoop(12)
+cntrlLoop.Start()
+
+'''# create a window to draw in
 myWin = visual.Window((600, 600),
                       allowGUI=False,
                       bitsMode=None,
@@ -38,4 +42,4 @@ while True:  # forever
             print myWin.fps()
             myWin.close()
             core.quit()
-    event.clearEvents('mouse')  # only really needed for pygame windows
+    event.clearEvents('mouse')  # only really needed for pygame windows'''
