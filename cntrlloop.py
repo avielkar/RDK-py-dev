@@ -1,3 +1,4 @@
+# coding: utf-8
 from psychopy import visual, event, core
 
 import time

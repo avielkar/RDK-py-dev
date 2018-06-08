@@ -1,3 +1,4 @@
+# coding: utf-8
 from psychopy import visual, event, core
 
 import time
@@ -9,13 +10,11 @@ class Renderer:
         self._my_win = None
         self._attributes_dict = {
             'Units': None,
-            'Color': {'r': 1,
-                      'g': 1,
-                      'b': 1},
+            'Color': dict(r=1, g=1, b=1),
             'Direction': 270,
             'NumberOfDots': 500,
             'FieldShape': 'circle',
-            'FieldPosition': (0.0, 0.0),
+            'FieldPosition': dict(x=0.0, y=0),
             'FieldSize': 1,
             'DotLife': 5,  # number of frames for each dot to be drawn
             'SignalDots': 'same',
@@ -44,12 +43,16 @@ class Renderer:
 
     def render(self):
         dot_patch = visual.DotStim(win=self._my_win,
-                                   units=self._attributes_dict['Units'],
-                                   color=self._attributes_dict['Color'],
+                                   units=eval(self._attributes_dict['Units']),
+                                   color=list([eval(self._attributes_dict['Color'])['r'],
+                                               eval(self._attributes_dict['Color'])['g'],
+                                               eval(self._attributes_dict['Color'])['b'],
+                                               ]),
                                    dir=self._attributes_dict['Direction'],
                                    nDots=self._attributes_dict['NumberOfDots'],
                                    fieldShape=self._attributes_dict['FieldShape'],
-                                   fieldPos=self._attributes_dict['FieldPosition'],
+                                   fieldPos=[eval(self._attributes_dict['FieldPosition'])['x'],
+                                             eval(self._attributes_dict['FieldPosition'])['y']],
                                    fieldSize=self._attributes_dict['FieldSize'],
                                    dotLife=self._attributes_dict['DotLife'],
                                    # number of frames for each dot to be drawn
