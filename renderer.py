@@ -21,7 +21,9 @@ class Renderer:
             'noiseDots': 'direction',
             # do the noise dots follow random- 'walk', 'direction', or 'position'
             'speed': 0.01,
-            'coherence': 0.9
+            'coherence': 0.9,
+            'renderTime': 1,
+            'renderFrequency': 60
         }
         pass
 
@@ -61,8 +63,8 @@ class Renderer:
                                   pos=(0, -0.5))
 
         start_time = time.time()
-        while time.time() - start_time < 1:
+        while time.time() - start_time < self._attributes_dict['renderTime']:
             dot_patch.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
-            time.sleep((50 / 1000))
+            time.sleep((1/self._attributes_dict['renderFrequency']))
