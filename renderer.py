@@ -35,6 +35,9 @@ class Renderer:
     def set_attributes(self, attributes_dict):
         self._attributes_dict = attributes_dict
 
+    def set_attribute(self, name, value):
+        self._attributes_dict[name] = value
+
     def render_trial(self):
         dot_patch = visual.DotStim(win=self._my_win,
                                    units=self._attributes_dict['units'],
@@ -44,7 +47,8 @@ class Renderer:
                                    fieldShape=self._attributes_dict['fieldShape'],
                                    fieldPos=self._attributes_dict['fieldPos'],
                                    fieldSize=self._attributes_dict['fieldSize'],
-                                   dotLife=self._attributes_dict['dotLife'],  # number of frames for each dot to be drawn
+                                   dotLife=self._attributes_dict['dotLife'],
+                                   # number of frames for each dot to be drawn
                                    signalDots=self._attributes_dict['signalDots'],
                                    # are the signal dots the 'same' on each frame? (see Scase et al)
                                    noiseDots=self._attributes_dict['noiseDots'],
