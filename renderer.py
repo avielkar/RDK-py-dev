@@ -9,7 +9,9 @@ class Renderer:
         self._my_win = None
         self._attributes_dict = {
             'Units': None,
-            'Color': (1.0, 1.0, 1.0),
+            'Color': {'r': 1,
+                      'g': 1,
+                      'b': 1},
             'Direction': 270,
             'NumberOfDots': 500,
             'FieldShape': 'circle',
@@ -67,5 +69,5 @@ class Renderer:
             dot_patch.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
-            time.sleep((1/self._attributes_dict['RenderFrequency']))
+            time.sleep((1 / self._attributes_dict['RenderFrequency']))
         time.sleep(2)

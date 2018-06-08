@@ -5,7 +5,9 @@ from cntrlloop import CntrlLoop
 info = {
     'ExpVersion': 1.1,
     'Units': None,
-    'Color': [1.0, 1.0, 1.0],
+    'Color': {'r': 1,
+              'g': 1,
+              'b': 1},
     'Direction': 270,
     'NumberOfDots': 500,
     'FieldShape': 'circle',
