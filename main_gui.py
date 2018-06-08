@@ -1,9 +1,10 @@
 # coding: utf-8
 from psychopy import gui
+from cntrlloop import CntrlLoop
 
 info = {
     'ExpVersion': 1.1,
-    'Units': 'None',
+    'Units': None,
     'Color': [1.0, 1.0, 1.0],
     'Direction': 270,
     'NumberOfDots': 500,
@@ -46,8 +47,11 @@ dictDlg = gui.DlgFromDict(dictionary=info,
                           tip=tipDictionary,
                           sort_keys=False)
 
+cntrlLoop = CntrlLoop(num_of_trials=10,
+                      attributes=dictDlg.dictionary)
+
 if dictDlg.OK:
-    print(info)
+    cntrlLoop.start()
 else:
     print('User Cancelled')
 
