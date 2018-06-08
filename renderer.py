@@ -8,22 +8,22 @@ class Renderer:
     def __init__(self):
         self._my_win = None
         self._attributes_dict = {
-            'units': None,
-            'color': (1.0, 1.0, 1.0),
-            'dir': 270,
-            'nDots': 500,
-            'fieldShape': 'circle',
-            'fieldPos': (0.0, 0.0),
-            'fieldSize': 1,
-            'dotLife': 5,  # number of frames for each dot to be drawn
-            'signalDots': 'same',
+            'Units': None,
+            'Color': (1.0, 1.0, 1.0),
+            'Direction': 270,
+            'NumberOfDots': 500,
+            'FieldShape': 'circle',
+            'FieldPosition': (0.0, 0.0),
+            'FieldSize': 1,
+            'DotLife': 5,  # number of frames for each dot to be drawn
+            'SignalDots': 'same',
             # are the signal dots the 'same' on each frame? (see Scase et al)
-            'noiseDots': 'direction',
+            'NoiseDots': 'direction',
             # do the noise dots follow random- 'walk', 'direction', or 'position'
-            'speed': 0.01,
-            'coherence': 0.9,
-            'renderTime': 1,
-            'renderFrequency': 60
+            'Speed': 0.01,
+            'Coherence': 0.9,
+            'RenderTime': 1,
+            'RenderFrequency': 60
         }
         pass
 
@@ -40,31 +40,32 @@ class Renderer:
     def set_attribute(self, name, value):
         self._attributes_dict[name] = value
 
-    def render_trial(self):
+    def render(self):
         dot_patch = visual.DotStim(win=self._my_win,
-                                   units=self._attributes_dict['units'],
-                                   color=self._attributes_dict['color'],
-                                   dir=self._attributes_dict['dir'],
-                                   nDots=self._attributes_dict['nDots'],
-                                   fieldShape=self._attributes_dict['fieldShape'],
-                                   fieldPos=self._attributes_dict['fieldPos'],
-                                   fieldSize=self._attributes_dict['fieldSize'],
-                                   dotLife=self._attributes_dict['dotLife'],
+                                   units=self._attributes_dict['Units'],
+                                   color=self._attributes_dict['Color'],
+                                   dir=self._attributes_dict['Direction'],
+                                   nDots=self._attributes_dict['NumberOfDots'],
+                                   fieldShape=self._attributes_dict['FieldShape'],
+                                   fieldPos=self._attributes_dict['FieldPosition'],
+                                   fieldSize=self._attributes_dict['FieldSize'],
+                                   dotLife=self._attributes_dict['DotLife'],
                                    # number of frames for each dot to be drawn
-                                   signalDots=self._attributes_dict['signalDots'],
+                                   signalDots=self._attributes_dict['SignalDots'],
                                    # are the signal dots the 'same' on each frame? (see Scase et al)
-                                   noiseDots=self._attributes_dict['noiseDots'],
+                                   noiseDots=self._attributes_dict['NoiseDots'],
                                    # do the noise dots follow random- 'walk', 'direction', or 'position'
-                                   speed=self._attributes_dict['speed'],
-                                   coherence=self._attributes_dict['coherence'])
+                                   speed=self._attributes_dict['Speed'],
+                                   coherence=self._attributes_dict['Coherence'])
 
         message = visual.TextStim(win=self._my_win,
                                   text='Hit Q to quit',
                                   pos=(0, -0.5))
 
         start_time = time.time()
-        while time.time() - start_time < self._attributes_dict['renderTime']:
+        while time.time() - start_time < self._attributes_dict['RenderTime']:
             dot_patch.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
-            time.sleep((1/self._attributes_dict['renderFrequency']))
+            time.sleep((1/self._attributes_dict['RenderFrequency']))
+        time.sleep(2)

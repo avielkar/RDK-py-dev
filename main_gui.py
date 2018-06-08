@@ -3,8 +3,8 @@ from psychopy import gui
 
 info = {
     'ExpVersion': 1.1,
-    'units': 'None',
-    'DotsColor': [1.0, 1.0, 1.0],
+    'Units': 'None',
+    'Color': [1.0, 1.0, 1.0],
     'Direction': 270,
     'NumberOfDots': 500,
     'FieldShape': 'circle',
