@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+# coding: utf-8
 from psychopy import visual, event, core
 
 # create a window to draw in
@@ -10,9 +10,11 @@ myWin = visual.Window((600, 600),
 
 # INITIALISE SOME STIMULI
 dotPatch = visual.DotStim(win=myWin,
+                          units=None,
                           color=(1.0, 1.0, 1.0),
                           dir=270,
-                          nDots=500, fieldShape='circle',
+                          nDots=500,
+                          fieldShape='circle',
                           fieldPos=(0.0, 0.0),
                           fieldSize=1,
                           dotLife=5,  # number of frames for each dot to be drawn
