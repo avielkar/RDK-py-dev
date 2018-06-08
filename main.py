@@ -3,7 +3,7 @@ from psychopy import visual, event, core
 from cntrlloop import CntrlLoop
 
 cntrlLoop = CntrlLoop(12)
-cntrlLoop.Start()
+cntrlLoop.start()
 
 '''# create a window to draw in
 myWin = visual.Window((600, 600),
@@ -21,6 +21,7 @@ dotPatch = visual.DotStim(win=myWin,
                           fieldShape='circle',
                           fieldPos=(0.0, 0.0),
                           fieldSize=1,
+                          
                           dotLife=5,  # number of frames for each dot to be drawn
                           signalDots='same',  # are the signal dots the 'same' on each frame? (see Scase et al)
                           noiseDots='direction',  # do the noise dots follow random- 'walk', 'direction', or 'position'
