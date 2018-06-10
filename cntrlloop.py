@@ -5,7 +5,7 @@ import time
 from renderer import Renderer
 
 class CntrlLoop:
-    def __init__(self , num_of_trials , attributes):
+    def __init__(self, num_of_trials, attributes):
         self._numOfTrials = num_of_trials
         self._renderer = Renderer()
         self._attributes = attributes

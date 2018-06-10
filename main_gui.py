@@ -9,7 +9,7 @@ info = {
     'Direction': 270,
     'NumberOfDots': 500,
     'FieldShape': 'circle',
-    'FieldPosition': dict(x=0.0, y=0),
+    'FieldPosition': dict(x=0.0, y=0.0),
     'FieldSize': 1,
     'DotLife': 5,
     'SignalDots': 'same',
