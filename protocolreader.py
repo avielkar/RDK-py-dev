@@ -1,11 +1,12 @@
 import pandas as pd
 
+
 class ProtocolReader:
 
     def __init__(self):
         pass
 
-    def read_file(self , path):
+    def read_file(self, path):
         protocol_data = pd.read_excel(path)
 
         params_names = protocol_data['param_name']
