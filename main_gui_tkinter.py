@@ -22,9 +22,11 @@ class MainGuiTkinter:
         self.label_choose_folder = None  # type: Label
         self.btn_choose_folder = None  # type: Button
         self.protocol_root_dir = 'D:\RDK-protocols'  # type: object
+        self.combobox_protocol_list = None # type: Combobox
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkFileDialog.askdirectory()
+        self.combo_box_protocol_update()
 
     def init_gui_controllers(self):
         self.label_choose_folder = Label(master=self.root,
@@ -36,9 +38,13 @@ class MainGuiTkinter:
                                         command=self.btn_choose_folder_clicked)
         self.btn_choose_folder.pack()
 
-        combobox_protocol_list = ttk.Combobox(master=self.root)
-        combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if f.split('.')[1] == 'xlsx']
-        combobox_protocol_list.pack()
+        self.combobox_protocol_list = ttk.Combobox(master=self.root)
+        self.combo_box_protocol_update()
+        self.combobox_protocol_list.pack()
+
+    def combo_box_protocol_update(self):
+        self.combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if
+                                                 f.endswith('.xlsx')]
 
     def load(self):
         self.root = tkinter.Tk()
