@@ -1,6 +1,7 @@
 # coding: utf-8
 from Tkinter import Label, Button
 
+import os
 import tkinter
 import ttk
 from tkinter import Tk
@@ -20,7 +21,7 @@ class MainGuiTkinter:
         self.protocol_file_path = 'D:\RDK-protocols\coherence.xlsx'
         self.label_choose_folder = None  # type: Label
         self.btn_choose_folder = None  # type: Button
-        self.protocol_root_dir = None  # type: object
+        self.protocol_root_dir = 'D:\RDK-protocols'  # type: object
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkFileDialog.askdirectory()
@@ -35,6 +36,9 @@ class MainGuiTkinter:
                                         command=self.btn_choose_folder_clicked)
         self.btn_choose_folder.pack()
 
+        combobox_protocol_list = ttk.Combobox(master=self.root)
+        combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if f.split('.')[1] == 'xlsx']
+        combobox_protocol_list.pack()
 
     def load(self):
         self.root = tkinter.Tk()
