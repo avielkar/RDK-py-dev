@@ -1,6 +1,4 @@
 # coding: utf-8
-from Tkinter import Label, Button
-
 import os
 import tkinter
 import ttk
