@@ -37,12 +37,23 @@ class MainGuiTkinter:
         self.btn_choose_folder.pack()
 
         self.combobox_protocol_list = ttk.Combobox(master=self.root)
+        self.combobox_protocol_list.bind("<<ComboboxSelected>>",
+                                         self.combobox_protocols_item_selected)
         self.combo_box_protocol_update()
         self.combobox_protocol_list.pack()
 
     def combo_box_protocol_update(self):
         self.combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if
                                                  f.endswith('.xlsx')]
+
+    def combobox_protocols_item_selected(self , event_args):
+        self.protocol_file_path = self.protocol_root_dir + '/' + self.combobox_protocol_list.get()
+        x=1
+
+
+
+    #def update_dynamic_controlls(self):
+
 
     def load(self):
         self.root = tkinter.Tk()
