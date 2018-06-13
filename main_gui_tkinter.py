@@ -71,23 +71,23 @@ class MainGuiTkinter:
             rel_x[0] += 0.1
 
             for key_param_attribute in titles:
-                if key_param_attribute == 'tool_tip' or\
+                if key_param_attribute == 'tool_tip' or \
                         key_param_attribute == 'param_name':
                     continue
+
                 if key_param_attribute == 'param_type':
                     param_combobox = ttk.Combobox(master=self.root)
                     param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair']
                     param_combobox.place(relx=rel_x[0], rely=rel_y[0])
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
-                    rel_x[0] += 0.1
-                    continue
+                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_combobox
                 else:
                     param_entry_value = Entry(master=self.root)
                     param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
                     param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
                     self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
-                    rel_x[0] += 0.1
-                    continue
+
+                rel_x[0] += 0.1
 
             rel_x[0] = 0.0
             rel_y[0] += 0.04
