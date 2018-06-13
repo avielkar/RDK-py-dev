@@ -20,7 +20,8 @@ class MainGuiTkinter:
         self.label_choose_folder = None  # type: Label
         self.btn_choose_folder = None  # type: Button
         self.protocol_root_dir = 'D:\RDK-protocols'  # type: object
-        self.combobox_protocol_list = None # type: Combobox
+        self.combobox_protocol_list = None  # type: Combobox
+        self.dynamic_controls_dict = None  # type: Dict[Any, Any]
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkFileDialog.askdirectory()
@@ -46,14 +47,17 @@ class MainGuiTkinter:
         self.combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if
                                                  f.endswith('.xlsx')]
 
-    def combobox_protocols_item_selected(self , event_args):
+    def combobox_protocols_item_selected(self, event_args):
         self.protocol_file_path = self.protocol_root_dir + '/' + self.combobox_protocol_list.get()
-        x=1
+        self.update_dynamic_controlls()
 
-
-
-    #def update_dynamic_controlls(self):
-
+    def update_dynamic_controlls(self):
+        excel_data_dict = self.protocol_reader.read_file(self.protocol_file_path)
+        for key_param_name in excel_data_dict:
+            lbl = Label(master=self.root,
+                        text=key_param_name)
+            self.dynamic_controls_dict['label_' + key_param_name] = lbl
+            lbl.pack()
 
     def load(self):
         self.root = tkinter.Tk()
@@ -62,6 +66,8 @@ class MainGuiTkinter:
 
         self.protocol_reader = ProtocolReader()
         self.protocol_reader.read_file(self.protocol_file_path)
+
+        self.dynamic_controls_dict = {}
 
         tkMessageBox.showinfo('Hello python', 'Hello World')
         self.root.mainloop()
