@@ -60,8 +60,7 @@ class MainGuiTkinter:
                                      text=key_param_name)
             param_label_name.place(relx=rel_x, rely=rel_y)
             self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
-            rel_x += 0.0
-            rel_y += 0.04
+            rel_x += 0.1
 
             for key_param_attribute in excel_data_dict[key_param_name]:
                 param_entry_value = Entry(master=self.root)
@@ -70,6 +69,7 @@ class MainGuiTkinter:
                 rel_x += 0.05
 
             rel_x = 0.0
+            rel_y += 0.04
 
     def load(self):
         self.root = tkinter.Tk()
