@@ -1,5 +1,7 @@
 # coding: utf-8
 import os
+from Tkinter import Button
+
 import tkinter
 import ttk
 from tkinter import Tk
@@ -21,6 +23,7 @@ class MainGuiTkinter:
         self.btn_choose_folder = None  # type: Button
         self.protocol_root_dir = 'D:\RDK-protocols'  # type: object
         self.combobox_protocol_list = None  # type: Combobox
+        self.btn_start_experiment = None  # type: Button
         self.dynamic_controls_dict = None  # type: Dict[Any, Any]
 
     def btn_choose_folder_clicked(self):
@@ -42,6 +45,15 @@ class MainGuiTkinter:
                                          self.combobox_protocols_item_selected)
         self.combo_box_protocol_update()
         self.combobox_protocol_list.pack()
+
+        self.btn_start_experiment = Button(master=self.root,
+                                           text='Start',
+                                           command=self.btn_start_experiment_clicked)
+        self.btn_start_experiment.place(relx=0.9,
+                                        rely=0.0)
+
+    def btn_start_experiment_clicked(self):
+        return
 
     def combo_box_protocol_update(self):
         self.combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if
