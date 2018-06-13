@@ -3,7 +3,7 @@ import os
 import tkinter
 import ttk
 from tkinter import Tk
-from tkinter import Label, Button
+from tkinter import Label, Button, Entry
 import tkFileDialog
 
 from protocolreader import ProtocolReader
@@ -49,18 +49,24 @@ class MainGuiTkinter:
 
     def combobox_protocols_item_selected(self, event_args):
         self.protocol_file_path = self.protocol_root_dir + '/' + self.combobox_protocol_list.get()
-        self.update_dynamic_controlls()
+        self.update_dynamic_controls()
 
-    def update_dynamic_controlls(self):
+    def update_dynamic_controls(self):
         excel_data_dict = self.protocol_reader.read_file(self.protocol_file_path)
         for key_param_name in excel_data_dict:
-            lbl = Label(master=self.root,
-                        text=key_param_name)
-            self.dynamic_controls_dict['label_' + key_param_name] = lbl
-            lbl.pack()
+            param_label_name = Label(master=self.root,
+                                     text=key_param_name)
+            self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
+            param_label_name.pack()
+
+            for key_param_attribute in excel_data_dict[key_param_name]:
+                param_entry_value = Entry(master=self.root)
+                param_entry_value.insert(0, excel_data_dict[key_param_name][key_param_attribute])
+                param_entry_value.pack()
 
     def load(self):
         self.root = tkinter.Tk()
+        self.root.geometry("1400x800")
 
         self.init_gui_controllers()
 
