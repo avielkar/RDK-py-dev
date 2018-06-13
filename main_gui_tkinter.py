@@ -62,6 +62,25 @@ class MainGuiTkinter:
         rel_x[0] = 0.0
         rel_y[0] += 0.04
 
+    def add_parameters_attributes(self, titles, data_dict, rel_x, rel_y):
+        for key_param_name in data_dict:
+            param_label_name = Label(master=self.root,
+                                     text=key_param_name)
+            param_label_name.place(relx=rel_x[0], rely=rel_y[0])
+            self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
+            rel_x[0] += 0.1
+
+            for key_param_attribute in titles:
+                if key_param_attribute != 'tool_tip' and key_param_attribute != 'param_name':
+                    param_entry_value = Entry(master=self.root)
+                    param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
+                    param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
+                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
+                    rel_x[0] += 0.1
+
+            rel_x[0] = 0.0
+            rel_y[0] += 0.04
+
     def update_dynamic_controls(self):
         self.dynamic_controls_dict.clear()
         [excel_data_dict, titles] = self.protocol_reader.read_file(self.protocol_file_path)
@@ -72,23 +91,7 @@ class MainGuiTkinter:
         self.add_parameters_titles(titles, rel_x, rel_y)
 
         # for other attributes
-        for key_param_name in excel_data_dict:
-            param_label_name = Label(master=self.root,
-                                     text=key_param_name)
-            param_label_name.place(relx=rel_x[0], rely=rel_y[0])
-            self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
-            rel_x[0] += 0.1
-
-            for key_param_attribute in titles:
-                if key_param_attribute != 'tool_tip' and key_param_attribute != 'param_name':
-                    param_entry_value = Entry(master=self.root)
-                    param_entry_value.insert(0, excel_data_dict[key_param_name][key_param_attribute])
-                    param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
-                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
-                    rel_x[0] += 0.1
-
-            rel_x[0] = 0.0
-            rel_y[0] += 0.04
+        self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
 
     def load(self):
         self.root = tkinter.Tk()
