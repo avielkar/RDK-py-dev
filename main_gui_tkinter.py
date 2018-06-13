@@ -66,7 +66,10 @@ class MainGuiTkinter:
             for key_param_attribute in excel_data_dict[key_param_name]:
                 param_entry_value = Entry(master=self.root)
                 param_entry_value.insert(0, excel_data_dict[key_param_name][key_param_attribute])
-                param_entry_value.pack()
+                param_entry_value.place(relx=rel_x, rely=rel_y)
+                rel_x += 0.05
+
+            rel_x = 0.0
 
     def load(self):
         self.root = tkinter.Tk()
