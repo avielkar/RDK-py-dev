@@ -57,6 +57,7 @@ class MainGuiTkinter:
         rel_x = 0.0
         rel_y = 0.1
 
+        # for titles labels
         for title in titles:
             if title != 'tool_tip':
                 title_label = Label(master=self.root,
@@ -67,6 +68,7 @@ class MainGuiTkinter:
         rel_x = 0.0
         rel_y += 0.04
 
+        # for other attributes
         for key_param_name in excel_data_dict:
             param_label_name = Label(master=self.root,
                                      text=key_param_name)
@@ -74,12 +76,13 @@ class MainGuiTkinter:
             self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
             rel_x += 0.1
 
-            for key_param_attribute in excel_data_dict[key_param_name]:
-                param_entry_value = Entry(master=self.root)
-                param_entry_value.insert(0, excel_data_dict[key_param_name][key_param_attribute])
-                param_entry_value.place(relx=rel_x, rely=rel_y)
-                self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
-                rel_x += 0.1
+            for key_param_attribute in titles:
+                if key_param_attribute != 'tool_tip' and key_param_attribute != 'param_name':
+                    param_entry_value = Entry(master=self.root)
+                    param_entry_value.insert(0, excel_data_dict[key_param_name][key_param_attribute])
+                    param_entry_value.place(relx=rel_x, rely=rel_y)
+                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
+                    rel_x += 0.1
 
             rel_x = 0.0
             rel_y += 0.04

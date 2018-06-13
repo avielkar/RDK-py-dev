@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1528902526024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1528905903609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
@@ -23,7 +23,7 @@
           <file leaf-file-name="Tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42330">
+                <state relative-caret-position="68">
                   <caret line="2490" column="8" selection-start-line="2490" selection-start-column="8" selection-end-line="2490" selection-end-column="8" />
                 </state>
               </provider>
@@ -44,8 +44,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="68" selection-start-line="68" selection-end-line="68" />
+                <state relative-caret-position="169">
+                  <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                   </folding>
@@ -83,8 +83,8 @@
           <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protocolreader.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+                <state relative-caret-position="290">
+                  <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -127,8 +127,8 @@
         <option value="$PROJECT_DIR$/cntrlloop.py" />
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/tests/protocolreader_test.py" />
-        <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
+        <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
       </list>
     </option>
@@ -410,7 +410,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528894629076</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Make no collision with the choose folder protocol.">
+      <created>1528902582404</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1528902582404</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add parameter titles without the tool_tip title and also returns the title from the protocol excel reader.">
+      <created>1528905238498</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1528905238498</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -418,11 +432,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51770836" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51927084" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49791667" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.48229167" visible="true" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.48072916" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -432,7 +446,7 @@
       <window_info anchor="right" id="SciView" order="6" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48385417" weight="0.32925585" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48229167" weight="0.32925585" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,7 +513,9 @@
     <MESSAGE value="Placing the paramter names label in the correct place." />
     <MESSAGE value="Placing all parameters entries beside the parameter label names." />
     <MESSAGE value="The places are great placed now." />
-    <option name="LAST_COMMIT_MESSAGE" value="The places are great placed now." />
+    <MESSAGE value="Make no collision with the choose folder protocol." />
+    <MESSAGE value="Add parameter titles without the tool_tip title and also returns the title from the protocol excel reader." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add parameter titles without the tool_tip title and also returns the title from the protocol excel reader." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -756,18 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding>
-            <element signature="e#16#40#0" expanded="true" />
-            <element signature="e#81#458#0" />
-            <element signature="e#476#2135#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/lib-tk/tkFileDialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -803,24 +807,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protocolreader.py">
+    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="68">
+          <caret line="2490" column="8" selection-start-line="2490" selection-start-column="8" selection-end-line="2490" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
+    <entry file="file://$PROJECT_DIR$/main_gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42330">
-          <caret line="2490" column="8" selection-start-line="2490" selection-start-column="8" selection-end-line="2490" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding>
+            <element signature="e#16#40#0" expanded="true" />
+            <element signature="e#81#458#0" />
+            <element signature="e#476#2135#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protocolreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="169">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
