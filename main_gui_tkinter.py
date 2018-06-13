@@ -54,7 +54,7 @@ class MainGuiTkinter:
     def update_dynamic_controls(self):
         excel_data_dict = self.protocol_reader.read_file(self.protocol_file_path)
         rel_x = 0.0
-        rel_y = 0.0
+        rel_y = 0.1
         for key_param_name in excel_data_dict:
             param_label_name = Label(master=self.root,
                                      text=key_param_name)
@@ -66,7 +66,8 @@ class MainGuiTkinter:
                 param_entry_value = Entry(master=self.root)
                 param_entry_value.insert(0, excel_data_dict[key_param_name][key_param_attribute])
                 param_entry_value.place(relx=rel_x, rely=rel_y)
-                rel_x += 0.05
+                self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] =param_entry_value
+                rel_x += 0.1
 
             rel_x = 0.0
             rel_y += 0.04
