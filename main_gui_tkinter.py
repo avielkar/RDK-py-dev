@@ -95,10 +95,10 @@ class MainGuiTkinter:
     def delete_dynamic_controls(self):
         for control in self.dynamic_controls_dict.values():
             control.destroy()
+        self.dynamic_controls_dict.clear()
 
     def update_dynamic_controls(self):
         self.delete_dynamic_controls()
-        self.dynamic_controls_dict.clear()
         [excel_data_dict, titles] = self.protocol_reader.read_file(self.protocol_file_path)
         rel_x = [0.0]
         rel_y = [0.1]

@@ -44,8 +44,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="97" selection-start-line="97" selection-end-line="97" />
+                <state relative-caret-position="229">
+                  <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                     <element signature="e#256#749#0" />
@@ -467,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528913288270</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Clean the guid controls when changing the protocol and load the new controls for the new selected protocol.">
+      <created>1528914440986</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1528914440986</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -475,11 +482,11 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5203125" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="7" sideWeight="0.5203125" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49739584" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.4796875" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4796875" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -534,7 +541,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add renderer class with some functions." />
     <MESSAGE value="Added function to set only one attributes." />
     <MESSAGE value="Make the render frequency and the render time parameterizable." />
     <MESSAGE value="Transfer the attributes dictionary from the main function to the renderer throw the control loop." />
@@ -559,7 +565,8 @@
     <MESSAGE value="Make adding parameters attributes as functions with reference for the (x,y) places." />
     <MESSAGE value="Make the attribute 'param_type' be a combobox with the selected value as the excel data." />
     <MESSAGE value="Make the code statements for the attributes more useful." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make the code statements for the attributes more useful." />
+    <MESSAGE value="Clean the guid controls when changing the protocol and load the new controls for the new selected protocol." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean the guid controls when changing the protocol and load the new controls for the new selected protocol." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -884,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="229">
+          <caret line="97" column="8" selection-start-line="97" selection-start-column="8" selection-end-line="97" selection-end-column="8" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
             <element signature="e#256#749#0" />
