@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="130" column="63" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+                <state relative-caret-position="441">
+                  <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                   </folding>
@@ -471,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528993155333</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Make parameters_attributes_dictionary saving also the parameters with their attributes.">
+      <created>1528995342008</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1528995342009</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -538,7 +544,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make the color attribute as dictionary and not a drop down list." />
     <MESSAGE value="Successful reading from an excel file." />
     <MESSAGE value="Read successful the excel sheet into dictionary of dictionaries." />
     <MESSAGE value="Adding select folder browser in the main gui with button event." />
@@ -563,7 +568,8 @@
     <MESSAGE value="Make he control loop constructor to be with no initiators." />
     <MESSAGE value="Add num of trials parameter for staircase." />
     <MESSAGE value="Add num of repetitions for the start in the control loop." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add num of repetitions for the start in the control loop." />
+    <MESSAGE value="Make parameters_attributes_dictionary saving also the parameters with their attributes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make parameters_attributes_dictionary saving also the parameters with their attributes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -585,7 +591,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>77</line>
+          <line>79</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
@@ -888,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="130" column="63" selection-start-line="130" selection-start-column="63" selection-end-line="130" selection-end-column="63" />
+        <state relative-caret-position="441">
+          <caret line="72" column="51" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="51" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
