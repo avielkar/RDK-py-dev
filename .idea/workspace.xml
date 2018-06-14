@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cntrlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/cntrlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,21 +16,12 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1528919543715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1528990448648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Tkinter.py" pinned="false" current-in-tab="false">
-            <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="2490" column="8" selection-start-line="2490" selection-start-column="8" selection-end-line="2490" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -44,16 +37,16 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+                <state relative-caret-position="404">
+                  <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="65" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
-                    <element signature="e#256#749#0" />
                     <element signature="e#800#893#0" />
+                    <element signature="e#1024#1964#0" />
                     <element signature="e#1913#2042#0" />
                     <element signature="e#2111#2399#0" />
                     <element signature="e#2498#3907#0" />
-                    <element signature="e#3045#3390#0" />
+                    <element signature="e#4153#4516#0" />
                   </folding>
                 </state>
               </provider>
@@ -73,11 +66,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="cntrlloop.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cntrlloop.py">
+          <file leaf-file-name="main_gui_tkinter_test.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/main_gui_tkinter_test.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+                <state relative-caret-position="51">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
                 </state>
               </provider>
             </entry>
@@ -85,12 +78,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/protocolreader.py">
+        <leaf>
+          <file leaf-file-name="cntrlloop.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/cntrlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+                <state relative-caret-position="204">
+                  <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -131,12 +124,12 @@
         <option value="$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/__init__.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
-        <option value="$PROJECT_DIR$/cntrlloop.py" />
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/tests/protocolreader_test.py" />
-        <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/protocolreader.py" />
+        <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/cntrlloop.py" />
       </list>
     </option>
   </component>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528914440986</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add start button with callback function with no logics.">
+      <created>1528919690818</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1528919690818</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -540,7 +540,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added function to set only one attributes." />
     <MESSAGE value="Make the render frequency and the render time parameterizable." />
     <MESSAGE value="Transfer the attributes dictionary from the main function to the renderer throw the control loop." />
     <MESSAGE value="Transfer the attributes from the main gui to the control loop and renderer." />
@@ -565,7 +564,8 @@
     <MESSAGE value="Make the attribute 'param_type' be a combobox with the selected value as the excel data." />
     <MESSAGE value="Make the code statements for the attributes more useful." />
     <MESSAGE value="Clean the guid controls when changing the protocol and load the new controls for the new selected protocol." />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean the guid controls when changing the protocol and load the new controls for the new selected protocol." />
+    <MESSAGE value="Add start button with callback function with no logics." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add start button with callback function with no logics." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -587,7 +587,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
@@ -601,7 +601,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="52" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -789,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cntrlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/dot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -824,13 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/main_gui_tkinter_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/lib-tk/ttk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -852,6 +838,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protocolreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -859,10 +852,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protocolreader.py">
+    <entry file="file://$PROJECT_DIR$/tests/main_gui_tkinter_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <element signature="e#97#472#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -878,29 +881,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="404">
+          <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="65" />
           <folding>
-            <element signature="e#97#472#0" />
+            <element signature="e#16#25#0" expanded="true" />
+            <element signature="e#800#893#0" />
+            <element signature="e#1024#1964#0" />
+            <element signature="e#1913#2042#0" />
+            <element signature="e#2111#2399#0" />
+            <element signature="e#2498#3907#0" />
+            <element signature="e#4153#4516#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+    <entry file="file://$PROJECT_DIR$/cntrlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="52" column="40" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-            <element signature="e#256#749#0" />
-            <element signature="e#800#893#0" />
-            <element signature="e#1913#2042#0" />
-            <element signature="e#2111#2399#0" />
-            <element signature="e#2498#3907#0" />
-            <element signature="e#3045#3390#0" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>

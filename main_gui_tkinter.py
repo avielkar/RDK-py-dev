@@ -9,6 +9,7 @@ from tkinter import Label, Button, Entry
 import tkFileDialog
 
 from protocolreader import ProtocolReader
+from cntrlloop import CntrlLoop
 import tkMessageBox
 
 
@@ -124,6 +125,8 @@ class MainGuiTkinter:
     def load(self):
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
+
+        self.control_loop = CntrlLoop()
 
         self.init_gui_controllers()
 
