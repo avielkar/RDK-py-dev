@@ -1,6 +1,6 @@
 # coding: utf-8
 from psychopy import gui
-from cntrlloop import CntrlLoop
+from controlloop import ControlLoop
 
 info = {
     'ExpVersion': 1.1,
@@ -49,8 +49,8 @@ dictDlg = gui.DlgFromDict(dictionary=info,
                           tip=tipDictionary,
                           sort_keys=False)
 
-cntrlLoop = CntrlLoop(num_of_trials=10,
-                      attributes=dictDlg.dictionary)
+cntrlLoop = ControlLoop(num_of_trials=10,
+                        attributes=dictDlg.dictionary)
 
 if dictDlg.OK:
     cntrlLoop.start()

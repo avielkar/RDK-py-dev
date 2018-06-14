@@ -9,7 +9,7 @@ from tkinter import Label, Button, Entry
 import tkFileDialog
 
 from protocolreader import ProtocolReader
-from cntrlloop import CntrlLoop
+from controlloop import ControlLoop
 import tkMessageBox
 
 
@@ -18,6 +18,7 @@ class MainGuiTkinter:
     def __init__(self):
         self.tkFileDialog = None
         self.protocol_reader = None  # type: ProtocolReader
+        self.control_loop = None  # type: ControlLoop
         self.root = None  # type: Tk
         self.protocol_file_path = 'D:\RDK-protocols\coherence.xlsx'
         self.label_choose_folder = None  # type: Label
@@ -126,7 +127,7 @@ class MainGuiTkinter:
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
 
-        self.control_loop = CntrlLoop()
+        self.control_loop = ControlLoop()
 
         self.init_gui_controllers()
 
