@@ -13,7 +13,7 @@ class ControlLoop:
         self._attributes = None  # type: Dict[Any, Any]
         pass
 
-    def start(self, attributes, num_of_trials , num_of_repetitions):
+    def start(self, attributes, num_of_trials, num_of_repetitions):
         self._renderer.init_window()
 
         self._attributes = attributes

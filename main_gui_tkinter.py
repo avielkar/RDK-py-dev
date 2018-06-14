@@ -1,6 +1,6 @@
 # coding: utf-8
 import os
-from Tkinter import Button
+from Tkinter import Button, Label
 
 import tkinter
 import ttk
@@ -27,6 +27,9 @@ class MainGuiTkinter:
         self.combobox_protocol_list = None  # type: Combobox
         self.btn_start_experiment = None  # type: Button
         self.dynamic_controls_dict = None  # type: Dict[Any, Any]
+        self.parameters_attributes_dictionary = None  # type: Dict[Any,Any]
+        self.label_num_of_repetitions = 1  # type: Label
+        self.label_num_of_trials = 14  # type: Label
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkFileDialog.askdirectory()
@@ -54,7 +57,18 @@ class MainGuiTkinter:
         self.btn_start_experiment.place(relx=0.9,
                                         rely=0.0)
 
+        self.label_num_of_trials = Label(masetr=self.root,
+                                         text='#Trials')
+        self.label_num_of_trials.place(relx=0.9,
+                                       rely=0.05)
+
+        self.label_num_of_repetitions = Label(master=self.root,
+                                              text='#repetitions')
+        self.label_num_of_repetitions.place(relx=0.9,
+                                            rely=0.1)
+
     def btn_start_experiment_clicked(self):
+        self.control_loop.start(attributes=self._)
         return
 
     def combo_box_protocol_update(self):
@@ -114,6 +128,7 @@ class MainGuiTkinter:
     def update_dynamic_controls(self):
         self.delete_dynamic_controls()
         [excel_data_dict, titles] = self.protocol_reader.read_file(self.protocol_file_path)
+        self.parameters_attributes_dictionary = excel_data_dict
         rel_x = [0.0]
         rel_y = [0.1]
 
