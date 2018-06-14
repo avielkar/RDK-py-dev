@@ -1,10 +1,13 @@
+from withinstair_decision_maker import WithinStairDecisionMaker
+
 class TrialMaker:
     def __init__(self):
         self._attributes = None  # type: Dict[Any, Any]
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
         self.trial_number = 0
-        pass
+        self.within_stair_decision_maker = None  # type: WithinStairDecisionMaker
+        passload_new_data
 
     def current_trial(self, previous_decision_correction=False):
         pass
@@ -17,11 +20,18 @@ class TrialMaker:
         self._numOfTrials = num_of_trials
         self._numOfRepetitions = num_of_repetitions
         self.trial_number = 0
-        pass
+        experiment_type = self.check_experiment_type()
+        if experiment_type == 'withinstair':
+            self.within_stair_decision_maker = WithinStairDecisionMaker()
+        elif experiment_type == 'varying':
+            pass
+        elif experiment_type == 'statics':
+            pass
+        else:
+            return False;
+        return True
 
     def check_experiment_type(self):
-        varying_type = 0
-        withinstair_type = 0
         varying_type = sum(1 for param_name in self._attributes \
                            if self._attributes[param_name]['param_type'] == 'varying')
         withinstair_type = sum(1 for param_name in self._attributes \
