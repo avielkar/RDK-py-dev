@@ -1,6 +1,6 @@
 # coding: utf-8
 from psychopy import visual, event, core
-from cntrlloop import CntrlLoop
+from controlloop import ControlLoop
 
 info = {
     'ExpVersion': 1.1,
@@ -19,5 +19,5 @@ info = {
     'RenderTime': 1,
     'RenderFrequency': 60
 }
-cntrlLoop = CntrlLoop(num_of_trials=12, attributes=info)
+cntrlLoop = ControlLoop(num_of_trials=12, attributes=info)
 cntrlLoop.start()
