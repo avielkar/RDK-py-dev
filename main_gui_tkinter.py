@@ -1,6 +1,6 @@
 # coding: utf-8
 import os
-from Tkinter import Button, Label
+from Tkinter import Button, Label, Entry
 
 import tkinter
 import ttk
@@ -15,6 +15,7 @@ import tkMessageBox
 
 class MainGuiTkinter:
 
+
     def __init__(self):
         self.tkFileDialog = None
         self.protocol_reader = None  # type: ProtocolReader
@@ -28,8 +29,10 @@ class MainGuiTkinter:
         self.btn_start_experiment = None  # type: Button
         self.dynamic_controls_dict = None  # type: Dict[Any, Any]
         self.parameters_attributes_dictionary = None  # type: Dict[Any,Any]
-        self.label_num_of_repetitions = 1  # type: Label
-        self.label_num_of_trials = 14  # type: Label
+        self.label_num_of_repetitions = None  # type: Label
+        self.label_num_of_trials = None  # type: Label
+        self.entry_num_of_repetitions = None  # type: Entry
+        self.entry_num_of_trials = None  # type: Entry
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkFileDialog.askdirectory()
@@ -57,15 +60,21 @@ class MainGuiTkinter:
         self.btn_start_experiment.place(relx=0.9,
                                         rely=0.0)
 
-        self.label_num_of_trials = Label(masetr=self.root,
+        self.label_num_of_trials = Label(master=self.root,
                                          text='#Trials')
-        self.label_num_of_trials.place(relx=0.9,
+        self.label_num_of_trials.place(relx=0.8,
                                        rely=0.05)
+        self.entry_num_of_trials = Entry(master=self.root)
+        self.entry_num_of_trials.insert(0, 14)
+        self.entry_num_of_trials.place(relx=0.85, rely=0.05)
 
         self.label_num_of_repetitions = Label(master=self.root,
                                               text='#repetitions')
-        self.label_num_of_repetitions.place(relx=0.9,
+        self.label_num_of_repetitions.place(relx=0.8,
                                             rely=0.1)
+        self.entry_num_of_repetitions = Entry(master=self.root)
+        self.entry_num_of_repetitions.insert(0, 1)
+        self.entry_num_of_repetitions.place(relx=0.85, rely=0.1)
 
     def btn_start_experiment_clicked(self):
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
