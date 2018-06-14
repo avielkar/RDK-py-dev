@@ -1,5 +1,6 @@
 from withinstair_decision_maker import WithinStairDecisionMaker
 
+
 class TrialMaker:
     def __init__(self):
         self._attributes = None  # type: Dict[Any, Any]
@@ -10,6 +11,7 @@ class TrialMaker:
         pass
 
     def current_trial(self, previous_decision_correction=False):
+        return self.within_stair_decision_maker.current_tria(previous_decision_correction)
         pass
 
     def load_new_data(self,
@@ -23,9 +25,10 @@ class TrialMaker:
         experiment_type = self.check_experiment_type()
         if experiment_type == 'withinstair':
             self.within_stair_decision_maker = WithinStairDecisionMaker()
-            self.within_stair_decision_maker.SetAttributes(attributes=self._attributes,
-                                                           backword_error_probability=0.9,
-                                                           backword_rightword_probability=0.1)
+            self.within_stair_decision_maker.set_attributes(
+                (filter(lambda x: x['param_type'] == 'withinstair', self._attributes))[0],
+                backword_error_probability=0.9,
+                backword_rightword_probability=0.1)
         elif experiment_type == 'varying':
             pass
         elif experiment_type == 'statics':
