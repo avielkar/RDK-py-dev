@@ -7,7 +7,7 @@ class TrialMaker:
         self._numOfRepetitions = None  # type: Integer
         self.trial_number = 0
         self.within_stair_decision_maker = None  # type: WithinStairDecisionMaker
-        passload_new_data
+        pass
 
     def current_trial(self, previous_decision_correction=False):
         pass

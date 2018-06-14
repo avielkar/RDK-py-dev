@@ -66,8 +66,8 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+                <state relative-caret-position="136">
+                  <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -537,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529008171365</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option.">
+      <created>1529010360204</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1529010360204</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -604,7 +611,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Rename function name to controls instead of controlls." />
     <MESSAGE value="Init the textboxes entries with the parameter value as read from the excel sheet." />
     <MESSAGE value="Placing the paramter names label in the correct place." />
     <MESSAGE value="Placing all parameters entries beside the parameter label names." />
@@ -629,7 +635,8 @@
     <MESSAGE value="Add trial maker plus change the behavior of the within stair decision maker to only gets its attribute." />
     <MESSAGE value="Create the TrialMaker class with functions definition without logic." />
     <MESSAGE value="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair." />
+    <MESSAGE value="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -969,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="136">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
