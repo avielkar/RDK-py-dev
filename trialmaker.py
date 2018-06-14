@@ -23,6 +23,9 @@ class TrialMaker:
         experiment_type = self.check_experiment_type()
         if experiment_type == 'withinstair':
             self.within_stair_decision_maker = WithinStairDecisionMaker()
+            self.within_stair_decision_maker.SetAttributes(attributes=self._attributes,
+                                                           backword_error_probability=0.9,
+                                                           backword_rightword_probability=0.1)
         elif experiment_type == 'varying':
             pass
         elif experiment_type == 'statics':
