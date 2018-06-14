@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +53,8 @@
           <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+                <state relative-caret-position="340">
+                  <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -67,8 +66,8 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="28" column="89" selection-start-line="28" selection-start-column="89" selection-end-line="28" selection-end-column="89" />
+                <state relative-caret-position="493">
+                  <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -116,8 +115,8 @@
         <option value="$PROJECT_DIR$/cntrlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
-        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
+        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
       </list>
     </option>
   </component>
@@ -559,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529011093696</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type).">
+      <created>1529012079453</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1529012079453</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -567,7 +573,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026042" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503125" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49739584" weight="0.32925585" />
@@ -578,7 +584,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49739584" weight="0.32925585" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.496875" weight="0.32925585" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -626,7 +632,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Placing all parameters entries beside the parameter label names." />
     <MESSAGE value="The places are great placed now." />
     <MESSAGE value="Make no collision with the choose folder protocol." />
     <MESSAGE value="Add parameter titles without the tool_tip title and also returns the title from the protocol excel reader." />
@@ -651,7 +656,8 @@
     <MESSAGE value="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option." />
     <MESSAGE value="Fix a mistake with a copy paste." />
     <MESSAGE value="Linking load_new_data with the withinstair_decision_maker and it's parameters." />
-    <option name="LAST_COMMIT_MESSAGE" value="Linking load_new_data with the withinstair_decision_maker and it's parameters." />
+    <MESSAGE value="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -982,17 +988,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="493">
+          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="89" selection-start-line="28" selection-start-column="89" selection-end-line="28" selection-end-column="89" />
+        <state relative-caret-position="340">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
