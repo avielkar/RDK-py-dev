@@ -20,5 +20,5 @@ class WithinStairDecisionMaker:
     def ResetDecision(self):
         pass
 
-    def NextDecision(self):
+    def CurrentTrial(self):
         pass
