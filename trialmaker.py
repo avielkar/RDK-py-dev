@@ -6,7 +6,7 @@ class TrialMaker:
         self.trial_number = 0
         pass
 
-    def current_trial(self):
+    def current_trial(self, previous_decision_correction=False):
         pass
 
     def load_new_data(self,
@@ -18,3 +18,19 @@ class TrialMaker:
         self._numOfRepetitions = num_of_repetitions
         self.trial_number = 0
         pass
+
+    def check_experiment_type(self):
+        varying_type = 0
+        withinstair_type = 0
+        varying_type = sum(1 for param_name in self._attributes \
+                           if self._attributes[param_name]['param_type'] == 'varying')
+        withinstair_type = sum(1 for param_name in self._attributes \
+                               if self._attributes[param_name]['param_type'] == 'withinstair')
+        if varying_type == 0 and withinstair_type == 0:
+            return 'statics'
+        elif varying_type > 0 and withinstair_type > 0:
+            return 'fault'
+        elif varying_type > 0 and withinstair_type == 0:
+            return 'varying'
+        else:
+            return 'withinstair'
