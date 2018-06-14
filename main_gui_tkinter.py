@@ -78,8 +78,8 @@ class MainGuiTkinter:
 
     def btn_start_experiment_clicked(self):
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
-                                num_of_trials=self.label_num_of_trials,
-                                num_of_repetitions=self.label_num_of_repetitions)
+                                num_of_trials=self.entry_num_of_trials.get(),
+                                num_of_repetitions=self.entry_num_of_repetitions.get())
         return
 
     def combo_box_protocol_update(self):
