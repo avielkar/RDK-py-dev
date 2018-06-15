@@ -70,9 +70,9 @@ class Renderer:
                                   pos=(0, -0.5))
 
         start_time = time.time()
-        while time.time() - start_time < self._attributes_dict['RenderTime']:
+        while time.time() - start_time < self.data['RenderTime']:
             dot_patch.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
-            time.sleep((1 / self._attributes_dict['RenderFrequency']))
+            time.sleep((1 / self.data['RenderFrequency']))
         time.sleep(2)
