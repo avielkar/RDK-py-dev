@@ -75,3 +75,6 @@ class Renderer:
             message.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
+
+    def clean_screen(self):
+        self._my_win.flip()
