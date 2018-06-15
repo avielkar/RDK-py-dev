@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,8 +57,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="457">
-                  <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+                <state relative-caret-position="406">
+                  <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -237,13 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Updates the protocol combobox with the selected folder.">
-      <created>1528742266664</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1528742266664</updated>
     </task>
     <task id="LOCAL-00016" summary="Make the protocol file path as combobox selected.">
       <created>1528884645503</created>
@@ -581,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529078394820</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data.">
+      <created>1529081736009</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1529081736009</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -589,12 +588,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.52239585" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5229167" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" side_tool="true" visible="true" weight="0.1171875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.496875" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.47760418" visible="true" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.47708333" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -606,7 +605,7 @@
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49947917" weight="0.32925585" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48802084" weight="0.32925585" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4875" weight="0.32925585" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -651,7 +650,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add the withinstair decision class with define functions - no logic yet." />
     <MESSAGE value="Add trial maker plus change the behavior of the within stair decision maker to only gets its attribute." />
     <MESSAGE value="Create the TrialMaker class with functions definition without logic." />
     <MESSAGE value="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair." />
@@ -676,7 +674,8 @@
     <MESSAGE value="Make the RenderTime and RenderFrequency to be read from the current trial data." />
     <MESSAGE value="Fix a -1 for the length in te index checker for the within stair index." />
     <MESSAGE value="Remove redundent ;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove redundent ;" />
+    <MESSAGE value="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,8 +1023,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        <state relative-caret-position="406">
+          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
