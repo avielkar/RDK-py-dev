@@ -60,7 +60,7 @@ class WithinStairDecisionMaker:
         if right_trial:
             if previous_decision_correction:
                 self.within_stair_positive_vector_index = self.within_stair_positive_vector_index + 1 \
-                    if self.within_stair_positive_vector_index < len(self.within_stair_vector_positive) \
+                    if self.within_stair_positive_vector_index < len(self.within_stair_vector_positive) - 1 \
                     else self.within_stair_positive_vector_index
             else:
                 self.within_stair_positive_vector_index = self.within_stair_positive_vector_index \
