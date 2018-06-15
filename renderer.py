@@ -26,6 +26,7 @@ class Renderer:
             'RenderTime': 1,
             'RenderFrequency': 60
         }
+        self.data = None  # type: List{(,)}
         pass
 
     def init_window(self):
@@ -41,7 +42,8 @@ class Renderer:
     def set_attribute(self, name, value):
         self._attributes_dict[name] = value
 
-    def render(self):
+    def render(self, data):
+        self.data = data
         dot_patch = visual.DotStim(win=self._my_win,
                                    units=eval(self._attributes_dict['Units']),
                                    color=list([eval(self._attributes_dict['Color'])['r'],
