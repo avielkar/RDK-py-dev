@@ -13,10 +13,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1528996163616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529064037615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5553587">
       <split-first>
         <leaf>
           <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="false">
@@ -28,11 +28,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+                <state relative-caret-position="425">
+                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                  <folding>
+                    <element signature="e#17#28#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -40,10 +43,32 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="81" column="86" selection-start-line="81" selection-start-column="86" selection-end-line="81" selection-end-column="86" />
+                <state relative-caret-position="408">
+                  <caret line="81" selection-start-line="81" selection-end-line="81" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
+                    <element signature="e#335#1231#0" />
+                    <element signature="e#975#1068#0" />
+                    <element signature="e#1361#3192#0" />
+                    <element signature="e#2224#2383#0" />
+                    <element signature="e#2453#2582#0" />
+                    <element signature="e#2651#2954#0" />
+                    <element signature="e#3038#4514#0" />
+                    <element signature="e#4563#4687#0" />
+                    <element signature="e#4736#5098#0" />
+                    <element signature="e#5128#5516#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="426">
+                  <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -53,20 +78,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Tkinter.py" pinned="false" current-in-tab="true">
-            <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
-                  <caret line="2090" selection-start-line="2090" selection-end-line="2090" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/renderer.py">
+          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="187">
-                  <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
                 </state>
               </provider>
             </entry>
@@ -109,11 +125,13 @@
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/tests/protocolreader_test.py" />
-        <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/cntrlloop.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/protocolreader.py" />
+        <option value="$PROJECT_DIR$/trialmaker.py" />
+        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
       </list>
     </option>
   </component>
@@ -239,48 +257,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added a dictionary gui - base.">
-      <created>1528206782524</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1528206782524</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Addeed gui parameters for the RDK experiment.">
-      <created>1528207541445</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1528207541445</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Make the fields in the gui dictionary to not be sorted alphabetaclly.">
-      <created>1528207597643</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1528207597643</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added tooltip dictionary to the gui dictionary parameters.">
-      <created>1528210055920</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1528210055920</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add renderer class with some functions.">
-      <created>1528476913303</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1528476913303</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added function to set only one attributes.">
-      <created>1528477474660</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1528477474660</updated>
     </task>
     <task id="LOCAL-00007" summary="Make the render frequency and the render time parameterizable.">
       <created>1528477718887</created>
@@ -506,7 +482,126 @@
       <option name="project" value="LOCAL" />
       <updated>1528996194858</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Add the withinstair decision class with define functions - no logic yet.">
+      <created>1529003615123</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1529003615123</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add trial maker plus change the behavior of the within stair decision maker to only gets its attribute.">
+      <created>1529005088956</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1529005088956</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Create the TrialMaker class with functions definition without logic.">
+      <created>1529006159312</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1529006159312</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair.">
+      <created>1529008171365</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1529008171365</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option.">
+      <created>1529010360204</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1529010360204</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Fix a mistake with a copy paste.">
+      <created>1529010384191</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1529010384191</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Linking load_new_data with the withinstair_decision_maker and it's parameters.">
+      <created>1529011093696</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1529011093696</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type).">
+      <created>1529012079453</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1529012079453</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Add logics for the create_within_stair_vector function and linked the trial maker to it.">
+      <created>1529013853352</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1529013853352</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Make trial num of repetition and trials being send to the trial maker with int types instead of string.">
+      <created>1529045981917</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1529045981917</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add positive and negative within_stair vector with indexes.&#10;Also logics for reset function.">
+      <created>1529047830605</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1529047830605</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Add logic for current_trial function in withinstair_decision_maker without the influence of the forward and backward probabilities.">
+      <created>1529050083090</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1529050083090</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fix the bug with iteration over keys value in the attribute dictionary.">
+      <created>1529051798418</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1529051798419</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Make the param_name to be in the attributes dictionary (delete the &quot;if&quot; statements)&#10;Also in load_data function make a reset and vector creation.">
+      <created>1529056758419</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1529056758419</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Make the function of the maker to return the dictionary value (include the parameter name).">
+      <created>1529057452778</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1529057452779</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Using numpy for floating point arrange.">
+      <created>1529064021025</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1529064021025</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Check the list is 0 len and not negative length.">
+      <created>1529064126313</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1529064126313</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,21 +609,24 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5203125" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503125" side_tool="true" weight="0.32925585" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" side_tool="true" visible="true" weight="0.1375" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49739584" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.4796875" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.496875" weight="0.32925585" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.478125" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.496875" weight="0.32925585" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info id="Structure" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49947917" weight="0.32925585" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48177084" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" sideWeight="0.48072916" visible="true" weight="0.32925585" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,8 +634,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49791667" weight="0.32925585" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49947917" weight="0.32925585" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,23 +669,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add protocl dir files combobox with filter for xlsx files." />
-    <MESSAGE value="Updates the protocol combobox with the selected folder." />
-    <MESSAGE value="Make the protocol file path as combobox selected." />
-    <MESSAGE value="Adding dynamic labels to the main gui as the selected protocol file." />
-    <MESSAGE value="Rename function name to controls instead of controlls." />
-    <MESSAGE value="Init the textboxes entries with the parameter value as read from the excel sheet." />
-    <MESSAGE value="Placing the paramter names label in the correct place." />
-    <MESSAGE value="Placing all parameters entries beside the parameter label names." />
-    <MESSAGE value="The places are great placed now." />
-    <MESSAGE value="Make no collision with the choose folder protocol." />
-    <MESSAGE value="Add parameter titles without the tool_tip title and also returns the title from the protocol excel reader." />
-    <MESSAGE value="Make the order of titles and attribute ne the same order ." />
-    <MESSAGE value="Make adding titles as functions with reference for the (x,y) places." />
-    <MESSAGE value="Make adding parameters attributes as functions with reference for the (x,y) places." />
-    <MESSAGE value="Make the attribute 'param_type' be a combobox with the selected value as the excel data." />
-    <MESSAGE value="Make the code statements for the attributes more useful." />
-    <MESSAGE value="Clean the guid controls when changing the protocol and load the new controls for the new selected protocol." />
     <MESSAGE value="Add start button with callback function with no logics." />
     <MESSAGE value="Make he control loop constructor to be with no initiators." />
     <MESSAGE value="Add num of trials parameter for staircase." />
@@ -598,30 +677,52 @@
     <MESSAGE value="Add parameters from the gui class to the start function in the control loop." />
     <MESSAGE value="Add labels + entries with default values for the num of repetitions and for the num of trials." />
     <MESSAGE value="Send the entries values to the start control loop at start button event." />
-    <option name="LAST_COMMIT_MESSAGE" value="Send the entries values to the start control loop at start button event." />
+    <MESSAGE value="Add the withinstair decision class with define functions - no logic yet." />
+    <MESSAGE value="Add trial maker plus change the behavior of the within stair decision maker to only gets its attribute." />
+    <MESSAGE value="Create the TrialMaker class with functions definition without logic." />
+    <MESSAGE value="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair." />
+    <MESSAGE value="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option." />
+    <MESSAGE value="Fix a mistake with a copy paste." />
+    <MESSAGE value="Linking load_new_data with the withinstair_decision_maker and it's parameters." />
+    <MESSAGE value="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type)." />
+    <MESSAGE value="Add logics for the create_within_stair_vector function and linked the trial maker to it." />
+    <MESSAGE value="Make trial num of repetition and trials being send to the trial maker with int types instead of string." />
+    <MESSAGE value="Add positive and negative within_stair vector with indexes.&#10;Also logics for reset function." />
+    <MESSAGE value="Add logic for current_trial function in withinstair_decision_maker without the influence of the forward and backward probabilities." />
+    <MESSAGE value="Fix the bug with iteration over keys value in the attribute dictionary." />
+    <MESSAGE value="Make the param_name to be in the attributes dictionary (delete the &quot;if&quot; statements)&#10;Also in load_data function make a reset and vector creation." />
+    <MESSAGE value="Make the function of the maker to return the dictionary value (include the parameter name)." />
+    <MESSAGE value="Using numpy for floating point arrange." />
+    <MESSAGE value="Check the list is 0 len and not negative length." />
+    <option name="LAST_COMMIT_MESSAGE" value="Check the list is 0 len and not negative length." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/renderer.py</url>
           <line>44</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/protocolreader_test.py</url>
           <line>8</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>4</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/controlloop.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>88</line>
-          <option name="timeStamp" value="50" />
+          <url>file://$PROJECT_DIR$/withinstair_decision_maker.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -634,7 +735,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="53" />
+      <option name="time" value="75" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -653,8 +754,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/psychopy/visual/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/psychopy/visual/window.py" />
     <entry file="file://C:/Program Files (x86)/PsychoPy2/Lib/site-packages/PsychoPy-1.84.2-py2.7.egg/psychopy/visual/window.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -753,13 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="922">
           <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-762174762/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1829">
-          <caret line="290" column="4" selection-start-line="290" selection-start-column="4" selection-end-line="290" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -893,6 +985,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="5142" lean-forward="true" selection-start-line="5142" selection-end-line="5142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="1124" selection-start-line="1124" selection-end-line="1124" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protocolreader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -900,34 +1013,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/renderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/lib-tk/Tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="2090" selection-start-line="2090" selection-end-line="2090" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="81" column="86" selection-start-line="81" selection-start-column="86" selection-end-line="81" selection-end-column="86" />
+        <state relative-caret-position="408">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
+            <element signature="e#335#1231#0" />
+            <element signature="e#975#1068#0" />
+            <element signature="e#1361#3192#0" />
+            <element signature="e#2224#2383#0" />
+            <element signature="e#2453#2582#0" />
+            <element signature="e#2651#2954#0" />
+            <element signature="e#3038#4514#0" />
+            <element signature="e#4563#4687#0" />
+            <element signature="e#4736#5098#0" />
+            <element signature="e#5128#5516#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="425">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="54" column="41" lean-forward="true" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -23,8 +23,8 @@ class ProtocolReader:
         for param_name in params_names:
             data_dict[param_name] = dict()
             for param_key in protocol_data.keys():
-                if param_key != 'param_name':
-                    data_dict[param_name][param_key] = protocol_data[param_key][param_index]
+                # if param_key != 'param_name':
+                data_dict[param_name][param_key] = protocol_data[param_key][param_index]
             param_index += 1
 
         return [data_dict, titles]
