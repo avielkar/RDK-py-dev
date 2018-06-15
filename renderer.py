@@ -26,6 +26,7 @@ class Renderer:
             'RenderTime': 1,
             'RenderFrequency': 60
         }
+        self.data = None  # type: Dict[String, Any]
         pass
 
     def init_window(self):
@@ -41,36 +42,37 @@ class Renderer:
     def set_attribute(self, name, value):
         self._attributes_dict[name] = value
 
-    def render(self):
+    def render(self, data):
+        self.data = data
         dot_patch = visual.DotStim(win=self._my_win,
-                                   units=eval(self._attributes_dict['Units']),
-                                   color=list([eval(self._attributes_dict['Color'])['r'],
-                                               eval(self._attributes_dict['Color'])['g'],
-                                               eval(self._attributes_dict['Color'])['b'],
+                                   units=self.data['Units'],
+                                   color=list([eval(self.data['Color'])[0],
+                                               eval(self.data['Color'])[1],
+                                               eval(self.data['Color'])[2],
                                                ]),
-                                   dir=self._attributes_dict['Direction'],
-                                   nDots=self._attributes_dict['NumberOfDots'],
-                                   fieldShape=self._attributes_dict['FieldShape'],
-                                   fieldPos=[eval(self._attributes_dict['FieldPosition'])['x'],
-                                             eval(self._attributes_dict['FieldPosition'])['y']],
-                                   fieldSize=self._attributes_dict['FieldSize'],
-                                   dotLife=self._attributes_dict['DotLife'],
+                                   dir=self.data['Direction'],
+                                   nDots=self.data['NumberOfDots'],
+                                   fieldShape=self.data['FieldShape'],
+                                   fieldPos=[eval(self.data['FieldPosition'])[0],
+                                             eval(self.data['FieldPosition'])[1]],
+                                   fieldSize=self.data['FieldSize'],
+                                   dotLife=self.data['DotLife'],
                                    # number of frames for each dot to be drawn
-                                   signalDots=self._attributes_dict['SignalDots'],
+                                   signalDots=self.data['SignalDots'],
                                    # are the signal dots the 'same' on each frame? (see Scase et al)
-                                   noiseDots=self._attributes_dict['NoiseDots'],
+                                   noiseDots=self.data['NoiseDots'],
                                    # do the noise dots follow random- 'walk', 'direction', or 'position'
-                                   speed=self._attributes_dict['Speed'],
-                                   coherence=self._attributes_dict['Coherence'])
+                                   speed=self.data['Speed'],
+                                   coherence=self.data['Coherence'])
 
         message = visual.TextStim(win=self._my_win,
                                   text='Hit Q to quit',
                                   pos=(0, -0.5))
 
         start_time = time.time()
-        while time.time() - start_time < self._attributes_dict['RenderTime']:
+        while time.time() - start_time < self.data['RenderTime']:
             dot_patch.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
-            time.sleep((1 / self._attributes_dict['RenderFrequency']))
+            time.sleep((1 / self.data['RenderFrequency']))
         time.sleep(2)
