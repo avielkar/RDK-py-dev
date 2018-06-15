@@ -79,7 +79,8 @@ class WithinStairDecisionMaker:
                     else self.within_stair_negative_vector_index - 1
             current_withinstair_value = self.within_stair_vector_negative[self.within_stair_negative_vector_index]
 
-        current_trial_data = list()
+        current_trial_data = dict()
         for param_attributes in self.static_parameters_attributes:
-            current_trial_data.append({param_attributes['param_name']: param_attributes['value']})
-        current_trial_data.append({self.within_stair_attribute['param_name']: current_withinstair_value})
+            current_trial_data[param_attributes['param_name']] = param_attributes['value']
+        current_trial_data[self.within_stair_attribute['param_name']] = current_withinstair_value
+        return current_trial_data
