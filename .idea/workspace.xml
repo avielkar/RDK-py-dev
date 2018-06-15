@@ -15,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529090560783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529092358770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5436644">
@@ -33,8 +33,8 @@
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+                <state relative-caret-position="460">
+                  <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -58,8 +58,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="443">
-                  <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+                <state relative-caret-position="-16">
+                  <caret line="37" selection-start-line="37" selection-end-line="37" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -83,6 +83,7 @@
       <find>dots</find>
       <find>command</find>
       <find>Combobox</find>
+      <find>size</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,8 +111,8 @@
         <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/renderer.py" />
       </list>
     </option>
   </component>
@@ -237,13 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Init the textboxes entries with the parameter value as read from the excel sheet.">
-      <created>1528893467194</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1528893467194</updated>
     </task>
     <task id="LOCAL-00020" summary="Placing the paramter names label in the correct place.">
       <created>1528894230671</created>
@@ -581,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529089595671</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Add clean function to the renderer to clean up the screen.&#10;Rename the function with the spelling error.">
+      <created>1529090665045</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1529090665045</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -589,12 +590,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50364584" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.52447915" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.496875" weight="0.32925585" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4765625" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.47552082" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -604,9 +605,9 @@
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info id="Structure" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49895832" weight="0.32925585" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4875" weight="0.32925585" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49947917" weight="0.32925585" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -649,7 +650,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option." />
     <MESSAGE value="Fix a mistake with a copy paste." />
     <MESSAGE value="Linking load_new_data with the withinstair_decision_maker and it's parameters." />
     <MESSAGE value="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type)." />
@@ -674,7 +674,8 @@
     <MESSAGE value="the data is member and should not be sent via the function." />
     <MESSAGE value="Remove permenantly the sleeps." />
     <MESSAGE value="Add post trial time stage to the control loop with logic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add post trial time stage to the control loop with logic." />
+    <MESSAGE value="Add clean function to the renderer to clean up the screen.&#10;Rename the function with the spelling error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add clean function to the renderer to clean up the screen.&#10;Rename the function with the spelling error." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -689,7 +690,7 @@
           <line>4</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/renderer.py</url>
           <line>72</line>
           <option name="timeStamp" value="106" />
@@ -813,13 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1013,20 +1007,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/renderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        <state relative-caret-position="-16">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="164" column="18" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="85" column="46" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
         </state>
       </provider>
     </entry>
