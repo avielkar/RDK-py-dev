@@ -81,5 +81,5 @@ class WithinStairDecisionMaker:
 
         current_trial_data = list()
         for param_attributes in self.static_parameters_attributes:
-            current_trial_data.append((param_attributes['param_name'], param_attributes['value']))
-        current_trial_data.append((self.within_stair_attribute['param_name'], current_withinstair_value))
+            current_trial_data.append({param_attributes['param_name']: param_attributes['value']})
+        current_trial_data.append({self.within_stair_attribute['param_name']: current_withinstair_value})

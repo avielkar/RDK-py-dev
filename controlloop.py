@@ -13,7 +13,7 @@ class ControlLoop:
         self._renderer = Renderer()
         self._attributes = None  # type: Dict[Any, Any]
         self._trial_maker = TrialMaker()
-        self.current_trial_data = None  # type: List[(,)]
+        self.current_trial_data = None  # type: List[(:)]
     pass
 
     def start(self, attributes, num_of_trials, num_of_repetitions):
