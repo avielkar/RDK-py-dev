@@ -44,9 +44,9 @@ class WithinStairDecisionMaker:
     def current_trial(self, previous_decision_correction):
         right_trial = True if random.randint(0, 1) == 0 else False
 
-        if len(self.within_stair_vector_positive) < 0 and len(self.within_stair_vector_negative) > 0:
+        if len(self.within_stair_vector_positive) == 0 and len(self.within_stair_vector_negative) > 0:
             right_trial = False
-        elif len(self.within_stair_vector_positive) > 0 and len(self.within_stair_vector_negative) < 0:
+        elif len(self.within_stair_vector_positive) > 0 and len(self.within_stair_vector_negative) == 0:
             right_trial = True
 
         if right_trial:
