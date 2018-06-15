@@ -35,15 +35,17 @@ class ControlLoop:
 
         for trialNum in range(self._numOfTrials):
             self.current_trial_data = self._trial_maker.current_trial(True)
-            self._renderer.render(self.current_trial_data)
             print self.current_trial_data
+
+            self.wait_start_key_respoxse()
+
+            self._renderer.render(self.current_trial_data)
 
             self.response_time_stage()
 
-    def wait_start_key_response(self):
+    def wait_start_key_respoxse(self):
         keys = psychopy.event.waitKeys(maxWait=float('inf'),
                                        keyList=['space'])
-
 
     def response_time_stage(self):
         keys = psychopy.event.waitKeys(maxWait=self.current_trial_data['ResponseTime'],
