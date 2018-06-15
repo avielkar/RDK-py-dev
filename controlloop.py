@@ -35,9 +35,8 @@ class ControlLoop:
 
         for trialNum in range(self._numOfTrials):
             self.current_trial_data = self._trial_maker.current_trial(True)
-            print self.current_trial_data
 
-            self.wait_start_key_respoxse()
+            self.wait_start_key_response()
 
             self._renderer.render(self.current_trial_data)
 
@@ -45,7 +44,11 @@ class ControlLoop:
 
             self.post_trial_stage()
 
-    def wait_start_key_respoxse(self):
+    def wait_start_key_response(self):
+        print self.current_trial_data
+
+        self._renderer.add_text_to_screen('Press space to start the trial')
+
         keys = psychopy.event.waitKeys(maxWait=float('inf'),
                                        keyList=['space'])
 
@@ -58,6 +61,7 @@ class ControlLoop:
             print 'no response'
 
     def post_trial_stage(self):
+        self._renderer.clean_screen()
         time.sleep(self.current_trial_data['PostTrialTime'])
 
 
