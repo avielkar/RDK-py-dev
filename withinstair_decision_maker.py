@@ -1,5 +1,6 @@
 import random
 import numpy
+from typing import List, Any
 
 
 class WithinStairDecisionMaker:
@@ -8,6 +9,7 @@ class WithinStairDecisionMaker:
         self.backword_rightword_probability = None  # type: Integer
         self.backword_error_probability = None  # type: Integer
         self.param_attributes = None  # type: Dict[Any, Any]
+        static_parameters_attributes = None  # type: List[Any]
         self.within_stair_vector_positive = None  # type: list
         self.within_stair_vector_negative = None  # type: list
         self.within_stair_negative_vector_index = 0
@@ -36,8 +38,9 @@ class WithinStairDecisionMaker:
 
     def create_within_stair_vector(self):
 
-        self.within_stair_attribute = self.param_attributes[(filter(lambda x: self.param_attributes[x]['param_type'] == 'withinstair', self.param_attributes.keys()))[0]]
-
+        self.within_stair_attribute = self.param_attributes\
+                                      [(filter(lambda x: self.param_attributes[x]['param_type'] == 'withinstair', self.param_attributes.keys()))[0]]
+        self.static_parameters_attributes = (filter(lambda attributes: attributes['param_type'] == 'static', self.param_attributes.values()))
         within_stair_low_val = self.within_stair_attribute['min_value']
         within_stair_high_value = self.within_stair_attribute['max_value']
         within_stair_jumping = self.within_stair_attribute['jumping']
