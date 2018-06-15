@@ -43,3 +43,5 @@ class ControlLoop:
     def response_time_stage(self):
         keys = psychopy.event.waitKeys(maxWait=self.current_trial_data['ResponseTime'],
                                        keyList=['left', 'right'])
+        if keys:
+            print ('pressed {key}'.format(key=keys[0]))
