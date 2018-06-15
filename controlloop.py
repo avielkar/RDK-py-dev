@@ -40,6 +40,11 @@ class ControlLoop:
 
             self.response_time_stage()
 
+    def wait_start_key_response(self):
+        keys = psychopy.event.waitKeys(maxWait=float('inf'),
+                                       keyList=['space'])
+
+
     def response_time_stage(self):
         keys = psychopy.event.waitKeys(maxWait=self.current_trial_data['ResponseTime'],
                                        keyList=['left', 'right'])
