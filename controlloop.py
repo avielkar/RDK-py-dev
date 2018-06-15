@@ -54,3 +54,8 @@ class ControlLoop:
             print ('pressed {key}'.format(key=keys[0]))
         else:
             print 'no response'
+
+    def post_trial_stage(self):
+        time.sleep(self.current_trial_data['PostTrialTime'])
+
+
