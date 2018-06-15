@@ -1,8 +1,8 @@
 # coding: utf-8
-from psychopy import visual, event, core
 
 import time
 from renderer import Renderer
+from trialmaker import TrialMaker
 
 
 class ControlLoop:
@@ -11,6 +11,7 @@ class ControlLoop:
         self._numOfRepetitions = None  # type: Integer
         self._renderer = Renderer()
         self._attributes = None  # type: Dict[Any, Any]
+        self._trial_maker = TrialMaker()
         pass
 
     def start(self, attributes, num_of_trials, num_of_repetitions):
@@ -24,5 +25,12 @@ class ControlLoop:
 
         self._renderer.set_attributes(self._attributes)
 
+        self._trial_maker.load_new_data(attributes=self._attributes,
+                                        num_of_repetitions=self._numOfRepetitions,
+                                        num_of_trials=self._numOfTrials)
+
         for trialNum in range(self._numOfTrials):
-            self._renderer.render()
+            #self._renderer.render()
+            print self._trial_maker.current_trial()
+            time.sleep(4)
+
