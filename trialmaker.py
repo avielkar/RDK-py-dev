@@ -33,7 +33,7 @@ class TrialMaker:
         elif experiment_type == 'statics':
             pass
         else:
-            return False;
+            return False
         return True
 
     def check_experiment_type(self):
