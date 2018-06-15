@@ -75,4 +75,3 @@ class Renderer:
             message.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
-        #time.sleep(2)

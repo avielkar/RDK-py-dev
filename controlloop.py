@@ -39,7 +39,6 @@ class ControlLoop:
             print self.current_trial_data
 
             self.response_time_stage()
-            #time.sleep(4)
 
     def response_time_stage(self):
         keys = psychopy.event.waitKeys(maxWait=self.current_trial_data['ResponseTime'],

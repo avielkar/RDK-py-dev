@@ -32,8 +32,8 @@
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="491">
-                  <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+                <state relative-caret-position="477">
+                  <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
                 </state>
               </provider>
             </entry>
@@ -57,8 +57,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+                <state relative-caret-position="423">
+                  <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/renderer.py" />
       </list>
     </option>
   </component>
@@ -236,13 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Make the protocol file path as combobox selected.">
-      <created>1528884645503</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1528884645503</updated>
     </task>
     <task id="LOCAL-00017" summary="Adding dynamic labels to the main gui as the selected protocol file.">
       <created>1528885736263</created>
@@ -580,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529081736009</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="the data is member and should not be sent via the function.">
+      <created>1529081905351</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1529081905351</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -650,7 +650,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add trial maker plus change the behavior of the within stair decision maker to only gets its attribute." />
     <MESSAGE value="Create the TrialMaker class with functions definition without logic." />
     <MESSAGE value="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair." />
     <MESSAGE value="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option." />
@@ -675,7 +674,8 @@
     <MESSAGE value="Fix a -1 for the length in te index checker for the within stair index." />
     <MESSAGE value="Remove redundent ;" />
     <MESSAGE value="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data." />
+    <MESSAGE value="the data is member and should not be sent via the function." />
+    <option name="LAST_COMMIT_MESSAGE" value="the data is member and should not be sent via the function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1014,20 +1014,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/renderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="423">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
         </state>
       </provider>
     </entry>
