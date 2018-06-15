@@ -43,6 +43,8 @@ class ControlLoop:
 
             self.response_time_stage()
 
+            self.post_trial_stage()
+
     def wait_start_key_respoxse(self):
         keys = psychopy.event.waitKeys(maxWait=float('inf'),
                                        keyList=['space'])
