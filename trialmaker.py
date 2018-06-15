@@ -25,7 +25,7 @@ class TrialMaker:
         if experiment_type == 'withinstair':
             self.within_stair_decision_maker = WithinStairDecisionMaker()
             self.within_stair_decision_maker.set_attributes(
-                self._attributes[(filter(lambda x: self._attributes[x]['param_type'] == 'withinstair', self._attributes.keys()))[0]],
+                param_attributes=self._attributes,
                 backword_error_probability=0.9,
                 backword_rightword_probability=0.1)
         elif experiment_type == 'varying':

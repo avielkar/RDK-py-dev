@@ -3,14 +3,16 @@ import numpy
 
 
 class WithinStairDecisionMaker:
+
     def __init__(self):
         self.backword_rightword_probability = None  # type: Integer
         self.backword_error_probability = None  # type: Integer
-        self.param_attributes = None  # type: Anys
+        self.param_attributes = None  # type: Dict[Any, Any]
         self.within_stair_vector_positive = None  # type: list
         self.within_stair_vector_negative = None  # type: list
         self.within_stair_negative_vector_index = 0
         self.within_stair_positive_vector_index = 0
+        self.within_stair_attribute = None  # type: Any
         pass
 
     def set_attributes(self,
@@ -33,9 +35,12 @@ class WithinStairDecisionMaker:
         pass
 
     def create_within_stair_vector(self):
-        within_stair_low_val = self.param_attributes['min_value']
-        within_stair_high_value = self.param_attributes['max_value']
-        within_stair_jumping = self.param_attributes['jumping']
+
+        self.within_stair_attribute = self.param_attributes[(filter(lambda x: self.param_attributes[x]['param_type'] == 'withinstair', self.param_attributes.keys()))[0]]
+
+        within_stair_low_val = self.within_stair_attribute['min_value']
+        within_stair_high_value = self.within_stair_attribute['max_value']
+        within_stair_jumping = self.within_stair_attribute['jumping']
         within_vector = numpy.arange(float(within_stair_low_val),
                               float(within_stair_high_value),
                               float(within_stair_jumping))
