@@ -12,7 +12,6 @@ class TrialMaker:
 
     def current_trial(self, previous_decision_correction=False):
         return self.within_stair_decision_maker.current_trial(previous_decision_correction)
-        pass
 
     def load_new_data(self,
                       attributes,
