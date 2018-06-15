@@ -1,4 +1,5 @@
 import random
+import numpy
 
 
 class WithinStairDecisionMaker:
@@ -35,9 +36,9 @@ class WithinStairDecisionMaker:
         within_stair_low_val = self.param_attributes['min_value']
         within_stair_high_value = self.param_attributes['max_value']
         within_stair_jumping = self.param_attributes['jumping']
-        within_vector = range(within_stair_low_val,
-                              within_stair_high_value,
-                              within_stair_jumping)
+        within_vector = numpy.arange(float(within_stair_low_val),
+                              float(within_stair_high_value),
+                              float(within_stair_jumping))
         return within_vector
 
     def current_trial(self, previous_decision_correction):
