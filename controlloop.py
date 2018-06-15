@@ -3,6 +3,7 @@
 import time
 from renderer import Renderer
 from trialmaker import TrialMaker
+import psychopy.event
 
 
 class ControlLoop:
@@ -14,6 +15,7 @@ class ControlLoop:
         self._attributes = None  # type: Dict[Any, Any]
         self._trial_maker = TrialMaker()
         self.current_trial_data = None  # type: Dict[String, Any]
+
     pass
 
     def start(self, attributes, num_of_trials, num_of_repetitions):
@@ -35,5 +37,10 @@ class ControlLoop:
             self.current_trial_data = self._trial_maker.current_trial(True)
             self._renderer.render(self.current_trial_data)
             print self.current_trial_data
-            time.sleep(4)
 
+            self.response_time_stage(self.current_trial_data)
+            #time.sleep(4)
+
+    def response_time_stage(self, current_trial_data):
+        keys = psychopy.event.waitKeys(maxWait=current_trial_data['ResponseTime'],
+                                       keyList=['left', 'right'])
