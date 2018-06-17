@@ -14,10 +14,10 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529092358770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529266441340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5436644">
+    <splitter split-orientation="horizontal" split-proportion="0.53852737">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
@@ -29,23 +29,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/renderer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="save_data_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/save_data_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-                  <folding>
-                    <element signature="e#16#43#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="119">
+                  <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -69,8 +57,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-column="15" />
+                <state relative-caret-position="153">
+                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -122,8 +110,8 @@
         <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/save_data_maker.py" />
       </list>
     </option>
@@ -170,7 +158,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/AdamLab/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/backends/__init__.py&#10;__ini&#9;FILE&#9;file://C:/Program Files (x86)/PsychoPy2/Lib/site-packages/PsychoPy-1.84.2-py2.7.egg/psychopy/visual/__init__.py" />
+    <property name="SearchEverywhereHistoryKey" value="ProtocolReader&#9;null&#9;null&#10;__ini&#9;FILE&#9;file://C:/Program Files (x86)/PsychoPy2/Lib/site-packages/PsychoPy-1.84.2-py2.7.egg/psychopy/visual/__init__.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -250,13 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Placing all parameters entries beside the parameter label names.">
-      <created>1528894500588</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1528894500588</updated>
     </task>
     <task id="LOCAL-00022" summary="The places are great placed now.">
       <created>1528894629076</created>
@@ -594,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529093584000</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Add save trial data to the control loop&#10;Also added function for post trial stage as thread to be run with the sleep time of the PostTrialTime parameter.">
+      <created>1529265888704</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1529265888704</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -602,12 +590,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50364584" side_tool="true" visible="true" weight="0.29969418" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.525" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="7" sideWeight="0.49635416" visible="true" weight="0.29969418" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.47552082" weight="0.32925585" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49635416" weight="0.29969418" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.475" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -679,7 +667,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Linking load_new_data with the withinstair_decision_maker and it's parameters." />
     <MESSAGE value="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type)." />
     <MESSAGE value="Add logics for the create_within_stair_vector function and linked the trial maker to it." />
     <MESSAGE value="Make trial num of repetition and trials being send to the trial maker with int types instead of string." />
@@ -704,7 +691,8 @@
     <MESSAGE value="Add post trial time stage to the control loop with logic." />
     <MESSAGE value="Add clean function to the renderer to clean up the screen.&#10;Rename the function with the spelling error." />
     <MESSAGE value="Add save_data_maker class with functions with no logic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add save_data_maker class with functions with no logic." />
+    <MESSAGE value="Add save trial data to the control loop&#10;Also added function for post trial stage as thread to be run with the sleep time of the PostTrialTime parameter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add save trial data to the control loop&#10;Also added function for post trial stage as thread to be run with the sleep time of the PostTrialTime parameter." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -964,33 +952,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-            <element signature="e#335#1231#0" />
-            <element signature="e#975#1068#0" />
-            <element signature="e#1361#3192#0" />
-            <element signature="e#2224#2383#0" />
-            <element signature="e#2453#2582#0" />
-            <element signature="e#2651#2954#0" />
-            <element signature="e#3038#4514#0" />
-            <element signature="e#4563#4687#0" />
-            <element signature="e#4736#5098#0" />
-            <element signature="e#5128#5516#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protocolreader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/basevisual.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1012,6 +973,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="316" column="8" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protocolreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1026,40 +1021,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="15" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/typing.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="316" column="8" selection-start-line="316" selection-start-column="8" selection-end-line="316" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding>
-            <element signature="e#16#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>

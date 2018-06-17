@@ -1,5 +1,4 @@
 # coding: utf-8
-from typing import BinaryIO
 import datetime
 
 
@@ -12,9 +11,9 @@ class SaveDataMaker:
         pass
 
     def create_new_data_file(self):
-        self.current_saved_file_name = '{date:%Y-%m-%d %H:%M:%S}.txt' \
+        self.current_saved_file_name = '\{date:%Y-%m-%d %H_%M_%S}.txt' \
             .format(date=datetime.datetime.now())
-        self.current_saved_file = open(self.directory_path + self.current_saved_file_name, 'rw')
+        self.current_saved_file = open(self.directory_path + self.current_saved_file_name, 'wb')
         pass
 
     def save_trial_data_to_file(self, trial_data):
