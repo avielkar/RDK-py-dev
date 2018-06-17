@@ -1,8 +1,10 @@
 # coding: utf-8
 
 import time
+from threading import Thread
 from renderer import Renderer
 from trialmaker import TrialMaker
+from save_data_maker import SaveDataMaker
 import psychopy.event
 
 
@@ -14,6 +16,7 @@ class ControlLoop:
         self._renderer = Renderer()
         self._attributes = None  # type: Dict[Any, Any]
         self._trial_maker = TrialMaker()
+        self._save_data_maker = SaveDataMaker()
         self.current_trial_data = None  # type: Dict[String, Any]
 
     pass
@@ -32,6 +35,8 @@ class ControlLoop:
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         num_of_repetitions=self._numOfRepetitions,
                                         num_of_trials=self._numOfTrials)
+
+        self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self._numOfTrials):
             self.current_trial_data = self._trial_maker.current_trial(True)
@@ -61,7 +66,21 @@ class ControlLoop:
             print 'no response'
 
     def post_trial_stage(self):
+        # time.sleep(self.current_trial_data['PostTrialTime'])
+        threadSleep = Thread(target=self.sleep_function,
+                             args=(self.current_trial_data['PostTrialTime']))
+        thread_post_trial_stage = Thread(target=self.post_trial_stage_thread,
+                                         args=())
+
+        thread_post_trial_stage.start()
+        threadSleep.start()
+
+        thread_post_trial_stage.join()
+        threadSleep.join()
+
+    def post_trial_stage_thread(self):
         self._renderer.clean_screen()
-        time.sleep(self.current_trial_data['PostTrialTime'])
+        self._save_data_maker.save_trial_data_to_file(self.current_trial_data)
 
-
+    def sleep_function(self, sleep_time_seconds):
+        time.sleep(sleep_time_seconds)
