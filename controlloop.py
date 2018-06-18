@@ -64,6 +64,7 @@ class ControlLoop:
             print ('pressed {key}'.format(key=keys[0]))
             self._current_trial_data['Response'] = keys[0]
         else:
+            self._current_trial_data['Response'] = 'none'
             print 'no response'
 
     def post_trial_stage(self):

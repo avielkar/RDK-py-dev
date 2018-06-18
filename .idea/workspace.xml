@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/response_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/response_analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +50,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+                <state relative-caret-position="256">
+                  <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -288,13 +287,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Make parameters_attributes_dictionary saving also the parameters with their attributes.">
-      <created>1528995342008</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1528995342009</updated>
     </task>
     <task id="LOCAL-00036" summary="Add parameters from the gui class to the start function in the control loop.">
       <created>1528995476792</created>
@@ -632,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529346061412</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Save the response if was in the trial data in the control loop in response stage.">
+      <created>1529346419965</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1529346419965</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -717,7 +716,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace the current trial_data to be a list od dictionary with param_name as key and value as the parameter value instead of tuple." />
     <MESSAGE value="Convert the parameters send to the renderer to dictionary instead of list." />
     <MESSAGE value="Make the RenderTime and RenderFrequency to be read from the current trial data." />
     <MESSAGE value="Fix a -1 for the length in te index checker for the within stair index." />
@@ -742,7 +740,8 @@
     <MESSAGE value="The change buffer size." />
     <MESSAGE value="Add to do line." />
     <MESSAGE value="Added analyze_response function to decide if the response was the correct direction of the movement." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added analyze_response function to decide if the response was the correct direction of the movement." />
+    <MESSAGE value="Save the response if was in the trial data in the control loop in response stage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Save the response if was in the trial data in the control loop in response stage." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,8 +1090,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="64" column="58" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+        <state relative-caret-position="256">
+          <caret line="66" column="53" selection-start-line="66" selection-start-column="53" selection-end-line="66" selection-end-column="53" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
