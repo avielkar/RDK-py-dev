@@ -66,20 +66,19 @@ class ControlLoop:
             print 'no response'
 
     def post_trial_stage(self):
-        # time.sleep(self.current_trial_data['PostTrialTime'])
-        threadSleep = Thread(target=self.sleep_function,
-                             args=(self.current_trial_data['PostTrialTime']))
+        self._renderer.clean_screen()
+        thread_sleep = Thread(target=self.sleep_function,
+                              args=(self.current_trial_data['PostTrialTime'],))
         thread_post_trial_stage = Thread(target=self.post_trial_stage_thread,
                                          args=())
 
         thread_post_trial_stage.start()
-        threadSleep.start()
+        thread_sleep.start()
 
         thread_post_trial_stage.join()
-        threadSleep.join()
+        thread_sleep.join()
 
     def post_trial_stage_thread(self):
-        self._renderer.clean_screen()
         self._save_data_maker.save_trial_data_to_file(self.current_trial_data)
 
     def sleep_function(self, sleep_time_seconds):
