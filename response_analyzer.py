@@ -4,7 +4,7 @@ class ResponseAnalyzer:
     def __init__(self):
         pass
 
-    def analyze_response(self , trial_data,response):
+    def analyze_response(self, trial_data, response):
         current_direction = float(trial_data['Direction'])
         if 180 > current_direction > 0 and response == 'right':
             return True

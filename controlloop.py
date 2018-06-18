@@ -62,6 +62,7 @@ class ControlLoop:
                                        keyList=['left', 'right'])
         if keys:
             print ('pressed {key}'.format(key=keys[0]))
+            self._current_trial_data['Response'] = keys[0]
         else:
             print 'no response'
 
