@@ -17,7 +17,7 @@ class SaveDataMaker:
         pass
 
     def save_trial_data_to_file(self, trial_data):
-        # add the trial number as the first line
+        # add the trial number as the first line.
         self.current_saved_file.write('Trial# {trial_number}\r\n'.format(trial_number=trial_data['Trial#']))
 
         # loop over all keys and values.
