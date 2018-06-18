@@ -22,7 +22,7 @@ class SaveDataMaker:
 
         # loop over all keys and values.
         for (key, value) in trial_data.items():
-            if str(key) is not 'Trial#':
+            if key != 'Trial#':
                 self.current_saved_file.write('{key} : {value}\r\n'.format(key=key, value=value))
         # new line for spacing with the next trial data.
         self.current_saved_file.write('\r\n')
