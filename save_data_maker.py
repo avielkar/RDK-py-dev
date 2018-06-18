@@ -18,7 +18,7 @@ class SaveDataMaker:
 
     def save_trial_data_to_file(self, trial_data):
         for (key, value) in trial_data.items():
-            self.current_saved_file.write('{key} : {value}\n'.format(key=key, value=value))
+            self.current_saved_file.write('{key} : {value}\r\n'.format(key=key, value=value))
         pass
 
     def close_data_file(self):
