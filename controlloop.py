@@ -66,6 +66,7 @@ class ControlLoop:
             print 'no response'
 
     def post_trial_stage(self):
+        # todo: check how to tahe the screen clean to the post_trial_stage_thread.
         self._renderer.clean_screen()
         thread_sleep = Thread(target=self.sleep_function,
                               args=(self._current_trial_data['PostTrialTime'],))
