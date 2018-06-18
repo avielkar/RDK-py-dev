@@ -11,7 +11,13 @@ class TrialMaker:
         pass
 
     def current_trial(self, previous_decision_correction=False):
-        return self.within_stair_decision_maker.current_trial(previous_decision_correction)
+        current_trial = self.within_stair_decision_maker.current_trial(previous_decision_correction)
+
+        # add the trial number to the current trial data
+        self.trial_number += 1
+        current_trial['Trial#'] = self.trial_number
+
+        return current_trial
 
     def load_new_data(self,
                       attributes,
