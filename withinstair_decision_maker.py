@@ -27,8 +27,8 @@ class WithinStairDecisionMaker:
 
     def reset_within_maker(self):
         self.within_stair_vector = self.create_within_stair_vector()
-        self.within_stair_negative_vector_index = 0
-        self.within_stair_positive_vector_index = 0
+        self.within_stair_negative_vector_index = len(self.within_stair_vector) - 1
+        self.within_stair_positive_vector_index = len(self.within_stair_vector) - 1
         pass
 
     def create_within_stair_vector(self):
@@ -50,7 +50,7 @@ class WithinStairDecisionMaker:
         right_trial = True if random.randint(0, 1) == 0 else False
 
         if right_trial:
-            if previous_decision_correction:
+            if not previous_decision_correction:
                 self.within_stair_positive_vector_index = self.within_stair_positive_vector_index + 1 \
                     if self.within_stair_positive_vector_index < len(self.within_stair_vector_positive) - 1 \
                     else self.within_stair_positive_vector_index
@@ -61,7 +61,7 @@ class WithinStairDecisionMaker:
 
             current_withinstair_value = self.within_stair_vector_positive[self.within_stair_positive_vector_index]
         else:
-            if previous_decision_correction:
+            if not previous_decision_correction:
                 self.within_stair_negative_vector_index = self.within_stair_negative_vector_index + 1 \
                     if self.within_stair_negative_vector_index < len(self.within_stair_vector_negative) - 1 \
                     else self.within_stair_negative_vector_index
