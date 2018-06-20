@@ -13,6 +13,7 @@ class WithinStairDecisionMaker:
         self.within_stair_negative_vector_index = 0
         self.within_stair_positive_vector_index = 0
         self.within_stair_attribute = None  # type: Any
+        self.last_trial_direction = None  # type: 'left' , 'right' or 'none'
         pass
 
     def set_attributes(self,
@@ -29,6 +30,7 @@ class WithinStairDecisionMaker:
         self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_negative_vector_index = len(self.within_stair_vector) - 1
         self.within_stair_positive_vector_index = len(self.within_stair_vector) - 1
+        self.last_trial_direction = 'none'
         pass
 
     def create_within_stair_vector(self):
