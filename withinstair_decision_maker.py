@@ -9,8 +9,7 @@ class WithinStairDecisionMaker:
         self.backword_error_probability = None  # type: Integer
         self.param_attributes = None  # type: Dict[Any, Any]
         self.static_parameters_attributes = None  # type: List[Any]
-        self.within_stair_vector_positive = None  # type: list
-        self.within_stair_vector_negative = None  # type: list
+        self.within_stair_vector = None  # type: list
         self.within_stair_negative_vector_index = 0
         self.within_stair_positive_vector_index = 0
         self.within_stair_attribute = None  # type: Any
@@ -27,9 +26,7 @@ class WithinStairDecisionMaker:
         pass
 
     def reset_within_maker(self):
-        within_stair_vector = self.create_within_stair_vector()
-        self.within_stair_vector_positive = [value for value in within_stair_vector if value > 0]
-        self.within_stair_vector_negative = [value for value in within_stair_vector if value < 0]
+        self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_negative_vector_index = 0
         self.within_stair_positive_vector_index = 0
         pass
@@ -51,10 +48,6 @@ class WithinStairDecisionMaker:
 
     def current_trial(self, previous_decision_correction):
         right_trial = True if random.randint(0, 1) == 0 else False
-        if len(self.within_stair_vector_positive) == 0 and len(self.within_stair_vector_negative) > 0:
-            right_trial = False
-        elif len(self.within_stair_vector_positive) > 0 and len(self.within_stair_vector_negative) == 0:
-            right_trial = True
 
         if right_trial:
             if previous_decision_correction:
