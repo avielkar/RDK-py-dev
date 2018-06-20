@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Save none response if no response was accured.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/response_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/response_analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +32,7 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
+                <state relative-caret-position="51">
                   <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
@@ -70,8 +69,8 @@
           <file leaf-file-name="response_analyzer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/response_analyzer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
                 </state>
               </provider>
             </entry>
@@ -142,9 +141,9 @@
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/save_data_maker.py" />
-        <option value="$PROJECT_DIR$/response_analyzer.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/response_analyzer.py" />
       </list>
     </option>
   </component>
@@ -274,13 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Add labels + entries with default values for the num of repetitions and for the num of trials.">
-      <created>1528996117019</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1528996117019</updated>
     </task>
     <task id="LOCAL-00038" summary="Send the entries values to the start control loop at start button event.">
       <created>1528996194858</created>
@@ -618,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529346450791</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Reset respo se analyzer at the start of the experiment (in each start experiment) and adding it's initialization at the ctor.">
+      <created>1529493728253</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1529493728253</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -703,7 +702,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make the RenderTime and RenderFrequency to be read from the current trial data." />
     <MESSAGE value="Fix a -1 for the length in te index checker for the within stair index." />
     <MESSAGE value="Remove redundent ;" />
     <MESSAGE value="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data." />
@@ -728,7 +726,8 @@
     <MESSAGE value="Added analyze_response function to decide if the response was the correct direction of the movement." />
     <MESSAGE value="Save the response if was in the trial data in the control loop in response stage." />
     <MESSAGE value="Save none response if no response was accured." />
-    <option name="LAST_COMMIT_MESSAGE" value="Save none response if no response was accured." />
+    <MESSAGE value="Reset respo se analyzer at the start of the experiment (in each start experiment) and adding it's initialization at the ctor." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reset respo se analyzer at the start of the experiment (in each start experiment) and adding it's initialization at the ctor." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1058,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/response_analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -1077,11 +1069,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="51">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/response_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
         </state>
       </provider>
     </entry>
