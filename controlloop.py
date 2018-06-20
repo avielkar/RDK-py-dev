@@ -5,6 +5,7 @@ from threading import Thread
 from renderer import Renderer
 from trialmaker import TrialMaker
 from save_data_maker import SaveDataMaker
+from response_analyzer import ResponseAnalyzer
 import psychopy.event
 
 
@@ -18,6 +19,7 @@ class ControlLoop:
         self._trial_maker = TrialMaker()
         self._save_data_maker = SaveDataMaker()
         self._current_trial_data = None  # type: Dict[String, Any]
+        self._response_analyzer = ResponseAnalyzer()
 
     pass
 
@@ -31,6 +33,8 @@ class ControlLoop:
         self._numOfTrials = num_of_trials
 
         self._renderer.set_attributes(self._attributes)
+
+        self._response_analyzer.reset_analyzer()
 
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         num_of_repetitions=self._numOfRepetitions,
