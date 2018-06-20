@@ -16,7 +16,7 @@ class WithinStairDecisionMaker:
         self.last_trial_direction = None  # type: 'left' , 'right' or 'none'
         self.last_trial_correction_right = None  # type: bool
         self.last_trial_correction_left = None  # type: bool
-        self.current_trial_attributes = None #Dict[string, Any]
+        self.current_trial_attributes = None  # Dict[string, Any]
         pass
 
     def set_attributes(self,
@@ -53,8 +53,11 @@ class WithinStairDecisionMaker:
                                      float(within_stair_jumping))
         return within_vector
 
-    def set_current_correctness(self , trial_correctness):
-        if self.within_stair_attribute
+    def set_current_correctness(self, trial_correctness):
+        if 180 > self.within_stair_attribute['Direction'] > 0:
+            self.last_trial_correction_right = trial_correctness
+        else:
+            self.last_trial_correction_left = trial_correctness
 
     def current_trial(self, previous_decision_correction):
         right_trial = True if random.randint(0, 1) == 0 else False
