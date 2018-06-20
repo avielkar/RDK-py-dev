@@ -69,8 +69,8 @@
           <file leaf-file-name="response_analyzer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/response_analyzer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -273,13 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Add logics for the create_within_stair_vector function and linked the trial maker to it.">
-      <created>1529013853352</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1529013853352</updated>
     </task>
     <task id="LOCAL-00048" summary="Make trial num of repetition and trials being send to the trial maker with int types instead of string.">
       <created>1529045981917</created>
@@ -617,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529497641075</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Delete the unnecessary logic for the response analyzer.">
+      <created>1529498635943</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1529498635943</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -702,7 +702,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace ':' in the saved file name with '_' due to Windows file names rules." />
     <MESSAGE value="Take the renderer for the pyglet windows out of the thread middewhile until find a solution." />
     <MESSAGE value="Add buffering to the file writer in the saved data maker." />
     <MESSAGE value="Replace the '\' in the directory instead of the file name." />
@@ -727,7 +726,8 @@
     <MESSAGE value="add the current trial data attributes attribue to the within maker." />
     <MESSAGE value="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer)." />
     <MESSAGE value="Link the trial maker with the withinmaker with the control loop fot the response." />
-    <option name="LAST_COMMIT_MESSAGE" value="Link the trial maker with the withinmaker with the control loop fot the response." />
+    <MESSAGE value="Delete the unnecessary logic for the response analyzer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete the unnecessary logic for the response analyzer." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1079,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/response_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="374">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
         </state>
       </provider>
     </entry>

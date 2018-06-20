@@ -20,4 +20,4 @@ class ResponseAnalyzer:
         return False
 
     def reset_analyzer(self):
-        self._first_trial_left = True
+        pass
