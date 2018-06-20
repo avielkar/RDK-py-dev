@@ -43,7 +43,7 @@ class ControlLoop:
         self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self._numOfTrials):
-            self._current_trial_data = self._trial_maker.current_trial(True)
+            self._current_trial_data = self._trial_maker.current_trial()
 
             self.wait_start_key_response()
 
@@ -86,6 +86,8 @@ class ControlLoop:
         thread_sleep.join()
 
     def post_trial_stage_thread(self):
+        trial_correction = self._response_analyzer.analyze_response(self._current_trial_data)
+        self._trial_maker.set_current_trial_response_correction(trial_correction)
         self._save_data_maker.save_trial_data_to_file(self._current_trial_data)
 
     def sleep_function(self, sleep_time_seconds):

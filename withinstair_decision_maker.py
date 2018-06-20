@@ -59,11 +59,11 @@ class WithinStairDecisionMaker:
         else:
             self.last_trial_correction_left = trial_correctness
 
-    def current_trial(self, previous_decision_correction):
+    def current_trial(self):
         right_trial = True if random.randint(0, 1) == 0 else False
 
         if right_trial:
-            if not previous_decision_correction:
+            if not self.last_trial_correction_right:
                 self.within_stair_positive_vector_index = self.within_stair_positive_vector_index + 1 \
                     if self.within_stair_positive_vector_index < len(self.within_stair_vector_positive) - 1 \
                     else self.within_stair_positive_vector_index
@@ -74,7 +74,7 @@ class WithinStairDecisionMaker:
 
             current_withinstair_value = self.within_stair_vector_positive[self.within_stair_positive_vector_index]
         else:
-            if not previous_decision_correction:
+            if not self.last_trial_correction_left:
                 self.within_stair_negative_vector_index = self.within_stair_negative_vector_index + 1 \
                     if self.within_stair_negative_vector_index < len(self.within_stair_vector_negative) - 1 \
                     else self.within_stair_negative_vector_index

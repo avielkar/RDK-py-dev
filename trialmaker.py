@@ -19,6 +19,9 @@ class TrialMaker:
 
         return current_trial
 
+    def set_current_trial_response_correction(self, trial_correctness):
+        self.within_stair_decision_maker.set_current_correctness(trial_correctness)
+
     def load_new_data(self,
                       attributes,
                       num_of_repetitions,

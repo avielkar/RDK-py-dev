@@ -6,8 +6,9 @@ class ResponseAnalyzer:
         self._first_trial_right = True
         pass
 
-    def analyze_response(self, trial_data, response):
+    def analyze_response(self, trial_data):
         current_direction = float(trial_data['Direction'])
+        response = trial_data['Response']
 
         # if it is the firat trial there is no past to look for.....
         if self._first_trial_left and 360 > current_direction > 180:
