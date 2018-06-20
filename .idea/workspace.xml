@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer).">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/response_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/response_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,17 +14,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529340619843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529498553033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5839041">
+    <splitter split-orientation="horizontal" split-proportion="0.49229452">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -72,8 +69,8 @@
           <file leaf-file-name="response_analyzer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/response_analyzer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+                <state relative-caret-position="153">
+                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
@@ -276,13 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type).">
-      <created>1529012079453</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1529012079453</updated>
     </task>
     <task id="LOCAL-00047" summary="Add logics for the create_within_stair_vector function and linked the trial maker to it.">
       <created>1529013853352</created>
@@ -620,7 +610,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529496811281</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Link the trial maker with the withinmaker with the control loop fot the response.">
+      <created>1529497641075</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1529497641075</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -628,12 +625,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50364584" side_tool="true" visible="true" weight="0.32925585" />
-      <window_info active="true" anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.525" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49635416" visible="true" weight="0.32925585" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.47552082" weight="0.32925585" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49635416" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.475" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -705,7 +702,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add save trial data to the control loop&#10;Also added function for post trial stage as thread to be run with the sleep time of the PostTrialTime parameter." />
     <MESSAGE value="Replace ':' in the saved file name with '_' due to Windows file names rules." />
     <MESSAGE value="Take the renderer for the pyglet windows out of the thread middewhile until find a solution." />
     <MESSAGE value="Add buffering to the file writer in the saved data maker." />
@@ -730,7 +726,8 @@
     <MESSAGE value="Make th elast left and right correction members to be false at the experiment start." />
     <MESSAGE value="add the current trial data attributes attribue to the within maker." />
     <MESSAGE value="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer)." />
+    <MESSAGE value="Link the trial maker with the withinmaker with the control loop fot the response." />
+    <option name="LAST_COMMIT_MESSAGE" value="Link the trial maker with the withinmaker with the control loop fot the response." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,15 +1072,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+        <state relative-caret-position="289">
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/response_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
