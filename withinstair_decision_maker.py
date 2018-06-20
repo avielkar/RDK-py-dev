@@ -24,7 +24,6 @@ class WithinStairDecisionMaker:
         self.backword_error_probability = backword_error_probability
         self.backword_rightword_probability = backword_rightword_probability
         self.reset_within_maker()
-        self.create_within_stair_vector()
         pass
 
     def reset_within_maker(self):
