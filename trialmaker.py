@@ -10,8 +10,8 @@ class TrialMaker:
         self.within_stair_decision_maker = None  # type: WithinStairDecisionMaker
         pass
 
-    def current_trial(self, previous_decision_correction=False):
-        current_trial = self.within_stair_decision_maker.current_trial(previous_decision_correction)
+    def current_trial(self):
+        current_trial = self.within_stair_decision_maker.current_trial()
 
         # add the trial number to the current trial data
         self.trial_number += 1

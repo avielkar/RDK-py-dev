@@ -54,7 +54,7 @@ class WithinStairDecisionMaker:
         return within_vector
 
     def set_current_correctness(self, trial_correctness):
-        if 180 > self.within_stair_attribute['Direction'] > 0:
+        if 180 > self.current_trial_attributes['Direction'] > 0:
             self.last_trial_correction_right = trial_correctness
         else:
             self.last_trial_correction_left = trial_correctness
@@ -65,24 +65,24 @@ class WithinStairDecisionMaker:
         if right_trial:
             if not self.last_trial_correction_right:
                 self.within_stair_positive_vector_index = self.within_stair_positive_vector_index + 1 \
-                    if self.within_stair_positive_vector_index < len(self.within_stair_vector_positive) - 1 \
+                    if self.within_stair_positive_vector_index < len(self.within_stair_vector) - 1 \
                     else self.within_stair_positive_vector_index
             else:
                 self.within_stair_positive_vector_index = self.within_stair_positive_vector_index \
                     if self.within_stair_positive_vector_index == 0 \
                     else self.within_stair_positive_vector_index - 1
 
-            current_withinstair_value = self.within_stair_vector_positive[self.within_stair_positive_vector_index]
+            current_withinstair_value = self.within_stair_vector[self.within_stair_positive_vector_index]
         else:
             if not self.last_trial_correction_left:
                 self.within_stair_negative_vector_index = self.within_stair_negative_vector_index + 1 \
-                    if self.within_stair_negative_vector_index < len(self.within_stair_vector_negative) - 1 \
+                    if self.within_stair_negative_vector_index < len(self.within_stair_vector) - 1 \
                     else self.within_stair_negative_vector_index
             else:
                 self.within_stair_negative_vector_index = self.within_stair_negative_vector_index \
                     if self.within_stair_negative_vector_index == 0 \
                     else self.within_stair_negative_vector_index - 1
-            current_withinstair_value = self.within_stair_vector_negative[self.within_stair_negative_vector_index]
+            current_withinstair_value = self.within_stair_vector[self.within_stair_negative_vector_index]
 
         current_trial_data = dict()
         for param_attributes in self.static_parameters_attributes:
