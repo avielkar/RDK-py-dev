@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Replace random with the numpy random">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,7 +42,11 @@
           </file>
           <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="61" column="64" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -266,13 +269,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Add logic for current_trial function in withinstair_decision_maker without the influence of the forward and backward probabilities.">
-      <created>1529050083090</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1529050083090</updated>
     </task>
     <task id="LOCAL-00051" summary="Fix the bug with iteration over keys value in the attribute dictionary.">
       <created>1529051798418</created>
@@ -610,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529607702309</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Replace random with the numpy random">
+      <created>1529608132813</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1529608132813</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -695,7 +698,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Replace the '\' in the directory instead of the file name." />
     <MESSAGE value="\r\n for new line - \n not makes a new line but not with carriage return." />
     <MESSAGE value="Rename attributes names in the control loop.&#10;Add the trial number in the data maker to the current trial details (which returned from the withinstair decision maker)." />
     <MESSAGE value="Add trial number to the data save maker in the first line for the trial.&#10;Also , added a new line between each trial data." />
@@ -720,7 +722,8 @@
     <MESSAGE value="Delete the unnecessary logic for the response analyzer." />
     <MESSAGE value="ctd.Delete the unnecessary logic for the response analyzer." />
     <MESSAGE value="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls." />
+    <MESSAGE value="Replace random with the numpy random" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace random with the numpy random" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1068,7 +1071,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="61" column="64" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
