@@ -5,6 +5,7 @@ from threading import Thread
 from renderer import Renderer
 from trialmaker import TrialMaker
 from save_data_maker import SaveDataMaker
+from response_analyzer import ResponseAnalyzer
 import psychopy.event
 
 
@@ -18,6 +19,7 @@ class ControlLoop:
         self._trial_maker = TrialMaker()
         self._save_data_maker = SaveDataMaker()
         self._current_trial_data = None  # type: Dict[String, Any]
+        self._response_analyzer = ResponseAnalyzer()
 
     pass
 
@@ -32,6 +34,8 @@ class ControlLoop:
 
         self._renderer.set_attributes(self._attributes)
 
+        self._response_analyzer.reset_analyzer()
+
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         num_of_repetitions=self._numOfRepetitions,
                                         num_of_trials=self._numOfTrials)
@@ -39,7 +43,7 @@ class ControlLoop:
         self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self._numOfTrials):
-            self._current_trial_data = self._trial_maker.current_trial(True)
+            self._current_trial_data = self._trial_maker.current_trial()
 
             self.wait_start_key_response()
 
@@ -62,7 +66,9 @@ class ControlLoop:
                                        keyList=['left', 'right'])
         if keys:
             print ('pressed {key}'.format(key=keys[0]))
+            self._current_trial_data['Response'] = keys[0]
         else:
+            self._current_trial_data['Response'] = 'none'
             print 'no response'
 
     def post_trial_stage(self):
@@ -80,6 +86,8 @@ class ControlLoop:
         thread_sleep.join()
 
     def post_trial_stage_thread(self):
+        trial_correction = self._response_analyzer.analyze_response(self._current_trial_data)
+        self._trial_maker.set_current_trial_response_correction(trial_correction)
         self._save_data_maker.save_trial_data_to_file(self._current_trial_data)
 
     def sleep_function(self, sleep_time_seconds):

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save_data_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data_maker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/response_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/response_analyzer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,35 +14,38 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529340619843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529617200636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4803082">
+    <splitter split-orientation="horizontal" split-proportion="0.44349316">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+                <state relative-caret-position="-308">
+                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/renderer.py">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+                <state relative-caret-position="273">
+                  <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+                  <folding>
+                    <element signature="e#17#28#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="save_data_maker.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/save_data_maker.py">
+          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+                <state relative-caret-position="443">
+                  <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -51,18 +54,6 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -72,14 +63,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/controlloop.py">
+          <file leaf-file-name="response_analyzer.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/response_analyzer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="103">
-                  <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#17#28#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="238">
+                  <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -87,7 +75,7 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="35">
+                <state relative-caret-position="2363">
                   <caret line="139" column="22" lean-forward="true" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
@@ -147,11 +135,12 @@
         <option value="$PROJECT_DIR$/cntrlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/protocolreader.py" />
-        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
-        <option value="$PROJECT_DIR$/renderer.py" />
+        <option value="$PROJECT_DIR$/save_data_maker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/save_data_maker.py" />
+        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
+        <option value="$PROJECT_DIR$/renderer.py" />
+        <option value="$PROJECT_DIR$/response_analyzer.py" />
       </list>
     </option>
   </component>
@@ -189,6 +178,10 @@
               <item name="RDK-py-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="RDK-py-dev" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RDK-py-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -277,167 +270,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Add num of trials parameter for staircase.">
-      <created>1528993030715</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1528993030715</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Add num of repetitions for the start in the control loop.">
-      <created>1528993155333</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1528993155333</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Make parameters_attributes_dictionary saving also the parameters with their attributes.">
-      <created>1528995342008</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1528995342009</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Add parameters from the gui class to the start function in the control loop.">
-      <created>1528995476792</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1528995476792</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Add labels + entries with default values for the num of repetitions and for the num of trials.">
-      <created>1528996117019</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1528996117019</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Send the entries values to the start control loop at start button event.">
-      <created>1528996194858</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1528996194858</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Add the withinstair decision class with define functions - no logic yet.">
-      <created>1529003615123</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1529003615123</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Add trial maker plus change the behavior of the within stair decision maker to only gets its attribute.">
-      <created>1529005088956</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1529005088956</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Create the TrialMaker class with functions definition without logic.">
-      <created>1529006159312</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1529006159312</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Adding check_experiment_type for returnning which type of experiment is going to run - static - varying - ot withinstair.">
-      <created>1529008171365</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1529008171365</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Update function load_new_data to update the experiment type and return true or false if the experiment type is good option.">
-      <created>1529010360204</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1529010360204</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Fix a mistake with a copy paste.">
-      <created>1529010384191</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1529010384191</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Linking load_new_data with the withinstair_decision_maker and it's parameters.">
-      <created>1529011093696</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1529011093696</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Give the set_attributes function in within_stair_decision_maker the attribute with the withinstair type (now assumes that there should be onlhy 1 parameter with withinstair type).">
-      <created>1529012079453</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1529012079453</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Add logics for the create_within_stair_vector function and linked the trial maker to it.">
-      <created>1529013853352</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1529013853352</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Make trial num of repetition and trials being send to the trial maker with int types instead of string.">
-      <created>1529045981917</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1529045981917</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Add positive and negative within_stair vector with indexes.&#10;Also logics for reset function.">
-      <created>1529047830605</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1529047830605</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Add logic for current_trial function in withinstair_decision_maker without the influence of the forward and backward probabilities.">
-      <created>1529050083090</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1529050083090</updated>
-    </task>
-    <task id="LOCAL-00051" summary="Fix the bug with iteration over keys value in the attribute dictionary.">
-      <created>1529051798418</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1529051798419</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Make the param_name to be in the attributes dictionary (delete the &quot;if&quot; statements)&#10;Also in load_data function make a reset and vector creation.">
-      <created>1529056758419</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1529056758419</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Make the function of the maker to return the dictionary value (include the parameter name).">
-      <created>1529057452778</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1529057452779</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Using numpy for floating point arrange.">
-      <created>1529064021025</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1529064021025</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Check the list is 0 len and not negative length.">
-      <created>1529064126313</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1529064126313</updated>
     </task>
     <task id="LOCAL-00056" summary="Updates the create_within_vector to return a list of paired (name,value) types for all paramter names with their values for the current trial.">
       <created>1529070640196</created>
@@ -621,7 +453,168 @@
       <option name="project" value="LOCAL" />
       <updated>1529340535085</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Add to do line.">
+      <created>1529342645462</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1529342645462</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Added analyze_response function to decide if the response was the correct direction of the movement.">
+      <created>1529346061412</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1529346061412</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Save the response if was in the trial data in the control loop in response stage.">
+      <created>1529346419965</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1529346419965</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Save none response if no response was accured.">
+      <created>1529346450791</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1529346450791</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Reset respo se analyzer at the start of the experiment (in each start experiment) and adding it's initialization at the ctor.">
+      <created>1529493728253</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1529493728253</updated>
+    </task>
+    <task id="LOCAL-00087" summary="If first trial for right or for left make the init first trials for left and right as false for not advance in the difficulty at the beginning.">
+      <created>1529494164988</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1529494164988</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Delete the unnecessary create_vector call.">
+      <created>1529494666406</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1529494666406</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Make a withinstair vector for both right and left and indexes for the same vector for separate left and right.">
+      <created>1529495386441</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1529495386442</updated>
+    </task>
+    <task id="LOCAL-00090" summary="At initialization the index should be the highest and increase or decrease if wrong or correct answer.">
+      <created>1529495638504</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1529495638504</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Add last_trial_direction_attribute to the within maker,.">
+      <created>1529495920951</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1529495920951</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Make th elast left and right correction members to be false at the experiment start.">
+      <created>1529496264038</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1529496264038</updated>
+    </task>
+    <task id="LOCAL-00093" summary="add the current trial data attributes attribue to the within maker.">
+      <created>1529496567686</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1529496567686</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer).">
+      <created>1529496811281</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1529496811281</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Link the trial maker with the withinmaker with the control loop fot the response.">
+      <created>1529497641075</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1529497641075</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Delete the unnecessary logic for the response analyzer.">
+      <created>1529498635943</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1529498635943</updated>
+    </task>
+    <task id="LOCAL-00097" summary="ctd.Delete the unnecessary logic for the response analyzer.">
+      <created>1529498654755</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1529498654755</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls.">
+      <created>1529607702309</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1529607702309</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Replace random with the numpy random">
+      <created>1529608132813</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1529608132813</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Replace random with the numpy random">
+      <created>1529608151856</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1529608151857</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Replace the direction in the return trail data withinstair_maker if it is a left trial.">
+      <created>1529608620242</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1529608620242</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Change the heading angles checking for being matched to thr psychopy.">
+      <created>1529609423149</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1529609423149</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Make response analyzer to deal with the corrected angles sides.&#10;Todo: check how to make the angles left in the within_maker.">
+      <created>1529612085558</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1529612085558</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Make renderer angles convert for moe convenient and also the within maker.">
+      <created>1529616977726</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1529616977727</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -629,12 +622,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5140625" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5265625" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4953125" weight="0.29969418" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4734375" weight="0.32925585" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.32925585" />
+      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4953125" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.4734375" visible="true" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -644,9 +637,9 @@
       <window_info anchor="right" id="SciView" order="6" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" sideWeight="0.4859375" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48697916" weight="0.32925585" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49895832" weight="0.32925585" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4875" weight="0.32925585" />
-      <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" />
@@ -669,7 +662,7 @@
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49895832" weight="0.32925585" />
+      <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.496875" weight="0.32925585" />
     </layout>
   </component>
@@ -706,32 +699,32 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Link the control loop to the trial data list of tuples." />
-    <MESSAGE value="Add data member to the renderer class fot saving the current trial data." />
-    <MESSAGE value="Replace the current trial_data to be a list od dictionary with param_name as key and value as the parameter value instead of tuple." />
-    <MESSAGE value="Convert the parameters send to the renderer to dictionary instead of list." />
-    <MESSAGE value="Make the RenderTime and RenderFrequency to be read from the current trial data." />
-    <MESSAGE value="Fix a -1 for the length in te index checker for the within stair index." />
-    <MESSAGE value="Remove redundent ;" />
-    <MESSAGE value="Comment redundant sleeps and add Wait for Keys 'left' or 'right' with time wait be read from the trial_data." />
-    <MESSAGE value="the data is member and should not be sent via the function." />
-    <MESSAGE value="Remove permenantly the sleeps." />
-    <MESSAGE value="Add post trial time stage to the control loop with logic." />
-    <MESSAGE value="Add clean function to the renderer to clean up the screen.&#10;Rename the function with the spelling error." />
-    <MESSAGE value="Add save_data_maker class with functions with no logic." />
-    <MESSAGE value="Add save trial data to the control loop&#10;Also added function for post trial stage as thread to be run with the sleep time of the PostTrialTime parameter." />
-    <MESSAGE value="Replace ':' in the saved file name with '_' due to Windows file names rules." />
-    <MESSAGE value="Take the renderer for the pyglet windows out of the thread middewhile until find a solution." />
-    <MESSAGE value="Add buffering to the file writer in the saved data maker." />
-    <MESSAGE value="Replace the '\' in the directory instead of the file name." />
-    <MESSAGE value="\r\n for new line - \n not makes a new line but not with carriage return." />
-    <MESSAGE value="Rename attributes names in the control loop.&#10;Add the trial number in the data maker to the current trial details (which returned from the withinstair decision maker)." />
-    <MESSAGE value="Add trial number to the data save maker in the first line for the trial.&#10;Also , added a new line between each trial data." />
-    <MESSAGE value="Added the \r\n for the new line after the trail number." />
     <MESSAGE value="Added '.' I missed," />
     <MESSAGE value="Added str() convert for the key for taking the 'u' to garbage." />
     <MESSAGE value="The change buffer size." />
-    <option name="LAST_COMMIT_MESSAGE" value="The change buffer size." />
+    <MESSAGE value="Add to do line." />
+    <MESSAGE value="Added analyze_response function to decide if the response was the correct direction of the movement." />
+    <MESSAGE value="Save the response if was in the trial data in the control loop in response stage." />
+    <MESSAGE value="Save none response if no response was accured." />
+    <MESSAGE value="Reset respo se analyzer at the start of the experiment (in each start experiment) and adding it's initialization at the ctor." />
+    <MESSAGE value="If first trial for right or for left make the init first trials for left and right as false for not advance in the difficulty at the beginning." />
+    <MESSAGE value="Delete the unnecessary create_vector call." />
+    <MESSAGE value="Make a withinstair vector for both right and left and indexes for the same vector for separate left and right." />
+    <MESSAGE value="At initialization the index should be the highest and increase or decrease if wrong or correct answer." />
+    <MESSAGE value="Add last_trial_direction_attribute to the within maker,." />
+    <MESSAGE value="Make th elast left and right correction members to be false at the experiment start." />
+    <MESSAGE value="add the current trial data attributes attribue to the within maker." />
+    <MESSAGE value="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer)." />
+    <MESSAGE value="Link the trial maker with the withinmaker with the control loop fot the response." />
+    <MESSAGE value="Delete the unnecessary logic for the response analyzer." />
+    <MESSAGE value="ctd.Delete the unnecessary logic for the response analyzer." />
+    <MESSAGE value="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls." />
+    <MESSAGE value="Replace random with the numpy random" />
+    <MESSAGE value="Replace the direction in the return trail data withinstair_maker if it is a left trial." />
+    <MESSAGE value="Change the heading angles checking for being matched to thr psychopy." />
+    <MESSAGE value="Make response analyzer to deal with the corrected angles sides.&#10;Todo: check how to make the angles left in the within_maker." />
+    <MESSAGE value="Make renderer angles convert for moe convenient and also the within maker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make renderer angles convert for moe convenient and also the within maker." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,11 +738,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>4</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/renderer.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/save_data_maker.py</url>
@@ -767,7 +755,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="112" />
+      <option name="time" value="113" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -791,7 +779,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/psychopy/visual/backends/pygletbackend.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/psychopy/visual/window.py" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/psychopy/visual/backends/__init__.py" />
     <entry file="file://$PROJECT_DIR$/acac.py" />
@@ -989,16 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/backends/pygletbackend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1010,23 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="601" column="21" lean-forward="true" selection-start-line="601" selection-start-column="21" selection-end-line="601" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/main_gui_tkinter_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="139" column="22" lean-forward="true" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,34 +1011,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+    <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/renderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+        <state>
+          <caret selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="59" column="34" lean-forward="true" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+        <state relative-caret-position="273">
+          <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/save_data_maker.py">
+    <entry file="file://$PROJECT_DIR$/tests/main_gui_tkinter_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="139" column="22" lean-forward="true" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/response_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
