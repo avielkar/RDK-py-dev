@@ -12,9 +12,9 @@ class ResponseAnalyzer:
             return True
         elif 90 > current_direction > -90 and response == 'left':
             return False
-        elif 270 > current_direction > 90 and response == 'right':
+        elif 180 > current_direction > 90 and response == 'right':
             return False
-        elif 270 > current_direction < 90 and response == 'left':
+        elif 180 > current_direction > 90 and response == 'left':
             return True
 
         return False
