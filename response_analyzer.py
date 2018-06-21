@@ -8,13 +8,13 @@ class ResponseAnalyzer:
         current_direction = float(trial_data['Direction'])
         response = trial_data['Response']
 
-        if 90 > current_direction > -90 and response == 'right':
+        if 180 > current_direction > 0 and response == 'right':
             return True
-        elif 90 > current_direction > -90 and response == 'left':
+        elif 180 > current_direction > 0 and response == 'left':
             return False
-        elif 180 > current_direction > 90 and response == 'right':
+        elif 0 > current_direction > -180 and response == 'right':
             return False
-        elif 180 > current_direction > 90 and response == 'left':
+        elif 0 > current_direction > -180 and response == 'left':
             return True
 
         return False
