@@ -50,7 +50,7 @@ class Renderer:
                                                eval(self.data['Color'])[1],
                                                eval(self.data['Color'])[2],
                                                ]),
-                                   dir=self.data['Direction'],
+                                   dir=self.convert_to_psycho_direction(self.data['Direction']),
                                    nDots=self.data['NumberOfDots'],
                                    fieldShape=self.data['FieldShape'],
                                    fieldPos=[eval(self.data['FieldPosition'])[0],
@@ -75,6 +75,17 @@ class Renderer:
             message.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
+
+    def convert_to_psycho_direction(self , direction):
+        if 90 > direction > 0:
+            return 90-direction
+        elif 180 > direction > 90:
+            return -direction + 90
+        elif -90 < direction < 0:
+            return 90 - direction
+        elif -180 < direction < -90:
+            return -direction - 270
+
 
     def clean_screen(self):
         self._my_win.flip()
