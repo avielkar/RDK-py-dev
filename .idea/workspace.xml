@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="ctd.Delete the unnecessary logic for the response analyzer.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Replace random with the numpy random">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +17,7 @@
     <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1529607524992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49229452">
+    <splitter split-orientation="horizontal" split-proportion="0.6018836">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
@@ -44,14 +43,7 @@
           </file>
           <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="305">
-                  <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -274,13 +266,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Add positive and negative within_stair vector with indexes.&#10;Also logics for reset function.">
-      <created>1529047830605</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1529047830605</updated>
     </task>
     <task id="LOCAL-00050" summary="Add logic for current_trial function in withinstair_decision_maker without the influence of the forward and backward probabilities.">
       <created>1529050083090</created>
@@ -618,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529498654755</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls.">
+      <created>1529607702309</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1529607702309</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -626,12 +618,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.52552086" side_tool="true" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50416666" side_tool="true" visible="true" weight="0.32925585" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947917" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49635416" weight="0.32925585" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.47447917" visible="true" weight="0.32925585" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" sideWeight="0.49583334" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.47447917" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.27447918" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -703,7 +695,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add buffering to the file writer in the saved data maker." />
     <MESSAGE value="Replace the '\' in the directory instead of the file name." />
     <MESSAGE value="\r\n for new line - \n not makes a new line but not with carriage return." />
     <MESSAGE value="Rename attributes names in the control loop.&#10;Add the trial number in the data maker to the current trial details (which returned from the withinstair decision maker)." />
@@ -728,7 +719,8 @@
     <MESSAGE value="Link the trial maker with the withinmaker with the control loop fot the response." />
     <MESSAGE value="Delete the unnecessary logic for the response analyzer." />
     <MESSAGE value="ctd.Delete the unnecessary logic for the response analyzer." />
-    <option name="LAST_COMMIT_MESSAGE" value="ctd.Delete the unnecessary logic for the response analyzer." />
+    <MESSAGE value="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,14 +1068,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

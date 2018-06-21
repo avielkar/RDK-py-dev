@@ -1,4 +1,3 @@
-import random
 import numpy
 
 
@@ -60,7 +59,7 @@ class WithinStairDecisionMaker:
             self.last_trial_correction_left = trial_correctness
 
     def current_trial(self):
-        right_trial = True if random.randint(0, 1) == 0 else False
+        right_trial = True if numpy.random.random_integers(low=0`, high=1) == 0 else False
 
         if right_trial:
             if not self.last_trial_correction_right:
