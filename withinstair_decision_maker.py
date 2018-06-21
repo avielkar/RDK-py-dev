@@ -53,7 +53,7 @@ class WithinStairDecisionMaker:
         return within_vector
 
     def set_current_correctness(self, trial_correctness):
-        if 90 > self.current_trial_attributes['Direction'] > -90:
+        if 0 > self.current_trial_attributes['Direction'] > 180:
             self.last_trial_correction_right = trial_correctness
         else:
             self.last_trial_correction_left = trial_correctness
