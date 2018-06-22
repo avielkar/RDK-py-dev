@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +31,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59090906">
+    <splitter split-orientation="horizontal" split-proportion="0.45626822">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
@@ -90,8 +89,8 @@
           <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+                <state relative-caret-position="346">
+                  <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -299,13 +298,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00065" summary="the data is member and should not be sent via the function.">
-      <created>1529081905351</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1529081905351</updated>
     </task>
     <task id="LOCAL-00066" summary="Remove permenantly the sleeps.">
       <created>1529081962064</created>
@@ -643,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529657327509</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Change the graph to deal with the trial response correctness and not the righ decisions.&#10;Also add response correctness mamber to the saved data.">
+      <created>1529657965793</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1529657965793</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,12 +659,12 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49947917" weight="0.32925585" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5271855" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5063966" side_tool="true" visible="true" weight="0.3434238" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.50151974" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49413645" weight="0.34438503" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.4728145" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" sideWeight="0.4936034" visible="true" weight="0.3434238" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4728145" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17270789" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -673,7 +672,7 @@
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
-      <window_info anchor="right" id="SciView" order="6" sideWeight="0.49848023" weight="0.26439232" />
+      <window_info anchor="right" id="SciView" order="6" sideWeight="0.49848023" visible="true" weight="0.09594883" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4875" weight="0.32925585" />
@@ -720,7 +719,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Delete the unnecessary create_vector call." />
     <MESSAGE value="Make a withinstair vector for both right and left and indexes for the same vector for separate left and right." />
     <MESSAGE value="At initialization the index should be the highest and increase or decrease if wrong or correct answer." />
     <MESSAGE value="Add last_trial_direction_attribute to the within maker,." />
@@ -745,7 +743,8 @@
     <MESSAGE value="Add titles and y limits between 0.0 and 1.0" />
     <MESSAGE value="Fix wrong function call spelling." />
     <MESSAGE value="Updates the graph from the control loop.&#10;Added logics for the update_graph function in the graph_maker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates the graph from the control loop.&#10;Added logics for the update_graph function in the graph_maker." />
+    <MESSAGE value="Change the graph to deal with the trial response correctness and not the righ decisions.&#10;Also add response correctness mamber to the saved data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the graph to deal with the trial response correctness and not the righ decisions.&#10;Also add response correctness mamber to the saved data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,8 +1100,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graph_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="346">
+          <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
