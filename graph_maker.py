@@ -19,6 +19,8 @@ class GraphMaker:
         fig, axes = plot.subplots(1, 1)
         axes.scatter(np.array(self._x_values), np.array(self._y_values))
         axes.set_ybound(0.0, 1.0)
+        axes.set_xlabel('Coherence')
+        axes.set_ylabel('Correctness')
         fig.suptitle('Decision Graph')
         plot.show()
         pass
@@ -34,6 +36,8 @@ class GraphMaker:
             float(self._y_trials_correct_response_count[direction_index]) / self._y_trials_count[direction_index]
         fig, axes = plot.subplots(1, 1)
         axes.scatter(np.array(self._x_values), np.array(self._y_values))
+        axes.set_xlabel('Coherence')
+        axes.set_ylabel('Correctness')
         axes.set_ybound(0.0, 1.0)
         fig.suptitle('Decision Graph')
         plot.show()
