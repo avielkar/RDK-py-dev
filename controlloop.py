@@ -90,6 +90,7 @@ class ControlLoop:
 
     def post_trial_stage_thread(self):
         trial_correction = self._response_analyzer.analyze_response(self._current_trial_data)
+        self._current_trial_data['ResponseCorrectness'] = trial_correction
         self._trial_maker.set_current_trial_response_correction(trial_correction)
         self._graph_maker.update_graph(self._current_trial_data)
         self._save_data_maker.save_trial_data_to_file(self._current_trial_data)
