@@ -41,7 +41,7 @@ class ControlLoop:
                                         num_of_repetitions=self._numOfRepetitions,
                                         num_of_trials=self._numOfTrials)
 
-        self._graph_maker.init_graph(self.trialmaker.get_trials_scala_values())
+        self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
 
         self._save_data_maker.create_new_data_file()
 

@@ -15,7 +15,7 @@ class GraphMaker:
         fig, axes = plot.subplots(1, 1)
         axes.scatter(self._x_values, self._y_values)
         axes.set_ybound(0.0, 1.0)
-        fig.sptitle('Decision Graph')
+        fig.suptitle('Decision Graph')
         plot.show()
         pass
 
