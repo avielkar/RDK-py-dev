@@ -43,10 +43,10 @@ class WithinStairDecisionMaker:
     def create_within_stair_vector(self):
 
         self.within_stair_attribute = self.param_attributes \
-            [(filter(lambda x: self.param_attributes[x]['param_type'] == 'withinstair', self.param_attributes.keys()))[
+            [list(filter(lambda x: self.param_attributes[x]['param_type'] == 'withinstair', self.param_attributes.keys()))[
                 0]]
         self.static_parameters_attributes = (
-            filter(lambda attributes: attributes['param_type'] == 'static', self.param_attributes.values()))
+            list(filter(lambda attributes: attributes['param_type'] == 'static', self.param_attributes.values())))
         within_stair_low_val = self.within_stair_attribute['min_value']
         within_stair_high_value = self.within_stair_attribute['max_value']
         within_stair_jumping = self.within_stair_attribute['jumping']
