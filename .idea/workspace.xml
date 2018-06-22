@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_maker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,17 +23,17 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
-                  <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+                <state relative-caret-position="407">
+                  <caret line="47" column="31" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+                <state relative-caret-position="389">
+                  <caret line="43" column="79" lean-forward="true" selection-start-line="43" selection-start-column="79" selection-end-line="43" selection-end-column="79" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -42,11 +41,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="373">
-                  <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+                <state relative-caret-position="187">
+                  <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -76,8 +75,8 @@
           <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-column="32" />
+                <state relative-caret-position="221">
+                  <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
                   <folding>
                     <element signature="e#0#32#0" expanded="true" />
                   </folding>
@@ -149,12 +148,12 @@
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/protocolreader.py" />
         <option value="$PROJECT_DIR$/save_data_maker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
-        <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/response_analyzer.py" />
-        <option value="$PROJECT_DIR$/graph_maker.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
+        <option value="$PROJECT_DIR$/trialmaker.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/graph_maker.py" />
       </list>
     </option>
   </component>
@@ -284,27 +283,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Link the control loop to the trial data list of tuples.">
-      <created>1529073420073</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1529073420073</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Add data member to the renderer class fot saving the current trial data.">
-      <created>1529074196044</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1529074196044</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Replace the current trial_data to be a list od dictionary with param_name as key and value as the parameter value instead of tuple.">
-      <created>1529074680977</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1529074680978</updated>
     </task>
     <task id="LOCAL-00060" summary="Convert the parameters send to the renderer to dictionary instead of list.">
       <created>1529076898508</created>
@@ -628,7 +606,28 @@
       <option name="project" value="LOCAL" />
       <updated>1529618318974</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Added a function in within_maker returns the get_within_stair_vector_values for the control loop to inform the graph maker the data of the within_vector for the graphs scala.">
+      <created>1529645221336</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1529645221337</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Added get_trials_scala_values as described in the previous commit.">
+      <created>1529646741218</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1529646741218</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Added the scala_values for the graph_maker from the control loop o the init_graph.">
+      <created>1529647001588</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1529647001588</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TodoView">
@@ -646,7 +645,7 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49947917" weight="0.32925585" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50364584" side_tool="true" visible="true" weight="0.32925585" />
-      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" side_tool="true" visible="true" weight="0.1171875" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.50151974" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
       <window_info active="true" anchor="bottom" id="Python Console" order="7" sideWeight="0.49635416" visible="true" weight="0.32925585" />
@@ -658,7 +657,7 @@
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
-      <window_info anchor="right" id="SciView" order="6" />
+      <window_info anchor="right" id="SciView" order="6" sideWeight="0.49848023" weight="0.3296875" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4875" weight="0.32925585" />
@@ -705,9 +704,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added str() convert for the key for taking the 'u' to garbage." />
-    <MESSAGE value="The change buffer size." />
-    <MESSAGE value="Add to do line." />
     <MESSAGE value="Added analyze_response function to decide if the response was the correct direction of the movement." />
     <MESSAGE value="Save the response if was in the trial data in the control loop in response stage." />
     <MESSAGE value="Save none response if no response was accured." />
@@ -730,7 +726,10 @@
     <MESSAGE value="Make response analyzer to deal with the corrected angles sides.&#10;Todo: check how to make the angles left in the within_maker." />
     <MESSAGE value="Make renderer angles convert for moe convenient and also the within maker." />
     <MESSAGE value="Added graph_maker class with function definition with no logic." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added graph_maker class with function definition with no logic." />
+    <MESSAGE value="Added a function in within_maker returns the get_within_stair_vector_values for the control loop to inform the graph maker the data of the within_vector for the graphs scala." />
+    <MESSAGE value="Added get_trials_scala_values as described in the previous commit." />
+    <MESSAGE value="Added the scala_values for the graph_maker from the control loop o the init_graph." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the scala_values for the graph_maker from the control loop o the init_graph." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1023,16 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="71" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/main_gui_tkinter_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1064,27 +1053,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        <state relative-caret-position="407">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        <state relative-caret-position="389">
+          <caret line="43" column="79" lean-forward="true" selection-start-line="43" selection-start-column="79" selection-end-line="43" selection-end-column="79" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
