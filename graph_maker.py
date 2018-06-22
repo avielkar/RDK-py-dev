@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plot
+from matplotlib.pyplot import show, subplots
 import numpy as np
 
 
@@ -16,13 +16,13 @@ class GraphMaker:
         self._y_values = [0] * len(self._x_values)
         self._y_trials_count = [0] * len(self._x_values)
         self._y_trials_correct_response_count = [0] * len(self._x_values)
-        fig, axes = plot.subplots(1, 1)
+        fig, axes = subplots(1, 1)
         axes.scatter(np.array(self._x_values), np.array(self._y_values))
         axes.set_ybound(0.0, 1.0)
         axes.set_xlabel('Coherence')
         axes.set_ylabel('Correctness')
         fig.suptitle('Decision Graph')
-        plot.show()
+        show()
         pass
 
     def update_graph(self, trial_data):
@@ -34,11 +34,11 @@ class GraphMaker:
         self._y_trials_count[direction_index] += 1
         self._y_values[direction_index] = \
             float(self._y_trials_correct_response_count[direction_index]) / self._y_trials_count[direction_index]
-        fig, axes = plot.subplots(1, 1)
+        fig, axes = subplots(1, 1)
         axes.scatter(np.array(self._x_values), np.array(self._y_values))
         axes.set_xlabel('Coherence')
         axes.set_ylabel('Correctness')
         axes.set_ybound(0.0, 1.0)
         fig.suptitle('Decision Graph')
-        plot.show()
+        show()
         pass

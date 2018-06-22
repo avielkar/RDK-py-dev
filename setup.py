@@ -1,3 +1,3 @@
 from distutils.core import setup
 import py2exe
-setup(console=['C:\Users\AdamLab\Documents\GitHub\RDK-py-dev\init_rdk.py'])
+setup(console=['init_rdk.py'], requires=['matplotlib', 'psychopy', 'pandas', 'numpy'])
