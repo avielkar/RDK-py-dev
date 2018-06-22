@@ -45,6 +45,9 @@ class TrialMaker:
             return False
         return True
 
+    def get_trials_scala_values(self):
+        return self.within_stair_decision_maker.get_within_stair_vector_values()
+
     def check_experiment_type(self):
         varying_type = sum(1 for param_name in self._attributes \
                            if self._attributes[param_name]['param_type'] == 'varying')
