@@ -1,16 +1,16 @@
 # coding: utf-8
 import os
-from Tkinter import Button, Label, Entry
+from tkinter import Button, Label, Entry
 
 import tkinter
-import ttk
+import tkinter.ttk
 from tkinter import Tk
 from tkinter import Label, Button, Entry
-import tkFileDialog
+import tkinter.filedialog
 
 from protocolreader import ProtocolReader
 from controlloop import ControlLoop
-import tkMessageBox
+import tkinter.messagebox
 
 
 class MainGuiTkinter:
@@ -35,7 +35,7 @@ class MainGuiTkinter:
         self.entry_num_of_trials = None  # type: Entry
 
     def btn_choose_folder_clicked(self):
-        self.protocol_root_dir = tkFileDialog.askdirectory()
+        self.protocol_root_dir = tkinter.filedialog.askdirectory()
         self.combo_box_protocol_update()
 
     def init_gui_controllers(self):
@@ -48,7 +48,7 @@ class MainGuiTkinter:
                                         command=self.btn_choose_folder_clicked)
         self.btn_choose_folder.pack()
 
-        self.combobox_protocol_list = ttk.Combobox(master=self.root)
+        self.combobox_protocol_list = tkinter.ttk.Combobox(master=self.root)
         self.combobox_protocol_list.bind("<<ComboboxSelected>>",
                                          self.combobox_protocols_item_selected)
         self.combo_box_protocol_update()
@@ -115,7 +115,7 @@ class MainGuiTkinter:
                     continue
 
                 if key_param_attribute == 'param_type':
-                    param_combobox = ttk.Combobox(master=self.root)
+                    param_combobox = tkinter.ttk.Combobox(master=self.root)
                     param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair']
                     param_combobox.place(relx=rel_x[0], rely=rel_y[0])
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
@@ -162,5 +162,5 @@ class MainGuiTkinter:
 
         self.dynamic_controls_dict = {}
 
-        tkMessageBox.showinfo('Hello python', 'Hello World')
+        tkinter.messagebox.showinfo('Hello python', 'Hello World')
         self.root.mainloop()
