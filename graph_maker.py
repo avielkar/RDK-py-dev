@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plot
+import numpy as np
 
 
 class GraphMaker:
@@ -7,5 +9,5 @@ class GraphMaker:
     def init_graph(self):
         pass
 
-    def update_graph(self , trial_data):
+    def update_graph(self, trial_data):
         pass

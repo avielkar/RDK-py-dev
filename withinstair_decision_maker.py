@@ -28,6 +28,9 @@ class WithinStairDecisionMaker:
         self.reset_within_maker()
         pass
 
+    def get_within_stair_vector_values(self):
+        return self.within_stair_vector
+
     def reset_within_maker(self):
         self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_negative_vector_index = len(self.within_stair_vector) - 1
