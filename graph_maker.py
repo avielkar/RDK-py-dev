@@ -13,7 +13,9 @@ class GraphMaker:
         self._x_values = np.array(scala_values)
         self._y_values = np.zeros(len(self._x_values))
         fig, axes = plot.subplots(1, 1)
-        axes.plot(self._x_values, self._y_values)
+        axes.scatter(self._x_values, self._y_values)
+        axes.set_ybound(0.0, 1.0)
+        fig.sptitle('Decision Graph')
         plot.show()
         pass
 
