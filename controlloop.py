@@ -6,6 +6,7 @@ from renderer import Renderer
 from trialmaker import TrialMaker
 from save_data_maker import SaveDataMaker
 from response_analyzer import ResponseAnalyzer
+from graph_maker import GraphMaker
 import psychopy.event
 
 
@@ -20,7 +21,7 @@ class ControlLoop:
         self._save_data_maker = SaveDataMaker()
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
-
+        self._graph_maker = GraphMaker()
     pass
 
     def start(self, attributes, num_of_trials, num_of_repetitions):
@@ -39,6 +40,8 @@ class ControlLoop:
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         num_of_repetitions=self._numOfRepetitions,
                                         num_of_trials=self._numOfTrials)
+
+        self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
 
         self._save_data_maker.create_new_data_file()
 
@@ -87,7 +90,9 @@ class ControlLoop:
 
     def post_trial_stage_thread(self):
         trial_correction = self._response_analyzer.analyze_response(self._current_trial_data)
+        self._current_trial_data['ResponseCorrectness'] = trial_correction
         self._trial_maker.set_current_trial_response_correction(trial_correction)
+        self._graph_maker.update_graph(self._current_trial_data)
         self._save_data_maker.save_trial_data_to_file(self._current_trial_data)
 
     def sleep_function(self, sleep_time_seconds):
