@@ -12,6 +12,7 @@ import psychopy.event
 
 
 class ControlLoop:
+    exit_experiment = None  # type:bool
 
     def __init__(self):
         self._numOfTrials = None  # type: Integer
@@ -23,7 +24,7 @@ class ControlLoop:
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
-        self._exit_experiment = False
+        exit_experiment = False
 
     pass
 

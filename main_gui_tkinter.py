@@ -31,7 +31,6 @@ class MainGuiTkinter:
         self.label_num_of_trials = None  # type: Label
         self.entry_num_of_repetitions = None  # type: Entry
         self.entry_num_of_trials = None  # type: Entry
-        self.exit_experiment = False  # type: bool
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -172,6 +171,7 @@ class MainGuiTkinter:
     def exit_window_clicked(self):
         # wait the current trial to be finished
         # and then close the window in the control loop.
+        self.control_loop.exit_experiment = True
         pass
 
     def exit_window(self):
