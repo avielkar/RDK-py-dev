@@ -147,6 +147,10 @@ class MainGuiTkinter:
         # for other attributes
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
 
+    def show_message_box(self, message):
+        tkinter.messagebox.showinfo(message)
+        pass
+
     def load(self):
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
