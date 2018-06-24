@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Added function handler for event for clicking the exit window button.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +38,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="251">
-                  <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+                <state relative-caret-position="425">
+                  <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -54,7 +55,7 @@
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
-                  <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+                  <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                     <element signature="e#1274#1373#0" />
@@ -122,8 +123,8 @@
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
       </list>
     </option>
   </component>
@@ -244,13 +245,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Take the renderer for the pyglet windows out of the thread middewhile until find a solution.">
-      <created>1529338639355</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1529338639355</updated>
     </task>
     <task id="LOCAL-00073" summary="Add buffering to the file writer in the saved data maker.">
       <created>1529338680862</created>
@@ -588,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529859175201</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Add the exit_function logic.">
+      <created>1529859814332</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1529859814332</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,7 +666,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Link the trial maker with the withinmaker with the control loop fot the response." />
     <MESSAGE value="Delete the unnecessary logic for the response analyzer." />
     <MESSAGE value="ctd.Delete the unnecessary logic for the response analyzer." />
     <MESSAGE value="Delete unnecessary function input for the curren_trial function.&#10;Change some wrong names calls." />
@@ -690,7 +690,8 @@
     <MESSAGE value="Add the end of experiment message ox to the control loop at the end of the experiment." />
     <MESSAGE value="Add the title and the message info to the message box of the end of the expeiment." />
     <MESSAGE value="Added function handler for event for clicking the exit window button." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added function handler for event for clicking the exit window button." />
+    <MESSAGE value="Add the exit_function logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the exit_function logic." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1044,16 +1045,6 @@
     <entry file="file://C:/Python36-32/Lib/tkinter/messagebox.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RDK-py-dev.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1064,7 +1055,7 @@
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
             <element signature="e#1274#1373#0" />
@@ -1076,6 +1067,16 @@
             <element signature="e#5945#6069#0" />
             <element signature="e#6118#6544#0" />
             <element signature="e#6596#6658#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

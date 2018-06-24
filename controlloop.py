@@ -23,6 +23,7 @@ class ControlLoop:
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
+        self._exit_experiment = False
 
     pass
 

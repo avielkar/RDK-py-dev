@@ -31,6 +31,7 @@ class MainGuiTkinter:
         self.label_num_of_trials = None  # type: Label
         self.entry_num_of_repetitions = None  # type: Entry
         self.entry_num_of_trials = None  # type: Entry
+        self.exit_experiment = False  # type: bool
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
