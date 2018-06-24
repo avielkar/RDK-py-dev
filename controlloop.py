@@ -7,6 +7,7 @@ from trialmaker import TrialMaker
 from save_data_maker import SaveDataMaker
 from response_analyzer import ResponseAnalyzer
 from graph_maker import GraphMaker
+import tkinter.messagebox
 import psychopy.event
 
 
@@ -55,6 +56,8 @@ class ControlLoop:
             self.response_time_stage()
 
             self.post_trial_stage()
+
+        tkinter.messagebox.showinfo('End of the experiment!')
 
     def wait_start_key_response(self):
         print (self._current_trial_data)
