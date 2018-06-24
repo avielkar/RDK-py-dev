@@ -1,5 +1,5 @@
 # coding: utf-8
-from psychopy import visual, event, core
+from psychopy import visual
 
 import time
 

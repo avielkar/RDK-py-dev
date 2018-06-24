@@ -1,6 +1,5 @@
 # coding: utf-8
 import os
-from tkinter import Button, Label, Entry
 
 import tkinter
 import tkinter.ttk
@@ -14,7 +13,6 @@ import tkinter.messagebox
 
 
 class MainGuiTkinter:
-
 
     def __init__(self):
         self.tkFileDialog = None
