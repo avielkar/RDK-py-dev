@@ -23,6 +23,7 @@ class ControlLoop:
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
+
     pass
 
     def start(self, attributes, num_of_trials, num_of_repetitions):
@@ -57,10 +58,10 @@ class ControlLoop:
 
             self.post_trial_stage()
 
-        tkinter.messagebox.showinfo('End of the experiment!')
+        tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
     def wait_start_key_response(self):
-        print (self._current_trial_data)
+        print(self._current_trial_data)
 
         self._renderer.add_text_to_screen('Press space to start the trial')
 
@@ -71,11 +72,11 @@ class ControlLoop:
         keys = psychopy.event.waitKeys(maxWait=self._current_trial_data['ResponseTime'],
                                        keyList=['left', 'right'])
         if keys:
-            print ('pressed {key}'.format(key=keys[0]))
+            print('pressed {key}'.format(key=keys[0]))
             self._current_trial_data['Response'] = keys[0]
         else:
             self._current_trial_data['Response'] = 'none'
-            print ('no response')
+            print('no response')
 
     def post_trial_stage(self):
         # todo: check how to add the screen clean to the post_trial_stage_thread.
