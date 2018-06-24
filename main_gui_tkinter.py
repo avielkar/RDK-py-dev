@@ -166,3 +166,8 @@ class MainGuiTkinter:
 
         tkinter.messagebox.showinfo('Hello python', 'Hello World')
         self.root.mainloop()
+
+    def exit_window_clicked(self):
+        pass
+
+
