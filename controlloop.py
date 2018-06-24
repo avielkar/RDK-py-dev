@@ -24,7 +24,7 @@ class ControlLoop:
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
-        exit_experiment = False
+        self.exit_experiment = False
 
     pass
 
@@ -50,6 +50,9 @@ class ControlLoop:
         self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self._numOfTrials):
+            if self.exit_experiment:
+                break
+
             self._current_trial_data = self._trial_maker.current_trial()
 
             self.wait_start_key_response()
