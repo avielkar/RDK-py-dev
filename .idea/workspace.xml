@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Added function handler for event for clicking the exit window button.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +37,7 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
+                <state relative-caret-position="251">
                   <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
@@ -53,10 +53,19 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2244">
-                  <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
+                <state relative-caret-position="289">
+                  <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
+                    <element signature="e#1274#1373#0" />
+                    <element signature="e#3283#3547#0" />
+                    <element signature="e#3598#3757#0" />
+                    <element signature="e#3827#3956#0" />
+                    <element signature="e#4025#4328#0" />
+                    <element signature="e#4457#5896#0" />
+                    <element signature="e#5945#6069#0" />
+                    <element signature="e#6118#6544#0" />
+                    <element signature="e#6596#6658#0" />
                   </folding>
                 </state>
               </provider>
@@ -113,8 +122,8 @@
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
-        <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
       </list>
     </option>
   </component>
@@ -127,7 +136,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="890" />
     <option name="y" value="-1088" />
     <option name="width" value="1936" />
@@ -235,20 +244,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Add save trial data to the control loop&#10;Also added function for post trial stage as thread to be run with the sleep time of the PostTrialTime parameter.">
-      <created>1529265888704</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1529265888704</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Replace ':' in the saved file name with '_' due to Windows file names rules.">
-      <created>1529266481876</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1529266481876</updated>
     </task>
     <task id="LOCAL-00072" summary="Take the renderer for the pyglet windows out of the thread middewhile until find a solution.">
       <created>1529338639355</created>
@@ -579,7 +574,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529858660189</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Add the title and the message info to the message box of the end of the expeiment.">
+      <created>1529858841319</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1529858841319</updated>
+    </task>
+    <task id="LOCAL-00120" summary="Added function handler for event for clicking the exit window button.">
+      <created>1529859175201</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1529859175201</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TodoView">
@@ -592,25 +601,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="890" y="-1088" width="1936" height="1096" extended-state="6" />
+    <frame x="890" y="-1088" width="1936" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49947917" weight="0.32925585" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.53091687" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.49947917" weight="0.32925585" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5314499" side_tool="true" visible="true" weight="0.3361169" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5125786" side_tool="true" weight="0.21215352" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.49253732" weight="0.3434238" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.46908316" visible="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32925585" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49253732" weight="0.3434238" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46855012" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32925585" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18070363" />
-      <window_info anchor="right" id="R Packages" order="3" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.4874214" visible="true" weight="0.21215352" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.4874214" weight="0.21215352" />
       <window_info id="Structure" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="9" sideWeight="0.49840087" weight="0.32881" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4875" weight="0.32925585" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -618,7 +627,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
       <window_info anchor="right" id="Data View" order="7" />
     </layout>
@@ -656,8 +665,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the current trial data attributes attribue to the within maker." />
-    <MESSAGE value="Add set_current_trial_correction to the withinstair maker (should call it at the response time after response analyzer)." />
     <MESSAGE value="Link the trial maker with the withinmaker with the control loop fot the response." />
     <MESSAGE value="Delete the unnecessary logic for the response analyzer." />
     <MESSAGE value="ctd.Delete the unnecessary logic for the response analyzer." />
@@ -681,7 +688,9 @@
     <MESSAGE value="Remove unnecesary imports." />
     <MESSAGE value="Add show_,essage_box function to the main_gui to show any message with the given text." />
     <MESSAGE value="Add the end of experiment message ox to the control loop at the end of the experiment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the end of experiment message ox to the control loop at the end of the experiment." />
+    <MESSAGE value="Add the title and the message info to the message box of the end of the expeiment." />
+    <MESSAGE value="Added function handler for event for clicking the exit window button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added function handler for event for clicking the exit window button." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -717,7 +726,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="114" />
+      <option name="time" value="119" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -741,7 +750,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files (x86)/PsychoPy2/Lib/site-packages/PsychoPy-1.84.2-py2.7.egg/psychopy/visual/window.py" />
     <entry file="file://C:/Program Files (x86)/PsychoPy2/Lib/site-packages/PsychoPy-1.84.2-py2.7.egg/psychopy/visual/__init__.py" />
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/backends/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1036,22 +1044,38 @@
     <entry file="file://C:/Python36-32/Lib/tkinter/messagebox.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
+        <state relative-caret-position="251">
+          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
           <folding>
-            <element signature="e#16#25#0" expanded="true" />
+            <element signature="e#17#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
+    <entry file="file://$PROJECT_DIR$/RDK-py-dev.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="60" column="42" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
           <folding>
-            <element signature="e#17#28#0" expanded="true" />
+            <element signature="e#16#25#0" expanded="true" />
+            <element signature="e#1274#1373#0" />
+            <element signature="e#3283#3547#0" />
+            <element signature="e#3598#3757#0" />
+            <element signature="e#3827#3956#0" />
+            <element signature="e#4025#4328#0" />
+            <element signature="e#4457#5896#0" />
+            <element signature="e#5945#6069#0" />
+            <element signature="e#6118#6544#0" />
+            <element signature="e#6596#6658#0" />
           </folding>
         </state>
       </provider>

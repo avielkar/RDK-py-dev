@@ -154,6 +154,7 @@ class MainGuiTkinter:
     def load(self):
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
+        self.root.bind('<escape>', self.exit_window_clicked)
 
         self.control_loop = ControlLoop()
 
@@ -168,6 +169,10 @@ class MainGuiTkinter:
         self.root.mainloop()
 
     def exit_window_clicked(self):
+        # wait the current trial to be finished
+        # and then close the window in the control loop.
         pass
 
-
+    def exit_window(self):
+        self.root.destroy()
+        pass
