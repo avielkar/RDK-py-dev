@@ -70,6 +70,7 @@ class ControlLoop:
 
         self._renderer.add_text_to_screen('Press space to start the trial')
 
+        # todo: check why his is blocking function
         keys = psychopy.event.waitKeys(maxWait=float('inf'),
                                        keyList=['space'])
 

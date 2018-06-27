@@ -10,6 +10,7 @@ import tkinter.filedialog
 from protocolreader import ProtocolReader
 from controlloop import ControlLoop
 import tkinter.messagebox
+from threading import Thread
 
 
 class MainGuiTkinter:
@@ -75,9 +76,8 @@ class MainGuiTkinter:
         self.entry_num_of_repetitions.place(relx=0.85, rely=0.1)
 
     def btn_start_experiment_clicked(self):
-        self.control_loop.start(attributes=self.parameters_attributes_dictionary,
-                                num_of_trials=int(self.entry_num_of_trials.get()),
-                                num_of_repetitions=int(self.entry_num_of_repetitions.get()))
+        control_loop_thread = Thread(target=self.control_loop_function, args=())
+        control_loop_thread.start()
         return
 
     def combo_box_protocol_update(self):
@@ -154,7 +154,6 @@ class MainGuiTkinter:
     def load(self):
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
-        self.root.bind('<escape>', self.exit_window_clicked)
 
         self.control_loop = ControlLoop()
 
@@ -177,3 +176,8 @@ class MainGuiTkinter:
     def exit_window(self):
         self.root.destroy()
         pass
+
+    def control_loop_function(self):
+        self.control_loop.start(attributes=self.parameters_attributes_dictionary,
+                                num_of_trials=int(self.entry_num_of_trials.get()),
+                                num_of_repetitions=int(self.entry_num_of_repetitions.get()))

@@ -34,7 +34,7 @@ class Renderer:
                                      allowGUI=False,
                                      bitsMode=None,
                                      units='norm',
-                                     winType='pyglet')
+                                     winType='pygame')
 
     def set_attributes(self, attributes_dict):
         self._attributes_dict = attributes_dict
