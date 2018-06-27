@@ -9,6 +9,8 @@ from response_analyzer import ResponseAnalyzer
 from graph_maker import GraphMaker
 import tkinter.messagebox
 import psychopy.event
+import pygame
+from pygame.locals import *
 
 
 class ControlLoop:
@@ -71,8 +73,11 @@ class ControlLoop:
         self._renderer.add_text_to_screen('Press space to start the trial')
 
         # todo: check why his is blocking function
-        keys = psychopy.event.waitKeys(maxWait=float('inf'),
-                                       keyList=['space'])
+        pygame.event.clear()
+        event = pygame.event.wait()
+        while (event.type is not KEYDOWN and event.type is not KEYUP) or event.key is not K_SPACE:
+            print(event.type)
+            event = pygame.event.wait()
 
     def response_time_stage(self):
         keys = psychopy.event.waitKeys(maxWait=self._current_trial_data['ResponseTime'],
