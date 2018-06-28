@@ -10,6 +10,7 @@ import tkinter.filedialog
 from protocolreader import ProtocolReader
 from controlloop import ControlLoop
 import tkinter.messagebox
+from threading import Thread
 
 
 class MainGuiTkinter:
@@ -31,6 +32,7 @@ class MainGuiTkinter:
         self.label_num_of_trials = None  # type: Label
         self.entry_num_of_repetitions = None  # type: Entry
         self.entry_num_of_trials = None  # type: Entry
+        self.control_loop_thread = None  # type: Thread
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -75,9 +77,8 @@ class MainGuiTkinter:
         self.entry_num_of_repetitions.place(relx=0.85, rely=0.1)
 
     def btn_start_experiment_clicked(self):
-        self.control_loop.start(attributes=self.parameters_attributes_dictionary,
-                                num_of_trials=int(self.entry_num_of_trials.get()),
-                                num_of_repetitions=int(self.entry_num_of_repetitions.get()))
+        self.control_loop_thread = Thread(target=self.control_loop_function, args=())
+        self.control_loop_thread.start()
         return
 
     def combo_box_protocol_update(self):
@@ -154,6 +155,7 @@ class MainGuiTkinter:
     def load(self):
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
+        self.root.protocol('WM_DELETE_WINDOW', self.exit_window_clicked)
 
         self.control_loop = ControlLoop()
 
@@ -166,3 +168,17 @@ class MainGuiTkinter:
 
         tkinter.messagebox.showinfo('Hello python', 'Hello World')
         self.root.mainloop()
+
+    def exit_window_clicked(self):
+        # wait the current trial to be finished
+        # and then close the window in the control loop.
+        self.control_loop.exit_experiment = True
+        if self.control_loop_thread is not None:
+            self.control_loop_thread.join()
+        self.root.destroy()
+        pass
+
+    def control_loop_function(self):
+        self.control_loop.start(attributes=self.parameters_attributes_dictionary,
+                                num_of_trials=int(self.entry_num_of_trials.get()),
+                                num_of_repetitions=int(self.entry_num_of_repetitions.get()))

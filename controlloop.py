@@ -9,9 +9,12 @@ from response_analyzer import ResponseAnalyzer
 from graph_maker import GraphMaker
 import tkinter.messagebox
 import psychopy.event
+import pygame
+from pygame.locals import *
 
 
 class ControlLoop:
+    exit_experiment = None  # type:bool
 
     def __init__(self):
         self._numOfTrials = None  # type: Integer
@@ -23,6 +26,7 @@ class ControlLoop:
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
+        self.exit_experiment = False
 
     pass
 
@@ -48,6 +52,9 @@ class ControlLoop:
         self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self._numOfTrials):
+            if self.exit_experiment:
+                break
+
             self._current_trial_data = self._trial_maker.current_trial()
 
             self.wait_start_key_response()
@@ -58,25 +65,38 @@ class ControlLoop:
 
             self.post_trial_stage()
 
-        tkinter.messagebox.showinfo('info', 'End of the experiment!')
+        # todo: check why it is causing here a stucking problem.
+        # tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
     def wait_start_key_response(self):
         print(self._current_trial_data)
 
         self._renderer.add_text_to_screen('Press space to start the trial')
 
-        keys = psychopy.event.waitKeys(maxWait=float('inf'),
-                                       keyList=['space'])
+        pygame.event.clear()
+        event = pygame.event.wait()
+        while (event.type != KEYDOWN and event.type != KEYUP) or event.key != K_SPACE:
+            event = pygame.event.wait()
 
     def response_time_stage(self):
-        keys = psychopy.event.waitKeys(maxWait=self._current_trial_data['ResponseTime'],
-                                       keyList=['left', 'right'])
-        if keys:
-            print('pressed {key}'.format(key=keys[0]))
-            self._current_trial_data['Response'] = keys[0]
+        response = 'none'
+        pygame.event.clear()
+
+        start_time = time.time()
+        while time.time() - start_time < self._current_trial_data['ResponseTime']:
+            event = pygame.event.wait()
+            if ((event.type == KEYDOWN or event.type == KEYUP)\
+                    and (event.key == K_LEFT or event.key == K_RIGHT)):
+                response = 'left' if event.key == K_LEFT else 'right'
+                break
+            time.sleep(0.001)
+
+        if response is not 'none':
+            print('pressed {key}'.format(key=response))
         else:
-            self._current_trial_data['Response'] = 'none'
             print('no response')
+
+        self._current_trial_data['Response'] = response
 
     def post_trial_stage(self):
         # todo: check how to add the screen clean to the post_trial_stage_thread.
