@@ -173,6 +173,8 @@ class MainGuiTkinter:
         # wait the current trial to be finished
         # and then close the window in the control loop.
         self.control_loop.exit_experiment = True
+        self.control_loop_thread.join()
+        self.root.destroy()
         pass
 
     def control_loop_function(self):
