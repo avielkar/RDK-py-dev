@@ -113,17 +113,20 @@ class MainGuiTkinter:
                         key_param_attribute == 'param_name':
                     continue
 
-                if key_param_attribute == 'param_type':
+                if key_param_attribute == 'paramtype':
                     param_combobox = tkinter.ttk.Combobox(master=self.root)
                     param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair']
                     param_combobox.place(relx=rel_x[0], rely=rel_y[0])
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
                     self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_combobox
                 else:
-                    param_entry_value = Entry(master=self.root)
+                    dynamic_entry_name = key_param_attribute + '_' + key_param_name
+                    param_entry_value = Entry(master=self.root,
+                                              name=dynamic_entry_name)
                     param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
                     param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
-                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
+                    self.dynamic_controls_dict[dynamic_entry_name] = param_entry_value
+                    self.dynamic_controls_dict[dynamic_entry_name].bind('<Leave>', self.on_dynamic_entry_leave)
 
                 rel_x[0] += 0.1
 
@@ -147,6 +150,12 @@ class MainGuiTkinter:
 
         # for other attributes
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
+
+    def on_dynamic_entry_leave(self, event):
+        dynamic_entry_name = event.widget._name
+        [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
+        self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
+        pass
 
     def show_message_box(self, message):
         tkinter.messagebox.showinfo(message)
