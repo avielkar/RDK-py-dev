@@ -120,7 +120,8 @@ class MainGuiTkinter:
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
                     self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_combobox
                 else:
-                    param_entry_value = Entry(master=self.root)
+                    param_entry_value = Entry(master=self.root,
+                                              name=key_param_attribute + '_' + key_param_name)
                     param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
                     param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
                     self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
