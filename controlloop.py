@@ -65,7 +65,8 @@ class ControlLoop:
 
             self.post_trial_stage()
 
-        #tkinter.messagebox.showinfo('info', 'End of the experiment!')
+        # todo: check why it is causing here a stucking problem.
+        # tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
     def wait_start_key_response(self):
         print(self._current_trial_data)
