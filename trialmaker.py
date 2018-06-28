@@ -50,9 +50,9 @@ class TrialMaker:
 
     def check_experiment_type(self):
         varying_type = sum(1 for param_name in self._attributes \
-                           if self._attributes[param_name]['param_type'] == 'varying')
+                           if self._attributes[param_name]['paramtype'] == 'varying')
         withinstair_type = sum(1 for param_name in self._attributes \
-                               if self._attributes[param_name]['param_type'] == 'withinstair')
+                               if self._attributes[param_name]['paramtype'] == 'withinstair')
         if varying_type == 0 and withinstair_type == 0:
             return 'statics'
         elif varying_type > 0 and withinstair_type > 0:
