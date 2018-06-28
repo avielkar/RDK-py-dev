@@ -153,7 +153,7 @@ class MainGuiTkinter:
 
     def on_dynamic_entry_leave(self, event):
         dynamic_entry_name = event.widget._name
-        [key_param_attribute , key_param_name] = dynamic_entry_name.split('_')
+        [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
         self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
         pass
 
