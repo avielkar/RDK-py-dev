@@ -152,7 +152,8 @@ class MainGuiTkinter:
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
 
     def on_dynamic_entry_focus_out(self, event):
-
+        dynamic_entry_name = event.widget._name
+        [key_param_attribute , key_param_name] = dynamic_entry_name.split('_')
         pass
 
     def show_message_box(self, message):
