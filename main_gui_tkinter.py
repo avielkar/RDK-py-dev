@@ -124,6 +124,8 @@ class MainGuiTkinter:
                     param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
                     param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
                     self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_entry_value
+                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name]\
+                        .bind('<FocusOut>', self.on_dynamic_entry_focus_out)
 
                 rel_x[0] += 0.1
 
@@ -147,6 +149,10 @@ class MainGuiTkinter:
 
         # for other attributes
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
+
+    def on_dynamic_entry_focus_out(self, event):
+
+        pass
 
     def show_message_box(self, message):
         tkinter.messagebox.showinfo(message)
