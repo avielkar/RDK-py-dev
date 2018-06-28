@@ -154,6 +154,8 @@ class MainGuiTkinter:
     def load(self):
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
+        self.root.protocol('WM_DELETE_WINDOW', self.exit_window_clicked)
+
 
         self.control_loop = ControlLoop()
 
@@ -171,10 +173,6 @@ class MainGuiTkinter:
         # wait the current trial to be finished
         # and then close the window in the control loop.
         self.control_loop.exit_experiment = True
-        pass
-
-    def exit_window(self):
-        self.root.destroy()
         pass
 
     def control_loop_function(self):
