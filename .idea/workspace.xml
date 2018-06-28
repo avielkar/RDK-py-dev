@@ -31,14 +31,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5026076">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="86" selection-start-line="86" selection-end-line="86" />
+                <state relative-caret-position="-261">
+                  <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -49,21 +49,16 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+        <leaf>
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+                <state relative-caret-position="130">
+                  <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
-                    <element signature="e#1274#1373#0" />
-                    <element signature="e#3598#3757#0" />
-                    <element signature="e#3827#3956#0" />
-                    <element signature="e#4025#4328#0" />
-                    <element signature="e#4457#5896#0" />
-                    <element signature="e#5945#6069#0" />
-                    <element signature="e#6118#6544#0" />
+                    <element signature="e#1303#1402#0" />
+                    <element signature="e#1448#3258#0" />
                   </folding>
                 </state>
               </provider>
@@ -244,13 +239,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Added the \r\n for the new line after the trail number.">
-      <created>1529340126602</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1529340126602</updated>
     </task>
     <task id="LOCAL-00079" summary="Added '.' I missed,">
       <created>1529340173754</created>
@@ -588,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530200142019</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Add event for exiting the main (root) window.">
+      <created>1530200475541</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1530200475541</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -612,7 +607,7 @@
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
@@ -621,7 +616,7 @@
       <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" weight="0.21215352" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" visible="true" weight="0.32881" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" visible="true" weight="0.32881" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -693,7 +688,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Change the heading angles checking for being matched to thr psychopy." />
     <MESSAGE value="Make response analyzer to deal with the corrected angles sides.&#10;Todo: check how to make the angles left in the within_maker." />
     <MESSAGE value="Make renderer angles convert for moe convenient and also the within maker." />
     <MESSAGE value="Added graph_maker class with function definition with no logic." />
@@ -718,7 +712,8 @@
     <MESSAGE value="Replace pyglet with pygame for rendering from a thread which is not the main loop.&#10;Added a seperate thread for the control loop logic.&#10;To do : check why the wait for key with infinity time is blocking ?" />
     <MESSAGE value="fix the interference with the waitkey for the pyglet and the pygame - using only the pygame." />
     <MESSAGE value="Make the right/left response works with pygame events also." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make the right/left response works with pygame events also." />
+    <MESSAGE value="Add event for exiting the main (root) window." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add event for exiting the main (root) window." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1112,8 +1107,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="-261">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
@@ -1122,17 +1117,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="175" column="12" selection-start-line="175" selection-start-column="12" selection-end-line="175" selection-end-column="12" />
+        <state relative-caret-position="130">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
-            <element signature="e#1274#1373#0" />
-            <element signature="e#3598#3757#0" />
-            <element signature="e#3827#3956#0" />
-            <element signature="e#4025#4328#0" />
-            <element signature="e#4457#5896#0" />
-            <element signature="e#5945#6069#0" />
-            <element signature="e#6118#6544#0" />
+            <element signature="e#1303#1402#0" />
+            <element signature="e#1448#3258#0" />
           </folding>
         </state>
       </provider>

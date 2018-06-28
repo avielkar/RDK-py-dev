@@ -32,6 +32,7 @@ class MainGuiTkinter:
         self.label_num_of_trials = None  # type: Label
         self.entry_num_of_repetitions = None  # type: Entry
         self.entry_num_of_trials = None  # type: Entry
+        self.control_loop_thread = None  # type: Thread
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -76,8 +77,8 @@ class MainGuiTkinter:
         self.entry_num_of_repetitions.place(relx=0.85, rely=0.1)
 
     def btn_start_experiment_clicked(self):
-        control_loop_thread = Thread(target=self.control_loop_function, args=())
-        control_loop_thread.start()
+        self.control_loop_thread = Thread(target=self.control_loop_function, args=())
+        self.control_loop_thread.start()
         return
 
     def combo_box_protocol_update(self):
@@ -155,7 +156,6 @@ class MainGuiTkinter:
         self.root = tkinter.Tk()
         self.root.geometry("1400x800")
         self.root.protocol('WM_DELETE_WINDOW', self.exit_window_clicked)
-
 
         self.control_loop = ControlLoop()
 
