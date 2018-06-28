@@ -76,7 +76,6 @@ class ControlLoop:
         pygame.event.clear()
         event = pygame.event.wait()
         while (event.type != KEYDOWN and event.type != KEYUP) or event.key != K_SPACE:
-            print(event.type)
             event = pygame.event.wait()
 
     def response_time_stage(self):
