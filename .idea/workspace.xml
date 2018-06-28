@@ -53,8 +53,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+                <state relative-caret-position="442">
+                  <caret line="128" column="66" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                     <element signature="e#342#1288#0" />
@@ -256,13 +256,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00084" summary="Save the response if was in the trial data in the control loop in response stage.">
-      <created>1529346419965</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1529346419965</updated>
     </task>
     <task id="LOCAL-00085" summary="Save none response if no response was accured.">
       <created>1529346450791</created>
@@ -600,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530206270257</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Added name foreach dynamic entry (in order to know which widget in the focus_out event) was raised.">
+      <created>1530206331881</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1530206331881</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -724,7 +724,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added the scala_values for the graph_maker from the control loop o the init_graph." />
     <MESSAGE value="Added zero vector fot the y axis and the scala vector for the x axis attributes and convert then to numpy array." />
     <MESSAGE value="Draw the init graphs with the init vectors of scala and zeros." />
     <MESSAGE value="Add titles and y limits between 0.0 and 1.0" />
@@ -749,7 +748,8 @@
     <MESSAGE value="Check before joinig the control_loop thread if it is not null (id the main window closed immediately after opening with no start pressed button)." />
     <MESSAGE value="todo added." />
     <MESSAGE value="Added for each dynamic entry an event for on_dynamic_entry_focus_out." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added for each dynamic entry an event for on_dynamic_entry_focus_out." />
+    <MESSAGE value="Added name foreach dynamic entry (in order to know which widget in the focus_out event) was raised." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added name foreach dynamic entry (in order to know which widget in the focus_out event) was raised." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1177,8 +1177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
+        <state relative-caret-position="442">
+          <caret line="128" column="66" selection-start-line="128" selection-start-column="66" selection-end-line="128" selection-end-column="66" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
             <element signature="e#342#1288#0" />
