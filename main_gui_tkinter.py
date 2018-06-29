@@ -113,14 +113,17 @@ class MainGuiTkinter:
                         key_param_attribute == 'param_name':
                     continue
 
+                dynamic_entry_name = key_param_attribute + '_' + key_param_name
                 if key_param_attribute == 'paramtype':
-                    param_combobox = tkinter.ttk.Combobox(master=self.root)
+                    param_combobox = tkinter.ttk.Combobox(master=self.root,
+                                                          name=dynamic_entry_name)
                     param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair']
                     param_combobox.place(relx=rel_x[0], rely=rel_y[0])
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
-                    self.dynamic_controls_dict[key_param_attribute + '_' + key_param_name] = param_combobox
+                    self.dynamic_controls_dict[dynamic_entry_name] = param_combobox
+                    self.dynamic_controls_dict[dynamic_entry_name].bind('<<ComboboxSelected>>',
+                                                                        self.on_dynamic_combobox_item_selected)
                 else:
-                    dynamic_entry_name = key_param_attribute + '_' + key_param_name
                     param_entry_value = Entry(master=self.root,
                                               name=dynamic_entry_name)
                     param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
@@ -132,6 +135,8 @@ class MainGuiTkinter:
 
             rel_x[0] = 0.0
             rel_y[0] += 0.04
+
+        self.freeze_all_dynamic_entries_by_combobox_status()
 
     def delete_dynamic_controls(self):
         for control in self.dynamic_controls_dict.values():
@@ -151,10 +156,37 @@ class MainGuiTkinter:
         # for other attributes
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
 
+    def on_dynamic_combobox_item_selected(self, event):
+        dynamic_entry_name = event.widget._name
+        [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
+        self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
+        param_status = event.widget.get()
+
+        self.freeze_dynamic_entries_by_combobox_status(key_param_name , param_status)
+        pass
+
     def on_dynamic_entry_leave(self, event):
         dynamic_entry_name = event.widget._name
         [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
         self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
+        pass
+
+    def freeze_all_dynamic_entries_by_combobox_status(self):
+        for key_param_name in self.parameters_attributes_dictionary.keys():
+            self.freeze_dynamic_entries_by_combobox_status(key_param_name , self.dynamic_controls_dict['paramtype_'+key_param_name].get())
+        pass
+
+    def freeze_dynamic_entries_by_combobox_status(self , key_param_name , status):
+        if status == 'static':
+            self.dynamic_controls_dict['value_'+key_param_name].config (state='normal')
+            self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['jumping_' + key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='disabled')
+        elif status == 'varying' or status == 'acrosstair' or status == 'withinstair':
+            self.dynamic_controls_dict['value_'+key_param_name].config (state='disabled')
+            self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='normal')
+            self.dynamic_controls_dict['jumping_' + key_param_name].config(state='normal')
+            self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
         pass
 
     def show_message_box(self, message):

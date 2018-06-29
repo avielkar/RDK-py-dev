@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Extract the name of the changed variable key attribute and name from the entry name.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530221524016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530259097121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -33,14 +31,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35332465">
+    <splitter split-orientation="horizontal" split-proportion="0.34183007">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="55" selection-start-line="55" selection-end-line="55" />
+                <state relative-caret-position="346">
+                  <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -55,17 +53,21 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="128" column="110" selection-start-line="128" selection-start-column="110" selection-end-line="128" selection-end-column="110" />
+                <state relative-caret-position="352">
+                  <caret line="175" selection-start-line="175" selection-end-line="175" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
-                    <element signature="e#1303#1402#0" />
-                    <element signature="e#1448#3258#0" />
-                    <element signature="e#3923#4226#0" />
-                    <element signature="e#5843#5967#0" />
-                    <element signature="e#6493#6542#0" />
-                    <element signature="e#6572#7039#0" />
-                    <element signature="e#7140#7418#0" />
+                    <element signature="e#1504#3314#0" />
+                    <element signature="e#3368#3501#0" />
+                    <element signature="e#3552#3711#0" />
+                    <element signature="e#3979#4282#0" />
+                    <element signature="e#6404#6528#0" />
+                    <element signature="e#7069#7432#0" />
+                    <element signature="e#7814#8666#0" />
+                    <element signature="e#8717#8766#0" />
+                    <element signature="e#8796#9263#0" />
+                    <element signature="e#9308#9587#0" />
+                    <element signature="e#9634#9883#0" />
                   </folding>
                 </state>
               </provider>
@@ -152,6 +154,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,34 +249,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00087" summary="If first trial for right or for left make the init first trials for left and right as false for not advance in the difficulty at the beginning.">
-      <created>1529494164988</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1529494164988</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Delete the unnecessary create_vector call.">
-      <created>1529494666406</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1529494666406</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Make a withinstair vector for both right and left and indexes for the same vector for separate left and right.">
-      <created>1529495386441</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1529495386442</updated>
-    </task>
-    <task id="LOCAL-00090" summary="At initialization the index should be the highest and increase or decrease if wrong or correct answer.">
-      <created>1529495638504</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1529495638504</updated>
     </task>
     <task id="LOCAL-00091" summary="Add last_trial_direction_attribute to the within maker,.">
       <created>1529495920951</created>
@@ -591,7 +565,35 @@
       <option name="project" value="LOCAL" />
       <updated>1530220718654</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Add names to the dynamic combobox controls.">
+      <created>1530250921369</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1530250921369</updated>
+    </task>
+    <task id="LOCAL-00137" summary="Add the event raising function and logic for the dynamic combobox selected.">
+      <created>1530253504053</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1530253504053</updated>
+    </task>
+    <task id="LOCAL-00138" summary="Update the disable/enable entries by the parameter status for static status.">
+      <created>1530256602071</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1530256602071</updated>
+    </task>
+    <task id="LOCAL-00139" summary="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair.">
+      <created>1530257195284</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1530257195285</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -604,24 +606,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="890" y="-1088" width="1936" height="1096" extended-state="0" />
+    <frame x="890" y="-1088" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
-      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5156576" side_tool="true" weight="0.21215352" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18443497" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" weight="0.21215352" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48434237" weight="0.21215352" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -646,7 +647,6 @@
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
@@ -654,32 +654,32 @@
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info id="Structure" order="0" side_tool="true" />
-      <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
+      <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" weight="0.21215352" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32925585" />
       <window_info anchor="right" id="Data View" order="7" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -715,10 +715,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add titles and y limits between 0.0 and 1.0" />
-    <MESSAGE value="Fix wrong function call spelling." />
-    <MESSAGE value="Updates the graph from the control loop.&#10;Added logics for the update_graph function in the graph_maker." />
-    <MESSAGE value="Change the graph to deal with the trial response correctness and not the righ decisions.&#10;Also add response correctness mamber to the saved data." />
     <MESSAGE value="Make the division be converted to float because integer are zero when divided and zero." />
     <MESSAGE value="Remove unnecesary imports." />
     <MESSAGE value="Add show_,essage_box function to the main_gui to show any message with the given text." />
@@ -740,7 +736,11 @@
     <MESSAGE value="Added name foreach dynamic entry (in order to know which widget in the focus_out event) was raised." />
     <MESSAGE value="Replace a duplicated operators with parameter holds the operators results." />
     <MESSAGE value="Extract the name of the changed variable key attribute and name from the entry name." />
-    <option name="LAST_COMMIT_MESSAGE" value="Extract the name of the changed variable key attribute and name from the entry name." />
+    <MESSAGE value="Add names to the dynamic combobox controls." />
+    <MESSAGE value="Add the event raising function and logic for the dynamic combobox selected." />
+    <MESSAGE value="Update the disable/enable entries by the parameter status for static status." />
+    <MESSAGE value="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -757,13 +757,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>183</line>
+          <line>215</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>184</line>
+          <line>216</line>
           <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
+          <line>179</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
+          <line>167</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
+          <line>175</line>
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -776,7 +801,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="148" />
+      <option name="time" value="160" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -787,6 +812,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>self.dynamic_controls_dict['paramtype_'+key_param_name]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>event.widget.get()</expression-string>
         <language-id>Python</language-id>
@@ -803,32 +833,27 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.key == K_RIGHT</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.key is K_RIGHT</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.key is K_LEFT or event.key is K_RIGHT</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((event.type is KEYDOWN or event.type is KEYUP) and (event.key is K_LEFT or event.key is K_RIGHT))</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((event.type is KEYDOWN or event.type is KEYUP)\                     and (event.key is K_LEFT or event.key is K_RIGHT))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>event.type</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1139,16 +1164,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1156,19 +1171,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="55" selection-end-line="49" selection-end-column="55" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="128" column="110" selection-start-line="128" selection-start-column="110" selection-end-line="128" selection-end-column="110" />
+        <state relative-caret-position="352">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
-            <element signature="e#1303#1402#0" />
-            <element signature="e#1448#3258#0" />
-            <element signature="e#3923#4226#0" />
-            <element signature="e#5843#5967#0" />
-            <element signature="e#6493#6542#0" />
-            <element signature="e#6572#7039#0" />
-            <element signature="e#7140#7418#0" />
+            <element signature="e#1504#3314#0" />
+            <element signature="e#3368#3501#0" />
+            <element signature="e#3552#3711#0" />
+            <element signature="e#3979#4282#0" />
+            <element signature="e#6404#6528#0" />
+            <element signature="e#7069#7432#0" />
+            <element signature="e#7814#8666#0" />
+            <element signature="e#8717#8766#0" />
+            <element signature="e#8796#9263#0" />
+            <element signature="e#9308#9587#0" />
+            <element signature="e#9634#9883#0" />
           </folding>
         </state>
       </provider>
