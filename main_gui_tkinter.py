@@ -171,10 +171,15 @@ class MainGuiTkinter:
 
     def freeze_dynamic_entries_by_combobox_status(self , key_param_name , status):
         if status == 'static':
-            self.dynamic_controls_dict['value_'+key_param_name].config (state='enabled')
+            self.dynamic_controls_dict['value_'+key_param_name].config (state='normal')
             self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='disabled')
             self.dynamic_controls_dict['jumping_' + key_param_name].config(state='disabled')
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='disabled')
+        elif status == 'varying' or status == 'acrosstair' or status == 'withinstair':
+            self.dynamic_controls_dict['value_'+key_param_name].config (state='disabled')
+            self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='normal')
+            self.dynamic_controls_dict['jumping_' + key_param_name].config(state='normal')
+            self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
         pass
 
     def show_message_box(self, message):

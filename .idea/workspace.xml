@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530256086905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530257159121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -53,8 +53,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="487">
-                  <caret line="176" column="93" selection-start-line="176" selection-start-column="93" selection-end-line="176" selection-end-column="93" />
+                <state relative-caret-position="333">
+                  <caret line="177" column="84" selection-start-line="177" selection-start-column="84" selection-end-line="177" selection-end-column="84" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                   </folding>
@@ -238,13 +238,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00089" summary="Make a withinstair vector for both right and left and indexes for the same vector for separate left and right.">
-      <created>1529495386441</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1529495386442</updated>
     </task>
     <task id="LOCAL-00090" summary="At initialization the index should be the highest and increase or decrease if wrong or correct answer.">
       <created>1529495638504</created>
@@ -582,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530253504053</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Update the disable/enable entries by the parameter status for static status.">
+      <created>1530256602071</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1530256602071</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -704,7 +704,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updates the graph from the control loop.&#10;Added logics for the update_graph function in the graph_maker." />
     <MESSAGE value="Change the graph to deal with the trial response correctness and not the righ decisions.&#10;Also add response correctness mamber to the saved data." />
     <MESSAGE value="Make the division be converted to float because integer are zero when divided and zero." />
     <MESSAGE value="Remove unnecesary imports." />
@@ -729,7 +728,8 @@
     <MESSAGE value="Extract the name of the changed variable key attribute and name from the entry name." />
     <MESSAGE value="Add names to the dynamic combobox controls." />
     <MESSAGE value="Add the event raising function and logic for the dynamic combobox selected." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the event raising function and logic for the dynamic combobox selected." />
+    <MESSAGE value="Update the disable/enable entries by the parameter status for static status." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update the disable/enable entries by the parameter status for static status." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -746,12 +746,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>203</line>
+          <line>208</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>204</line>
+          <line>209</line>
           <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -807,27 +807,27 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.key == K_RIGHT</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.key is K_RIGHT</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.key is K_LEFT or event.key is K_RIGHT</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((event.type is KEYDOWN or event.type is KEYUP) and (event.key is K_LEFT or event.key is K_RIGHT))</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>((event.type is KEYDOWN or event.type is KEYUP)\                     and (event.key is K_LEFT or event.key is K_RIGHT))</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1162,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="176" column="93" selection-start-line="176" selection-start-column="93" selection-end-line="176" selection-end-column="93" />
+        <state relative-caret-position="333">
+          <caret line="177" column="84" selection-start-line="177" selection-start-column="84" selection-end-line="177" selection-end-column="84" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
