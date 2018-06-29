@@ -1,4 +1,4 @@
-from withinstair_decision_maker import SimpleWithinstairDecisionMaker
+from withinstair_decision_maker import *
 
 
 class TrialMaker:
