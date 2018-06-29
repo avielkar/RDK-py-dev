@@ -1,10 +1,11 @@
 import numpy
+from experimentdata import ExperimentData
 
 
 class WithinStairDecisionMaker:
+
     def __init__(self):
-        self.forward_rightward_probability = None  # type: Integer
-        self.backward_error_probability = None  # type: Integer
+        self.experiment_data = None  # type: ExperimentData
         self.param_attributes = None  # type: Dict[Any, Any]
         self.static_parameters_attributes = None  # type: List[Any]
         self.within_stair_vector = None  # type: list
@@ -14,11 +15,9 @@ class WithinStairDecisionMaker:
 
     def set_attributes(self,
                        param_attributes,
-                       backward_error_probability,
-                       forward_rightward_probability):
+                       experiment_data):
         self.param_attributes = param_attributes
-        self.backward_error_probability = backward_error_probability
-        self.forward_rightward_probability = forward_rightward_probability
+        self.experiment_data = experiment_data
         self.reset_within_maker()
         pass
 
@@ -127,12 +126,12 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
         right_trial = True if numpy.random.random_integers(low=0, high=1) == 0 else False
 
         if not self.last_trial_correction:
-            if numpy.random.binomial(size=1, n=1, p=self.backward_error_probability)[0] == 1:
+            if numpy.random.binomial(size=1, n=1, p=self.experiment_data.backward_error_probability)[0] == 1:
                 self.within_stair_vector_index = self.within_stair_vector_index + 1 \
                     if self.within_stair_vector_index < len(self.within_stair_vector) - 1 \
                     else self.within_stair_vector_index
         else:
-            if numpy.random.binomial(size=1, n=1, p=self.forward_rightward_probability)[0] == 1:
+            if numpy.random.binomial(size=1, n=1, p=self.experiment_data.forward_rightward_probability)[0] == 1:
                 self.within_stair_vector_index = self.within_stair_vector_index \
                     if self.within_stair_vector_index == 0 \
                     else self.within_stair_vector_index - 1
