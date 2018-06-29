@@ -48,15 +48,13 @@ class ControlLoop:
         self._response_analyzer.reset_analyzer()
 
         self._trial_maker.load_new_data(attributes=self._attributes,
-                                        num_of_repetitions=self._numOfRepetitions,
-                                        num_of_trials=self._numOfTrials,
                                         experiment_data=self.experiment_data)
 
         self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
 
         self._save_data_maker.create_new_data_file()
 
-        for trialNum in range(self._numOfTrials):
+        for trialNum in range(self.experiment_data.num_of_repetitions):
             if self.exit_experiment:
                 break
 
