@@ -103,10 +103,13 @@ class MainGuiTkinter:
     def add_parameters_attributes(self, titles, data_dict, rel_x, rel_y):
         for key_param_name in data_dict:
             param_label_name = Label(master=self.root,
+                                     name='label_' + key_param_name,
                                      text=key_param_name)
             param_label_name.place(relx=rel_x[0], rely=rel_y[0])
             self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
             rel_x[0] += 0.1
+            self.dynamic_controls_dict['label_' + key_param_name].bind('<Enter>', self.show_param_label_tooltip)
+            self.dynamic_controls_dict['label_' + key_param_name].bind('<Leave>', self.hide_param_label_tooltip)
 
             for key_param_attribute in titles:
                 if key_param_attribute == 'tool_tip' or \
@@ -156,13 +159,33 @@ class MainGuiTkinter:
         # for other attributes
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
 
+    def show_param_label_tooltip(self, event):
+        label_name = event.widget._name
+        param_name = label_name.split('_')[1]
+        x = event.widget.winfo_rootx() + 25
+        y = event.widget.winfo_rooty() + 20
+        # creates a toplevel window
+        tw = tkinter.Toplevel(event.widget)
+        # Leaves only the label and removes the app window
+        tw.wm_overrideredirect(True)
+        tw.wm_geometry("+%d+%d" % (x, y))
+        label = tkinter.Label(tw, text='dasdsadasdasdasd', justify='left',
+                         background="#ffffff", relief='solid', borderwidth=1)
+        label.pack()
+        pass
+
+    def hide_param_label_tooltip(self, event):
+        label_name = event.widget._name
+        param_name = label_name.split('_')[1]
+        pass
+
     def on_dynamic_combobox_item_selected(self, event):
         dynamic_entry_name = event.widget._name
         [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
         self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
         param_status = event.widget.get()
 
-        self.freeze_dynamic_entries_by_combobox_status(key_param_name , param_status)
+        self.freeze_dynamic_entries_by_combobox_status(key_param_name, param_status)
         pass
 
     def on_dynamic_entry_leave(self, event):
@@ -173,18 +196,19 @@ class MainGuiTkinter:
 
     def freeze_all_dynamic_entries_by_combobox_status(self):
         for key_param_name in self.parameters_attributes_dictionary.keys():
-            self.freeze_dynamic_entries_by_combobox_status(key_param_name , self.dynamic_controls_dict['paramtype_'+key_param_name].get())
+            self.freeze_dynamic_entries_by_combobox_status(key_param_name, self.dynamic_controls_dict[
+                'paramtype_' + key_param_name].get())
         pass
 
-    def freeze_dynamic_entries_by_combobox_status(self , key_param_name , status):
+    def freeze_dynamic_entries_by_combobox_status(self, key_param_name, status):
         if status == 'static':
-            self.dynamic_controls_dict['value_'+key_param_name].config (state='normal')
-            self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['value_' + key_param_name].config(state='normal')
+            self.dynamic_controls_dict['minvalue_' + key_param_name].config(state='disabled')
             self.dynamic_controls_dict['jumping_' + key_param_name].config(state='disabled')
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='disabled')
         elif status == 'varying' or status == 'acrosstair' or status == 'withinstair':
-            self.dynamic_controls_dict['value_'+key_param_name].config (state='disabled')
-            self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='normal')
+            self.dynamic_controls_dict['value_' + key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['minvalue_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['jumping_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
         pass
