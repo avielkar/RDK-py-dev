@@ -109,7 +109,7 @@ class ComplexWithinStairDecisionMaker(WithinStairDecisionMaker):
         return current_trial_data
 
 
-class SimpleWithinstairDecisionMaker(WithinStairDecisionMaker):
+class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
     def __init__(self):
         self.within_stair_vector_index = 0
         self.last_trial_correction = None  # type: bool
