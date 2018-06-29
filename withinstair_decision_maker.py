@@ -14,11 +14,11 @@ class WithinStairDecisionMaker:
 
     def set_attributes(self,
                        param_attributes,
-                       backword_error_probability,
-                       backword_rightword_probability):
+                       backward_error_probability,
+                       forward_rightward_probability):
         self.param_attributes = param_attributes
-        self.backward_error_probability = backword_error_probability
-        self.forward_rightward_probability = backword_rightword_probability
+        self.backward_error_probability = backward_error_probability
+        self.forward_rightward_probability = forward_rightward_probability
         self.reset_within_maker()
         pass
 

@@ -35,8 +35,8 @@ class TrialMaker:
             self.within_stair_decision_maker = SimpleWithinstairDecisionMaker()
             self.within_stair_decision_maker.set_attributes(
                 param_attributes=self._attributes,
-                backword_error_probability=0.9,
-                backword_rightword_probability=0.1)
+                backward_error_probability=0.9,
+                forward_rightward_probability=0.1)
         elif experiment_type == 'varying':
             pass
         elif experiment_type == 'statics':
