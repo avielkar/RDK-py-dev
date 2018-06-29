@@ -50,7 +50,7 @@ class ControlLoop:
 
         self._save_data_maker.create_new_data_file()
 
-        for trialNum in range(self.experiment_data.num_of_repetitions):
+        for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment:
                 break
 
