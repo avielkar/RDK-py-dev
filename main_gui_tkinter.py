@@ -11,6 +11,7 @@ from protocolreader import ProtocolReader
 from controlloop import ControlLoop
 import tkinter.messagebox
 from threading import Thread
+from experimentdata import ExperimentData
 
 
 class MainGuiTkinter:
@@ -82,18 +83,18 @@ class MainGuiTkinter:
         self.label_backward_error_probability = Label(master=self.root,
                                               text='#b.e.p')
         self.label_backward_error_probability.place(relx=0.8,
-                                            rely=0.1)
+                                            rely=0.15)
         self.entry_backward_error_probability = Entry(master=self.root)
         self.entry_backward_error_probability.insert(0, 1)
-        self.entry_backward_error_probability.place(relx=0.85, rely=0.1)
+        self.entry_backward_error_probability.place(relx=0.85, rely=0.15)
 
         self.label_forward_rightward_probability = Label(master=self.root,
                                               text='#f.r.p')
         self.label_forward_rightward_probability.place(relx=0.8,
-                                            rely=0.1)
+                                            rely=0.2)
         self.entry_forward_rightward_probability = Entry(master=self.root)
         self.entry_forward_rightward_probability.insert(0, 1)
-        self.entry_forward_rightward_probability.place(relx=0.85, rely=0.1)
+        self.entry_forward_rightward_probability.place(relx=0.85, rely=0.2)
 
     def btn_start_experiment_clicked(self):
         self.control_loop_thread = Thread(target=self.control_loop_function, args=())
@@ -266,6 +267,8 @@ class MainGuiTkinter:
         pass
 
     def control_loop_function(self):
+        experiment_data = ExperimentData(backward_error_probability=self.entry_backward_error_probability.get(),
+                                         forward_rightward_probability=self.entry_forward_rightward_probability.get())
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
                                 num_of_trials=int(self.entry_num_of_trials.get()),
                                 num_of_repetitions=int(self.entry_num_of_repetitions.get()))
