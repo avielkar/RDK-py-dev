@@ -136,6 +136,8 @@ class MainGuiTkinter:
             rel_x[0] = 0.0
             rel_y[0] += 0.04
 
+        self.freeze_all_dynamic_entries_by_combobox_status()
+
     def delete_dynamic_controls(self):
         for control in self.dynamic_controls_dict.values():
             control.destroy()
@@ -167,6 +169,11 @@ class MainGuiTkinter:
         dynamic_entry_name = event.widget._name
         [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
         self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
+        pass
+
+    def freeze_all_dynamic_entries_by_combobox_status(self):
+        for key_param_name in self.parameters_attributes_dictionary.keys():
+            self.freeze_dynamic_entries_by_combobox_status(key_param_name , self.dynamic_controls_dict['paramtype_'+key_param_name].get())
         pass
 
     def freeze_dynamic_entries_by_combobox_status(self , key_param_name , status):
