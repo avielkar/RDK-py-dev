@@ -155,12 +155,26 @@ class MainGuiTkinter:
         self.add_parameters_attributes(titles, excel_data_dict, rel_x, rel_y)
 
     def on_dynamic_combobox_item_selected(self, event):
+        dynamic_entry_name = event.widget._name
+        [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
+        self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
+        param_status = event.widget.get()
+
+        self.freeze_dynamic_entries_by_combobox_status(key_param_name , param_status)
         pass
 
     def on_dynamic_entry_leave(self, event):
         dynamic_entry_name = event.widget._name
         [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
         self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
+        pass
+
+    def freeze_dynamic_entries_by_combobox_status(self , key_param_name , status):
+        if status == 'static':
+            self.dynamic_controls_dict['value_'+key_param_name].config (state='enabled')
+            self.dynamic_controls_dict['minvalue_'+key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['jumping_' + key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='disabled')
         pass
 
     def show_message_box(self, message):
