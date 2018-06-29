@@ -95,3 +95,22 @@ class WithinStairDecisionMaker:
         self.current_trial_attributes = current_trial_data
 
         return current_trial_data
+
+
+class SimpleWithinstairDecisionMaker:
+    def __init__(self):
+        self.backword_rightword_probability = None  # type: Integer
+        self.backword_error_probability = None  # type: Integer
+        self.param_attributes = None  # type: Dict[Any, Any]
+        self.static_parameters_attributes = None  # type: List[Any]
+        self.within_stair_vector = None  # type: list
+        self.within_stair_negative_vector_index = 0
+        self.within_stair_positive_vector_index = 0
+        self.within_stair_attribute = None  # type: Any
+        self.last_trial_direction = None  # type: 'left' , 'right' or 'none'
+        self.last_trial_correction_right = None  # type: bool
+        self.last_trial_correction_left = None  # type: bool
+        self.current_trial_attributes = None  # Dict[string, Any]
+        pass
+
+
