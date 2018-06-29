@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk
+from tkinter import Tk, Toplevel
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -33,6 +33,7 @@ class MainGuiTkinter:
         self.entry_num_of_repetitions = None  # type: Entry
         self.entry_num_of_trials = None  # type: Entry
         self.control_loop_thread = None  # type: Thread
+        self.currebt_gui_tooltip_window = None  # type: Toplevel
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -162,21 +163,24 @@ class MainGuiTkinter:
     def show_param_label_tooltip(self, event):
         label_name = event.widget._name
         param_name = label_name.split('_')[1]
+        tool_tip_text = self.parameters_attributes_dictionary[param_name]['tool_tip']
+
         x = event.widget.winfo_rootx() + 25
         y = event.widget.winfo_rooty() + 20
         # creates a toplevel window
-        tw = tkinter.Toplevel(event.widget)
+        self.currebt_gui_tooltip_window = tkinter.Toplevel(event.widget)
         # Leaves only the label and removes the app window
-        tw.wm_overrideredirect(True)
-        tw.wm_geometry("+%d+%d" % (x, y))
-        label = tkinter.Label(tw, text='dasdsadasdasdasd', justify='left',
-                         background="#ffffff", relief='solid', borderwidth=1)
+        self.currebt_gui_tooltip_window.wm_overrideredirect(True)
+        self.currebt_gui_tooltip_window.wm_geometry("+%d+%d" % (x, y))
+        label = tkinter.Label(self.currebt_gui_tooltip_window, text=tool_tip_text, justify='left',
+                              background="#ffffff", relief='solid', borderwidth=1)
         label.pack()
         pass
 
     def hide_param_label_tooltip(self, event):
         label_name = event.widget._name
         param_name = label_name.split('_')[1]
+        self.currebt_gui_tooltip_window.destroy()
         pass
 
     def on_dynamic_combobox_item_selected(self, event):
