@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experimentdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/experimentdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +37,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="706">
-                  <caret line="269" column="41" selection-start-line="269" selection-start-column="41" selection-end-line="269" selection-end-column="41" />
+                <state relative-caret-position="536">
+                  <caret line="259" column="34" lean-forward="true" selection-start-line="259" selection-start-column="34" selection-end-line="259" selection-end-column="34" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                   </folding>
@@ -281,13 +281,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00101" summary="Replace the direction in the return trail data withinstair_maker if it is a left trial.">
-      <created>1529608620242</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1529608620242</updated>
     </task>
     <task id="LOCAL-00102" summary="Change the heading angles checking for being matched to thr psychopy.">
       <created>1529609423149</created>
@@ -625,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530287700456</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="Added the num of trials and num of repetitions to the experiment data.">
+      <created>1530287890036</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1530287890041</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -747,7 +747,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix the interference with the waitkey for the pyglet and the pygame - using only the pygame." />
     <MESSAGE value="Make the right/left response works with pygame events also." />
     <MESSAGE value="Add event for exiting the main (root) window." />
     <MESSAGE value="Add the control_loop_thread as attribute." />
@@ -772,7 +771,8 @@
     <MESSAGE value="Make an experimen tdata class for collecting all experiment gui data which is not from the excel." />
     <MESSAGE value="Transfer the experiment data through all classes to the within maker." />
     <MESSAGE value="Convert the entries data to int." />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert the entries data to int." />
+    <MESSAGE value="Added the num of trials and num of repetitions to the experiment data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the num of trials and num of repetitions to the experiment data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1209,8 +1209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="269" column="41" selection-start-line="269" selection-start-column="41" selection-end-line="269" selection-end-column="41" />
+        <state relative-caret-position="536">
+          <caret line="259" column="34" lean-forward="true" selection-start-line="259" selection-start-column="34" selection-end-line="259" selection-end-column="34" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
