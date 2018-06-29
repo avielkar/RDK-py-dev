@@ -1,4 +1,4 @@
-from withinstair_decision_maker import WithinStairDecisionMaker
+from withinstair_decision_maker import *
 
 
 class TrialMaker:
@@ -32,7 +32,7 @@ class TrialMaker:
         self.trial_number = 0
         experiment_type = self.check_experiment_type()
         if experiment_type == 'withinstair':
-            self.within_stair_decision_maker = WithinStairDecisionMaker()
+            self.within_stair_decision_maker = SimpleWithinstairDecisionMaker()
             self.within_stair_decision_maker.set_attributes(
                 param_attributes=self._attributes,
                 backword_error_probability=0.9,
