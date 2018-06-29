@@ -37,10 +37,6 @@ class ControlLoop:
 
         self._attributes = attributes
 
-        self._numOfRepetitions = num_of_repetitions
-
-        self._numOfTrials = num_of_trials
-
         self.experiment_data = experiment_data
 
         self._renderer.set_attributes(self._attributes)
