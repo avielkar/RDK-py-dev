@@ -11,6 +11,7 @@ import tkinter.messagebox
 import psychopy.event
 import pygame
 from pygame.locals import *
+from experimentdata import ExperimentData
 
 
 class ControlLoop:
@@ -19,6 +20,7 @@ class ControlLoop:
     def __init__(self):
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
+        self.experiment_data: None  # type: ExperimentData
         self._renderer = Renderer()
         self._attributes = None  # type: Dict[Any, Any]
         self._trial_maker = TrialMaker()
@@ -30,28 +32,25 @@ class ControlLoop:
 
     pass
 
-    def start(self, attributes, num_of_trials, num_of_repetitions):
+    def start(self, attributes, experiment_data):
         self._renderer.init_window()
 
         self._attributes = attributes
 
-        self._numOfRepetitions = num_of_repetitions
-
-        self._numOfTrials = num_of_trials
+        self.experiment_data = experiment_data
 
         self._renderer.set_attributes(self._attributes)
 
         self._response_analyzer.reset_analyzer()
 
         self._trial_maker.load_new_data(attributes=self._attributes,
-                                        num_of_repetitions=self._numOfRepetitions,
-                                        num_of_trials=self._numOfTrials)
+                                        experiment_data=self.experiment_data)
 
         self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
 
         self._save_data_maker.create_new_data_file()
 
-        for trialNum in range(self._numOfTrials):
+        for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment:
                 break
 
@@ -85,7 +84,7 @@ class ControlLoop:
         start_time = time.time()
         while time.time() - start_time < self._current_trial_data['ResponseTime']:
             event = pygame.event.wait()
-            if ((event.type == KEYDOWN or event.type == KEYUP)\
+            if ((event.type == KEYDOWN or event.type == KEYUP) \
                     and (event.key == K_LEFT or event.key == K_RIGHT)):
                 response = 'left' if event.key == K_LEFT else 'right'
                 break

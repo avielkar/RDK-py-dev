@@ -1,11 +1,11 @@
 from withinstair_decision_maker import *
+from experimentdata import ExperimentData
 
 
 class TrialMaker:
     def __init__(self):
         self._attributes = None  # type: Dict[Any, Any]
-        self._numOfTrials = None  # type: Integer
-        self._numOfRepetitions = None  # type: Integer
+        self._experiment_data = None # type: ExperimentData
         self.trial_number = 0
         self.within_stair_decision_maker = None  # type: WithinStairDecisionMaker
         pass
@@ -24,19 +24,16 @@ class TrialMaker:
 
     def load_new_data(self,
                       attributes,
-                      num_of_repetitions,
-                      num_of_trials):
+                      experiment_data):
         self._attributes = attributes
-        self._numOfTrials = num_of_trials
-        self._numOfRepetitions = num_of_repetitions
+        self.experiment_data = experiment_data
         self.trial_number = 0
         experiment_type = self.check_experiment_type()
         if experiment_type == 'withinstair':
-            self.within_stair_decision_maker = SimpleWithinstairDecisionMaker()
+            self.within_stair_decision_maker = SimpleWithinStairDecisionMaker()
             self.within_stair_decision_maker.set_attributes(
                 param_attributes=self._attributes,
-                backword_error_probability=0.9,
-                backword_rightword_probability=0.1)
+                experiment_data=experiment_data)
         elif experiment_type == 'varying':
             pass
         elif experiment_type == 'statics':
