@@ -1,8 +1,8 @@
 class ExperimentData:
-    backward_error_probability = None  # type:int
-    forward_rightward_probability = None  # type:int
     num_of_repetitions = None  # type:int
     num_of_trials = None  # type:int
+    backward_error_probability = None  # type:float
+    forward_rightward_probability = None  # type:float
 
     def __init__(self,
                  num_of_repetitions=None,

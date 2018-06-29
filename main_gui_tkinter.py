@@ -269,7 +269,7 @@ class MainGuiTkinter:
     def control_loop_function(self):
         experiment_data = ExperimentData(num_of_repetitions=int(self.entry_num_of_repetitions.get()),
                                          num_of_trials=int(self.entry_num_of_trials.get()),
-                                         backward_error_probability=int(self.entry_backward_error_probability.get()),
-                                         forward_rightward_probability=int(self.entry_forward_rightward_probability.get()))
+                                         backward_error_probability=float(self.entry_backward_error_probability.get()),
+                                         forward_rightward_probability=float(self.entry_forward_rightward_probability.get()))
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
                                 experiment_data=experiment_data)
