@@ -27,7 +27,7 @@ class GraphMaker:
         pyplot.ylabel('Correctness')
         pyplot.draw()
         pyplot.show()
-        pyplot.pause(0.01)
+        pyplot.pause(1)
         pass
 
     def update_graph(self, trial_data):
@@ -46,5 +46,5 @@ class GraphMaker:
         pyplot.ylabel('Correctness')
         pyplot.plot(np.array(self._x_values), np.array(self._y_values), 'ro')
         pyplot.draw()
-        pyplot.pause(0.01)
+        pyplot.pause(1)
         pass
