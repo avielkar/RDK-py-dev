@@ -32,7 +32,7 @@ class ControlLoop:
 
     pass
 
-    def start(self, attributes, num_of_trials, num_of_repetitions, experiment_data):
+    def start(self, attributes, experiment_data):
         self._renderer.init_window()
 
         self._attributes = attributes
