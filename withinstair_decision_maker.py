@@ -3,7 +3,7 @@ import numpy
 
 class WithinStairDecisionMaker:
     def __init__(self):
-        self.backword_rightword_probability = None  # type: Integer
+        self.forward_rightword_probability = None  # type: Integer
         self.backword_error_probability = None  # type: Integer
         self.param_attributes = None  # type: Dict[Any, Any]
         self.static_parameters_attributes = None  # type: List[Any]
@@ -18,7 +18,7 @@ class WithinStairDecisionMaker:
                        backword_rightword_probability):
         self.param_attributes = param_attributes
         self.backword_error_probability = backword_error_probability
-        self.backword_rightword_probability = backword_rightword_probability
+        self.forward_rightword_probability = backword_rightword_probability
         self.reset_within_maker()
         pass
 
@@ -29,7 +29,6 @@ class WithinStairDecisionMaker:
         pass
 
     def create_within_stair_vector(self):
-
         self.within_stair_attribute = self.param_attributes \
             [list(
                 filter(lambda x: self.param_attributes[x]['paramtype'] == 'withinstair', self.param_attributes.keys()))[
@@ -128,13 +127,15 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
         right_trial = True if numpy.random.random_integers(low=0, high=1) == 0 else False
 
         if not self.last_trial_correction:
-            self.within_stair_vector_index = self.within_stair_vector_index + 1 \
-                if self.within_stair_vector_index < len(self.within_stair_vector) - 1 \
-                else self.within_stair_vector_index
+            if numpy.random.binomial(size=1, n=1, p=self.backword_error_probability)[0] == 1:
+                self.within_stair_vector_index = self.within_stair_vector_index + 1 \
+                    if self.within_stair_vector_index < len(self.within_stair_vector) - 1 \
+                    else self.within_stair_vector_index
         else:
-            self.within_stair_vector_index = self.within_stair_vector_index \
-                if self.within_stair_vector_index == 0 \
-                else self.within_stair_vector_index - 1
+            if numpy.random.binomial(size=1, n=1, p=self.forward_rightword_probability)[0] == 1:
+                self.within_stair_vector_index = self.within_stair_vector_index \
+                    if self.within_stair_vector_index == 0 \
+                    else self.within_stair_vector_index - 1
 
         current_withinstair_value = self.within_stair_vector[self.within_stair_vector_index]
 
@@ -147,5 +148,3 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
         self.current_trial_attributes = current_trial_data
 
         return current_trial_data
-
-
