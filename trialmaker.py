@@ -17,7 +17,22 @@ class TrialMaker:
         self.trial_number += 1
         current_trial['Trial#'] = self.trial_number
 
+        self.convert_current_trial_attributes_to_their_types(current_trial=current_trial)
+
         return current_trial
+
+    def convert_current_trial_attributes_to_their_types(self, current_trial):
+        current_trial['Direction'] = float(current_trial['Direction'])
+        current_trial['NumberOfDots'] = int(current_trial['NumberOfDots'])
+        current_trial['FieldSize'] = int(current_trial['FieldSize'])
+        current_trial['DotLife'] = int(current_trial['DotLife'])
+        current_trial['Speed'] = float(current_trial['Speed'])
+        current_trial['Coherence'] = float(current_trial['Coherence'])
+        current_trial['RenderTime'] = float(current_trial['RenderTime'])
+        current_trial['RenderFrequency'] = float(current_trial['RenderFrequency'])
+        current_trial['ResponseTime'] = float(current_trial['ResponseTime'])
+        current_trial['PostTrialTime'] = float(current_trial['PostTrialTime'])
+        pass
 
     def set_current_trial_response_correction(self, trial_correctness):
         self.within_stair_decision_maker.set_current_correctness(trial_correctness)
