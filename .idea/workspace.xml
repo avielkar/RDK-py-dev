@@ -37,11 +37,12 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="105" column="105" selection-start-line="105" selection-start-column="105" selection-end-line="105" selection-end-column="105" />
+                <state relative-caret-position="452">
+                  <caret line="284" column="103" selection-start-line="284" selection-start-column="103" selection-end-line="284" selection-end-column="103" />
                   <folding>
-                    <element signature="e#401#1541#0" />
+                    <element signature="e#414#1620#0" />
                     <element signature="e#1592#1691#0" />
+                    <element signature="e#1737#5003#0" />
                     <element signature="e#4526#4659#0" />
                     <element signature="e#4710#4869#0" />
                     <element signature="e#4750#4869#0" />
@@ -69,7 +70,6 @@
                     <element signature="e#11649#12116#0" />
                     <element signature="e#12161#12440#0" />
                     <element signature="e#12161#12200#0" />
-                    <element signature="e#12487#13065#0" />
                   </folding>
                 </state>
               </provider>
@@ -78,8 +78,8 @@
           <file leaf-file-name="experimentdata.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/experimentdata.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="37" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -190,9 +190,9 @@
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/trialdata.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
-        <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
       </list>
     </option>
@@ -314,34 +314,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00108" summary="Added the scala_values for the graph_maker from the control loop o the init_graph.">
-      <created>1529647001588</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1529647001588</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Added zero vector fot the y axis and the scala vector for the x axis attributes and convert then to numpy array.">
-      <created>1529648217542</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1529648217542</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Draw the init graphs with the init vectors of scala and zeros.">
-      <created>1529648642769</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1529648642769</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Add titles and y limits between 0.0 and 1.0">
-      <created>1529651763776</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1529651763776</updated>
     </task>
     <task id="LOCAL-00112" summary="Fix wrong function call spelling.">
       <created>1529652349296</created>
@@ -658,7 +630,35 @@
       <option name="project" value="LOCAL" />
       <updated>1530460627131</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="Adding checkbox for enabling confidence choice.">
+      <created>1530461136528</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1530461136528</updated>
+    </task>
+    <task id="LOCAL-00158" summary="fix name spelling error.">
+      <created>1530461219568</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1530461219568</updated>
+    </task>
+    <task id="LOCAL-00159" summary="Add the confidence enable checkbutton to the attributes.">
+      <created>1530461388307</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1530461388307</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Added enable_confidence_choice attribute to experimentdata class.">
+      <created>1530461561462</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1530461561462</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -676,21 +676,21 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
-      <window_info anchor="right" x="0" y="0" width="47" height="18" id="Documentation" order="8" sideWeight="0.5163297" side_tool="true" visible="true" weight="0.036780383" />
+      <window_info anchor="right" x="0" y="0" width="47" height="18" id="Documentation" order="8" sideWeight="0.5157233" side_tool="true" visible="true" weight="0.036780383" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15991472" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.4836703" visible="true" weight="0.036780383" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48427674" visible="true" weight="0.036780383" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" visible="true" weight="0.32881" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -780,10 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added for each dynamic entry an event for on_dynamic_entry_focus_out." />
-    <MESSAGE value="Added name foreach dynamic entry (in order to know which widget in the focus_out event) was raised." />
-    <MESSAGE value="Replace a duplicated operators with parameter holds the operators results." />
-    <MESSAGE value="Extract the name of the changed variable key attribute and name from the entry name." />
     <MESSAGE value="Add names to the dynamic combobox controls." />
     <MESSAGE value="Add the event raising function and logic for the dynamic combobox selected." />
     <MESSAGE value="Update the disable/enable entries by the parameter status for static status." />
@@ -805,7 +801,11 @@
     <MESSAGE value="Also for the function signature." />
     <MESSAGE value="Fix the unnecessary lines." />
     <MESSAGE value="Adding comments for regions in the main gui fixed controls." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding comments for regions in the main gui fixed controls." />
+    <MESSAGE value="Adding checkbox for enabling confidence choice." />
+    <MESSAGE value="fix name spelling error." />
+    <MESSAGE value="Add the confidence enable checkbutton to the attributes." />
+    <MESSAGE value="Added enable_confidence_choice attribute to experimentdata class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added enable_confidence_choice attribute to experimentdata class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,17 +822,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>272</line>
+          <line>273</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>273</line>
+          <line>274</line>
           <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>193</line>
+          <line>194</line>
           <option name="timeStamp" value="161" />
         </line-breakpoint>
       </breakpoints>
@@ -1218,13 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1232,13 +1225,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experimentdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="105" column="105" selection-start-line="105" selection-start-column="105" selection-end-line="105" selection-end-column="105" />
+        <state relative-caret-position="452">
+          <caret line="284" column="103" selection-start-line="284" selection-start-column="103" selection-end-line="284" selection-end-column="103" />
           <folding>
-            <element signature="e#401#1541#0" />
+            <element signature="e#414#1620#0" />
             <element signature="e#1592#1691#0" />
+            <element signature="e#1737#5003#0" />
             <element signature="e#4526#4659#0" />
             <element signature="e#4710#4869#0" />
             <element signature="e#4750#4869#0" />
@@ -1266,7 +1267,6 @@
             <element signature="e#11649#12116#0" />
             <element signature="e#12161#12440#0" />
             <element signature="e#12161#12200#0" />
-            <element signature="e#12487#13065#0" />
           </folding>
         </state>
       </provider>
