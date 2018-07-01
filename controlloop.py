@@ -62,6 +62,9 @@ class ControlLoop:
 
             self.response_time_stage()
 
+            if self.experiment_data.enable_confidence_choice:
+                self.confidence_response_time_stage()
+
             self.post_trial_stage()
 
         # todo: check why it is causing here a stucking problem.
@@ -96,6 +99,26 @@ class ControlLoop:
             print('no response')
 
         self._current_trial_data['Response'] = response
+
+    def confidence_response_time_stage(self):
+        response = 'none'
+        pygame.event.clear()
+
+        start_time = time.time()
+        while time.time() - start_time < self._current_trial_data['ResponseTime']:
+            event = pygame.event.wait()
+            if ((event.type == KEYDOWN or event.type == KEYUP) \
+                    and (event.key == K_UP or event.key == K_DOWN)):
+                response = 'up' if event.key == K_LEFT else 'down'
+                break
+            time.sleep(0.001)
+
+        if response is not 'none':
+            print('pressed {key}'.format(key=response))
+        else:
+            print('no response')
+
+        self._current_trial_data['ConfidenceResponse'] = response
 
     def post_trial_stage(self):
         # todo: check how to add the screen clean to the post_trial_stage_thread.

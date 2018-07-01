@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Adding to the control loop confidence_response_time_stage function with no logic.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +34,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.53798586">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="452">
-                  <caret line="284" column="103" selection-start-line="284" selection-start-column="103" selection-end-line="284" selection-end-column="103" />
+                  <caret line="284" column="61" selection-start-line="284" selection-start-column="61" selection-end-line="284" selection-end-column="61" />
                   <folding>
                     <element signature="e#414#1620#0" />
                     <element signature="e#1592#1691#0" />
@@ -84,13 +84,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="389">
-                  <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+                <state relative-caret-position="231">
+                  <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
                   <folding>
-                    <element signature="e#17#28#0" expanded="true" />
+                    <element signature="e#472#1006#0" />
+                    <element signature="e#2153#2454#0" />
+                    <element signature="e#2675#2961#0" />
+                    <element signature="e#2856#2931#0" />
+                    <element signature="e#3199#3850#0" />
+                    <element signature="e#3899#4221#0" />
+                    <element signature="e#4281#4311#0" />
                   </folding>
                 </state>
               </provider>
@@ -191,9 +197,9 @@
         <option value="$PROJECT_DIR$/trialdata.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
       </list>
     </option>
   </component>
@@ -314,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Fix wrong function call spelling.">
-      <created>1529652349296</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1529652349296</updated>
     </task>
     <task id="LOCAL-00113" summary="Updates the graph from the control loop.&#10;Added logics for the update_graph function in the graph_maker.">
       <created>1529657327509</created>
@@ -658,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530461561462</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="Add the state of the confidence choice raiobutton to the sending to the control loop through the experiment data.">
+      <created>1530461842263</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1530461842263</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -780,7 +786,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add names to the dynamic combobox controls." />
     <MESSAGE value="Add the event raising function and logic for the dynamic combobox selected." />
     <MESSAGE value="Update the disable/enable entries by the parameter status for static status." />
     <MESSAGE value="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair." />
@@ -805,7 +810,8 @@
     <MESSAGE value="fix name spelling error." />
     <MESSAGE value="Add the confidence enable checkbutton to the attributes." />
     <MESSAGE value="Added enable_confidence_choice attribute to experimentdata class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added enable_confidence_choice attribute to experimentdata class." />
+    <MESSAGE value="Add the state of the confidence choice raiobutton to the sending to the control loop through the experiment data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the state of the confidence choice raiobutton to the sending to the control loop through the experiment data." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1146,13 +1152,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-273572998/pygame/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="245" selection-start-line="245" selection-end-line="245" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-273572998/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -1208,16 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1225,17 +1214,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
-          <caret line="284" column="103" selection-start-line="284" selection-start-column="103" selection-end-line="284" selection-end-column="103" />
+          <caret line="284" column="61" selection-start-line="284" selection-start-column="61" selection-end-line="284" selection-end-column="61" />
           <folding>
             <element signature="e#414#1620#0" />
             <element signature="e#1592#1691#0" />
@@ -1267,6 +1249,36 @@
             <element signature="e#11649#12116#0" />
             <element signature="e#12161#12440#0" />
             <element signature="e#12161#12200#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimentdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-273572998/pygame/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="262" selection-start-line="262" selection-end-line="262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="107" column="42" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+          <folding>
+            <element signature="e#472#1006#0" />
+            <element signature="e#2153#2454#0" />
+            <element signature="e#2675#2961#0" />
+            <element signature="e#2856#2931#0" />
+            <element signature="e#3199#3850#0" />
+            <element signature="e#3899#4221#0" />
+            <element signature="e#4281#4311#0" />
           </folding>
         </state>
       </provider>
