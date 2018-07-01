@@ -103,6 +103,9 @@ class MainGuiTkinter:
         self.entry_forward_rightward_probability.insert(0, 1)
         self.entry_forward_rightward_probability.place(relx=0.85, rely=0.2)
 
+        self.checkbox_confidence_choice = tkinter.Checkbutton(master=self.root, text='Confidence Choice')
+        self.checkbox_confidence_choice.place(relx=0.7, rely=0.7)
+
     def btn_start_experiment_clicked(self):
         self.control_loop_thread = Thread(target=self.control_loop_function, args=())
         self.control_loop_thread.start()
