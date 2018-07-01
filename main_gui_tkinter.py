@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk, Toplevel, Label
+from tkinter import Tk, Toplevel, Label, Checkbutton
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -37,6 +37,7 @@ class MainGuiTkinter:
         self.entry_num_of_trials = None  # type: Entry
         self.control_loop_thread = None  # type: Thread
         self.current_gui_tooltip_window = None  # type: Toplevel
+        self.checkbox_confidence_choice = None  # type:Checkbutton
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
