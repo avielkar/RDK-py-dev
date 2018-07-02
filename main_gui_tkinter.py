@@ -266,7 +266,7 @@ class MainGuiTkinter:
         self.root.geometry("1400x800")
         self.root.protocol('WM_DELETE_WINDOW', self.exit_window_clicked)
 
-        self.control_loop = ControlLoop()
+        self.control_loop = ControlLoop(self.gui_queue)
 
         self.init_gui_controllers()
 
