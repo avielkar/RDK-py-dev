@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530546012952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530546541765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -84,11 +84,10 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+                <state relative-caret-position="231">
+                  <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
                   <folding>
                     <element signature="e#472#1006#0" />
-                    <element signature="e#2675#2961#0" />
                     <element signature="e#2856#2931#0" />
                     <element signature="e#3899#4221#0" />
                     <element signature="e#4281#4311#0" />
@@ -104,8 +103,8 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="33" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="93" />
+                <state relative-caret-position="213">
+                  <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -315,13 +314,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Remove unnecesary imports.">
-      <created>1529695917227</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1529695917227</updated>
     </task>
     <task id="LOCAL-00117" summary="Add show_,essage_box function to the main_gui to show any message with the given text.">
       <created>1529858422127</created>
@@ -659,7 +651,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530546323755</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="Adding waiting prints for all trial waitings.....">
+      <created>1530546446610</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1530546446610</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -681,14 +680,14 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15991472" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48427674" visible="true" weight="0.036780383" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48427674" visible="true" weight="0.036780383" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
@@ -781,7 +780,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add show_param_label_tooltip event for tooltips." />
     <MESSAGE value="Create  SimpleWithinStairDecisionMaker withou logic." />
     <MESSAGE value="Make the SimpleWithinStairDecisionMaker and ComplexWithinStairDecisionMaker inherit from WithinStairDecisionMaker" />
     <MESSAGE value="Make trialmaker to call SimpleWithinstairDecisionMaker" />
@@ -806,7 +804,8 @@
     <MESSAGE value="Add logic to confidence_response_time_stage function and call it if necessary." />
     <MESSAGE value="Added variable indicate the real state of the confidence checkbutton." />
     <MESSAGE value="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary." />
+    <MESSAGE value="Adding waiting prints for all trial waitings....." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding waiting prints for all trial waitings....." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -921,13 +920,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/gui/wxgui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/tools/arraytools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1266,21 +1258,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="33" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="93" />
+        <state relative-caret-position="213">
+          <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-273572998/pygame/event.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="877">
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        <state relative-caret-position="231">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
           <folding>
             <element signature="e#472#1006#0" />
-            <element signature="e#2675#2961#0" />
             <element signature="e#2856#2931#0" />
             <element signature="e#3899#4221#0" />
             <element signature="e#4281#4311#0" />
