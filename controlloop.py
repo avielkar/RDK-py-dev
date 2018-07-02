@@ -74,6 +74,7 @@ class ControlLoop:
         print(self._current_trial_data)
 
         self._renderer.add_text_to_screen('Press space to start the trial')
+        print ('waiting to start response...')
 
         pygame.event.clear()
         event = pygame.event.wait()
@@ -83,6 +84,7 @@ class ControlLoop:
     def response_time_stage(self):
         response = 'none'
         pygame.event.clear()
+        print ('waiting to response...')
 
         start_time = time.time()
         while time.time() - start_time < self._current_trial_data['ResponseTime']:
@@ -103,6 +105,7 @@ class ControlLoop:
     def confidence_response_time_stage(self):
         response = 'none'
         pygame.event.clear()
+        print ('waiting to confidence response...')
 
         start_time = time.time()
         while time.time() - start_time < self._current_trial_data['ConfidenceResponseTime']:

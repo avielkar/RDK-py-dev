@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,11 +84,10 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="197">
-                  <caret line="111" column="51" lean-forward="true" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
+                <state relative-caret-position="248">
+                  <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
                   <folding>
                     <element signature="e#472#1006#0" />
-                    <element signature="e#2153#2454#0" />
                     <element signature="e#2675#2961#0" />
                     <element signature="e#2856#2931#0" />
                     <element signature="e#3899#4221#0" />
@@ -107,7 +105,7 @@
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="298">
-                  <caret line="33" selection-start-line="33" selection-end-line="33" />
+                  <caret line="33" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="93" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -317,13 +315,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Make the division be converted to float because integer are zero when divided and zero.">
-      <created>1529658029637</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1529658029637</updated>
     </task>
     <task id="LOCAL-00116" summary="Remove unnecesary imports.">
       <created>1529695917227</created>
@@ -661,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530543802353</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary.">
+      <created>1530546323755</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1530546323755</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -783,7 +781,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair." />
     <MESSAGE value="Add show_param_label_tooltip event for tooltips." />
     <MESSAGE value="Create  SimpleWithinStairDecisionMaker withou logic." />
     <MESSAGE value="Make the SimpleWithinStairDecisionMaker and ComplexWithinStairDecisionMaker inherit from WithinStairDecisionMaker" />
@@ -808,7 +805,8 @@
     <MESSAGE value="Add the state of the confidence choice raiobutton to the sending to the control loop through the experiment data." />
     <MESSAGE value="Add logic to confidence_response_time_stage function and call it if necessary." />
     <MESSAGE value="Added variable indicate the real state of the confidence checkbutton." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added variable indicate the real state of the confidence checkbutton." />
+    <MESSAGE value="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1269,7 +1267,7 @@
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="93" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -1278,11 +1276,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="111" column="51" lean-forward="true" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
+        <state relative-caret-position="248">
+          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
           <folding>
             <element signature="e#472#1006#0" />
-            <element signature="e#2153#2454#0" />
             <element signature="e#2675#2961#0" />
             <element signature="e#2856#2931#0" />
             <element signature="e#3899#4221#0" />
