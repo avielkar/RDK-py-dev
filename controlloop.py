@@ -62,7 +62,8 @@ class ControlLoop:
 
             self.response_time_stage()
 
-            if self.experiment_data.enable_confidence_choice:
+            if self.experiment_data.enable_confidence_choice and\
+                    self._current_trial_data['Response'] != 'none':
                 self.confidence_response_time_stage()
 
             self.post_trial_stage()
