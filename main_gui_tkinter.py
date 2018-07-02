@@ -300,5 +300,9 @@ class MainGuiTkinter:
 
     def after_function(self):
         print('aaa')
+
+        if self.gui_queue.empty():
+            data_dict = self.gui_queue.get()
+
         self.root.after(100, self.after_function)
         pass
