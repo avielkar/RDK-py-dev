@@ -105,11 +105,11 @@ class ControlLoop:
         pygame.event.clear()
 
         start_time = time.time()
-        while time.time() - start_time < self._current_trial_data['ResponseTime']:
+        while time.time() - start_time < self._current_trial_data['ConfidenceResponseTime']:
             event = pygame.event.wait()
             if ((event.type == KEYDOWN or event.type == KEYUP) \
                     and (event.key == K_UP or event.key == K_DOWN)):
-                response = 'up' if event.key == K_LEFT else 'down'
+                response = 'up' if event.key == K_UP else 'down'
                 break
             time.sleep(0.001)
 

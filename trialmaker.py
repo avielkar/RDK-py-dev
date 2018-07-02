@@ -31,6 +31,7 @@ class TrialMaker:
         current_trial['RenderTime'] = float(current_trial['RenderTime'])
         current_trial['RenderFrequency'] = float(current_trial['RenderFrequency'])
         current_trial['ResponseTime'] = float(current_trial['ResponseTime'])
+        current_trial['ConfidenceResponseTime'] = float(current_trial['ConfidenceResponseTime'])
         current_trial['PostTrialTime'] = float(current_trial['PostTrialTime'])
         pass
 
