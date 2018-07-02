@@ -13,6 +13,8 @@ import tkinter.messagebox
 from threading import Thread
 from experimentdata import ExperimentData
 from tkinter import BooleanVar
+import time
+import queue
 
 
 class MainGuiTkinter:
@@ -40,6 +42,7 @@ class MainGuiTkinter:
         self.current_gui_tooltip_window = None  # type: Toplevel
         self.checkbox_confidence_choice = None  # type:Checkbutton
         self.confidence_choice_value = None  # type: BooleanVar
+        self.gui_queue = queue.Queue()
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -273,6 +276,7 @@ class MainGuiTkinter:
         self.dynamic_controls_dict = {}
 
         tkinter.messagebox.showinfo('Hello python', 'Hello World')
+        self.root.after(100,self.after_function)
         self.root.mainloop()
 
     def exit_window_clicked(self):
@@ -293,3 +297,8 @@ class MainGuiTkinter:
                                          enable_confidence_choice=self.confidence_choice_value.get())
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
                                 experiment_data=experiment_data)
+
+    def after_function(self):
+        print('aaa')
+        self.root.after(100, self.after_function)
+        pass
