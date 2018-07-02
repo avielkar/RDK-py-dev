@@ -12,6 +12,7 @@ from controlloop import ControlLoop
 import tkinter.messagebox
 from threading import Thread
 from experimentdata import ExperimentData
+from tkinter import BooleanVar
 
 
 class MainGuiTkinter:
@@ -38,6 +39,7 @@ class MainGuiTkinter:
         self.control_loop_thread = None  # type: Thread
         self.current_gui_tooltip_window = None  # type: Toplevel
         self.checkbox_confidence_choice = None  # type:Checkbutton
+        self.confidence_choice_value = None  #type: BooleanVar
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -104,7 +106,11 @@ class MainGuiTkinter:
         self.entry_forward_rightward_probability.insert(0, 1)
         self.entry_forward_rightward_probability.place(relx=0.85, rely=0.2)
 
-        self.checkbox_confidence_choice = tkinter.Checkbutton(master=self.root, text='Confidence Choice')
+        # checkbox confidence region.
+        self.confidence_choice_value = BooleanVar()
+        self.checkbox_confidence_choice = tkinter.Checkbutton(master=self.root,
+                                                              text='Confidence Choice',
+                                                              variable=self.confidence_choice_value)
         self.checkbox_confidence_choice.place(relx=0.7, rely=0.7)
 
     def btn_start_experiment_clicked(self):
@@ -282,6 +288,6 @@ class MainGuiTkinter:
                                          num_of_trials=int(self.entry_num_of_trials.get()),
                                          backward_error_probability=float(self.entry_backward_error_probability.get()),
                                          forward_rightward_probability=float(self.entry_forward_rightward_probability.get()),
-                                         enable_confidence_choice=self.checkbox_confidence_choice.get())
+                                         enable_confidence_choice=self.confidence_choice_value.get())
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
                                 experiment_data=experiment_data)
