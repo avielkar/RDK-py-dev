@@ -62,6 +62,10 @@ class ControlLoop:
 
             self.response_time_stage()
 
+            if self.experiment_data.enable_confidence_choice and\
+                    self._current_trial_data['Response'] != 'none':
+                self.confidence_response_time_stage()
+
             self.post_trial_stage()
 
         # todo: check why it is causing here a stucking problem.
@@ -71,19 +75,21 @@ class ControlLoop:
         print(self._current_trial_data)
 
         self._renderer.add_text_to_screen('Press space to start the trial')
+        print ('waiting to start response...')
 
         pygame.event.clear()
-        event = pygame.event.wait()
+        event = pygame.event.poll()
         while (event.type != KEYDOWN and event.type != KEYUP) or event.key != K_SPACE:
-            event = pygame.event.wait()
+            event = pygame.event.poll()
 
     def response_time_stage(self):
         response = 'none'
         pygame.event.clear()
+        print ('waiting to response...')
 
         start_time = time.time()
         while time.time() - start_time < self._current_trial_data['ResponseTime']:
-            event = pygame.event.wait()
+            event = pygame.event.poll()
             if ((event.type == KEYDOWN or event.type == KEYUP) \
                     and (event.key == K_LEFT or event.key == K_RIGHT)):
                 response = 'left' if event.key == K_LEFT else 'right'
@@ -96,6 +102,27 @@ class ControlLoop:
             print('no response')
 
         self._current_trial_data['Response'] = response
+
+    def confidence_response_time_stage(self):
+        response = 'none'
+        pygame.event.clear()
+        print ('waiting to confidence response...')
+
+        start_time = time.time()
+        while time.time() - start_time < self._current_trial_data['ConfidenceResponseTime']:
+            event = pygame.event.poll()
+            if ((event.type == KEYDOWN or event.type == KEYUP) \
+                    and (event.key == K_UP or event.key == K_DOWN)):
+                response = 'up' if event.key == K_UP else 'down'
+                break
+            time.sleep(0.001)
+
+        if response is not 'none':
+            print('pressed {key}'.format(key=response))
+        else:
+            print('no response')
+
+        self._current_trial_data['ConfidenceResponse'] = response
 
     def post_trial_stage(self):
         # todo: check how to add the screen clean to the post_trial_stage_thread.

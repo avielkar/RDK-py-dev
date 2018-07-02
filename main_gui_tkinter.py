@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk, Toplevel, Label
+from tkinter import Tk, Toplevel, Label, Checkbutton
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -12,6 +12,7 @@ from controlloop import ControlLoop
 import tkinter.messagebox
 from threading import Thread
 from experimentdata import ExperimentData
+from tkinter import BooleanVar
 
 
 class MainGuiTkinter:
@@ -36,13 +37,16 @@ class MainGuiTkinter:
         self.entry_num_of_repetitions = None  # type: Entry
         self.entry_num_of_trials = None  # type: Entry
         self.control_loop_thread = None  # type: Thread
-        self.currebt_gui_tooltip_window = None  # type: Toplevel
+        self.current_gui_tooltip_window = None  # type: Toplevel
+        self.checkbox_confidence_choice = None  # type:Checkbutton
+        self.confidence_choice_value = None  #type: BooleanVar
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
         self.combo_box_protocol_update()
 
     def init_gui_controllers(self):
+        # choose folder region.
         self.label_choose_folder = Label(master=self.root,
                                          text='Choose folder')
         self.label_choose_folder.pack()
@@ -52,18 +56,21 @@ class MainGuiTkinter:
                                         command=self.btn_choose_folder_clicked)
         self.btn_choose_folder.pack()
 
+        # protocol list combobox region.
         self.combobox_protocol_list = tkinter.ttk.Combobox(master=self.root)
         self.combobox_protocol_list.bind("<<ComboboxSelected>>",
                                          self.combobox_protocols_item_selected)
         self.combo_box_protocol_update()
         self.combobox_protocol_list.pack()
 
+        # start experiment button region.
         self.btn_start_experiment = Button(master=self.root,
                                            text='Start',
                                            command=self.btn_start_experiment_clicked)
         self.btn_start_experiment.place(relx=0.9,
                                         rely=0.0)
 
+        # num of trials region.
         self.label_num_of_trials = Label(master=self.root,
                                          text='#Trials')
         self.label_num_of_trials.place(relx=0.8,
@@ -72,6 +79,7 @@ class MainGuiTkinter:
         self.entry_num_of_trials.insert(0, 14)
         self.entry_num_of_trials.place(relx=0.85, rely=0.05)
 
+        # num of repetitionns rehion.
         self.label_num_of_repetitions = Label(master=self.root,
                                               text='#repetitions')
         self.label_num_of_repetitions.place(relx=0.8,
@@ -80,21 +88,30 @@ class MainGuiTkinter:
         self.entry_num_of_repetitions.insert(0, 1)
         self.entry_num_of_repetitions.place(relx=0.85, rely=0.1)
 
+        # backword error probability region.
         self.label_backward_error_probability = Label(master=self.root,
-                                              text='#b.e.p')
+                                                      text='#b.e.p')
         self.label_backward_error_probability.place(relx=0.8,
-                                            rely=0.15)
+                                                    rely=0.15)
         self.entry_backward_error_probability = Entry(master=self.root)
         self.entry_backward_error_probability.insert(0, 1)
         self.entry_backward_error_probability.place(relx=0.85, rely=0.15)
 
+        # forward rightward probability.
         self.label_forward_rightward_probability = Label(master=self.root,
-                                              text='#f.r.p')
+                                                         text='#f.r.p')
         self.label_forward_rightward_probability.place(relx=0.8,
-                                            rely=0.2)
+                                                       rely=0.2)
         self.entry_forward_rightward_probability = Entry(master=self.root)
         self.entry_forward_rightward_probability.insert(0, 1)
         self.entry_forward_rightward_probability.place(relx=0.85, rely=0.2)
+
+        # checkbox confidence region.
+        self.confidence_choice_value = BooleanVar()
+        self.checkbox_confidence_choice = tkinter.Checkbutton(master=self.root,
+                                                              text='Confidence Choice',
+                                                              variable=self.confidence_choice_value)
+        self.checkbox_confidence_choice.place(relx=0.7, rely=0.7)
 
     def btn_start_experiment_clicked(self):
         self.control_loop_thread = Thread(target=self.control_loop_function, args=())
@@ -187,11 +204,11 @@ class MainGuiTkinter:
         x = event.widget.winfo_rootx() + 25
         y = event.widget.winfo_rooty() + 20
         # creates a toplevel window
-        self.currebt_gui_tooltip_window = tkinter.Toplevel(event.widget)
+        self.current_gui_tooltip_window = tkinter.Toplevel(event.widget)
         # Leaves only the label and removes the app window
-        self.currebt_gui_tooltip_window.wm_overrideredirect(True)
-        self.currebt_gui_tooltip_window.wm_geometry("+%d+%d" % (x, y))
-        label = tkinter.Label(self.currebt_gui_tooltip_window, text=tool_tip_text, justify='left',
+        self.current_gui_tooltip_window.wm_overrideredirect(True)
+        self.current_gui_tooltip_window.wm_geometry("+%d+%d" % (x, y))
+        label = tkinter.Label(self.current_gui_tooltip_window, text=tool_tip_text, justify='left',
                               background="#ffffff", relief='solid', borderwidth=1)
         label.pack()
         pass
@@ -199,7 +216,7 @@ class MainGuiTkinter:
     def hide_param_label_tooltip(self, event):
         label_name = event.widget._name
         param_name = label_name.split('_')[1]
-        self.currebt_gui_tooltip_window.destroy()
+        self.current_gui_tooltip_window.destroy()
         pass
 
     def on_dynamic_combobox_item_selected(self, event):
@@ -270,6 +287,7 @@ class MainGuiTkinter:
         experiment_data = ExperimentData(num_of_repetitions=int(self.entry_num_of_repetitions.get()),
                                          num_of_trials=int(self.entry_num_of_trials.get()),
                                          backward_error_probability=float(self.entry_backward_error_probability.get()),
-                                         forward_rightward_probability=float(self.entry_forward_rightward_probability.get()))
+                                         forward_rightward_probability=float(self.entry_forward_rightward_probability.get()),
+                                         enable_confidence_choice=self.confidence_choice_value.get())
         self.control_loop.start(attributes=self.parameters_attributes_dictionary,
                                 experiment_data=experiment_data)
