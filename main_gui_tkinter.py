@@ -276,7 +276,7 @@ class MainGuiTkinter:
         self.dynamic_controls_dict = {}
 
         tkinter.messagebox.showinfo('Hello python', 'Hello World')
-        self.root.after(100,self.after_function)
+        self.root.after(100, self.after_function)
         self.root.mainloop()
 
     def exit_window_clicked(self):
@@ -301,8 +301,10 @@ class MainGuiTkinter:
     def after_function(self):
         print('aaa')
 
-        if self.gui_queue.empty():
-            data_dict = self.gui_queue.get()
+        while not self.gui_queue.empty():
+            name_status = self.gui_queue.get()
+            if name_status[0] == 'enable_start_btn':
+                self.btn_start_experiment.config(state='disabled' if name_status[1] is False else 'normal')
 
         self.root.after(100, self.after_function)
         pass
