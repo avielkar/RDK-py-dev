@@ -6,8 +6,11 @@ import time
 
 class Renderer:
 
+    is_initialized = False
+
     def __init__(self):
         self._my_win = None
+        self.is_initialized = False
         self._attributes_dict = {
             'Units': None,
             'Color': dict(r=1, g=1, b=1),
@@ -35,6 +38,7 @@ class Renderer:
                                      bitsMode=None,
                                      units='norm',
                                      winType='pygame')
+        self.is_initialized = False
 
     def set_attributes(self, attributes_dict):
         self._attributes_dict = attributes_dict

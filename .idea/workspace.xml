@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Change get to pull because get returns a list of events and pull returns the first in the queue,`">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,15 +34,13 @@
     <splitter split-orientation="horizontal" split-proportion="0.49011588">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="303" column="18" selection-start-line="303" selection-start-column="18" selection-end-line="303" selection-end-column="18" />
+                <state relative-caret-position="315">
+                  <caret line="297" column="30" selection-start-line="297" selection-start-column="30" selection-end-line="297" selection-end-column="30" />
                   <folding>
                     <element signature="e#1767#1866#0" />
-                    <element signature="e#1912#5382#0" />
-                    <element signature="e#5436#5628#0" />
                     <element signature="e#5679#5838#0" />
                     <element signature="e#5719#5838#0" />
                     <element signature="e#5908#6037#0" />
@@ -81,10 +78,9 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="471">
-                  <caret line="75" column="47" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
+                <state relative-caret-position="425">
+                  <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
                   <folding>
-                    <element signature="e#485#1068#0" />
                     <element signature="e#2342#2690#0" />
                     <element signature="e#2735#3434#0" />
                     <element signature="e#2952#3238#0" />
@@ -96,6 +92,15 @@
                     <element signature="e#4954#5276#0" />
                     <element signature="e#5336#5366#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/renderer.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -191,13 +196,13 @@
         <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
-        <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/trialdata.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/renderer.py" />
       </list>
     </option>
   </component>
@@ -318,13 +323,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Add the title and the message info to the message box of the end of the expeiment.">
-      <created>1529858841319</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1529858841319</updated>
     </task>
     <task id="LOCAL-00120" summary="Added function handler for event for clicking the exit window button.">
       <created>1529859175201</created>
@@ -662,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530552043091</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="Make the gui_queue enable tha start btn after the experiment ends for other experiments starts press.">
+      <created>1530613425282</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1530613425282</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -783,7 +788,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make trialmaker to call SimpleWithinstairDecisionMaker" />
     <MESSAGE value="The logic for forward probability if right and backward probability if incorrect added." />
     <MESSAGE value="Renames incorrect names." />
     <MESSAGE value="Added b.e.p (backward error probability) and r.f.p (rightward forward probability) labels and entries to the gui." />
@@ -808,7 +812,8 @@
     <MESSAGE value="Adding waiting prints for all trial waitings....." />
     <MESSAGE value="Change wait to get because wait waits forever with no timeout....." />
     <MESSAGE value="Change get to pull because get returns a list of events and pull returns the first in the queue," />
-    <option name="LAST_COMMIT_MESSAGE" value="Change get to pull because get returns a list of events and pull returns the first in the queue," />
+    <MESSAGE value="Make the gui_queue enable tha start btn after the experiment ends for other experiments starts press." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make the gui_queue enable tha start btn after the experiment ends for other experiments starts press." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,27 +933,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/tools/attributetools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/dot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="1061" lean-forward="true" selection-start-line="1061" selection-end-line="1061" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/lib-tk/tkFileDialog.py" />
     <entry file="file://C:/Python27/Lib/lib-tk/ttk.py" />
     <entry file="file://$PROJECT_DIR$/tests/protocolreader_test.py">
@@ -1169,13 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/renderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/iohub/removed/util/targetpositionsequence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1234,26 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="75" column="47" selection-start-line="75" selection-start-column="47" selection-end-line="75" selection-end-column="47" />
-          <folding>
-            <element signature="e#485#1068#0" />
-            <element signature="e#2342#2690#0" />
-            <element signature="e#2735#3434#0" />
-            <element signature="e#2952#3238#0" />
-            <element signature="e#3133#3208#0" />
-            <element signature="e#3490#4212#0" />
-            <element signature="e#3728#4006#0" />
-            <element signature="e#3906#3976#0" />
-            <element signature="e#4254#4905#0" />
-            <element signature="e#4954#5276#0" />
-            <element signature="e#5336#5366#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experimentdata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1261,14 +1218,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/backends/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/backends/pygamebackend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="1111" column="28" lean-forward="true" selection-start-line="1111" selection-start-column="28" selection-end-line="1111" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="303" column="18" selection-start-line="303" selection-start-column="18" selection-end-line="303" selection-end-column="18" />
+        <state relative-caret-position="315">
+          <caret line="297" column="30" selection-start-line="297" selection-start-column="30" selection-end-line="297" selection-end-column="30" />
           <folding>
             <element signature="e#1767#1866#0" />
-            <element signature="e#1912#5382#0" />
-            <element signature="e#5436#5628#0" />
             <element signature="e#5679#5838#0" />
             <element signature="e#5719#5838#0" />
             <element signature="e#5908#6037#0" />
@@ -1290,6 +1266,32 @@
             <element signature="e#12539#12588#0" />
             <element signature="e#13130#13169#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding>
+            <element signature="e#2342#2690#0" />
+            <element signature="e#2735#3434#0" />
+            <element signature="e#2952#3238#0" />
+            <element signature="e#3133#3208#0" />
+            <element signature="e#3490#4212#0" />
+            <element signature="e#3728#4006#0" />
+            <element signature="e#3906#3976#0" />
+            <element signature="e#4254#4905#0" />
+            <element signature="e#4954#5276#0" />
+            <element signature="e#5336#5366#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
         </state>
       </provider>
     </entry>
