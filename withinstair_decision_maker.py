@@ -143,7 +143,7 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
             current_trial_data[param_attributes['param_name']] = param_attributes['value']
         current_trial_data[self.within_stair_attribute['param_name']] = current_withinstair_value
         current_trial_data['Direction'] = current_trial_data['Direction'] if right_trial \
-            else -current_trial_data['Direction']
+            else - float(current_trial_data['Direction'])
         self.current_trial_attributes = current_trial_data
 
         return current_trial_data

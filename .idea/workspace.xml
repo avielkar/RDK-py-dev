@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_maker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530618425634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530618884529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -40,8 +37,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="236" selection-start-line="236" selection-end-line="236" />
+                <state relative-caret-position="316">
+                  <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
                     <element signature="e#470#1777#0" />
@@ -73,7 +70,6 @@
                     <element signature="e#12618#13085#0" />
                     <element signature="e#13130#13409#0" />
                     <element signature="e#13130#13169#0" />
-                    <element signature="e#13456#14182#0" />
                   </folding>
                 </state>
               </provider>
@@ -88,16 +84,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="experimentdata.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="experimentdata.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/experimentdata.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="1" selection-start-column="1" selection-end-column="1" />
+                <state relative-caret-position="119">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="284">
@@ -124,7 +120,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="94">
@@ -157,11 +153,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2465">
-                  <caret line="145" column="11" lean-forward="true" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+                <state relative-caret-position="411">
+                  <caret line="145" column="57" selection-start-line="145" selection-start-column="57" selection-end-line="145" selection-end-column="57" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                   </folding>
@@ -223,7 +219,6 @@
         <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/trialdata.py" />
-        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
@@ -231,6 +226,7 @@
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
       </list>
     </option>
   </component>
@@ -351,13 +347,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00121" summary="Add the exit_function logic.">
-      <created>1529859814332</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1529859814332</updated>
     </task>
     <task id="LOCAL-00122" summary="Add exit_experiment member to the control loop also.">
       <created>1529859958523</created>
@@ -695,7 +684,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530613921683</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="Add rendere windows close.&#10;Add graph reset function and call to it.&#10;Remove the printing for the after_function.">
+      <created>1530618678537</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1530618678537</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -816,7 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Renames incorrect names." />
     <MESSAGE value="Added b.e.p (backward error probability) and r.f.p (rightward forward probability) labels and entries to the gui." />
     <MESSAGE value="Make an experimen tdata class for collecting all experiment gui data which is not from the excel." />
     <MESSAGE value="Transfer the experiment data through all classes to the within maker." />
@@ -841,7 +836,8 @@
     <MESSAGE value="Change get to pull because get returns a list of events and pull returns the first in the queue," />
     <MESSAGE value="Make the gui_queue enable tha start btn after the experiment ends for other experiments starts press." />
     <MESSAGE value="Added is_initialized paramater for the renderer class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added is_initialized paramater for the renderer class." />
+    <MESSAGE value="Add rendere windows close.&#10;Add graph reset function and call to it.&#10;Remove the printing for the after_function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add rendere windows close.&#10;Add graph reset function and call to it.&#10;Remove the printing for the after_function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -855,26 +851,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>4</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/experimentdata.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>291</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>297</line>
-          <option name="timeStamp" value="166" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/withinstair_decision_maker.py</url>
-          <line>144</line>
-          <option name="timeStamp" value="172" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1209,13 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -1251,10 +1220,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#485#1068#0" />
+            <element signature="e#2165#2221#0" />
+            <element signature="e#2342#2690#0" />
+            <element signature="e#2735#3434#0" />
+            <element signature="e#2952#3238#0" />
+            <element signature="e#3133#3208#0" />
+            <element signature="e#3490#4212#0" />
+            <element signature="e#3728#4006#0" />
+            <element signature="e#3906#3976#0" />
+            <element signature="e#4254#4905#0" />
+            <element signature="e#4954#5276#0" />
+            <element signature="e#5336#5366#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="236" selection-start-line="236" selection-end-line="236" />
+        <state relative-caret-position="316">
+          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
             <element signature="e#470#1777#0" />
@@ -1286,48 +1286,23 @@
             <element signature="e#12618#13085#0" />
             <element signature="e#13130#13409#0" />
             <element signature="e#13130#13169#0" />
-            <element signature="e#13456#14182#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
+    <entry file="file://$PROJECT_DIR$/experimentdata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#485#1068#0" />
-            <element signature="e#2165#2221#0" />
-            <element signature="e#2342#2690#0" />
-            <element signature="e#2735#3434#0" />
-            <element signature="e#2952#3238#0" />
-            <element signature="e#3133#3208#0" />
-            <element signature="e#3490#4212#0" />
-            <element signature="e#3728#4006#0" />
-            <element signature="e#3906#3976#0" />
-            <element signature="e#4254#4905#0" />
-            <element signature="e#4954#5276#0" />
-            <element signature="e#5336#5366#0" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="145" column="11" lean-forward="true" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+        <state relative-caret-position="411">
+          <caret line="145" column="57" selection-start-line="145" selection-start-column="57" selection-end-line="145" selection-end-column="57" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
