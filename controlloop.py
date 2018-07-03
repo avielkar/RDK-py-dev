@@ -12,12 +12,13 @@ import psychopy.event
 import pygame
 from pygame.locals import *
 from experimentdata import ExperimentData
+import queue
 
 
 class ControlLoop:
     exit_experiment = None  # type:bool
 
-    def __init__(self):
+    def __init__(self, gui_queue):
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
         self.experiment_data: None  # type: ExperimentData
@@ -29,6 +30,7 @@ class ControlLoop:
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
         self.exit_experiment = False
+        self.gui_queue = gui_queue  # type:queue.Queue
 
     pass
 
@@ -46,7 +48,10 @@ class ControlLoop:
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         experiment_data=self.experiment_data)
 
-        self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
+        if not self._renderer.is_initialized:
+            self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
+        else:
+            self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         self._save_data_maker.create_new_data_file()
 
@@ -62,7 +67,7 @@ class ControlLoop:
 
             self.response_time_stage()
 
-            if self.experiment_data.enable_confidence_choice and\
+            if self.experiment_data.enable_confidence_choice and \
                     self._current_trial_data['Response'] != 'none':
                 self.confidence_response_time_stage()
 
@@ -71,11 +76,14 @@ class ControlLoop:
         # todo: check why it is causing here a stucking problem.
         # tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
+        self._renderer.close()
+        self.gui_queue.put(('enable_start_btn', True))
+
     def wait_start_key_response(self):
         print(self._current_trial_data)
 
         self._renderer.add_text_to_screen('Press space to start the trial')
-        print ('waiting to start response...')
+        print('waiting to start response...')
 
         pygame.event.clear()
         event = pygame.event.poll()
@@ -85,7 +93,7 @@ class ControlLoop:
     def response_time_stage(self):
         response = 'none'
         pygame.event.clear()
-        print ('waiting to response...')
+        print('waiting to response...')
 
         start_time = time.time()
         while time.time() - start_time < self._current_trial_data['ResponseTime']:
@@ -106,7 +114,7 @@ class ControlLoop:
     def confidence_response_time_stage(self):
         response = 'none'
         pygame.event.clear()
-        print ('waiting to confidence response...')
+        print('waiting to confidence response...')
 
         start_time = time.time()
         while time.time() - start_time < self._current_trial_data['ConfidenceResponseTime']:

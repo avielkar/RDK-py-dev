@@ -30,6 +30,24 @@ class GraphMaker:
         pyplot.pause(1)
         pass
 
+    def reset_graph(self
+                    , scala_values):
+        self._x_values = scala_values.tolist()
+        self._y_values = [0] * len(self._x_values)
+        self._y_trials_count = [0] * len(self._x_values)
+        self._y_trials_correct_response_count = [0] * len(self._x_values)
+
+        pyplot.axis([self._x_values[0], \
+                     self._x_values[len(self._x_values) - 1], \
+                     0.0, \
+                     1.0])
+        pyplot.clf()
+        pyplot.xlabel('Coherence')
+        pyplot.ylabel('Correctness')
+        pyplot.draw()
+        pyplot.pause(1)
+        pass
+
     def update_graph(self, trial_data):
         direction = trial_data['Coherence']
         response_correctness = trial_data['ResponseCorrectness']

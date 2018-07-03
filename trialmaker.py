@@ -22,9 +22,9 @@ class TrialMaker:
         return current_trial
 
     def convert_current_trial_attributes_to_their_types(self, current_trial):
-        current_trial['Direction'] = float(current_trial['Direction'])
+        current_trial['Direction'] = int(current_trial['Direction'])
         current_trial['NumberOfDots'] = int(current_trial['NumberOfDots'])
-        current_trial['FieldSize'] = int(current_trial['FieldSize'])
+        current_trial['FieldSize'] = float(current_trial['FieldSize'])
         current_trial['DotLife'] = int(current_trial['DotLife'])
         current_trial['Speed'] = float(current_trial['Speed'])
         current_trial['Coherence'] = float(current_trial['Coherence'])
