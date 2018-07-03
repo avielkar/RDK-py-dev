@@ -38,7 +38,10 @@ class Renderer:
                                      bitsMode=None,
                                      units='norm',
                                      winType='pygame')
-        self.is_initialized = False
+        self.is_initialized = True
+
+    def close(self):
+        self._my_win.close()
 
     def set_attributes(self, attributes_dict):
         self._attributes_dict = attributes_dict

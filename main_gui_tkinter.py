@@ -299,7 +299,7 @@ class MainGuiTkinter:
                                 experiment_data=experiment_data)
 
     def after_function(self):
-        print('aaa')
+        #print('aaa')
 
         while not self.gui_queue.empty():
             name_status = self.gui_queue.get()
