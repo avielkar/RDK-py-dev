@@ -18,7 +18,7 @@ import queue
 class ControlLoop:
     exit_experiment = None  # type:bool
 
-    def __init__(self, gui_queue):
+    def __init__(self, gui_queue, control_loop_queue):
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
         self.experiment_data: None  # type: ExperimentData
@@ -31,8 +31,10 @@ class ControlLoop:
         self._graph_maker = GraphMaker()
         self.exit_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
-
-    pass
+        self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
+        self.main_loop_thread = Thread(target=self.listrning_function,
+                                       args=())
+        self.main_loop_thread.start()
 
     def start(self, attributes, experiment_data):
         self._renderer.init_window()
@@ -158,3 +160,13 @@ class ControlLoop:
 
     def sleep_function(self, sleep_time_seconds):
         time.sleep(sleep_time_seconds)
+
+    def listrning_function(self):
+        while True:
+            if not self.control_loop_commands_queue.empty():
+                (command, data) = self.control_loop_commands_queue.get()
+                if command == 'start':
+                    (attributes, experiment_data) = data
+                    self.start(attributes=attributes,
+                               experiment_data=experiment_data)
+            time.sleep(0.1)

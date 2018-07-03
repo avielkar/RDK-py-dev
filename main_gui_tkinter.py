@@ -43,6 +43,7 @@ class MainGuiTkinter:
         self.checkbox_confidence_choice = None  # type:Checkbutton
         self.confidence_choice_value = None  # type: BooleanVar
         self.gui_queue = queue.Queue()
+        self.control_loop_queue = queue.Queue()
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -119,8 +120,7 @@ class MainGuiTkinter:
     def btn_start_experiment_clicked(self):
         self.btn_start_experiment.config(state='disabled')
         self.update_parameter_dictionary_according_to_gui()
-        self.control_loop_thread = Thread(target=self.control_loop_function, args=())
-        self.control_loop_thread.start()
+        self.control_loop_function()
         return
 
     def combo_box_protocol_update(self):
@@ -273,7 +273,8 @@ class MainGuiTkinter:
         self.root.geometry("1400x800")
         self.root.protocol('WM_DELETE_WINDOW', self.exit_window_clicked)
 
-        self.control_loop = ControlLoop(self.gui_queue)
+        self.control_loop = ControlLoop(self.gui_queue,
+                                        self.control_loop_queue)
 
         self.init_gui_controllers()
 
@@ -302,8 +303,11 @@ class MainGuiTkinter:
                                          forward_rightward_probability=float(
                                              self.entry_forward_rightward_probability.get()),
                                          enable_confidence_choice=self.confidence_choice_value.get())
-        self.control_loop.start(attributes=self.parameters_attributes_dictionary,
-                                experiment_data=experiment_data)
+        command = 'start'
+        command_data = (self.parameters_attributes_dictionary , experiment_data)
+        data = (command, command_data)
+        self.control_loop_queue.put(data)
+
 
     def after_function(self):
         #print('aaa')
