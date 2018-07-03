@@ -118,6 +118,7 @@ class MainGuiTkinter:
 
     def btn_start_experiment_clicked(self):
         self.btn_start_experiment.config(state='disabled')
+        self.update_parameter_dictionary_according_to_gui()
         self.control_loop_thread = Thread(target=self.control_loop_function, args=())
         self.control_loop_thread.start()
         return
@@ -237,6 +238,12 @@ class MainGuiTkinter:
         [key_param_attribute, key_param_name] = dynamic_entry_name.split('_')
         self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = event.widget.get()
         pass
+
+    def update_parameter_dictionary_according_to_gui(self):
+        for (dynamic_control_name, dynamic_control) in self.dynamic_controls_dict.items():
+            if type(dynamic_control) == Entry:
+                [key_param_attribute, key_param_name] = dynamic_control_name.split('_')
+                self.parameters_attributes_dictionary[key_param_name][key_param_attribute] = dynamic_control.get()
 
     def freeze_all_dynamic_entries_by_combobox_status(self):
         for key_param_name in self.parameters_attributes_dictionary.keys():
