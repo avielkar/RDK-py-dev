@@ -1,6 +1,8 @@
 # coding: utf-8
 from psychopy import visual
 
+from experimentdata import ExperimentData
+
 import time
 
 
@@ -42,7 +44,7 @@ class Renderer:
     def close(self):
         self._my_win.close()
 
-    def set_attributes(self, attributes_dict):
+    def set_attributes(self, attributes_dict, experiment_data):
         self._attributes_dict = attributes_dict
 
     def set_attribute(self, name, value):

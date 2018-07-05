@@ -55,10 +55,21 @@
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="81" column="48" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+                <state relative-caret-position="323">
+                  <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="50" selection-end-column="43" />
                   <folding>
                     <element signature="e#16#43#0" expanded="true" />
+                    <element signature="e#163#993#0" />
+                    <element signature="e#251#928#0" />
+                    <element signature="e#1030#1316#0" />
+                    <element signature="e#1347#1367#0" />
+                    <element signature="e#1588#3831#0" />
+                    <element signature="e#1765#1995#0" />
+                    <element signature="e#2278#2397#0" />
+                    <element signature="e#3637#3831#0" />
+                    <element signature="e#3895#4162#0" />
+                    <element signature="e#4200#4219#0" />
+                    <element signature="e#4269#4519#0" />
                   </folding>
                 </state>
               </provider>
@@ -269,13 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00127" summary="Add event for exiting the main (root) window.">
-      <created>1530200475541</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1530200475541</updated>
     </task>
     <task id="LOCAL-00128" summary="Add the control_loop_thread as attribute.">
       <created>1530200777471</created>
@@ -613,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530821316862</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Added fixation point drawing in the renderer class.">
+      <created>1530826624483</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1530826624483</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -634,7 +645,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13166311" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
@@ -642,7 +653,7 @@
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
+      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
@@ -718,7 +729,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make this update to the main gui." />
     <MESSAGE value="update also for the trial maker" />
     <MESSAGE value="Also for the logic of the control loop." />
     <MESSAGE value="Also for the function signature." />
@@ -743,7 +753,8 @@
     <MESSAGE value="Move all rendering and graphing to the listening thread function." />
     <MESSAGE value="function name spelling issue." />
     <MESSAGE value="Make the exit window to influence on the listening function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make the exit window to influence on the listening function." />
+    <MESSAGE value="Added fixation point drawing in the renderer class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added fixation point drawing in the renderer class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1198,10 +1209,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="81" column="48" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+        <state relative-caret-position="323">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="50" selection-end-column="43" />
           <folding>
             <element signature="e#16#43#0" expanded="true" />
+            <element signature="e#163#993#0" />
+            <element signature="e#251#928#0" />
+            <element signature="e#1030#1316#0" />
+            <element signature="e#1347#1367#0" />
+            <element signature="e#1588#3831#0" />
+            <element signature="e#1765#1995#0" />
+            <element signature="e#2278#2397#0" />
+            <element signature="e#3637#3831#0" />
+            <element signature="e#3895#4162#0" />
+            <element signature="e#4200#4219#0" />
+            <element signature="e#4269#4519#0" />
           </folding>
         </state>
       </provider>
