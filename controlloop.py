@@ -41,7 +41,7 @@ class ControlLoop:
 
         self.experiment_data = experiment_data
 
-        self._renderer.set_attributes(self._attributes)
+        self._renderer.set_attributes(self._attributes, self.experiment_data)
 
         self._response_analyzer.reset_analyzer()
 

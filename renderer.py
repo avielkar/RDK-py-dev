@@ -1,11 +1,12 @@
 # coding: utf-8
 from psychopy import visual
 
+from experimentdata import ExperimentData
+
 import time
 
 
 class Renderer:
-
     is_initialized = False
 
     def __init__(self):
@@ -30,6 +31,7 @@ class Renderer:
             'RenderFrequency': 60
         }
         self.data = None  # type: Dict[String, Any]
+        self.experiment_data = None  # type: ExperimentData
         pass
 
     def init_window(self):
@@ -43,11 +45,9 @@ class Renderer:
     def close(self):
         self._my_win.close()
 
-    def set_attributes(self, attributes_dict):
+    def set_attributes(self, attributes_dict, experiment_data):
         self._attributes_dict = attributes_dict
-
-    def set_attribute(self, name, value):
-        self._attributes_dict[name] = value
+        self.experiment_data = experiment_data
 
     def render(self, data):
         self.data = data
@@ -76,9 +76,19 @@ class Renderer:
                                   text='Hit Q to quit',
                                   pos=(0, -0.5))
 
+        if self.experiment_data.draw_fixation_point:
+            fixation_point_stim = visual.Circle(win=self._my_win,
+                                                radius=0.01,
+                                                edges=32,
+                                                pos=[0, 0],
+                                                lineColor=[0, 1, 0],
+                                                fillColor=[0, 1, 0])
+
         start_time = time.time()
         while time.time() - start_time < self.data['RenderTime']:
             dot_patch.draw()
+            if self.experiment_data.draw_fixation_point:
+                fixation_point_stim.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))

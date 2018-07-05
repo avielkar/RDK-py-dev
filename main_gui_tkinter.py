@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk, Toplevel, Label, Checkbutton
+from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -42,6 +42,7 @@ class MainGuiTkinter:
         self.current_gui_tooltip_window = None  # type: Toplevel
         self.checkbox_confidence_choice = None  # type:Checkbutton
         self.confidence_choice_value = None  # type: BooleanVar
+        self.draw_fixation_point_value = None  # type:BooleanVar
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
 
@@ -116,6 +117,13 @@ class MainGuiTkinter:
                                                               text='Confidence Choice',
                                                               variable=self.confidence_choice_value)
         self.checkbox_confidence_choice.place(relx=0.7, rely=0.7)
+
+        # draw_fixation_point region.
+        self.draw_fixation_point_value = BooleanVar()
+        self.checkbox_draw_fixation_point = tkinter.Checkbutton(master=self.root,
+                                                                text='Draw F.P',
+                                                                variable=self.draw_fixation_point_value)
+        self.checkbox_draw_fixation_point.place(relx=0.7, rely=0.75)
 
     def btn_start_experiment_clicked(self):
         self.btn_start_experiment.config(state='disabled')
@@ -302,15 +310,15 @@ class MainGuiTkinter:
                                          backward_error_probability=float(self.entry_backward_error_probability.get()),
                                          forward_rightward_probability=float(
                                              self.entry_forward_rightward_probability.get()),
-                                         enable_confidence_choice=self.confidence_choice_value.get())
+                                         enable_confidence_choice=self.confidence_choice_value.get(),
+                                         draw_fixxation_point=self.draw_fixation_point_value.get())
         command = 'start'
-        command_data = (self.parameters_attributes_dictionary , experiment_data)
+        command_data = (self.parameters_attributes_dictionary, experiment_data)
         data = (command, command_data)
         self.control_loop_queue.put(data)
 
-
     def after_function(self):
-        #print('aaa')
+        # print('aaa')
 
         while not self.gui_queue.empty():
             name_status = self.gui_queue.get()
