@@ -77,6 +77,7 @@ class ControlLoop:
         # todo: check why it is causing here a stucking problem.
         # tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
+        self._save_data_maker.close_data_file()
         self.gui_queue.put(('enable_start_btn', True))
 
     def wait_start_key_response(self):
