@@ -18,7 +18,7 @@ import queue
 class ControlLoop:
     exit_experiment = None  # type:bool
 
-    def __init__(self, gui_queue):
+    def __init__(self, gui_queue, control_loop_queue):
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
         self.experiment_data: None  # type: ExperimentData
@@ -31,12 +31,12 @@ class ControlLoop:
         self._graph_maker = GraphMaker()
         self.exit_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
-
-    pass
+        self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
+        self.main_loop_thread = Thread(target=self.listening_function,
+                                       args=())
+        self.main_loop_thread.start()
 
     def start(self, attributes, experiment_data):
-        self._renderer.init_window()
-
         self._attributes = attributes
 
         self.experiment_data = experiment_data
@@ -48,12 +48,13 @@ class ControlLoop:
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         experiment_data=self.experiment_data)
 
+        self._save_data_maker.create_new_data_file()
+
         if not self._renderer.is_initialized:
+            self._renderer.init_window()
             self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
         else:
             self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
-
-        self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment:
@@ -76,7 +77,7 @@ class ControlLoop:
         # todo: check why it is causing here a stucking problem.
         # tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
-        self._renderer.close()
+        self._save_data_maker.close_data_file()
         self.gui_queue.put(('enable_start_btn', True))
 
     def wait_start_key_response(self):
@@ -158,3 +159,13 @@ class ControlLoop:
 
     def sleep_function(self, sleep_time_seconds):
         time.sleep(sleep_time_seconds)
+
+    def listening_function(self):
+        while not self.exit_experiment:
+            if not self.control_loop_commands_queue.empty():
+                (command, data) = self.control_loop_commands_queue.get()
+                if command == 'start':
+                    (attributes, experiment_data) = data
+                    self.start(attributes=attributes,
+                               experiment_data=experiment_data)
+            time.sleep(0.1)
