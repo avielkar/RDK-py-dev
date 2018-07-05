@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/experimentdata.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +39,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="642">
-                  <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
+                <state relative-caret-position="527">
+                  <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
                   <folding>
                     <element signature="e#2660#3007#0" />
                     <element signature="e#3268#3554#0" />
@@ -52,14 +54,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+                <state relative-caret-position="272">
+                  <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
                   <folding>
                     <element signature="e#16#43#0" expanded="true" />
-                    <element signature="e#163#993#0" />
                     <element signature="e#251#928#0" />
                     <element signature="e#1030#1316#0" />
                     <element signature="e#1347#1367#0" />
@@ -71,6 +72,15 @@
                     <element signature="e#4200#4219#0" />
                     <element signature="e#4269#4519#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="experimentdata.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/experimentdata.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
                 </state>
               </provider>
             </entry>
@@ -152,14 +162,14 @@
         <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/trialdata.py" />
-        <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/experimentdata.py" />
       </list>
     </option>
   </component>
@@ -280,13 +290,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00129" summary="Added join to wait to the control_loop thread and also destroy the root (main) window.">
-      <created>1530201259174</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1530201259174</updated>
     </task>
     <task id="LOCAL-00130" summary="Check before joinig the control_loop thread if it is not null (id the main window closed immediately after opening with no start pressed button).">
       <created>1530201429245</created>
@@ -624,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530826863997</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="Delete unnecessary function.">
+      <created>1530826890613</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1530826890613</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -647,13 +657,13 @@
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13166311" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13166311" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
-      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
@@ -729,7 +739,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Also for the logic of the control loop." />
     <MESSAGE value="Also for the function signature." />
     <MESSAGE value="Fix the unnecessary lines." />
     <MESSAGE value="Adding comments for regions in the main gui fixed controls." />
@@ -754,7 +763,8 @@
     <MESSAGE value="Make the exit window to influence on the listening function." />
     <MESSAGE value="Added fixation point drawing in the renderer class." />
     <MESSAGE value="Import experiment_data to the renderer class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Import experiment_data to the renderer class." />
+    <MESSAGE value="Delete unnecessary function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -771,7 +781,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/renderer.py</url>
-          <line>51</line>
+          <line>53</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1091,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1170,22 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
-          <folding>
-            <element signature="e#2660#3007#0" />
-            <element signature="e#3268#3554#0" />
-            <element signature="e#3449#3524#0" />
-            <element signature="e#3806#4527#0" />
-            <element signature="e#4043#4321#0" />
-            <element signature="e#4221#4291#0" />
-            <element signature="e#5651#5681#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1209,11 +1196,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
+        <state relative-caret-position="272">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding>
             <element signature="e#16#43#0" expanded="true" />
-            <element signature="e#163#993#0" />
             <element signature="e#251#928#0" />
             <element signature="e#1030#1316#0" />
             <element signature="e#1347#1367#0" />
@@ -1225,6 +1211,29 @@
             <element signature="e#4200#4219#0" />
             <element signature="e#4269#4519#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="43" column="54" lean-forward="true" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+          <folding>
+            <element signature="e#2660#3007#0" />
+            <element signature="e#3268#3554#0" />
+            <element signature="e#3449#3524#0" />
+            <element signature="e#3806#4527#0" />
+            <element signature="e#4043#4321#0" />
+            <element signature="e#4221#4291#0" />
+            <element signature="e#5651#5681#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimentdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
         </state>
       </provider>
     </entry>

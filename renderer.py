@@ -31,6 +31,7 @@ class Renderer:
             'RenderFrequency': 60
         }
         self.data = None  # type: Dict[String, Any]
+        self.experiment_data = None  # type: ExperimentData
         pass
 
     def init_window(self):
@@ -46,6 +47,7 @@ class Renderer:
 
     def set_attributes(self, attributes_dict, experiment_data):
         self._attributes_dict = attributes_dict
+        self.experiment_data = experiment_data
 
     def render(self, data):
         self.data = data
