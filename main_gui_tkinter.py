@@ -42,7 +42,7 @@ class MainGuiTkinter:
         self.current_gui_tooltip_window = None  # type: Toplevel
         self.checkbox_confidence_choice = None  # type:Checkbutton
         self.confidence_choice_value = None  # type: BooleanVar
-        draw_fixation_point_value = None  # type:BooleanVar
+        self.draw_fixation_point_value = None  # type:BooleanVar
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
 
@@ -311,7 +311,7 @@ class MainGuiTkinter:
                                          forward_rightward_probability=float(
                                              self.entry_forward_rightward_probability.get()),
                                          enable_confidence_choice=self.confidence_choice_value.get(),
-                                         draw_fixxation_point=self.draw_fixation_point_value)
+                                         draw_fixxation_point=self.draw_fixation_point_value.get())
         command = 'start'
         command_data = (self.parameters_attributes_dictionary, experiment_data)
         data = (command, command_data)
