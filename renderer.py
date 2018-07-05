@@ -5,7 +5,6 @@ import time
 
 
 class Renderer:
-
     is_initialized = False
 
     def __init__(self):
@@ -76,9 +75,17 @@ class Renderer:
                                   text='Hit Q to quit',
                                   pos=(0, -0.5))
 
+        fixation_point_stim = visual.Circle(win=self._my_win,
+                                            radius=0.01,
+                                            edges=32,
+                                            pos=[0, 0],
+                                            lineColor=[0, 1, 0],
+                                            fillColor=[0, 1, 0])
+
         start_time = time.time()
         while time.time() - start_time < self.data['RenderTime']:
             dot_patch.draw()
+            fixation_point_stim.draw()
             message.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
