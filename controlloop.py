@@ -37,8 +37,6 @@ class ControlLoop:
         self.main_loop_thread.start()
 
     def start(self, attributes, experiment_data):
-        self._renderer.init_window()
-
         self._attributes = attributes
 
         self.experiment_data = experiment_data
@@ -50,12 +48,13 @@ class ControlLoop:
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         experiment_data=self.experiment_data)
 
+        self._save_data_maker.create_new_data_file()
+
         if not self._renderer.is_initialized:
+            self._renderer.init_window()
             self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
         else:
             self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
-
-        self._save_data_maker.create_new_data_file()
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment:
@@ -78,7 +77,6 @@ class ControlLoop:
         # todo: check why it is causing here a stucking problem.
         # tkinter.messagebox.showinfo('info', 'End of the experiment!')
 
-        self._renderer.close()
         self.gui_queue.put(('enable_start_btn', True))
 
     def wait_start_key_response(self):

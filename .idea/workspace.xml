@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530631409574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530632226088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -35,11 +34,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5545523">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="307" column="37" selection-start-line="307" selection-start-column="37" selection-end-line="307" selection-end-column="37" />
+                <state relative-caret-position="272">
+                  <caret line="123" selection-start-line="123" selection-end-line="123" />
                   <folding>
                     <element signature="e#470#1819#0" />
                     <element signature="e#1831#1930#0" />
@@ -79,22 +78,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="166" selection-start-line="166" selection-end-line="166" />
+                <state relative-caret-position="-160">
+                  <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
                   <folding>
-                    <element signature="e#1894#2386#0" />
                     <element signature="e#2396#2452#0" />
                     <element signature="e#2660#3007#0" />
-                    <element signature="e#3052#3750#0" />
                     <element signature="e#3268#3554#0" />
                     <element signature="e#3449#3524#0" />
                     <element signature="e#3806#4527#0" />
                     <element signature="e#4043#4321#0" />
                     <element signature="e#4221#4291#0" />
-                    <element signature="e#4569#5220#0" />
                     <element signature="e#5269#5591#0" />
                     <element signature="e#5651#5681#0" />
                   </folding>
@@ -106,11 +102,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+                <state relative-caret-position="1033">
+                  <caret line="61" selection-start-line="61" selection-end-line="61" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -125,6 +121,18 @@
                   <caret line="127" column="42" lean-forward="true" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/graph_maker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="156">
+                  <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#34#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -190,8 +198,8 @@
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
       </list>
     </option>
   </component>
@@ -312,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00123" summary="change control loop exit_experiment member to be public.">
-      <created>1529860332326</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1529860332326</updated>
     </task>
     <task id="LOCAL-00124" summary="Replace pyglet with pygame for rendering from a thread which is not the main loop.&#10;Added a seperate thread for the control loop logic.&#10;To do : check why the wait for key with infinity time is blocking ?">
       <created>1530118603231</created>
@@ -656,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530619096200</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Added listening function.&#10;Also added the command start via the control_loop_queue.">
+      <created>1530631463287</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1530631463287</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -761,7 +769,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make an experimen tdata class for collecting all experiment gui data which is not from the excel." />
     <MESSAGE value="Transfer the experiment data through all classes to the within maker." />
     <MESSAGE value="Convert the entries data to int." />
     <MESSAGE value="Added the num of trials and num of repetitions to the experiment data." />
@@ -786,7 +793,8 @@
     <MESSAGE value="Added is_initialized paramater for the renderer class." />
     <MESSAGE value="Add rendere windows close.&#10;Add graph reset function and call to it.&#10;Remove the printing for the after_function." />
     <MESSAGE value="Make a float convertion before adding minus sign." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make a float convertion before adding minus sign." />
+    <MESSAGE value="Added listening function.&#10;Also added the command start via the control_loop_queue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added listening function.&#10;Also added the command start via the control_loop_queue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -808,13 +816,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>167</line>
+          <line>165</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>166</line>
+          <line>164</line>
           <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
+          <line>299</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/graph_maker.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="193" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -827,7 +845,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="192" />
+      <option name="time" value="194" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -886,13 +904,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python27/site-packages/psychopy/visual/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="164" column="18" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2/typing.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1094,16 +1105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/pyglet/gl/lib_wgl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
@@ -1194,41 +1195,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="166" selection-start-line="166" selection-end-line="166" />
-          <folding>
-            <element signature="e#1894#2386#0" />
-            <element signature="e#2396#2452#0" />
-            <element signature="e#2660#3007#0" />
-            <element signature="e#3052#3750#0" />
-            <element signature="e#3268#3554#0" />
-            <element signature="e#3449#3524#0" />
-            <element signature="e#3806#4527#0" />
-            <element signature="e#4043#4321#0" />
-            <element signature="e#4221#4291#0" />
-            <element signature="e#4569#5220#0" />
-            <element signature="e#5269#5591#0" />
-            <element signature="e#5651#5681#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="307" column="37" selection-start-line="307" selection-start-column="37" selection-end-line="307" selection-end-column="37" />
+        <state relative-caret-position="272">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
           <folding>
             <element signature="e#470#1819#0" />
             <element signature="e#1831#1930#0" />
@@ -1263,6 +1233,51 @@
             <element signature="e#13720#13759#0" />
             <element signature="e#14812#15140#0" />
             <element signature="e#14881#15076#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1033">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="e#2396#2452#0" />
+            <element signature="e#2660#3007#0" />
+            <element signature="e#3268#3554#0" />
+            <element signature="e#3449#3524#0" />
+            <element signature="e#3806#4527#0" />
+            <element signature="e#4043#4321#0" />
+            <element signature="e#4221#4291#0" />
+            <element signature="e#5269#5591#0" />
+            <element signature="e#5651#5681#0" />
           </folding>
         </state>
       </provider>
