@@ -32,7 +32,7 @@ class ControlLoop:
         self.exit_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
         self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
-        self.main_loop_thread = Thread(target=self.listrning_function,
+        self.main_loop_thread = Thread(target=self.listening_function,
                                        args=())
         self.main_loop_thread.start()
 
@@ -159,7 +159,7 @@ class ControlLoop:
     def sleep_function(self, sleep_time_seconds):
         time.sleep(sleep_time_seconds)
 
-    def listrning_function(self):
+    def listening_function(self):
         while True:
             if not self.control_loop_commands_queue.empty():
                 (command, data) = self.control_loop_commands_queue.get()
