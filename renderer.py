@@ -47,9 +47,6 @@ class Renderer:
     def set_attributes(self, attributes_dict, experiment_data):
         self._attributes_dict = attributes_dict
 
-    def set_attribute(self, name, value):
-        self._attributes_dict[name] = value
-
     def render(self, data):
         self.data = data
         dot_patch = visual.DotStim(win=self._my_win,

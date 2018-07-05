@@ -55,8 +55,8 @@
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="50" selection-end-column="43" />
+                <state relative-caret-position="306">
+                  <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
                   <folding>
                     <element signature="e#16#43#0" expanded="true" />
                     <element signature="e#163#993#0" />
@@ -280,13 +280,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00128" summary="Add the control_loop_thread as attribute.">
-      <created>1530200777471</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1530200777471</updated>
     </task>
     <task id="LOCAL-00129" summary="Added join to wait to the control_loop thread and also destroy the root (main) window.">
       <created>1530201259174</created>
@@ -624,7 +617,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530826624483</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="Import experiment_data to the renderer class.">
+      <created>1530826863997</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1530826863997</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -729,7 +729,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update also for the trial maker" />
     <MESSAGE value="Also for the logic of the control loop." />
     <MESSAGE value="Also for the function signature." />
     <MESSAGE value="Fix the unnecessary lines." />
@@ -754,7 +753,8 @@
     <MESSAGE value="function name spelling issue." />
     <MESSAGE value="Make the exit window to influence on the listening function." />
     <MESSAGE value="Added fixation point drawing in the renderer class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added fixation point drawing in the renderer class." />
+    <MESSAGE value="Import experiment_data to the renderer class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Import experiment_data to the renderer class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -771,7 +771,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/renderer.py</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1209,8 +1209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="50" selection-end-column="43" />
+        <state relative-caret-position="306">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
           <folding>
             <element signature="e#16#43#0" expanded="true" />
             <element signature="e#163#993#0" />
