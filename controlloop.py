@@ -160,7 +160,7 @@ class ControlLoop:
         time.sleep(sleep_time_seconds)
 
     def listening_function(self):
-        while True:
+        while not self.exit_experiment:
             if not self.control_loop_commands_queue.empty():
                 (command, data) = self.control_loop_commands_queue.get()
                 if command == 'start':

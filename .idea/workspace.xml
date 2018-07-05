@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530632226088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1530821266227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -37,8 +37,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="123" selection-start-line="123" selection-end-line="123" />
+                <state relative-caret-position="112">
+                  <caret line="289" column="34" selection-start-line="289" selection-start-column="33" selection-end-line="289" selection-end-column="34" />
                   <folding>
                     <element signature="e#470#1819#0" />
                     <element signature="e#1831#1930#0" />
@@ -69,7 +69,6 @@
                     <element signature="e#12191#12548#0" />
                     <element signature="e#12648#13001#0" />
                     <element signature="e#13065#13114#0" />
-                    <element signature="e#13720#13999#0" />
                     <element signature="e#13720#13759#0" />
                     <element signature="e#14812#15140#0" />
                     <element signature="e#14881#15076#0" />
@@ -81,8 +80,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-160">
-                  <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+                <state relative-caret-position="350">
+                  <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
                   <folding>
                     <element signature="e#2396#2452#0" />
                     <element signature="e#2660#3007#0" />
@@ -320,20 +319,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00124" summary="Replace pyglet with pygame for rendering from a thread which is not the main loop.&#10;Added a seperate thread for the control loop logic.&#10;To do : check why the wait for key with infinity time is blocking ?">
-      <created>1530118603231</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1530118603231</updated>
-    </task>
-    <task id="LOCAL-00125" summary="fix the interference with the waitkey for the pyglet and the pygame - using only the pygame.">
-      <created>1530127024917</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1530127024917</updated>
     </task>
     <task id="LOCAL-00126" summary="Make the right/left response works with pygame events also.">
       <created>1530200142019</created>
@@ -664,7 +649,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530631463287</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Move all rendering and graphing to the listening thread function.">
+      <created>1530820177608</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1530820177608</updated>
+    </task>
+    <task id="LOCAL-00174" summary="function name spelling issue.">
+      <created>1530820447163</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1530820447163</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -685,17 +684,18 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13166311" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
       <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" visible="true" weight="0.32881" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -704,7 +704,6 @@
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.51670146" side_tool="true" weight="0.15991472" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
       <window_info anchor="right" id="Data View" order="7" />
     </layout>
     <layout-to-restore>
@@ -769,8 +768,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Transfer the experiment data through all classes to the within maker." />
-    <MESSAGE value="Convert the entries data to int." />
     <MESSAGE value="Added the num of trials and num of repetitions to the experiment data." />
     <MESSAGE value="Make this update to the main gui." />
     <MESSAGE value="update also for the trial maker" />
@@ -794,7 +791,9 @@
     <MESSAGE value="Add rendere windows close.&#10;Add graph reset function and call to it.&#10;Remove the printing for the after_function." />
     <MESSAGE value="Make a float convertion before adding minus sign." />
     <MESSAGE value="Added listening function.&#10;Also added the command start via the control_loop_queue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added listening function.&#10;Also added the command start via the control_loop_queue." />
+    <MESSAGE value="Move all rendering and graphing to the listening thread function." />
+    <MESSAGE value="function name spelling issue." />
+    <option name="LAST_COMMIT_MESSAGE" value="function name spelling issue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1195,10 +1194,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1033">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="112">
+          <caret line="289" column="34" selection-start-line="289" selection-start-column="33" selection-end-line="289" selection-end-column="34" />
           <folding>
             <element signature="e#470#1819#0" />
             <element signature="e#1831#1930#0" />
@@ -1229,7 +1255,6 @@
             <element signature="e#12191#12548#0" />
             <element signature="e#12648#13001#0" />
             <element signature="e#13065#13114#0" />
-            <element signature="e#13720#13999#0" />
             <element signature="e#13720#13759#0" />
             <element signature="e#14812#15140#0" />
             <element signature="e#14881#15076#0" />
@@ -1237,37 +1262,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1033">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/graph_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+        <state relative-caret-position="350">
+          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
           <folding>
             <element signature="e#2396#2452#0" />
             <element signature="e#2660#3007#0" />
