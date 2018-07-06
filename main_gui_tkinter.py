@@ -16,6 +16,7 @@ from tkinter import BooleanVar
 import time
 import queue
 import multiprocessing
+from graph_maker_process import GraphMakerProcess
 
 
 class MainGuiTkinter:
@@ -47,7 +48,7 @@ class MainGuiTkinter:
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = multiprocessing.Queue()
-        self.graph_maker_process = multiprocessing.Process(target=self._graph_maker.listening_function_thread,
+        self.graph_maker_process = multiprocessing.Process(target=GraphMakerProcess.__init__(),
                                                       args=(self.graph_maker_command_queue,))
 
     def btn_choose_folder_clicked(self):
