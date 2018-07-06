@@ -4,9 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_maker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init_rdk.py" beforeDir="false" afterPath="$PROJECT_DIR$/init_rdk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,20 +37,11 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="349">
-                  <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+                <state relative-caret-position="221">
+                  <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="subprocess.py" pinned="false" current-in-tab="false">
-            <entry file="file://C:/Python36-32/Lib/subprocess.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
-                  <caret line="421" column="17" selection-start-line="421" selection-start-column="17" selection-end-line="421" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -145,8 +133,8 @@
           <file leaf-file-name="threading.py" pinned="false" current-in-tab="true">
             <entry file="file://C:/Python36-32/Lib/threading.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="863" selection-start-line="863" selection-end-line="863" />
+                <state relative-caret-position="230">
+                  <caret line="865" column="71" lean-forward="true" selection-start-line="865" selection-start-column="71" selection-end-line="865" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -350,13 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00138" summary="Update the disable/enable entries by the parameter status for static status.">
-      <created>1530256602071</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1530256602071</updated>
     </task>
     <task id="LOCAL-00139" summary="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair.">
       <created>1530257195284</created>
@@ -694,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530869748765</updated>
     </task>
-    <option name="localTasksCounter" value="187" />
+    <task id="LOCAL-00187" summary="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue.">
+      <created>1530875147023</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1530875147023</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -715,14 +703,14 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13272922" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
+      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -799,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add logic to confidence_response_time_stage function and call it if necessary." />
     <MESSAGE value="Added variable indicate the real state of the confidence checkbutton." />
     <MESSAGE value="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary." />
     <MESSAGE value="Adding waiting prints for all trial waitings....." />
@@ -824,7 +811,8 @@
     <MESSAGE value="Trying to move the graph_maker proess to the main_gui." />
     <MESSAGE value="Added GraphMakerProcess to call with the process from the main_gui." />
     <MESSAGE value="Added the call from the main gio." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the call from the main gio." />
+    <MESSAGE value="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -846,12 +834,12 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>171</line>
+          <line>170</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>170</line>
+          <line>169</line>
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -887,12 +875,12 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string />
+        <expression-string>dynamic_control is Entry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>type(dynamic_control) == Entry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -902,7 +890,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>type(self.dynamic_controls_dict[dynamic_entry_name]) == tkinter.Entry</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1313,15 +1301,15 @@
     </entry>
     <entry file="file://C:/Python36-32/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="863" selection-start-line="863" selection-end-line="863" />
+        <state relative-caret-position="230">
+          <caret line="865" column="71" lean-forward="true" selection-start-line="865" selection-start-column="71" selection-end-line="865" selection-end-column="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+        <state relative-caret-position="221">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
