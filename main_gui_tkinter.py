@@ -25,7 +25,7 @@ class MainGuiTkinter:
     def __init__(self, graph_maker_command_queue):
         self.tkFileDialog = None
         self.protocol_reader = None  # type: ProtocolReader
-        self.protocl_writer = None  # type:ProtocolWriter
+        self.protocol_writer = None  # type:ProtocolWriter
         self.control_loop = None  # type: ControlLoop
         self.root = None  # type: Tk
         self.protocol_file_path = 'D:\RDK-protocols\coherence.xlsx'
@@ -157,7 +157,7 @@ class MainGuiTkinter:
 
     def btn_save_protocol_clicked(self):
         self.update_parameter_dictionary_according_to_gui()
-        self.protocl_writer.write_file(self.protocol_file_path , self.parameters_attributes_dictionary)
+        self.protocol_writer.write_file(self.protocol_file_path, self.parameters_attributes_dictionary)
         pass
 
     def add_parameters_titles(self, titles, rel_x, rel_y):
@@ -311,7 +311,7 @@ class MainGuiTkinter:
         self.protocol_reader = ProtocolReader()
         self.protocol_reader.read_file(self.protocol_file_path)
 
-        self.protocolwriter  = ProtocolWriter()
+        self.protocol_writer = ProtocolWriter()
 
         self.dynamic_controls_dict = {}
 
