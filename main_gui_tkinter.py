@@ -15,6 +15,7 @@ from experimentdata import ExperimentData
 from tkinter import BooleanVar
 import time
 import queue
+import multiprocessing
 
 
 class MainGuiTkinter:
@@ -45,6 +46,9 @@ class MainGuiTkinter:
         self.draw_fixation_point_value = None  # type:BooleanVar
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
+        self.graph_maker_command_queue = multiprocessing.Queue()
+        self.graph_maker_process = multiprocessing.Process(target=self._graph_maker.listening_function_thread,
+                                                      args=(self.graph_maker_command_queue,))
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -285,7 +289,8 @@ class MainGuiTkinter:
         self.root.protocol('WM_DELETE_WINDOW', self.exit_window_clicked)
 
         self.control_loop = ControlLoop(self.gui_queue,
-                                        self.control_loop_queue)
+                                        self.control_loop_queue,
+                                        self.graph_maker_queue)
 
         self.init_gui_controllers()
 

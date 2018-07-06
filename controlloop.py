@@ -19,7 +19,7 @@ import multiprocessing
 class ControlLoop:
     exit_experiment = None  # type:bool
 
-    def __init__(self, gui_queue, control_loop_queue):
+    def __init__(self, gui_queue, control_loop_queue, graph_maker_queue):
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
         self.experiment_data: None  # type: ExperimentData
@@ -33,7 +33,7 @@ class ControlLoop:
         self.exit_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
         self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
-        self.graph_maker_command_queue = None  # type: queue.Queue
+        self.graph_maker_command_queue = None  # type: multiprocessing.Queue
         self.main_loop_thread = Thread(target=self.listening_function,
                                        args=())
         self.main_loop_thread.start()
@@ -54,8 +54,6 @@ class ControlLoop:
 
         if not self._renderer.is_initialized:
             self._renderer.init_window()
-            graph_maker_command_queue = queue.Queue()
-            multiprocessing.Process(target=GraphMaker.listening_function_thread, args=self.graph_maker_command_queue)
             #self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
             self.graph_maker_command_queue.put(('init_graph' , self._trial_maker.get_trials_scala_values()))
         else:
