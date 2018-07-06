@@ -48,6 +48,7 @@ class MainGuiTkinter:
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = graph_maker_command_queue
+        self.btn_save_protocol = None  # type: Button
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -71,6 +72,13 @@ class MainGuiTkinter:
         self.combo_box_protocol_update()
         self.combobox_protocol_list.pack()
 
+        # save protocol button region.
+        self.btn_save_protocol = Button(master=self.root,
+                                        text='Save Protocol',
+                                        command=self.btn_save_protocol_clicked)
+        self.btn_save_protocol.place(relx=0.6,
+                                     rely=0.05)
+
         # start experiment button region.
         self.btn_start_experiment = Button(master=self.root,
                                            text='Start',
@@ -87,7 +95,7 @@ class MainGuiTkinter:
         self.entry_num_of_trials.insert(0, 14)
         self.entry_num_of_trials.place(relx=0.85, rely=0.05)
 
-        # num of repetitionns rehion.
+        # num of repetitionns region.
         self.label_num_of_repetitions = Label(master=self.root,
                                               text='#repetitions')
         self.label_num_of_repetitions.place(relx=0.8,
@@ -144,6 +152,9 @@ class MainGuiTkinter:
     def combobox_protocols_item_selected(self, event_args):
         self.protocol_file_path = self.protocol_root_dir + '/' + self.combobox_protocol_list.get()
         self.update_dynamic_controls()
+
+    def btn_save_protocol_clicked(self):
+        pass
 
     def add_parameters_titles(self, titles, rel_x, rel_y):
         for title in titles:
