@@ -13,7 +13,7 @@ class ProtocolWriter:
         excel_writer = pd.ExcelWriter(dir_path + '/' + file_name + '.xlsx')
 
         excel_data = []
-        for attribute_name in data['Coherence'].keys():
+        for attribute_name in data[list(data.keys())[0]].keys():
             column_data = [data[param_name][attribute_name] for param_name in data.keys()]
             columns_name = attribute_name
             excel_data.append((columns_name, column_data))
