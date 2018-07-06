@@ -47,6 +47,8 @@ class MainGuiTkinter:
         self.checkbox_confidence_choice = None  # type:Checkbutton
         self.confidence_choice_value = None  # type: BooleanVar
         self.draw_fixation_point_value = None  # type:BooleanVar
+        self.label_save_protocol_name = None  # type: Label
+        self.entry_save_protocol_name = None  # type: Entry
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = graph_maker_command_queue
@@ -74,12 +76,19 @@ class MainGuiTkinter:
         self.combo_box_protocol_update()
         self.combobox_protocol_list.pack()
 
-        # save protocol button region.
+        # save protocol region.
         self.btn_save_protocol = Button(master=self.root,
                                         text='Save Protocol',
                                         command=self.btn_save_protocol_clicked)
         self.btn_save_protocol.place(relx=0.6,
                                      rely=0.05)
+        self.label_save_protocol_name = Label(master=self.root,
+                                              text='New Protocol Name:')
+        self.label_save_protocol_name.place(relx=0.6,
+                                            rely=0.00)
+        self.entry_save_protocol_name = Entry(master=self.root)
+        self.entry_save_protocol_name.place(relx=0.7,
+                                            rely=0.0)
 
         # start experiment button region.
         self.btn_start_experiment = Button(master=self.root,
@@ -157,7 +166,8 @@ class MainGuiTkinter:
 
     def btn_save_protocol_clicked(self):
         self.update_parameter_dictionary_according_to_gui()
-        self.protocol_writer.write_file(self.protocol_file_path, self.parameters_attributes_dictionary)
+        self.protocol_writer.write_file(self.protocol_root_dir + '/' + self.entry_save_protocol_name.get(),
+                                        self.parameters_attributes_dictionary)
         pass
 
     def add_parameters_titles(self, titles, rel_x, rel_y):
