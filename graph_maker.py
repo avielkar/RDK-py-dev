@@ -1,5 +1,7 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
+import queue
+import time
 
 
 class GraphMaker:
@@ -67,5 +69,16 @@ class GraphMaker:
         pyplot.pause(1)
         pass
 
-    def listening_function_thread(self):
+    def listening_function_thread(self , control_loop_queue):
+        while True:
+            if not control_loop_queue.empty():
+                (command_function , command_data) = control_loop_queue.get()
+                if command_data == 'update_graph':
+                    self.update_graph(command_data)
+                elif command_data == 'reset_graph':
+                    self.reset_graph(command_data)
+                elif command_data == 'init_graph':
+                    self.init_graph(command_data)
+
+            time.sleep(0.1)
         pass

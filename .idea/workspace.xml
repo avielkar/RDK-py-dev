@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +37,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="158" column="84" selection-start-line="158" selection-start-column="84" selection-end-line="158" selection-end-column="84" />
+                <state relative-caret-position="397">
+                  <caret line="171" column="60" selection-start-line="171" selection-start-column="59" selection-end-line="171" selection-end-column="60" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                     <element signature="e#2169#2661#0" />
@@ -52,9 +51,6 @@
                     <element signature="e#4513#4583#0" />
                     <element signature="e#5561#5883#0" />
                     <element signature="e#5943#5973#0" />
-                    <element signature="e#6017#6424#0" />
-                    <element signature="e#6061#6424#0" />
-                    <element signature="e#6126#6396#0" />
                     <element signature="e#6242#6396#0" />
                   </folding>
                 </state>
@@ -135,9 +131,10 @@
           <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+                <state relative-caret-position="340">
+                  <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
                   <folding>
+                    <element signature="e#0#34#0" expanded="true" />
                     <element signature="e#107#336#0" />
                     <element signature="e#386#1020#0" />
                     <element signature="e#727#866#0" />
@@ -210,8 +207,8 @@
         <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
-        <option value="$PROJECT_DIR$/graph_maker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/graph_maker.py" />
       </list>
     </option>
   </component>
@@ -332,13 +329,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00133" summary="Added name foreach dynamic entry (in order to know which widget in the focus_out event) was raised.">
-      <created>1530206331881</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1530206331881</updated>
     </task>
     <task id="LOCAL-00134" summary="Replace a duplicated operators with parameter holds the operators results.">
       <created>1530206561329</created>
@@ -676,7 +666,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530827766371</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands.">
+      <created>1530865463990</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1530865463991</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -696,8 +693,8 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" visible="true" weight="0.3434238" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13272922" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
@@ -781,7 +778,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding checkbox for enabling confidence choice." />
     <MESSAGE value="fix name spelling error." />
     <MESSAGE value="Add the confidence enable checkbutton to the attributes." />
     <MESSAGE value="Added enable_confidence_choice attribute to experimentdata class." />
@@ -806,7 +802,8 @@
     <MESSAGE value="Add draw_fixation_point to the experiment_data class&#10;Link the control_loop experiment_data to the renderer." />
     <MESSAGE value="Add draw_fxation_point checkbutton to the gui and add it to the experiment_data sent to the control_loop." />
     <MESSAGE value="Added draw_fixation_pint logic to the renderer." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added draw_fixation_pint logic to the renderer." />
+    <MESSAGE value="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -843,7 +840,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/graph_maker.py</url>
-          <line>13</line>
+          <line>15</line>
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1276,25 +1273,10 @@
     <entry file="file://$PROJECT_DIR$/experimentdata.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
-          <folding>
-            <element signature="e#107#336#0" />
-            <element signature="e#386#1020#0" />
-            <element signature="e#727#866#0" />
-            <element signature="e#1092#1626#0" />
-            <element signature="e#1334#1473#0" />
-            <element signature="e#1676#2566#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="158" column="84" selection-start-line="158" selection-start-column="84" selection-end-line="158" selection-end-column="84" />
+        <state relative-caret-position="397">
+          <caret line="171" column="60" selection-start-line="171" selection-start-column="59" selection-end-line="171" selection-end-column="60" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
             <element signature="e#2169#2661#0" />
@@ -1307,10 +1289,23 @@
             <element signature="e#4513#4583#0" />
             <element signature="e#5561#5883#0" />
             <element signature="e#5943#5973#0" />
-            <element signature="e#6017#6424#0" />
-            <element signature="e#6061#6424#0" />
-            <element signature="e#6126#6396#0" />
             <element signature="e#6242#6396#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="74" column="49" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#107#336#0" />
+            <element signature="e#386#1020#0" />
+            <element signature="e#727#866#0" />
+            <element signature="e#1092#1626#0" />
+            <element signature="e#1334#1473#0" />
+            <element signature="e#1676#2566#0" />
           </folding>
         </state>
       </provider>
