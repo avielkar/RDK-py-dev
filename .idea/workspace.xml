@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Added functionallity and new file for the protocolwriter.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
@@ -46,7 +46,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="protocolwriter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="protocolwriter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/protocolwriter.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
@@ -55,7 +55,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protocolreader.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
@@ -76,12 +76,11 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+                <state relative-caret-position="234">
+                  <caret line="308" column="47" lean-forward="true" selection-start-line="308" selection-start-column="47" selection-end-line="308" selection-end-column="47" />
                   <folding>
-                    <element signature="e#567#2110#0" />
+                    <element signature="e#16#25#0" expanded="true" />
                     <element signature="e#2108#2207#0" />
-                    <element signature="e#6207#6369#0" />
                     <element signature="e#6420#6701#0" />
                     <element signature="e#6465#6628#0" />
                     <element signature="e#6505#6628#0" />
@@ -108,7 +107,6 @@
                     <element signature="e#12930#13287#0" />
                     <element signature="e#13387#13740#0" />
                     <element signature="e#13804#13853#0" />
-                    <element signature="e#13883#14551#0" />
                     <element signature="e#14596#14875#0" />
                     <element signature="e#14596#14635#0" />
                     <element signature="e#14922#15788#0" />
@@ -304,13 +302,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00141" summary="Create  SimpleWithinStairDecisionMaker withou logic.">
-      <created>1530272928140</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1530272928141</updated>
     </task>
     <task id="LOCAL-00142" summary="Make the SimpleWithinStairDecisionMaker and ComplexWithinStairDecisionMaker inherit from WithinStairDecisionMaker">
       <created>1530273650206</created>
@@ -648,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530885382344</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="Added save_protocol btn to the giuo with it's event.">
+      <created>1530886218760</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1530886218760</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -753,7 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding waiting prints for all trial waitings....." />
     <MESSAGE value="Change wait to get because wait waits forever with no timeout....." />
     <MESSAGE value="Change get to pull because get returns a list of events and pull returns the first in the queue," />
     <MESSAGE value="Make the gui_queue enable tha start btn after the experiment ends for other experiments starts press." />
@@ -778,7 +775,8 @@
     <MESSAGE value="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue." />
     <MESSAGE value="Delete garbaged lines." />
     <MESSAGE value="Added functionallity and new file for the protocolwriter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionallity and new file for the protocolwriter." />
+    <MESSAGE value="Added save_protocol btn to the giuo with it's event." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added save_protocol btn to the giuo with it's event." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -810,7 +808,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>325</line>
+          <line>329</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1206,13 +1204,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protocolreader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protocolwriter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1234,14 +1225,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protocolreader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        <state relative-caret-position="234">
+          <caret line="308" column="47" lean-forward="true" selection-start-line="308" selection-start-column="47" selection-end-line="308" selection-end-column="47" />
           <folding>
-            <element signature="e#567#2110#0" />
+            <element signature="e#16#25#0" expanded="true" />
             <element signature="e#2108#2207#0" />
-            <element signature="e#6207#6369#0" />
             <element signature="e#6420#6701#0" />
             <element signature="e#6465#6628#0" />
             <element signature="e#6505#6628#0" />
@@ -1268,7 +1265,6 @@
             <element signature="e#12930#13287#0" />
             <element signature="e#13387#13740#0" />
             <element signature="e#13804#13853#0" />
-            <element signature="e#13883#14551#0" />
             <element signature="e#14596#14875#0" />
             <element signature="e#14596#14635#0" />
             <element signature="e#14922#15788#0" />

@@ -8,6 +8,7 @@ from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
 from protocolreader import ProtocolReader
+from protocolwriter import ProtocolWriter
 from controlloop import ControlLoop
 import tkinter.messagebox
 from threading import Thread
@@ -24,6 +25,7 @@ class MainGuiTkinter:
     def __init__(self, graph_maker_command_queue):
         self.tkFileDialog = None
         self.protocol_reader = None  # type: ProtocolReader
+        self.protocl_writer = None  # type:ProtocolWriter
         self.control_loop = None  # type: ControlLoop
         self.root = None  # type: Tk
         self.protocol_file_path = 'D:\RDK-protocols\coherence.xlsx'
@@ -306,6 +308,8 @@ class MainGuiTkinter:
 
         self.protocol_reader = ProtocolReader()
         self.protocol_reader.read_file(self.protocol_file_path)
+
+        self.protocolwriter  = ProtocolWriter()
 
         self.dynamic_controls_dict = {}
 
