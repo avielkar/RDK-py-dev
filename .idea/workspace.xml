@@ -37,8 +37,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+                <state relative-caret-position="573">
+                  <caret line="157" column="86" selection-start-line="157" selection-start-column="86" selection-end-line="157" selection-end-column="86" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -338,13 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00139" summary="Update the disable/enable entries by the parameter status for static varying , acrosstair and withinstair.">
-      <created>1530257195284</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1530257195285</updated>
     </task>
     <task id="LOCAL-00140" summary="Add show_param_label_tooltip event for tooltips.">
       <created>1530267257585</created>
@@ -682,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530875147023</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="Delete garbaged lines.">
+      <created>1530875276586</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1530875276586</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -787,7 +787,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added variable indicate the real state of the confidence checkbutton." />
     <MESSAGE value="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary." />
     <MESSAGE value="Adding waiting prints for all trial waitings....." />
     <MESSAGE value="Change wait to get because wait waits forever with no timeout....." />
@@ -812,7 +811,8 @@
     <MESSAGE value="Added GraphMakerProcess to call with the process from the main_gui." />
     <MESSAGE value="Added the call from the main gio." />
     <MESSAGE value="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue." />
+    <MESSAGE value="Delete garbaged lines." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete garbaged lines." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,12 +834,12 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>170</line>
+          <line>166</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>169</line>
+          <line>165</line>
           <option name="timeStamp" value="191" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
@@ -1308,8 +1308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+        <state relative-caret-position="573">
+          <caret line="157" column="86" selection-start-line="157" selection-start-column="86" selection-end-line="157" selection-end-column="86" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
