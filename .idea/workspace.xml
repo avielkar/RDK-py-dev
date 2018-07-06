@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/graph_maker_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +37,7 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
+                <state relative-caret-position="227">
                   <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
@@ -77,10 +76,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
+                <state relative-caret-position="816">
                   <caret line="48" selection-start-line="48" selection-end-line="48" />
                   <folding>
                     <element signature="e#16#25#0" expanded="true" />
@@ -115,6 +114,15 @@
                     <element signature="e#15482#15811#0" />
                     <element signature="e#15552#15747#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="graph_maker_process.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/graph_maker_process.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
                 </state>
               </provider>
             </entry>
@@ -199,6 +207,7 @@
         <option value="$PROJECT_DIR$/graph_maker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/graph_maker_process.py" />
       </list>
     </option>
   </component>
@@ -319,13 +328,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Extract the name of the changed variable key attribute and name from the entry name.">
-      <created>1530220718654</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1530220718654</updated>
     </task>
     <task id="LOCAL-00136" summary="Add names to the dynamic combobox controls.">
       <created>1530250921369</created>
@@ -663,7 +665,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530866263371</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="Trying to move the graph_maker proess to the main_gui.">
+      <created>1530869529928</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1530869529928</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -768,7 +777,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add the confidence enable checkbutton to the attributes." />
     <MESSAGE value="Added enable_confidence_choice attribute to experimentdata class." />
     <MESSAGE value="Add the state of the confidence choice raiobutton to the sending to the control loop through the experiment data." />
     <MESSAGE value="Add logic to confidence_response_time_stage function and call it if necessary." />
@@ -793,7 +801,8 @@
     <MESSAGE value="Added draw_fixation_pint logic to the renderer." />
     <MESSAGE value="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands." />
     <MESSAGE value="Add listening_function_thread logic for the graph_maker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add listening_function_thread logic for the graph_maker." />
+    <MESSAGE value="Trying to move the graph_maker proess to the main_gui." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to move the graph_maker proess to the main_gui." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,7 +912,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/matplotlib/__init__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1242,7 +1250,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="227">
           <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
@@ -1252,7 +1260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="816">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
@@ -1287,6 +1295,13 @@
             <element signature="e#15482#15811#0" />
             <element signature="e#15552#15747#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
