@@ -110,8 +110,8 @@
           <file leaf-file-name="protocolwriter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protocolwriter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -301,13 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Renames incorrect names.">
-      <created>1530280268628</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1530280268628</updated>
     </task>
     <task id="LOCAL-00146" summary="Added b.e.p (backward error probability) and r.f.p (rightward forward probability) labels and entries to the gui.">
       <created>1530282338390</created>
@@ -645,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530888097149</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Make the logic of the write_function works and save the data good.">
+      <created>1530900652891</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1530900652891</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,7 +750,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added is_initialized paramater for the renderer class." />
     <MESSAGE value="Add rendere windows close.&#10;Add graph reset function and call to it.&#10;Remove the printing for the after_function." />
     <MESSAGE value="Make a float convertion before adding minus sign." />
     <MESSAGE value="Added listening function.&#10;Also added the command start via the control_loop_queue." />
@@ -775,7 +774,8 @@
     <MESSAGE value="Added the protocol_writer object to the main_gui." />
     <MESSAGE value="Add logic for the save protocol event." />
     <MESSAGE value="Save the data_dict in the write function to dataframe and write it to the excel sheet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Save the data_dict in the write function to dataframe and write it to the excel sheet." />
+    <MESSAGE value="Make the logic of the write_function works and save the data good." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make the logic of the write_function works and save the data good." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1272,8 +1272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protocolwriter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="136">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>

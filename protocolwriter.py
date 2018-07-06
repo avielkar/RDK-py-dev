@@ -6,7 +6,7 @@ class ProtocolWriter:
         pass
 
     def write_file(self, path, data):
-        excel_writer = pd.ExcelWriter('D:\RDK-protocols\coherence123.xlsx')
+        excel_writer = pd.ExcelWriter(path)
 
         excel_data = []
         for attribute_name in data['Coherence'].keys():
