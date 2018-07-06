@@ -166,8 +166,9 @@ class MainGuiTkinter:
 
     def btn_save_protocol_clicked(self):
         self.update_parameter_dictionary_according_to_gui()
-        self.protocol_writer.write_file(self.protocol_root_dir, self.entry_save_protocol_name.get(),
-                                        self.parameters_attributes_dictionary)
+        if not self.protocol_writer.write_file(self.protocol_root_dir, self.entry_save_protocol_name.get(),
+                                        self.parameters_attributes_dictionary):
+            tkinter.messagebox.showinfo('Error', 'File name already exists in this directory')
         pass
 
     def add_parameters_titles(self, titles, rel_x, rel_y):
