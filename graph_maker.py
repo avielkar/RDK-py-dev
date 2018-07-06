@@ -79,6 +79,6 @@ class GraphMaker:
                     self.reset_graph(command_data)
                 elif command_function == 'init_graph':
                     self.init_graph(command_data)
-
+            pyplot.pause(0.1)
             time.sleep(0.1)
         pass
