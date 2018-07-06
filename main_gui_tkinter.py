@@ -132,8 +132,11 @@ class MainGuiTkinter:
         return
 
     def combo_box_protocol_update(self):
-        self.combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if
-                                                 f.endswith('.xlsx')]
+        if self.protocol_root_dir != '':
+            self.combobox_protocol_list['values'] = [f for f in os.listdir(self.protocol_root_dir) if
+                                                     f.endswith('.xlsx')]
+        else:
+            self.combobox_protocol_list['values'] = list()
 
     def combobox_protocols_item_selected(self, event_args):
         self.protocol_file_path = self.protocol_root_dir + '/' + self.combobox_protocol_list.get()
