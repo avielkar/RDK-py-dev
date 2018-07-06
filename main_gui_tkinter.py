@@ -166,7 +166,7 @@ class MainGuiTkinter:
 
     def btn_save_protocol_clicked(self):
         self.update_parameter_dictionary_according_to_gui()
-        self.protocol_writer.write_file(self.protocol_root_dir + '/' + self.entry_save_protocol_name.get(),
+        self.protocol_writer.write_file(self.protocol_root_dir, self.entry_save_protocol_name.get(),
                                         self.parameters_attributes_dictionary)
         pass
 

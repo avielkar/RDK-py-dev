@@ -1,12 +1,16 @@
 import pandas as pd
+import os
 
 
 class ProtocolWriter:
     def init(self):
         pass
 
-    def write_file(self, path, data):
-        excel_writer = pd.ExcelWriter(path + '.xlsx')
+    def write_file(self, dir_path, file_name, data):
+        if file_name + '.xlsx' in os.listdir(dir_path):
+            return False
+
+        excel_writer = pd.ExcelWriter(dir_path + '/' + file_name + '.xlsx')
 
         excel_data = []
         for attribute_name in data['Coherence'].keys():
@@ -19,4 +23,5 @@ class ProtocolWriter:
                     index=False)
         excel_writer.save()
 
+        return True
         pass
