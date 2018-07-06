@@ -156,6 +156,8 @@ class MainGuiTkinter:
         self.update_dynamic_controls()
 
     def btn_save_protocol_clicked(self):
+        self.update_parameter_dictionary_according_to_gui()
+        self.protocl_writer.write_file(self.protocol_file_path , self.parameters_attributes_dictionary)
         pass
 
     def add_parameters_titles(self, titles, rel_x, rel_y):
