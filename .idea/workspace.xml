@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protocolwriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/protocolwriter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,13 +64,12 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="169" column="40" selection-start-line="169" selection-start-column="40" selection-end-line="169" selection-end-column="40" />
+                <state relative-caret-position="-85">
+                  <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
                   <folding>
-                    <element signature="e#567#2110#0" />
                     <element signature="e#2108#2207#0" />
                     <element signature="e#2528#7076#0" />
                     <element signature="e#6420#6701#0" />
@@ -111,11 +110,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="protocolwriter.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="protocolwriter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/protocolwriter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="136">
+                  <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -183,8 +182,8 @@
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
-        <option value="$PROJECT_DIR$/protocolwriter.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/protocolwriter.py" />
       </list>
     </option>
   </component>
@@ -305,13 +304,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00147" summary="Make an experimen tdata class for collecting all experiment gui data which is not from the excel.">
-      <created>1530284924147</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1530284924147</updated>
     </task>
     <task id="LOCAL-00148" summary="Transfer the experiment data through all classes to the within maker.">
       <created>1530287121880</created>
@@ -649,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530900746772</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="Add the entry for the new protocol name and transfer the new protocol full path to the protocolwriter.">
+      <created>1530901730171</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1530901730171</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TodoView">
@@ -754,7 +753,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make a float convertion before adding minus sign." />
     <MESSAGE value="Added listening function.&#10;Also added the command start via the control_loop_queue." />
     <MESSAGE value="Move all rendering and graphing to the listening thread function." />
     <MESSAGE value="function name spelling issue." />
@@ -779,7 +777,8 @@
     <MESSAGE value="Save the data_dict in the write function to dataframe and write it to the excel sheet." />
     <MESSAGE value="Make the logic of the write_function works and save the data good." />
     <MESSAGE value="Add the path parameter from the function instead the const path (that was for testing)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the path parameter from the function instead the const path (that was for testing)." />
+    <MESSAGE value="Add the entry for the new protocol name and transfer the new protocol full path to the protocolwriter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the entry for the new protocol name and transfer the new protocol full path to the protocolwriter." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1233,19 +1232,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protocolwriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="169" column="40" selection-start-line="169" selection-start-column="40" selection-end-line="169" selection-end-column="40" />
+        <state relative-caret-position="-85">
+          <caret line="31" column="54" lean-forward="true" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
           <folding>
-            <element signature="e#567#2110#0" />
             <element signature="e#2108#2207#0" />
             <element signature="e#2528#7076#0" />
             <element signature="e#6420#6701#0" />
@@ -1282,6 +1273,13 @@
             <element signature="e#15828#16157#0" />
             <element signature="e#15898#16093#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protocolwriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
         </state>
       </provider>
     </entry>
