@@ -73,11 +73,11 @@ class GraphMaker:
         while True:
             if not control_loop_queue.empty():
                 (command_function , command_data) = control_loop_queue.get()
-                if command_data == 'update_graph':
+                if command_function == 'update_graph':
                     self.update_graph(command_data)
-                elif command_data == 'reset_graph':
+                elif command_function == 'reset_graph':
                     self.reset_graph(command_data)
-                elif command_data == 'init_graph':
+                elif command_function == 'init_graph':
                     self.init_graph(command_data)
 
             time.sleep(0.1)

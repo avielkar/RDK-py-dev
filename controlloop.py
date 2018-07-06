@@ -33,7 +33,7 @@ class ControlLoop:
         self.exit_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
         self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
-        self.graph_maker_command_queue = None  # type: multiprocessing.Queue
+        self.graph_maker_command_queue = graph_maker_queue  # type: multiprocessing.Queue
         self.main_loop_thread = Thread(target=self.listening_function,
                                        args=())
         self.main_loop_thread.start()
@@ -54,11 +54,11 @@ class ControlLoop:
 
         if not self._renderer.is_initialized:
             self._renderer.init_window()
-            #self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
-            self.graph_maker_command_queue.put(('init_graph' , self._trial_maker.get_trials_scala_values()))
+            # self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
-            self.graph_maker_command_queue.put(('reset_graph'),self._trial_maker.get_trials_scala_values())
-            #self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))
+            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment:
@@ -153,7 +153,7 @@ class ControlLoop:
         thread_sleep.join()
 
         # todo: check hoe to add it to the post trial stage thread.
-        #self._graph_maker.update_graph(self._current_trial_data)
+        # self._graph_maker.update_graph(self._current_trial_data)
         self.graph_maker_command_queue.put(('update_graph', self._current_trial_data))
 
     def post_trial_stage_thread(self):
