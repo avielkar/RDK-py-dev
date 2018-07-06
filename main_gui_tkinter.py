@@ -8,6 +8,7 @@ from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
 from protocolreader import ProtocolReader
+from protocolwriter import ProtocolWriter
 from controlloop import ControlLoop
 import tkinter.messagebox
 from threading import Thread
@@ -24,6 +25,7 @@ class MainGuiTkinter:
     def __init__(self, graph_maker_command_queue):
         self.tkFileDialog = None
         self.protocol_reader = None  # type: ProtocolReader
+        self.protocol_writer = None  # type:ProtocolWriter
         self.control_loop = None  # type: ControlLoop
         self.root = None  # type: Tk
         self.protocol_file_path = 'D:\RDK-protocols\coherence.xlsx'
@@ -45,9 +47,12 @@ class MainGuiTkinter:
         self.checkbox_confidence_choice = None  # type:Checkbutton
         self.confidence_choice_value = None  # type: BooleanVar
         self.draw_fixation_point_value = None  # type:BooleanVar
+        self.label_save_protocol_name = None  # type: Label
+        self.entry_save_protocol_name = None  # type: Entry
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = graph_maker_command_queue
+        self.btn_save_protocol = None  # type: Button
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -71,6 +76,20 @@ class MainGuiTkinter:
         self.combo_box_protocol_update()
         self.combobox_protocol_list.pack()
 
+        # save protocol region.
+        self.btn_save_protocol = Button(master=self.root,
+                                        text='Save Protocol',
+                                        command=self.btn_save_protocol_clicked)
+        self.btn_save_protocol.place(relx=0.6,
+                                     rely=0.05)
+        self.label_save_protocol_name = Label(master=self.root,
+                                              text='New Protocol Name:')
+        self.label_save_protocol_name.place(relx=0.6,
+                                            rely=0.00)
+        self.entry_save_protocol_name = Entry(master=self.root)
+        self.entry_save_protocol_name.place(relx=0.7,
+                                            rely=0.0)
+
         # start experiment button region.
         self.btn_start_experiment = Button(master=self.root,
                                            text='Start',
@@ -87,7 +106,7 @@ class MainGuiTkinter:
         self.entry_num_of_trials.insert(0, 14)
         self.entry_num_of_trials.place(relx=0.85, rely=0.05)
 
-        # num of repetitionns rehion.
+        # num of repetitionns region.
         self.label_num_of_repetitions = Label(master=self.root,
                                               text='#repetitions')
         self.label_num_of_repetitions.place(relx=0.8,
@@ -144,6 +163,13 @@ class MainGuiTkinter:
     def combobox_protocols_item_selected(self, event_args):
         self.protocol_file_path = self.protocol_root_dir + '/' + self.combobox_protocol_list.get()
         self.update_dynamic_controls()
+
+    def btn_save_protocol_clicked(self):
+        self.update_parameter_dictionary_according_to_gui()
+        if not self.protocol_writer.write_file(self.protocol_root_dir, self.entry_save_protocol_name.get(),
+                                        self.parameters_attributes_dictionary):
+            tkinter.messagebox.showinfo('Error', 'File name already exists in this directory')
+        pass
 
     def add_parameters_titles(self, titles, rel_x, rel_y):
         for title in titles:
@@ -295,6 +321,8 @@ class MainGuiTkinter:
 
         self.protocol_reader = ProtocolReader()
         self.protocol_reader.read_file(self.protocol_file_path)
+
+        self.protocol_writer = ProtocolWriter()
 
         self.dynamic_controls_dict = {}
 
