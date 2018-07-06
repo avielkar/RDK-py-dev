@@ -13,12 +13,13 @@ import pygame
 from pygame.locals import *
 from experimentdata import ExperimentData
 import queue
+import multiprocessing
 
 
 class ControlLoop:
     exit_experiment = None  # type:bool
 
-    def __init__(self, gui_queue, control_loop_queue):
+    def __init__(self, gui_queue, control_loop_queue, graph_maker_queue):
         self._numOfTrials = None  # type: Integer
         self._numOfRepetitions = None  # type: Integer
         self.experiment_data: None  # type: ExperimentData
@@ -32,6 +33,7 @@ class ControlLoop:
         self.exit_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
         self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
+        self.graph_maker_command_queue = graph_maker_queue  # type: multiprocessing.Queue
         self.main_loop_thread = Thread(target=self.listening_function,
                                        args=())
         self.main_loop_thread.start()
@@ -52,9 +54,9 @@ class ControlLoop:
 
         if not self._renderer.is_initialized:
             self._renderer.init_window()
-            self._graph_maker.init_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
-            self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment:
@@ -148,14 +150,12 @@ class ControlLoop:
         thread_post_trial_stage.join()
         thread_sleep.join()
 
-        # todo: check hoe to add it to the post trial stage thread.
-        self._graph_maker.update_graph(self._current_trial_data)
-
     def post_trial_stage_thread(self):
         trial_correction = self._response_analyzer.analyze_response(self._current_trial_data)
         self._current_trial_data['ResponseCorrectness'] = trial_correction
         self._trial_maker.set_current_trial_response_correction(trial_correction)
         self._save_data_maker.save_trial_data_to_file(self._current_trial_data)
+        self.graph_maker_command_queue.put(('update_graph', self._current_trial_data))
 
     def sleep_function(self, sleep_time_seconds):
         time.sleep(sleep_time_seconds)
