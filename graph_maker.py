@@ -66,3 +66,6 @@ class GraphMaker:
         pyplot.draw()
         pyplot.pause(1)
         pass
+
+    def listening_function_thread(self):
+        pass
