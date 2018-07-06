@@ -359,6 +359,7 @@ class MainGuiTkinter:
             name_status = self.gui_queue.get()
             if name_status[0] == 'enable_start_btn':
                 self.btn_start_experiment.config(state='disabled' if name_status[1] is False else 'normal')
+                tkinter.messagebox.showinfo('Information', 'Experiment ended succesfully !!!!')
 
         self.root.after(100, self.after_function)
         pass
