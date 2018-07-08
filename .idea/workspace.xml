@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Added message box info that the experiment ended successfuly.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/experimentdata.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +37,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="505">
-                  <caret line="153" column="53" lean-forward="true" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
+                <state relative-caret-position="2601">
+                  <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -46,7 +46,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="protocolreader.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/protocolreader.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
@@ -55,9 +55,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="experimentdata.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="experimentdata.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/experimentdata.py">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="428">
+                  <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -67,41 +71,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="445">
-                  <caret line="361" column="86" selection-start-line="361" selection-start-column="86" selection-end-line="361" selection-end-column="86" />
-                  <folding>
-                    <element signature="e#2108#2207#0" />
-                    <element signature="e#2528#7076#0" />
-                    <element signature="e#6420#6701#0" />
-                    <element signature="e#6465#6628#0" />
-                    <element signature="e#6505#6628#0" />
-                    <element signature="e#6771#6900#0" />
-                    <element signature="e#6969#7272#0" />
-                    <element signature="e#7002#7223#0" />
-                    <element signature="e#7042#7223#0" />
-                    <element signature="e#7356#9702#0" />
-                    <element signature="e#7401#9640#0" />
-                    <element signature="e#8039#9583#0" />
-                    <element signature="e#8327#9024#0" />
-                    <element signature="e#9067#9550#0" />
-                    <element signature="e#9751#9875#0" />
-                    <element signature="e#9924#10350#0" />
-                    <element signature="e#11237#11377#0" />
-                    <element signature="e#11443#11805#0" />
-                    <element signature="e#11860#12094#0" />
-                    <element signature="e#12164#12496#0" />
-                    <element signature="e#12259#12496#0" />
-                    <element signature="e#12310#12496#0" />
-                    <element signature="e#12567#12804#0" />
-                    <element signature="e#12647#12791#0" />
-                    <element signature="e#12895#13753#0" />
-                    <element signature="e#12930#13287#0" />
-                    <element signature="e#13387#13740#0" />
-                    <element signature="e#13804#13853#0" />
-                    <element signature="e#14596#14875#0" />
-                    <element signature="e#14596#14635#0" />
-                    <element signature="e#14922#15788#0" />
-                  </folding>
+                <state relative-caret-position="363">
+                  <caret line="359" column="29" selection-start-line="359" selection-start-column="29" selection-end-line="359" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -176,7 +147,6 @@
         <option value="$PROJECT_DIR$/main_gui.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
-        <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/graph_maker_process.py" />
         <option value="$PROJECT_DIR$/init_rdk.py" />
@@ -184,6 +154,7 @@
         <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/protocolwriter.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/experimentdata.py" />
       </list>
     </option>
   </component>
@@ -209,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,7 +192,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,13 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00151" summary="Make this update to the main gui.">
-      <created>1530287942595</created>
-      <option name="number" value="00151" />
-      <option name="presentableId" value="LOCAL-00151" />
-      <option name="project" value="LOCAL" />
-      <updated>1530287942595</updated>
     </task>
     <task id="LOCAL-00152" summary="update also for the trial maker">
       <created>1530288002501</created>
@@ -648,7 +612,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530903942579</updated>
     </task>
-    <option name="localTasksCounter" value="200" />
+    <task id="LOCAL-00200" summary="Fix spelling error.">
+      <created>1531073235909</created>
+      <option name="number" value="00200" />
+      <option name="presentableId" value="LOCAL-00200" />
+      <option name="project" value="LOCAL" />
+      <updated>1531073235909</updated>
+    </task>
+    <option name="localTasksCounter" value="201" />
     <servers />
   </component>
   <component name="TodoView">
@@ -668,18 +639,16 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" visible="true" weight="0.3434238" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13486141" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
-      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="right" id="Data View" order="7" />
@@ -690,34 +659,36 @@
       <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.51670146" side_tool="true" weight="0.15991472" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
-      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" visible="true" weight="0.21215352" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
+      <window_info id="Favorites" order="1" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,7 +724,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make the exit window to influence on the listening function." />
     <MESSAGE value="Added fixation point drawing in the renderer class." />
     <MESSAGE value="Import experiment_data to the renderer class." />
     <MESSAGE value="Delete unnecessary function." />
@@ -778,7 +748,8 @@
     <MESSAGE value="Added .xlsx type to the end of the file name." />
     <MESSAGE value="Change the inputs to the function to be the dir and the file name.&#10;Also, check if the file exists in the directory." />
     <MESSAGE value="Add error message if the file name exists in the directory path." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add error message if the file name exists in the directory path." />
+    <MESSAGE value="Fix spelling error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix spelling error." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,9 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
           <caret line="127" column="42" lean-forward="true" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,9 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1033">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,9 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentdata.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://C:/Python36-32/Lib/multiprocessing/process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1157,9 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,8 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="153" column="53" lean-forward="true" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
+        <state relative-caret-position="2601">
+          <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
@@ -1244,41 +1203,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="361" column="86" selection-start-line="361" selection-start-column="86" selection-end-line="361" selection-end-column="86" />
-          <folding>
-            <element signature="e#2108#2207#0" />
-            <element signature="e#2528#7076#0" />
-            <element signature="e#6420#6701#0" />
-            <element signature="e#6465#6628#0" />
-            <element signature="e#6505#6628#0" />
-            <element signature="e#6771#6900#0" />
-            <element signature="e#6969#7272#0" />
-            <element signature="e#7002#7223#0" />
-            <element signature="e#7042#7223#0" />
-            <element signature="e#7356#9702#0" />
-            <element signature="e#7401#9640#0" />
-            <element signature="e#8039#9583#0" />
-            <element signature="e#8327#9024#0" />
-            <element signature="e#9067#9550#0" />
-            <element signature="e#9751#9875#0" />
-            <element signature="e#9924#10350#0" />
-            <element signature="e#11237#11377#0" />
-            <element signature="e#11443#11805#0" />
-            <element signature="e#11860#12094#0" />
-            <element signature="e#12164#12496#0" />
-            <element signature="e#12259#12496#0" />
-            <element signature="e#12310#12496#0" />
-            <element signature="e#12567#12804#0" />
-            <element signature="e#12647#12791#0" />
-            <element signature="e#12895#13753#0" />
-            <element signature="e#12930#13287#0" />
-            <element signature="e#13387#13740#0" />
-            <element signature="e#13804#13853#0" />
-            <element signature="e#14596#14875#0" />
-            <element signature="e#14596#14635#0" />
-            <element signature="e#14922#15788#0" />
-          </folding>
+        <state relative-caret-position="363">
+          <caret line="359" column="29" selection-start-line="359" selection-start-column="29" selection-end-line="359" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experimentdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
         </state>
       </provider>
     </entry>
