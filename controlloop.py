@@ -154,7 +154,7 @@ class ControlLoop:
         trial_correction = self._response_analyzer.analyze_response(self._current_trial_data)
         self._current_trial_data['ResponseCorrectness'] = trial_correction
         self._trial_maker.set_current_trial_response_correction(trial_correction)
-        self._save_data_maker.save_trial_data_to_file(self._current_trial_data)
+        self._save_data_maker.save_trial_data_to_file(self._current_trial_data, self.experiment_data)
         self.graph_maker_command_queue.put(('update_graph', self._current_trial_data))
 
     def sleep_function(self, sleep_time_seconds):
