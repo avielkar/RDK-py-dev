@@ -13,9 +13,9 @@ class SaveDataMaker:
         pass
 
     def create_new_data_file(self):
-        self.current_saved_file_name = '{date:%Y-%m-%d %H_%M_%S}.txt' \
+        self.current_saved_file_name = '{date:%Y-%m-%d %H_%M_%S}' \
             .format(date=datetime.datetime.now())
-        self.current_saved_file = open(self.directory_path + self.current_saved_file_name, 'w', buffering=1)
+        self.current_saved_file = open(self.directory_path + self.current_saved_file_name + '.txt', 'w', buffering=1)
         pass
 
     def save_trial_data_to_file(self, trial_data, experiment_data):
@@ -34,9 +34,9 @@ class SaveDataMaker:
         self.current_saved_file.write('\r\n')
 
         saved_trial_dic = {'trial data': trial_data,
-                           'experiment_data': experiment_data}
-        with open(self.directory_path + self.current_saved_file_name, 'ab') as f:
-            sio.savemat(f, {'trial_' + trial_data['Trial#']: saved_trial_dic})
+                           'experiment_data': experiment_data.to_dict()}
+        trial_num_string = 'trial_' + str(trial_data['Trial#'])
+        sio.savemat(self.directory_path + self.current_saved_file_name + '.mat', saved_trial_dic)
         pass
 
     def close_data_file(self):
