@@ -39,3 +39,14 @@ class ExperimentData:
             enable_confidence_choice = self.enable_confidence_choice,
             draw_fixation_point = self.draw_fixation_point
         )
+
+    def to_dict(self):
+        return\
+            {
+                'num_of_repetitions' : self.num_of_repetitions,
+                'num_of_trials' : self.num_of_trials,
+                'backward_error_probability' : self.backward_error_probability,
+                'forward_rightward_probability' : self.forward_rightward_probability,
+                'enable_confidence_choice' : self.enable_confidence_choice,
+                'draw_fixation_point' : self.draw_fixation_point
+            }
