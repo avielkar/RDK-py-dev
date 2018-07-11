@@ -1,6 +1,7 @@
 # coding: utf-8
 import datetime
 from experimentdata import ExperimentData
+import scipy.io as sio
 
 
 class SaveDataMaker:
@@ -31,6 +32,11 @@ class SaveDataMaker:
 
         # new line for spacing with the next trial data.
         self.current_saved_file.write('\r\n')
+
+        saved_trial_dic = {'trial data': trial_data,
+                           'experiment_data': experiment_data}
+        with open(self.directory_path + self.current_saved_file_name, 'ab') as f:
+            sio.savemat(f, {'trial_' + trial_data['Trial#']: saved_trial_dic})
         pass
 
     def close_data_file(self):
