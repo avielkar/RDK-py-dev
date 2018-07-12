@@ -57,6 +57,7 @@ class MainGuiTkinter:
         self.btn_save_protocol = None  # type: Button
 
     def btn_choose_folder_clicked(self):
+        # todo:if not choose ant name - give error after start press.
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
         self.combo_box_protocol_update()
 

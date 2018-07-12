@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save_data_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +86,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+                <state relative-caret-position="310">
+                  <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
                 </state>
               </provider>
             </entry>
@@ -312,13 +311,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00164" summary="fix the K_DOWN to K_UP.&#10;Add 'ConfidenceResponseTime' to the parameters dictionary.">
-      <created>1530546323755</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1530546323755</updated>
     </task>
     <task id="LOCAL-00165" summary="Adding waiting prints for all trial waitings.....">
       <created>1530546446610</created>
@@ -656,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531430295674</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="Remove the unnecessary event for the item selected.">
+      <created>1531430452317</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1531430452317</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TodoView">
@@ -677,14 +676,14 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.68976545" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.31023455" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.31023455" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3075693" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49685535" visible="true" weight="0.1401919" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
+      <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="2" sideWeight="0.5031447" side_tool="true" visible="true" weight="0.1401919" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48400852" weight="0.32881" />
@@ -761,7 +760,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Delete garbaged lines." />
     <MESSAGE value="Added functionallity and new file for the protocolwriter." />
     <MESSAGE value="Added save_protocol btn to the giuo with it's event." />
     <MESSAGE value="Added the protocol_writer object to the main_gui." />
@@ -786,7 +784,8 @@
     <MESSAGE value="Added user_running_experiment_name for the experiment data attributes." />
     <MESSAGE value="Linked the selected user name from the gui to the control loop throw the experiment data parameter." />
     <MESSAGE value="Make the dir with the belong user name in the path if not exists and save in it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make the dir with the belong user name in the path if not exists and save in it." />
+    <MESSAGE value="Remove the unnecessary event for the item selected." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove the unnecessary event for the item selected." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,7 +817,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>358</line>
+          <line>357</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1251,8 +1250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+        <state relative-caret-position="310">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
