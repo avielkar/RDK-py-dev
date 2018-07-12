@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar
+from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar, Entry
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -49,6 +49,8 @@ class MainGuiTkinter:
         self.draw_fixation_point_value = None  # type:BooleanVar
         self.label_save_protocol_name = None  # type: Label
         self.entry_save_protocol_name = None  # type: Entry
+        self.combobox_user_name_list = None  # type: Entry
+        self.label_user_name = None  # type: Label
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = graph_maker_command_queue
@@ -147,6 +149,16 @@ class MainGuiTkinter:
                                                                 variable=self.draw_fixation_point_value)
         self.checkbox_draw_fixation_point.place(relx=0.7, rely=0.75)
 
+        # user name region.
+        self.label_user_name = Label(master=self.root, text='User Name:')
+        self.label_user_name.place(relx=0.65, rely=0.1)
+
+        self.combobox_user_name_list = tkinter.ttk.Combobox(master=self.root)
+        self.combobox_user_name_list.bind("<<ComboboxSelected>>",
+                                          self.combobox_user_name_selected)
+        self.combobox_user_name_list_initialize()
+        self.combobox_user_name_list.place(relx=0.7, rely=0.1)
+
     def btn_start_experiment_clicked(self):
         self.btn_start_experiment.config(state='disabled')
         self.update_parameter_dictionary_according_to_gui()
@@ -167,7 +179,7 @@ class MainGuiTkinter:
     def btn_save_protocol_clicked(self):
         self.update_parameter_dictionary_according_to_gui()
         if not self.protocol_writer.write_file(self.protocol_root_dir, self.entry_save_protocol_name.get(),
-                                        self.parameters_attributes_dictionary):
+                                               self.parameters_attributes_dictionary):
             tkinter.messagebox.showinfo('Error', 'File name already exists in this directory')
         pass
 
@@ -302,6 +314,13 @@ class MainGuiTkinter:
             self.dynamic_controls_dict['minvalue_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['jumping_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
+        pass
+
+    def combobox_user_name_selected(self):
+        pass
+
+    def combobox_user_name_list_initialize(self):
+
         pass
 
     def show_message_box(self, message):

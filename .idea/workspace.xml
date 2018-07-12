@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Delete the key with the # char because Matlab cannot read it as attribute in it's struct.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save_data_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data_maker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1531419207582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1531428728458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,13 +34,13 @@
     <favorites_list name="RDK-py-dev" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55699086">
+    <splitter split-orientation="horizontal" split-proportion="0.40974867">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="193">
+                <state relative-caret-position="493">
                   <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
@@ -52,8 +52,8 @@
           <file leaf-file-name="save_data_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/save_data_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+                <state relative-caret-position="387">
+                  <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
                   <folding>
                     <element signature="e#16#31#0" expanded="true" />
                   </folding>
@@ -83,11 +83,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="386">
-                  <caret line="341" column="10" lean-forward="true" selection-start-line="341" selection-start-column="10" selection-end-line="341" selection-end-column="10" />
+                <state relative-caret-position="264">
+                  <caret line="159" column="43" lean-forward="true" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+            <entry file="file://C:/Python36-32/Lib/tkinter/__init__.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="2295" selection-start-line="2295" selection-end-line="2295" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="init_rdk.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/init_rdk.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
                 </state>
               </provider>
             </entry>
@@ -104,10 +122,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
+                <state relative-caret-position="190">
                   <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
@@ -179,9 +197,9 @@
         <option value="$PROJECT_DIR$/graph_maker.py" />
         <option value="$PROJECT_DIR$/protocolwriter.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
-        <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/experimentdata.py" />
         <option value="$PROJECT_DIR$/save_data_maker.py" />
+        <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
       </list>
     </option>
   </component>
@@ -207,6 +225,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,7 +237,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -666,19 +684,19 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4989339" weight="0.32881" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.6881663" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.31183368" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.68976545" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.31023455" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3075693" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49842766" visible="true" weight="0.13859275" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49685535" visible="true" weight="0.1401919" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
-      <window_info id="Favorites" order="2" sideWeight="0.5015723" side_tool="true" visible="true" weight="0.13859275" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48507464" weight="0.32881" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
+      <window_info id="Favorites" order="2" sideWeight="0.5031447" side_tool="true" visible="true" weight="0.1401919" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48400852" weight="0.32881" />
+      <window_info anchor="right" id="Data View" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -687,35 +705,35 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
-      <window_info anchor="right" id="Data View" order="7" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
-      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" visible="true" weight="0.21215352" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
+      <window_info id="Favorites" order="1" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,7 +826,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main_gui_tkinter.py</url>
-          <line>342</line>
+          <line>361</line>
           <option name="timeStamp" value="192" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1001,9 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
           <caret line="127" column="42" lean-forward="true" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,9 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1033">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1122,13 +1134,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph_maker_process.py" />
-    <entry file="file://$PROJECT_DIR$/init_rdk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1140,13 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="706">
           <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36-32/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="1279" selection-start-line="1279" selection-end-line="1279" />
         </state>
       </provider>
     </entry>
@@ -1194,18 +1192,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
+        <state relative-caret-position="493">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="341" column="10" lean-forward="true" selection-start-line="341" selection-start-column="10" selection-end-line="341" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1228,7 +1219,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graph_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="190">
           <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
@@ -1238,11 +1229,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        <state relative-caret-position="387">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
           <folding>
             <element signature="e#16#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="2295" selection-start-line="2295" selection-end-line="2295" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init_rdk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="159" column="43" lean-forward="true" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
         </state>
       </provider>
     </entry>
