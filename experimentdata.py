@@ -5,6 +5,7 @@ class ExperimentData:
     forward_rightward_probability = None  # type:float
     enable_confidence_choice = None  # type:bool
     draw_fixation_point = None  # type:bool
+    user_running_experiment_name = None  # type: str
 
     # todo: change all attributes to a list of dictionary.
 
@@ -14,13 +15,15 @@ class ExperimentData:
                  backward_error_probability=None,
                  forward_rightward_probability=None,
                  enable_confidence_choice=None,
-                 draw_fixation_point=None):
+                 draw_fixation_point=None,
+                 user_running_experiment_name=None):
         self.num_of_repetitions = num_of_repetitions
         self.num_of_trials = num_of_trials
         self.backward_error_probability = backward_error_probability
         self.forward_rightward_probability = forward_rightward_probability
         self.enable_confidence_choice = enable_confidence_choice
         self.draw_fixation_point = draw_fixation_point
+        self.user_running_experiment_name = user_running_experiment_name
         pass
 
     def to_string(self):
@@ -30,23 +33,26 @@ class ExperimentData:
                 'backward_error_probability : {backward_error_probability}' + '\r\n' +
                 'forward_rightward_probability : {forward_rightward_probability}' + '\r\n' +
                 'enable_confidence_choice : {enable_confidence_choice}' + '\r\n' +
-                'draw_fixation_point : {draw_fixation_point}' + '\r\n'
+                'draw_fixation_point : {draw_fixation_point}' + '\r\n' +
+                'user_running_experiment_name : {user_running_experiment_name}' + '\r\n'
         ).format(
             num_of_repetitions=self.num_of_repetitions,
-            num_of_trials = self.num_of_trials,
-            backward_error_probability = self.backward_error_probability,
-            forward_rightward_probability = self.forward_rightward_probability,
-            enable_confidence_choice = self.enable_confidence_choice,
-            draw_fixation_point = self.draw_fixation_point
+            num_of_trials=self.num_of_trials,
+            backward_error_probability=self.backward_error_probability,
+            forward_rightward_probability=self.forward_rightward_probability,
+            enable_confidence_choice=self.enable_confidence_choice,
+            draw_fixation_point=self.draw_fixation_point,
+            user_running_experiment_name=self.user_running_experiment_name
         )
 
     def to_dict(self):
-        return\
+        return \
             {
-                'num_of_repetitions' : self.num_of_repetitions,
-                'num_of_trials' : self.num_of_trials,
-                'backward_error_probability' : self.backward_error_probability,
-                'forward_rightward_probability' : self.forward_rightward_probability,
-                'enable_confidence_choice' : self.enable_confidence_choice,
-                'draw_fixation_point' : self.draw_fixation_point
+                'num_of_repetitions': self.num_of_repetitions,
+                'num_of_trials': self.num_of_trials,
+                'backward_error_probability': self.backward_error_probability,
+                'forward_rightward_probability': self.forward_rightward_probability,
+                'enable_confidence_choice': self.enable_confidence_choice,
+                'draw_fixation_point': self.draw_fixation_point,
+                'user_running_experiment_name': self.user_running_experiment_name
             }
