@@ -365,7 +365,8 @@ class MainGuiTkinter:
                                          forward_rightward_probability=float(
                                              self.entry_forward_rightward_probability.get()),
                                          enable_confidence_choice=self.confidence_choice_value.get(),
-                                         draw_fixation_point=self.draw_fixation_point_value.get())
+                                         draw_fixation_point=self.draw_fixation_point_value.get(),
+                                         user_running_experiment_name=self.combobox_user_name_list.get())
         command = 'start'
         command_data = (self.parameters_attributes_dictionary, experiment_data)
         data = (command, command_data)

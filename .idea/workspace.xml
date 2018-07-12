@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Add users list to the users combobox with the init function of the combobox.">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experimentdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/experimentdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +34,7 @@
     <favorites_list name="RDK-py-dev" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5872049">
+    <splitter split-orientation="horizontal" split-proportion="0.53160703">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
@@ -86,8 +86,8 @@
           <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
-                  <caret line="361" column="31" lean-forward="true" selection-start-line="361" selection-start-column="31" selection-end-line="361" selection-end-column="31" />
+                <state relative-caret-position="200">
+                  <caret line="368" column="104" selection-start-line="368" selection-start-column="104" selection-end-line="368" selection-end-column="104" />
                 </state>
               </provider>
             </entry>
@@ -198,8 +198,8 @@
         <option value="$PROJECT_DIR$/protocolwriter.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/save_data_maker.py" />
-        <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/experimentdata.py" />
+        <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
       </list>
     </option>
   </component>
@@ -320,13 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00161" summary="Add the state of the confidence choice raiobutton to the sending to the control loop through the experiment data.">
-      <created>1530461842263</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1530461842263</updated>
     </task>
     <task id="LOCAL-00162" summary="Add logic to confidence_response_time_stage function and call it if necessary.">
       <created>1530462353640</created>
@@ -664,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531429127217</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="Added user_running_experiment_name for the experiment data attributes.">
+      <created>1531429433820</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1531429433820</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TodoView">
@@ -769,7 +769,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added GraphMakerProcess to call with the process from the main_gui." />
     <MESSAGE value="Added the call from the main gio." />
     <MESSAGE value="Make the graph_maker as a seperate process in the init_rdk communicate with the control_loop via multiprocessing queue." />
     <MESSAGE value="Delete garbaged lines." />
@@ -794,7 +793,8 @@
     <MESSAGE value="Make code cleaner." />
     <MESSAGE value="Added the combobox with label for the user that is running the experiment.&#10;also, added function for event and for init the combobox with no logic." />
     <MESSAGE value="Add users list to the users combobox with the init function of the combobox." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add users list to the users combobox with the init function of the combobox." />
+    <MESSAGE value="Added user_running_experiment_name for the experiment data attributes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added user_running_experiment_name for the experiment data attributes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1234,13 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="361" column="31" lean-forward="true" selection-start-line="361" selection-start-column="31" selection-end-line="361" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
@@ -1255,6 +1248,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="56" column="47" lean-forward="true" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="368" column="104" selection-start-line="368" selection-start-column="104" selection-end-line="368" selection-end-column="104" />
         </state>
       </provider>
     </entry>
