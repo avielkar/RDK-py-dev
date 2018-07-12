@@ -35,9 +35,8 @@ class SaveDataMaker:
         self.current_saved_file.write('\r\n')
 
         loaded_dict = dict()
-        if(trial_data['Trial#'] > 1):
+        if trial_data['Trial#'] > 1:
             loaded_dict = mfp.loadmat(self.directory_path + self.current_saved_file_name + '.mat')
-
 
         trial_num_string = 'trial_' + str(trial_data['Trial#'])
         loaded_dict[trial_num_string] ={'trial_data': trial_data,

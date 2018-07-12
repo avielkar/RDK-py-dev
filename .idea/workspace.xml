@@ -52,8 +52,8 @@
           <file leaf-file-name="save_data_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/save_data_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+                <state relative-caret-position="323">
+                  <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
                   <folding>
                     <element signature="e#16#31#0" expanded="true" />
                   </folding>
@@ -302,13 +302,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00157" summary="Adding checkbox for enabling confidence choice.">
-      <created>1530461136528</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1530461136528</updated>
     </task>
     <task id="LOCAL-00158" summary="fix name spelling error.">
       <created>1530461219568</created>
@@ -646,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531418641165</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="Names in the saved mat file cannot include ' ' character , so add '_' instead.">
+      <created>1531419181459</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1531419181459</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TodoView">
@@ -751,7 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added draw_fixation_pint logic to the renderer." />
     <MESSAGE value="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands." />
     <MESSAGE value="Add listening_function_thread logic for the graph_maker." />
     <MESSAGE value="Trying to move the graph_maker proess to the main_gui." />
@@ -776,7 +775,8 @@
     <MESSAGE value="Save data also for a mat file." />
     <MESSAGE value="Added to_dict to experiment_data class." />
     <MESSAGE value="Createt the loaded dict and load it (if trial num is greater than 1) and save it with mat4py (it saves and load the dict with normal and no garbages of the numpy arrays)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Createt the loaded dict and load it (if trial num is greater than 1) and save it with mat4py (it saves and load the dict with normal and no garbages of the numpy arrays)." />
+    <MESSAGE value="Names in the saved mat file cannot include ' ' character , so add '_' instead." />
+    <option name="LAST_COMMIT_MESSAGE" value="Names in the saved mat file cannot include ' ' character , so add '_' instead." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1238,8 +1238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+        <state relative-caret-position="323">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
           <folding>
             <element signature="e#16#31#0" expanded="true" />
           </folding>
