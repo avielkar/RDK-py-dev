@@ -1,6 +1,8 @@
 # coding: utf-8
 import datetime
 from experimentdata import ExperimentData
+import scipy.io as sio
+import mat4py as mfp
 
 
 class SaveDataMaker:
@@ -12,9 +14,9 @@ class SaveDataMaker:
         pass
 
     def create_new_data_file(self):
-        self.current_saved_file_name = '{date:%Y-%m-%d %H_%M_%S}.txt' \
+        self.current_saved_file_name = '{date:%Y-%m-%d %H_%M_%S}' \
             .format(date=datetime.datetime.now())
-        self.current_saved_file = open(self.directory_path + self.current_saved_file_name, 'w', buffering=1)
+        self.current_saved_file = open(self.directory_path + self.current_saved_file_name + '.txt', 'w', buffering=1)
         pass
 
     def save_trial_data_to_file(self, trial_data, experiment_data):
@@ -31,6 +33,20 @@ class SaveDataMaker:
 
         # new line for spacing with the next trial data.
         self.current_saved_file.write('\r\n')
+
+        loaded_dict = dict()
+        if trial_data['Trial#'] > 1:
+            loaded_dict = mfp.loadmat(self.directory_path + self.current_saved_file_name + '.mat')
+
+        trial_num_string = 'trial_' + str(trial_data['Trial#'])
+        # delete the key with the # char because Matlab cannot read it as attribute in it's struct.
+        trial_data['TrialNum'] = trial_data['Trial#']
+        del trial_data['Trial#']
+
+        loaded_dict[trial_num_string] = {'trial_data': trial_data,
+                                         'experiment_data': experiment_data.to_dict()}
+
+        mfp.savemat(self.directory_path + self.current_saved_file_name + '.mat', loaded_dict)
         pass
 
     def close_data_file(self):
