@@ -40,7 +40,7 @@ class SaveDataMaker:
 
 
         trial_num_string = 'trial_' + str(trial_data['Trial#'])
-        loaded_dict[trial_num_string] ={'trial data': trial_data,
+        loaded_dict[trial_num_string] ={'trial_data': trial_data,
                            'experiment_data': experiment_data.to_dict()}
 
         mfp.savemat(self.directory_path + self.current_saved_file_name + '.mat', loaded_dict)

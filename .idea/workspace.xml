@@ -53,7 +53,7 @@
             <entry file="file://$PROJECT_DIR$/save_data_maker.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="408">
-                  <caret line="42" column="65" lean-forward="true" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+                  <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
                   <folding>
                     <element signature="e#16#31#0" expanded="true" />
                   </folding>
@@ -302,13 +302,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00156" summary="Adding comments for regions in the main gui fixed controls.">
-      <created>1530460627131</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1530460627131</updated>
     </task>
     <task id="LOCAL-00157" summary="Adding checkbox for enabling confidence choice.">
       <created>1530461136528</created>
@@ -646,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531335209904</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="Createt the loaded dict and load it (if trial num is greater than 1) and save it with mat4py (it saves and load the dict with normal and no garbages of the numpy arrays).">
+      <created>1531418641165</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1531418641165</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TodoView">
@@ -666,17 +666,17 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49946696" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.6924307" side_tool="true" visible="true" weight="0.32881" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4642857" weight="0.3361169" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3075693" visible="true" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4992224" visible="true" weight="0.13859275" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.6876333" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.31236672" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3075693" weight="0.32881" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49842766" visible="true" weight="0.13859275" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
-      <window_info id="Favorites" order="2" sideWeight="0.5007776" side_tool="true" visible="true" weight="0.13859275" />
+      <window_info id="Favorites" order="2" sideWeight="0.5015723" side_tool="true" visible="true" weight="0.13859275" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48507464" weight="0.32881" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -751,7 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add draw_fxation_point checkbutton to the gui and add it to the experiment_data sent to the control_loop." />
     <MESSAGE value="Added draw_fixation_pint logic to the renderer." />
     <MESSAGE value="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands." />
     <MESSAGE value="Add listening_function_thread logic for the graph_maker." />
@@ -776,7 +775,8 @@
     <MESSAGE value="Transfer the experiment_data to the saved_data_maker and write it there to the saved file." />
     <MESSAGE value="Save data also for a mat file." />
     <MESSAGE value="Added to_dict to experiment_data class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added to_dict to experiment_data class." />
+    <MESSAGE value="Createt the loaded dict and load it (if trial num is greater than 1) and save it with mat4py (it saves and load the dict with normal and no garbages of the numpy arrays)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Createt the loaded dict and load it (if trial num is greater than 1) and save it with mat4py (it saves and load the dict with normal and no garbages of the numpy arrays)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1239,7 +1239,7 @@
     <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="42" column="65" lean-forward="true" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="e#16#31#0" expanded="true" />
           </folding>
