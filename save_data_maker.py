@@ -2,6 +2,7 @@
 import datetime
 from experimentdata import ExperimentData
 import scipy.io as sio
+import mat4py as mfp
 
 
 class SaveDataMaker:
@@ -33,10 +34,16 @@ class SaveDataMaker:
         # new line for spacing with the next trial data.
         self.current_saved_file.write('\r\n')
 
-        saved_trial_dic = {'trial data': trial_data,
-                           'experiment_data': experiment_data.to_dict()}
+        loaded_dict = dict()
+        if(trial_data['Trial#'] > 1):
+            loaded_dict = mfp.loadmat(self.directory_path + self.current_saved_file_name + '.mat')
+
+
         trial_num_string = 'trial_' + str(trial_data['Trial#'])
-        sio.savemat(self.directory_path + self.current_saved_file_name + '.mat', saved_trial_dic)
+        loaded_dict[trial_num_string] ={'trial data': trial_data,
+                           'experiment_data': experiment_data.to_dict()}
+
+        mfp.savemat(self.directory_path + self.current_saved_file_name + '.mat', loaded_dict)
         pass
 
     def close_data_file(self):
