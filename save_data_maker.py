@@ -42,9 +42,9 @@ class SaveDataMaker:
         # delete the key with the # char because Matlab cannot read it as attribute in it's struct.
         trial_data['TrialNum'] = trial_data['Trial#']
         del trial_data['Trial#']
-        
-        loaded_dict[trial_num_string] ={'trial_data': trial_data,
-                           'experiment_data': experiment_data.to_dict()}
+
+        loaded_dict[trial_num_string] = {'trial_data': trial_data,
+                                         'experiment_data': experiment_data.to_dict()}
 
         mfp.savemat(self.directory_path + self.current_saved_file_name + '.mat', loaded_dict)
         pass
