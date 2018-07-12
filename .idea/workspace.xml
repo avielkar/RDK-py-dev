@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
+    <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="Delete the key with the # char because Matlab cannot read it as attribute in it's struct.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/save_data_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/save_data_maker.py" afterDir="false" />
     </list>
@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1531418386630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1531419207582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,7 +34,7 @@
     <favorites_list name="RDK-py-dev" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.668693">
+    <splitter split-orientation="horizontal" split-proportion="0.55699086">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
@@ -52,8 +52,8 @@
           <file leaf-file-name="save_data_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/save_data_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+                <state relative-caret-position="442">
+                  <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
                   <folding>
                     <element signature="e#16#31#0" expanded="true" />
                   </folding>
@@ -107,8 +107,8 @@
           <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="309">
-                  <caret line="74" selection-start-line="74" selection-end-line="74" />
+                <state relative-caret-position="88">
+                  <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -302,13 +302,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00158" summary="fix name spelling error.">
-      <created>1530461219568</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1530461219568</updated>
     </task>
     <task id="LOCAL-00159" summary="Add the confidence enable checkbutton to the attributes.">
       <created>1530461388307</created>
@@ -646,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531419181459</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="Make code cleaner.">
+      <created>1531419206528</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1531419206528</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TodoView">
@@ -665,9 +665,9 @@
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49946696" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.6876333" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.31236672" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.4989339" weight="0.32881" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.6881663" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.31183368" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3075693" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49842766" visible="true" weight="0.13859275" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
@@ -751,7 +751,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands." />
     <MESSAGE value="Add listening_function_thread logic for the graph_maker." />
     <MESSAGE value="Trying to move the graph_maker proess to the main_gui." />
     <MESSAGE value="Added GraphMakerProcess to call with the process from the main_gui." />
@@ -776,7 +775,8 @@
     <MESSAGE value="Added to_dict to experiment_data class." />
     <MESSAGE value="Createt the loaded dict and load it (if trial num is greater than 1) and save it with mat4py (it saves and load the dict with normal and no garbages of the numpy arrays)." />
     <MESSAGE value="Names in the saved mat file cannot include ' ' character , so add '_' instead." />
-    <option name="LAST_COMMIT_MESSAGE" value="Names in the saved mat file cannot include ' ' character , so add '_' instead." />
+    <MESSAGE value="Make code cleaner." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make code cleaner." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1219,16 +1219,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/mat4py/loadmat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1236,10 +1226,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/save_data_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="442">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
           <folding>
             <element signature="e#16#31#0" expanded="true" />
           </folding>
