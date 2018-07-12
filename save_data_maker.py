@@ -5,7 +5,7 @@ import scipy.io as sio
 import mat4py as mfp
 import os
 
-
+# todo:make the path decider more efficient.,
 class SaveDataMaker:
 
     def __init__(self):

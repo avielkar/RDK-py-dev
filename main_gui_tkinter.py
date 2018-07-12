@@ -49,7 +49,7 @@ class MainGuiTkinter:
         self.draw_fixation_point_value = None  # type:BooleanVar
         self.label_save_protocol_name = None  # type: Label
         self.entry_save_protocol_name = None  # type: Entry
-        self.combobox_user_name_list = None  # type: Entry
+        self.combobox_user_name_list = None  # type: Combobox
         self.label_user_name = None  # type: Label
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
@@ -154,8 +154,6 @@ class MainGuiTkinter:
         self.label_user_name.place(relx=0.65, rely=0.1)
 
         self.combobox_user_name_list = tkinter.ttk.Combobox(master=self.root)
-        self.combobox_user_name_list.bind("<<ComboboxSelected>>",
-                                          self.combobox_user_name_selected)
         self.combobox_user_name_list_initialize()
         self.combobox_user_name_list.place(relx=0.7, rely=0.1)
 
@@ -314,9 +312,6 @@ class MainGuiTkinter:
             self.dynamic_controls_dict['minvalue_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['jumping_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
-        pass
-
-    def combobox_user_name_selected(self):
         pass
 
     def combobox_user_name_list_initialize(self):
