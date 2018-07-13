@@ -50,7 +50,7 @@ class ControlLoop:
         self._trial_maker.load_new_data(attributes=self._attributes,
                                         experiment_data=self.experiment_data)
 
-        self._save_data_maker.create_new_data_file()
+        self._save_data_maker.create_new_data_file(experiment_data.user_running_experiment_name)
 
         if not self._renderer.is_initialized:
             self._renderer.init_window()

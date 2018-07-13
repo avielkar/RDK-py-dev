@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar
+from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar, Entry
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -49,12 +49,15 @@ class MainGuiTkinter:
         self.draw_fixation_point_value = None  # type:BooleanVar
         self.label_save_protocol_name = None  # type: Label
         self.entry_save_protocol_name = None  # type: Entry
+        self.combobox_user_name_list = None  # type: Combobox
+        self.label_user_name = None  # type: Label
         self.gui_queue = queue.Queue()
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = graph_maker_command_queue
         self.btn_save_protocol = None  # type: Button
 
     def btn_choose_folder_clicked(self):
+        # todo:if not choose ant name - give error after start press.
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
         self.combo_box_protocol_update()
 
@@ -147,6 +150,14 @@ class MainGuiTkinter:
                                                                 variable=self.draw_fixation_point_value)
         self.checkbox_draw_fixation_point.place(relx=0.7, rely=0.75)
 
+        # user name region.
+        self.label_user_name = Label(master=self.root, text='User Name:')
+        self.label_user_name.place(relx=0.65, rely=0.1)
+
+        self.combobox_user_name_list = tkinter.ttk.Combobox(master=self.root)
+        self.combobox_user_name_list_initialize()
+        self.combobox_user_name_list.place(relx=0.7, rely=0.1)
+
     def btn_start_experiment_clicked(self):
         self.btn_start_experiment.config(state='disabled')
         self.update_parameter_dictionary_according_to_gui()
@@ -167,7 +178,7 @@ class MainGuiTkinter:
     def btn_save_protocol_clicked(self):
         self.update_parameter_dictionary_according_to_gui()
         if not self.protocol_writer.write_file(self.protocol_root_dir, self.entry_save_protocol_name.get(),
-                                        self.parameters_attributes_dictionary):
+                                               self.parameters_attributes_dictionary):
             tkinter.messagebox.showinfo('Error', 'File name already exists in this directory')
         pass
 
@@ -304,6 +315,10 @@ class MainGuiTkinter:
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
         pass
 
+    def combobox_user_name_list_initialize(self):
+        self.combobox_user_name_list['values'] = ['Avi', 'Adam', 'Orly']
+        pass
+
     def show_message_box(self, message):
         tkinter.messagebox.showinfo(message)
         pass
@@ -346,7 +361,8 @@ class MainGuiTkinter:
                                          forward_rightward_probability=float(
                                              self.entry_forward_rightward_probability.get()),
                                          enable_confidence_choice=self.confidence_choice_value.get(),
-                                         draw_fixation_point=self.draw_fixation_point_value.get())
+                                         draw_fixation_point=self.draw_fixation_point_value.get(),
+                                         user_running_experiment_name=self.combobox_user_name_list.get())
         command = 'start'
         command_data = (self.parameters_attributes_dictionary, experiment_data)
         data = (command, command_data)
