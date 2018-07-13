@@ -57,7 +57,6 @@ class MainGuiTkinter:
         self.btn_save_protocol = None  # type: Button
 
     def btn_choose_folder_clicked(self):
-        # todo:if not choose ant name - give error after start press.
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
         self.combo_box_protocol_update()
 
@@ -159,9 +158,12 @@ class MainGuiTkinter:
         self.combobox_user_name_list.place(relx=0.7, rely=0.1)
 
     def btn_start_experiment_clicked(self):
-        self.btn_start_experiment.config(state='disabled')
-        self.update_parameter_dictionary_according_to_gui()
-        self.control_loop_function()
+        if self.combobox_user_name_list.get() == '':
+            tkinter.messagebox.showinfo('Error', 'Should choose user name !!!!')
+        else:
+            self.btn_start_experiment.config(state='disabled')
+            self.update_parameter_dictionary_according_to_gui()
+            self.control_loop_function()
         return
 
     def combo_box_protocol_update(self):
