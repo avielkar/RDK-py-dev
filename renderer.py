@@ -1,6 +1,8 @@
 # coding: utf-8
 from psychopy import visual
 
+from wrapping_dot_stim import *
+
 from experimentdata import ExperimentData
 
 import time
@@ -51,26 +53,26 @@ class Renderer:
 
     def render(self, data):
         self.data = data
-        dot_patch = visual.DotStim(win=self._my_win,
-                                   units=self.data['Units'],
-                                   color=list([eval(self.data['Color'])[0],
-                                               eval(self.data['Color'])[1],
-                                               eval(self.data['Color'])[2],
-                                               ]),
-                                   dir=self.convert_to_psycho_direction(self.data['Direction']),
-                                   nDots=self.data['NumberOfDots'],
-                                   fieldShape=self.data['FieldShape'],
-                                   fieldPos=[eval(self.data['FieldPosition'])[0],
-                                             eval(self.data['FieldPosition'])[1]],
-                                   fieldSize=self.data['FieldSize'],
-                                   dotLife=self.data['DotLife'],
-                                   # number of frames for each dot to be drawn
-                                   signalDots=self.data['SignalDots'],
-                                   # are the signal dots the 'same' on each frame? (see Scase et al)
-                                   noiseDots=self.data['NoiseDots'],
-                                   # do the noise dots follow random- 'walk', 'direction', or 'position'
-                                   speed=self.data['Speed'],
-                                   coherence=self.data['Coherence'])
+        dot_patch = WrappingDotStim(win=self._my_win,
+                                    units=self.data['Units'],
+                                    color=list([eval(self.data['Color'])[0],
+                                                eval(self.data['Color'])[1],
+                                                eval(self.data['Color'])[2],
+                                                ]),
+                                    dir=self.convert_to_psycho_direction(self.data['Direction']),
+                                    nDots=self.data['NumberOfDots'],
+                                    fieldShape=self.data['FieldShape'],
+                                    fieldPos=[eval(self.data['FieldPosition'])[0],
+                                              eval(self.data['FieldPosition'])[1]],
+                                    fieldSize=self.data['FieldSize'],
+                                    dotLife=self.data['DotLife'],
+                                    # number of frames for each dot to be drawn
+                                    signalDots=self.data['SignalDots'],
+                                    # are the signal dots the 'same' on each frame? (see Scase et al)
+                                    noiseDots=self.data['NoiseDots'],
+                                    # do the noise dots follow random- 'walk', 'direction', or 'position'
+                                    speed=self.data['Speed'],
+                                    coherence=self.data['Coherence'])
 
         message = visual.TextStim(win=self._my_win,
                                   text='Hit Q to quit',
