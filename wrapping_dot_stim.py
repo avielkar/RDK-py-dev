@@ -1,5 +1,4 @@
-from psychopy import core, visual, gui, data, misc, event
-import time, numpy, math, os.path, pickle
+import numpy
 from numpy import *
 from psychopy import visual
 

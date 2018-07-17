@@ -1,7 +1,7 @@
 # coding: utf-8
-from psychopy import visual
 
-from wrapping_dot_stim import *
+from psychopy import visual
+from wrapping_dot_stim import WrappingDotStim
 
 from experimentdata import ExperimentData
 
