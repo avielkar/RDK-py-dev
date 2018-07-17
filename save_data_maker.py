@@ -1,7 +1,5 @@
 # coding: utf-8
 import datetime
-from experimentdata import ExperimentData
-import scipy.io as sio
 import mat4py as mfp
 import os
 
