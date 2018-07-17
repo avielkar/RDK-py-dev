@@ -14,7 +14,7 @@ class Renderer:
         self._my_win = None
         self.is_initialized = False
         self._attributes_dict = {
-            'Units': None,
+            'Units': 'deg',
             'Color': dict(r=1, g=1, b=1),
             'Direction': 270,
             'NumberOfDots': 500,
@@ -35,13 +35,14 @@ class Renderer:
         self.experiment_data = None  # type: ExperimentData
         pass
 
-    # todo: init window units according to the input data in the units parameter.
+    # todo: init window units according to the input data in the units parameter. Also for the monitor distance.
+    # todo: check wht onlt testwindow is allowed.
     def init_window(self):
-        monitors.Monitor(name='Dell',
+        monitors.Monitor(name='testMonitor',
                          distance=48,)
         self._my_win = visual.Window((600, 600),
                                      monitor='testMonitor',
-                                     fullscr=True,
+                                     fullscr=False,
                                      allowGUI=False,
                                      bitsMode=None,
                                      units='norm',
