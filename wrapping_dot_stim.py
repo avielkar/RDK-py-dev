@@ -61,16 +61,22 @@ class WrappingDotStim(visual.DotStim):
             dead = dead + (~self._signalDots)  # just create new ones
         # handle boundaries of the field
         if self.fieldShape in [None, 'square', 'sqr']:
-            self._dotsXY[(self._dotsXY[:, 0] > (self.fieldSize / 2.0)), 0] = numpy.subtract(
-                numpy.mod((self._dotsXY[(self._dotsXY[:, 0] > (self.fieldSize / 2.0)), 0]), (self.fieldSize / 2.0)),
-                (self.fieldSize / 2.0))
-            self._dotsXY[(self._dotsXY[:, 1] > (self.fieldSize / 2.0)), 1] = numpy.subtract(
-                numpy.mod((self._dotsXY[(self._dotsXY[:, 1] > (self.fieldSize / 2.0)), 1]), (self.fieldSize / 2.0)),
-                (self.fieldSize / 2))
-            self._dotsXY[(self._dotsXY[:, 0] < -(self.fieldSize / 2.0)), 0] = numpy.mod(
-                self._dotsXY[(self._dotsXY[:, 0] < -(self.fieldSize / 2.0)), 0], (self.fieldSize / 2.0))
-            self._dotsXY[(self._dotsXY[:, 1] < -(self.fieldSize / 2.0)), 1] = numpy.mod(
-                self._dotsXY[(self._dotsXY[:, 1] < -(self.fieldSize / 2.0)), 1], (self.fieldSize / 2.0))
+            self._dotsXY[(self._dotsXY[:, 0] > (self.fieldSize[0] / 2.0)),
+                         0] = numpy.subtract(numpy.mod((self._dotsXY[(self._dotsXY[:,
+                                                                      0] > (self.fieldSize[0] / 2.0)), 0]),
+                                                       (self.fieldSize[0] / 2.0)),
+                                             (self.fieldSize[0] / 2.0))
+            self._dotsXY[(self._dotsXY[:, 1] > (self.fieldSize[1] / 2.0)),
+                         1] = numpy.subtract(numpy.mod((self._dotsXY[(self._dotsXY[:,
+                                                                      1] > (self.fieldSize[1] / 2.0)), 1]),
+                                                       (self.fieldSize[1] / 2.0)),
+                                             (self.fieldSize[1] / 2.0))
+            self._dotsXY[(self._dotsXY[:, 0] < -(self.fieldSize[0] / 2.0)),
+                         0] = numpy.mod(self._dotsXY[(self._dotsXY[:, 0] < -(self.fieldSize[0] /
+                                                                             2.0)), 0], (self.fieldSize[0] / 2.0))
+            self._dotsXY[(self._dotsXY[:, 1] < -(self.fieldSize[1] / 2.0)),
+                         1] = numpy.mod(self._dotsXY[(self._dotsXY[:, 1] < -(self.fieldSize[1] /
+                                                                             2.0)), 1], (self.fieldSize[1] / 2.0))
 
         elif self.fieldShape == 'circle':
             # transform to a normalised circle (radius = 1 all around) then to polar coords to check
@@ -80,5 +86,6 @@ class WrappingDotStim(visual.DotStim):
         # update any dead dots
         if sum(dead):
             self._dotsXY[dead, :] = self._newDotsXY(sum(dead))
+
         # update the pixel XY coordinates
-        self._calcDotsXYRendered()
+        self._updateVertices()
