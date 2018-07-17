@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from psychopy import visual
+from psychopy import visual, monitors
 
 from experimentdata import ExperimentData
 
@@ -35,8 +35,13 @@ class Renderer:
         self.experiment_data = None  # type: ExperimentData
         pass
 
+    # todo: init window units according to the input data in the units parameter.
     def init_window(self):
+        monitors.Monitor(name='Dell',
+                         distance=48,)
         self._my_win = visual.Window((600, 600),
+                                     monitor='testMonitor',
+                                     fullscr=True,
                                      allowGUI=False,
                                      bitsMode=None,
                                      units='norm',
