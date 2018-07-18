@@ -37,22 +37,24 @@ class Renderer:
 
     # todo: init window units according to the input data in the units parameter. Also for the monitor distance.
     # todo: check why only testMonitor is allowed.
-    def init_window(self):
+    def init_window(self, units, distance2screen):
         my_monitor = monitors.Monitor(name='testMonitor',
-                                      distance=1000)
+                                      distance=distance2screen)
         my_monitor.setSizePix([600, 600])
 
         self._my_win = visual.Window(monitor=my_monitor,
                                      fullscr=False,
                                      allowGUI=False,
                                      bitsMode=None,
-                                     units='deg',
+                                     units=units,
                                      winType='pygame')
         self.is_initialized = True
 
     def close(self):
         self._my_win.close()
 
+    # todo: remove the attributes_dict - it is not necessary , also remove the experiment_data and transfer it via
+    # the render function.
     def set_attributes(self, attributes_dict, experiment_data):
         self._attributes_dict = attributes_dict
         self.experiment_data = experiment_data

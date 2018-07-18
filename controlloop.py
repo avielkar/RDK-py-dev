@@ -53,7 +53,8 @@ class ControlLoop:
         self._save_data_maker.create_new_data_file(experiment_data.user_running_experiment_name)
 
         if not self._renderer.is_initialized:
-            self._renderer.init_window()
+            self._renderer.init_window(units=self._current_trial_data['Units'],
+                                       distance2screen=self._current_trial_data['Distance2Screen'])
             self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
             self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
