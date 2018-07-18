@@ -36,16 +36,17 @@ class Renderer:
         pass
 
     # todo: init window units according to the input data in the units parameter. Also for the monitor distance.
-    # todo: check wht onlt testwindow is allowed.
+    # todo: check why only testMonitor is allowed.
     def init_window(self):
-        monitors.Monitor(name='testMonitor',
-                         distance=48,)
-        self._my_win = visual.Window((600, 600),
-                                     monitor='testMonitor',
+        my_monitor = monitors.Monitor(name='testMonitor',
+                                      distance=1000)
+        my_monitor.setSizePix([600, 600])
+
+        self._my_win = visual.Window(monitor=my_monitor,
                                      fullscr=False,
                                      allowGUI=False,
                                      bitsMode=None,
-                                     units='norm',
+                                     units='deg',
                                      winType='pygame')
         self.is_initialized = True
 
