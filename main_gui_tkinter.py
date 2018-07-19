@@ -14,10 +14,7 @@ import tkinter.messagebox
 from threading import Thread
 from experimentdata import ExperimentData
 from tkinter import BooleanVar
-import time
 import queue
-import multiprocessing
-from graph_maker import GraphMaker
 
 
 class MainGuiTkinter:
