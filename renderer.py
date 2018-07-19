@@ -1,6 +1,6 @@
 # coding: utf-8
 
-from psychopy import visual
+from psychopy import visual, monitors
 
 from experimentdata import ExperimentData
 
@@ -14,7 +14,7 @@ class Renderer:
         self._my_win = None
         self.is_initialized = False
         self._attributes_dict = {
-            'Units': None,
+            'Units': 'deg',
             'Color': dict(r=1, g=1, b=1),
             'Direction': 270,
             'NumberOfDots': 500,
@@ -35,17 +35,24 @@ class Renderer:
         self.experiment_data = None  # type: ExperimentData
         pass
 
-    def init_window(self):
-        self._my_win = visual.Window((600, 600),
+    def init_window(self, units, distance2screen):
+        my_monitor = monitors.Monitor(name='testMonitor',
+                                      distance=distance2screen)
+
+        self._my_win = visual.Window(size=(800, 800),
+                                     monitor=my_monitor,
+                                     fullscr=False,
                                      allowGUI=False,
                                      bitsMode=None,
-                                     units='norm',
+                                     units=units,
                                      winType='pygame')
         self.is_initialized = True
 
     def close(self):
         self._my_win.close()
 
+    # todo: remove the attributes_dict - it is not necessary , also remove the experiment_data and transfer it via
+    # the render function.
     def set_attributes(self, attributes_dict, experiment_data):
         self._attributes_dict = attributes_dict
         self.experiment_data = experiment_data
