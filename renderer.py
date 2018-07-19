@@ -40,9 +40,9 @@ class Renderer:
     def init_window(self, units, distance2screen):
         my_monitor = monitors.Monitor(name='testMonitor',
                                       distance=distance2screen)
-        my_monitor.setSizePix([600, 600])
 
-        self._my_win = visual.Window(monitor=my_monitor,
+        self._my_win = visual.Window(size=(800, 800),
+                                     monitor=my_monitor,
                                      fullscr=False,
                                      allowGUI=False,
                                      bitsMode=None,
