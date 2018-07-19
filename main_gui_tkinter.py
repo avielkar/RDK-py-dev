@@ -100,7 +100,8 @@ class MainGuiTkinter:
         # stop experiment button region.
         self.btn_stop_experiment = Button(master=self.root,
                                           text='Stop',
-                                          command=self.btn_stop_experiment_clicked)
+                                          command=self.btn_stop_experiment_clicked,
+                                          state='disabled')
         self.btn_stop_experiment.place(relx=0.95,
                                        rely=0.0)
 
