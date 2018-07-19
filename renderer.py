@@ -35,8 +35,6 @@ class Renderer:
         self.experiment_data = None  # type: ExperimentData
         pass
 
-    # todo: init window units according to the input data in the units parameter. Also for the monitor distance.
-    # todo: check why only testMonitor is allowed.
     def init_window(self, units, distance2screen):
         my_monitor = monitors.Monitor(name='testMonitor',
                                       distance=distance2screen)

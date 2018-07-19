@@ -14,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1532027571203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1532031080017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -52,8 +52,8 @@
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+                <state relative-caret-position="204">
+                  <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
                   <folding>
                     <element signature="e#17#54#0" expanded="true" />
                   </folding>
@@ -109,8 +109,8 @@
           <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="74" selection-start-line="74" selection-end-line="74" />
+                <state relative-caret-position="187">
+                  <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -308,13 +308,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00172" summary="Added listening function.&#10;Also added the command start via the control_loop_queue.">
-      <created>1530631463287</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1530631463287</updated>
     </task>
     <task id="LOCAL-00173" summary="Move all rendering and graphing to the listening thread function.">
       <created>1530820177608</created>
@@ -652,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531942432934</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="Change the screen render width.">
+      <created>1532029283209</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1532029283209</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TodoView">
@@ -666,6 +666,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="890" y="-1088" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
@@ -772,7 +773,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add the entry for the new protocol name and transfer the new protocol full path to the protocolwriter." />
     <MESSAGE value="Added .xlsx type to the end of the file name." />
     <MESSAGE value="Change the inputs to the function to be the dir and the file name.&#10;Also, check if the file exists in the directory." />
     <MESSAGE value="Add error message if the file name exists in the directory path." />
@@ -797,7 +797,8 @@
     <MESSAGE value="Make the monitor declaration and usage cleaner." />
     <MESSAGE value="Added to the init_window the units and the distance2screen parameters." />
     <MESSAGE value="Convert the distance to float instance." />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert the distance to float instance." />
+    <MESSAGE value="Change the screen render width." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change the screen render width." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1223,16 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/tools/monitorunittools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1264,10 +1255,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/graph_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="204">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding>
             <element signature="e#17#54#0" expanded="true" />
           </folding>
