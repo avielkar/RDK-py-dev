@@ -173,7 +173,7 @@ class MainGuiTkinter:
 
     def btn_stop_experiment_clicked(self):
         # self.btn_start_experiment.config(state='normal')
-        self.control_loop.exit_experiment = True
+        self.control_loop.stop_experiment = True
 
     def combo_box_protocol_update(self):
         if self.protocol_root_dir != '':

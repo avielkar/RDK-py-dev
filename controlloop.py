@@ -31,6 +31,7 @@ class ControlLoop:
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
         self.exit_experiment = False
+        self.stop_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
         self.control_loop_commands_queue = control_loop_queue  # type: queue.Queue
         self.graph_maker_command_queue = graph_maker_queue  # type: multiprocessing.Queue
@@ -60,7 +61,8 @@ class ControlLoop:
             self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         for trialNum in range(self.experiment_data.num_of_trials):
-            if self.exit_experiment:
+            if self.exit_experiment or self.stop_experiment:
+                self.stop_experiment = False
                 break
 
             self._current_trial_data = self._trial_maker.current_trial()
