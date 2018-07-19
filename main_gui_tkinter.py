@@ -3,7 +3,7 @@ import os
 
 import tkinter
 import tkinter.ttk
-from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar, Entry
+from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar, Entry, Button
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
 
@@ -14,10 +14,7 @@ import tkinter.messagebox
 from threading import Thread
 from experimentdata import ExperimentData
 from tkinter import BooleanVar
-import time
 import queue
-import multiprocessing
-from graph_maker import GraphMaker
 
 
 class MainGuiTkinter:
@@ -34,6 +31,7 @@ class MainGuiTkinter:
         self.protocol_root_dir = 'D:\RDK-protocols'  # type: object
         self.combobox_protocol_list = None  # type: Combobox
         self.btn_start_experiment = None  # type: Button
+        self.btn_stop_experiment = None  # type: Button
         self.dynamic_controls_dict = None  # type: Dict[Any, Any]
         self.parameters_attributes_dictionary = None  # type: Dict[Any,Any]
         self.label_num_of_repetitions = None  # type: Label
@@ -99,6 +97,14 @@ class MainGuiTkinter:
         self.btn_start_experiment.place(relx=0.9,
                                         rely=0.0)
 
+        # stop experiment button region.
+        self.btn_stop_experiment = Button(master=self.root,
+                                          text='Stop',
+                                          command=self.btn_stop_experiment_clicked,
+                                          state='disabled')
+        self.btn_stop_experiment.place(relx=0.95,
+                                       rely=0.0)
+
         # num of trials region.
         self.label_num_of_trials = Label(master=self.root,
                                          text='#Trials')
@@ -162,9 +168,14 @@ class MainGuiTkinter:
             tkinter.messagebox.showinfo('Error', 'Should choose user name !!!!')
         else:
             self.btn_start_experiment.config(state='disabled')
+            self.btn_stop_experiment.config(state='norm')
             self.update_parameter_dictionary_according_to_gui()
             self.control_loop_function()
         return
+
+    def btn_stop_experiment_clicked(self):
+        # self.btn_start_experiment.config(state='normal')
+        self.control_loop.stop_experiment = True
 
     def combo_box_protocol_update(self):
         if self.protocol_root_dir != '':
