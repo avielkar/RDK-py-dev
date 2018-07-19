@@ -168,6 +168,7 @@ class MainGuiTkinter:
             tkinter.messagebox.showinfo('Error', 'Should choose user name !!!!')
         else:
             self.btn_start_experiment.config(state='disabled')
+            self.btn_stop_experiment.config(state='norm')
             self.update_parameter_dictionary_according_to_gui()
             self.control_loop_function()
         return
