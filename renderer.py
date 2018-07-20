@@ -1,4 +1,4 @@
-# coding: utf-888
+# coding: utf-8
 
 from psychopy import visual, monitors
 
