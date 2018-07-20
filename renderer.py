@@ -105,7 +105,7 @@ class Renderer:
 
     def density_to_number_of_dots(self, dots_density, field_size):
         # todo: check here if a caculation of the field size is also correct for the degree dimension.
-        return dots_density * field_size ** 2 / 2
+        return int(dots_density * field_size ** 2 / 2)
         pass
 
     def convert_to_psycho_direction(self, direction):
