@@ -1,4 +1,4 @@
-# coding: utf-8
+# coding: utf-888
 
 from psychopy import visual, monitors
 
@@ -102,7 +102,9 @@ class Renderer:
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
 
-    def density_to_number_of_dots(self, dots_density, units):
+    def density_to_number_of_dots(self, dots_density, units, field_size):
+        if units == 'cm':
+            number_of_dots = dots_density * field_size**2/2
         pass
 
     def convert_to_psycho_direction(self, direction):
