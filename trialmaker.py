@@ -1,5 +1,6 @@
 from withinstair_decision_maker import *
 from experimentdata import ExperimentData
+from static_decision_maker import StaticDecisionMaker
 
 
 class TrialMaker:
@@ -48,15 +49,16 @@ class TrialMaker:
         self.experiment_type = self.check_experiment_type()
         if self.experiment_type == 'withinstair':
             self.decision_maker = SimpleWithinStairDecisionMaker()
-            self.decision_maker.set_attributes(
-                param_attributes=self._attributes,
-                experiment_data=experiment_data)
         elif self.experiment_type == 'varying':
             pass
         elif self.experiment_type == 'statics':
+            self.decision_maker = StaticDecisionMaker()
             pass
         else:
             return False
+        self.decision_maker.set_attributes(
+            param_attributes=self._attributes,
+            experiment_data=experiment_data)
         return True
 
     def get_trials_scala_values(self):
