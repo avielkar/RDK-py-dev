@@ -1,17 +1,19 @@
 from withinstair_decision_maker import *
 from experimentdata import ExperimentData
+from static_decision_maker import StaticDecisionMaker
 
 
 class TrialMaker:
     def __init__(self):
         self._attributes = None  # type: Dict[Any, Any]
-        self._experiment_data = None # type: ExperimentData
+        self._experiment_data = None  # type: ExperimentData
         self.trial_number = 0
-        self.within_stair_decision_maker = None  # type: WithinStairDecisionMaker
+        self.decision_maker = None  # type: DecisionMaker
+        self.experiment_type = None  # type:str
         pass
 
     def current_trial(self):
-        current_trial = self.within_stair_decision_maker.current_trial()
+        current_trial = self.decision_maker.current_trial()
 
         # add the trial number to the current trial data
         self.trial_number += 1
@@ -36,7 +38,7 @@ class TrialMaker:
         pass
 
     def set_current_trial_response_correction(self, trial_correctness):
-        self.within_stair_decision_maker.set_current_correctness(trial_correctness)
+        self.decision_maker.set_current_correctness(trial_correctness)
 
     def load_new_data(self,
                       attributes,
@@ -44,22 +46,23 @@ class TrialMaker:
         self._attributes = attributes
         self.experiment_data = experiment_data
         self.trial_number = 0
-        experiment_type = self.check_experiment_type()
-        if experiment_type == 'withinstair':
-            self.within_stair_decision_maker = SimpleWithinStairDecisionMaker()
-            self.within_stair_decision_maker.set_attributes(
-                param_attributes=self._attributes,
-                experiment_data=experiment_data)
-        elif experiment_type == 'varying':
+        self.experiment_type = self.check_experiment_type()
+        if self.experiment_type == 'withinstair':
+            self.decision_maker = SimpleWithinStairDecisionMaker()
+        elif self.experiment_type == 'varying':
             pass
-        elif experiment_type == 'statics':
+        elif self.experiment_type == 'statics':
+            self.decision_maker = StaticDecisionMaker()
             pass
         else:
             return False
+        self.decision_maker.set_attributes(
+            param_attributes=self._attributes,
+            experiment_data=experiment_data)
         return True
 
     def get_trials_scala_values(self):
-        return self.within_stair_decision_maker.get_within_stair_vector_values()
+        return self.decision_maker.get_vector_values()
 
     def check_experiment_type(self):
         varying_type = sum(1 for param_name in self._attributes \

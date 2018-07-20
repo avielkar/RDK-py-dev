@@ -1,16 +1,15 @@
+from abc import abstractmethod
+
 import numpy
 from experimentdata import ExperimentData
+from decision_maker import DecisionMaker
 
 
-class WithinStairDecisionMaker:
+class WithinStairDecisionMaker(DecisionMaker):
 
     def __init__(self):
-        self.experiment_data = None  # type: ExperimentData
-        self.param_attributes = None  # type: Dict[Any, Any]
-        self.static_parameters_attributes = None  # type: List[Any]
         self.within_stair_vector = None  # type: list
         self.within_stair_attribute = None  # type: Any
-        self.current_trial_attributes = None  # Dict[string, Any]
         pass
 
     def set_attributes(self,
@@ -18,13 +17,14 @@ class WithinStairDecisionMaker:
                        experiment_data):
         self.param_attributes = param_attributes
         self.experiment_data = experiment_data
-        self.reset_within_maker()
+        self.reset_maker()
         pass
 
-    def get_within_stair_vector_values(self):
+    def get_vector_values(self):
         return self.within_stair_vector
 
-    def reset_within_maker(self):
+    @abstractmethod
+    def reset_maker(self):
         pass
 
     def create_within_stair_vector(self):
@@ -42,6 +42,7 @@ class WithinStairDecisionMaker:
                                      float(within_stair_jumping))
         return within_vector
 
+    @abstractmethod
     def current_trial(self):
         pass
 
@@ -56,7 +57,7 @@ class ComplexWithinStairDecisionMaker(WithinStairDecisionMaker):
         self.last_trial_correction_left = None  # type: bool
         pass
 
-    def reset_within_maker(self):
+    def reset_maker(self):
         self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_negative_vector_index = len(self.within_stair_vector) - 1
         self.within_stair_positive_vector_index = len(self.within_stair_vector) - 1
@@ -113,7 +114,7 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
         self.last_trial_correction = None  # type: bool
         pass
 
-    def reset_within_maker(self):
+    def reset_maker(self):
         self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_vector_index = len(self.within_stair_vector) - 1
         self.last_trial_correction = False
