@@ -1,3 +1,5 @@
+from abc import abstractmethod
+
 import numpy
 from experimentdata import ExperimentData
 from decision_maker import DecisionMaker
@@ -21,6 +23,7 @@ class WithinStairDecisionMaker(DecisionMaker):
     def get_vector_values(self):
         return self.within_stair_vector
 
+    @abstractmethod
     def reset_maker(self):
         pass
 
@@ -39,6 +42,7 @@ class WithinStairDecisionMaker(DecisionMaker):
                                      float(within_stair_jumping))
         return within_vector
 
+    @abstractmethod
     def current_trial(self):
         pass
 

@@ -26,6 +26,7 @@ class DecisionMaker:
     def reset_within_maker(self):
         pass
 
+    @abstractmethod
     def current_trial(self):
         pass
 
