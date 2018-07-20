@@ -57,12 +57,11 @@
           <file leaf-file-name="static_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+                <state relative-caret-position="255">
+                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="21" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                     <element signature="e#540#674#0" />
-                    <element signature="e#805#809#0" />
                     <element signature="e#1756#1760#0" />
                   </folding>
                 </state>
@@ -108,8 +107,11 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+                <state relative-caret-position="-7">
+                  <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -308,13 +310,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00183" summary="Add listening_function_thread logic for the graph_maker.">
-      <created>1530866263371</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1530866263371</updated>
     </task>
     <task id="LOCAL-00184" summary="Trying to move the graph_maker proess to the main_gui.">
       <created>1530869529928</created>
@@ -652,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532080809895</updated>
     </task>
-    <option name="localTasksCounter" value="232" />
+    <task id="LOCAL-00232" summary="Implement get_vector_values function for the static maker&#10;Add attribute for the trial maker with the data of the current type of experiment(withinstair, statics, etc........)">
+      <created>1532081274190</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1532081274190</updated>
+    </task>
+    <option name="localTasksCounter" value="233" />
     <servers />
   </component>
   <component name="TodoView">
@@ -774,7 +776,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make code cleaner." />
     <MESSAGE value="Added the combobox with label for the user that is running the experiment.&#10;also, added function for event and for init the combobox with no logic." />
     <MESSAGE value="Add users list to the users combobox with the init function of the combobox." />
     <MESSAGE value="Added user_running_experiment_name for the experiment data attributes." />
@@ -799,7 +800,8 @@
     <MESSAGE value="Add StaticDecisionMaker class." />
     <MESSAGE value="Make inheritance from DecisionMaker." />
     <MESSAGE value="Delete unnecessary function or union attributes to the base class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary function or union attributes to the base class." />
+    <MESSAGE value="Implement get_vector_values function for the static maker&#10;Add attribute for the trial maker with the data of the current type of experiment(withinstair, statics, etc........)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement get_vector_values function for the static maker&#10;Add attribute for the trial maker with the data of the current type of experiment(withinstair, statics, etc........)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1265,8 +1267,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        <state relative-caret-position="-7">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,12 +1291,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        <state relative-caret-position="255">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="21" selection-end-column="12" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
             <element signature="e#540#674#0" />
-            <element signature="e#805#809#0" />
             <element signature="e#1756#1760#0" />
           </folding>
         </state>

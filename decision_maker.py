@@ -17,7 +17,7 @@ class DecisionMaker:
                        experiment_data):
         self.param_attributes = param_attributes
         self.experiment_data = experiment_data
-        self.reset_within_maker()
+        self.reset_maker()
         pass
 
     def get_vector_values(self):
@@ -30,7 +30,7 @@ class DecisionMaker:
         pass
 
     @abstractmethod
-    def reset_within_maker(self):
+    def reset_maker(self):
         pass
 
     @abstractmethod

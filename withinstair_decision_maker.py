@@ -15,13 +15,13 @@ class WithinStairDecisionMaker(DecisionMaker):
                        experiment_data):
         self.param_attributes = param_attributes
         self.experiment_data = experiment_data
-        self.reset_within_maker()
+        self.reset_maker()
         pass
 
     def get_vector_values(self):
         return self.within_stair_vector
 
-    def reset_within_maker(self):
+    def reset_maker(self):
         pass
 
     def create_within_stair_vector(self):
@@ -53,7 +53,7 @@ class ComplexWithinStairDecisionMaker(WithinStairDecisionMaker):
         self.last_trial_correction_left = None  # type: bool
         pass
 
-    def reset_within_maker(self):
+    def reset_maker(self):
         self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_negative_vector_index = len(self.within_stair_vector) - 1
         self.within_stair_positive_vector_index = len(self.within_stair_vector) - 1
@@ -110,7 +110,7 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
         self.last_trial_correction = None  # type: bool
         pass
 
-    def reset_within_maker(self):
+    def reset_maker(self):
         self.within_stair_vector = self.create_within_stair_vector()
         self.within_stair_vector_index = len(self.within_stair_vector) - 1
         self.last_trial_correction = False
