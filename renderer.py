@@ -41,6 +41,7 @@ class Renderer:
 
         self._my_win = visual.Window(size=(800, 800),
                                      monitor=my_monitor,
+                                     color='black',
                                      fullscr=False,
                                      allowGUI=False,
                                      bitsMode=None,
