@@ -82,10 +82,6 @@ class Renderer:
                                            speed=self.data['Speed'],
                                            coherence=self.data['Coherence'])
 
-        message = visual.TextStim(win=self._my_win,
-                                  text='Hit Q to quit',
-                                  pos=(0, -0.5))
-
         if self.experiment_data.draw_fixation_point:
             fixation_point_stim = visual.Circle(win=self._my_win,
                                                 radius=0.01,
