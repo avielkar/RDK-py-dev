@@ -16,7 +16,7 @@ class StaticDecisionMaker(DecisionMaker):
         pass
 
     def get_vector_values(self):
-        return self.param_attributes['Coherence']['value']
+        return numpy.array(list([self.param_attributes['Coherence']['value']]))
 
     def reset_maker(self):
         pass

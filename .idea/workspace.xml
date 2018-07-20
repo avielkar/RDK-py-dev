@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/static_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1532084994265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1532086612910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -41,11 +40,10 @@
           <file leaf-file-name="decision_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                <state relative-caret-position="289">
+                  <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
                   <folding>
                     <element signature="e#611#745#0" />
-                    <element signature="e#801#832#0" />
                     <element signature="e#1827#1831#0" />
                     <element signature="e#1978#1982#0" />
                     <element signature="e#2017#2021#0" />
@@ -57,8 +55,8 @@
           <file leaf-file-name="static_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+                <state relative-caret-position="306">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                   </folding>
@@ -70,11 +68,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="57" column="79" lean-forward="true" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+                <state relative-caret-position="230">
+                  <caret line="60" column="93" lean-forward="true" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                   </folding>
@@ -85,8 +83,8 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+                <state relative-caret-position="217">
+                  <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -94,19 +92,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="115">
-                  <caret line="22" column="25" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="25" />
+                <state relative-caret-position="187">
+                  <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
                   <folding>
-                    <element signature="e#210#324#0" />
                     <element signature="e#445#572#0" />
                     <element signature="e#703#707#0" />
                     <element signature="e#1674#1678#0" />
-                    <element signature="e#1751#4831#0" />
                     <element signature="e#1779#2087#0" />
-                    <element signature="e#2124#2505#0" />
                     <element signature="e#2573#2772#0" />
                     <element signature="e#2811#4831#0" />
                     <element signature="e#2930#3604#0" />
@@ -130,11 +125,20 @@
           <file leaf-file-name="graph_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/graph_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+                <state relative-caret-position="1360">
+                  <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
+            <entry file="file://C:/Python36-32/Lib/multiprocessing/process.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="92" selection-start-line="92" selection-end-line="92" />
                 </state>
               </provider>
             </entry>
@@ -170,6 +174,7 @@
       <find>_calcDotsXYRendered</find>
       <find>deg</find>
       <find>'static'</find>
+      <find>within_stair_vector</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -209,10 +214,10 @@
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/DecisionMaker.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
-        <option value="$PROJECT_DIR$/decision_maker.py" />
-        <option value="$PROJECT_DIR$/static_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
+        <option value="$PROJECT_DIR$/decision_maker.py" />
+        <option value="$PROJECT_DIR$/static_decision_maker.py" />
       </list>
     </option>
   </component>
@@ -333,13 +338,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00188" summary="Delete garbaged lines.">
-      <created>1530875276586</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1530875276586</updated>
     </task>
     <task id="LOCAL-00189" summary="Added functionallity and new file for the protocolwriter.">
       <created>1530885382344</created>
@@ -677,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532082372753</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="Implement the static_maker in case of statics types in the control loop.">
+      <created>1532085179602</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1532085179602</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TodoView">
@@ -697,8 +702,8 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49840087" weight="0.32881" />
-      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.54477614" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4552239" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.54477614" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4552239" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3065032" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49144635" visible="true" weight="0.14818764" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
@@ -706,7 +711,7 @@
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4946695" weight="0.32881" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" weight="0.15991472" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="2" sideWeight="0.5085537" side_tool="true" weight="0.14498934" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4792111" weight="0.32881" />
@@ -799,7 +804,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make the dir with the belong user name in the path if not exists and save in it." />
     <MESSAGE value="Remove the unnecessary event for the item selected." />
     <MESSAGE value="Check before start thea the user choose the running experiment user name 0 if not - raise up a windo-w." />
     <MESSAGE value="Add monitoe named 'Dell' with 48 cm distance." />
@@ -824,7 +828,8 @@
     <MESSAGE value="Make some function abstractmethods." />
     <MESSAGE value="Ctd." />
     <MESSAGE value="Implement the method current_trial for the static maker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement the method current_trial for the static maker." />
+    <MESSAGE value="Implement the static_maker in case of statics types in the control loop." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement the static_maker in case of statics types in the control loop." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -968,13 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36-32/Lib/multiprocessing/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
@@ -1238,62 +1236,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decision_maker.py">
+    <entry file="file://C:/Python36-32/Lib/multiprocessing/process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#611#745#0" />
-            <element signature="e#801#832#0" />
-            <element signature="e#1827#1831#0" />
-            <element signature="e#1978#1982#0" />
-            <element signature="e#2017#2021#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="196">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/graph_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        <state relative-caret-position="1360">
+          <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="230">
+          <caret line="60" column="93" lean-forward="true" selection-start-line="60" selection-start-column="93" selection-end-line="60" selection-end-column="93" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#17#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
-            <element signature="e#210#324#0" />
             <element signature="e#445#572#0" />
             <element signature="e#703#707#0" />
             <element signature="e#1674#1678#0" />
-            <element signature="e#1751#4831#0" />
             <element signature="e#1779#2087#0" />
-            <element signature="e#2124#2505#0" />
             <element signature="e#2573#2772#0" />
             <element signature="e#2811#4831#0" />
             <element signature="e#2930#3604#0" />
@@ -1313,12 +1301,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
+    <entry file="file://$PROJECT_DIR$/decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="57" column="79" lean-forward="true" selection-start-line="57" selection-start-column="79" selection-end-line="57" selection-end-column="79" />
+        <state relative-caret-position="289">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
-            <element signature="e#17#28#0" expanded="true" />
+            <element signature="e#611#745#0" />
+            <element signature="e#1827#1831#0" />
+            <element signature="e#1978#1982#0" />
+            <element signature="e#2017#2021#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>

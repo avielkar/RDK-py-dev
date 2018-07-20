@@ -56,9 +56,9 @@ class ControlLoop:
         if not self._renderer.is_initialized:
             self._renderer.init_window(units=self._attributes['Units']['value'],
                                        distance2screen=float(self._attributes['Distance2Screen']['value']))
-            self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_vector_values()))
+            self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
-            self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_vector_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment or self.stop_experiment:
