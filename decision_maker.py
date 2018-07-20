@@ -12,7 +12,6 @@ class DecisionMaker:
         self.static_parameters_attributes = None  # type: List[Any]
         self.within_stair_vector = None  # type: list
         self.within_stair_attribute = None  # type: Any
-        self.current_trial_attributes = None  # Dict[string, Any]
         pass
 
     def set_attributes(self,
