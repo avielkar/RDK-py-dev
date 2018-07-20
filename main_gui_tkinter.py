@@ -226,7 +226,7 @@ class MainGuiTkinter:
                 if key_param_attribute == 'paramtype':
                     param_combobox = tkinter.ttk.Combobox(master=self.root,
                                                           name=dynamic_entry_name)
-                    param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair']
+                    param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair', 'const']
                     param_combobox.place(relx=rel_x[0], rely=rel_y[0])
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
                     self.dynamic_controls_dict[dynamic_entry_name] = param_combobox
@@ -326,6 +326,11 @@ class MainGuiTkinter:
             self.dynamic_controls_dict['minvalue_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['jumping_' + key_param_name].config(state='normal')
             self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='normal')
+        elif status == 'const':
+            self.dynamic_controls_dict['value_' + key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['minvalue_' + key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['jumping_' + key_param_name].config(state='disabled')
+            self.dynamic_controls_dict['maxvalue_' + key_param_name].config(state='disabled')
         pass
 
     def combobox_user_name_list_initialize(self):

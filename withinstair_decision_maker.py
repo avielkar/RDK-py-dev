@@ -33,7 +33,7 @@ class WithinStairDecisionMaker:
                 filter(lambda x: self.param_attributes[x]['paramtype'] == 'withinstair', self.param_attributes.keys()))[
                 0]]
         self.static_parameters_attributes = (
-            list(filter(lambda attributes: attributes['paramtype'] == 'static', self.param_attributes.values())))
+            list(filter(lambda attributes: attributes['paramtype'] == 'static' or attributes['paramtype'] == 'const', self.param_attributes.values())))
         within_stair_low_val = self.within_stair_attribute['minvalue']
         within_stair_high_value = self.within_stair_attribute['maxvalue']
         within_stair_jumping = self.within_stair_attribute['jumping']
