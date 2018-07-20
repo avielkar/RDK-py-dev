@@ -102,6 +102,9 @@ class Renderer:
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
 
+    def density_to_number_of_dots(self, dots_density, units):
+        pass
+
     def convert_to_psycho_direction(self, direction):
         if 90 >= direction >= 0:
             return 90 - direction
