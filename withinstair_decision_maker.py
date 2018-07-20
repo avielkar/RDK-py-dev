@@ -1,8 +1,9 @@
 import numpy
 from experimentdata import ExperimentData
+from decision_maker import DecisionMaker
 
 
-class WithinStairDecisionMaker:
+class WithinStairDecisionMaker():
 
     def __init__(self):
         self.experiment_data = None  # type: ExperimentData

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/decision_maker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_gui_tkinter.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_gui_tkinter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,7 +38,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.41602466">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="30">
@@ -54,9 +54,26 @@
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="196">
-                  <caret line="63" selection-start-line="63" selection-end-line="63" />
+                  <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
                   <folding>
                     <element signature="e#17#54#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="decision_maker.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/decision_maker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#30#0" expanded="true" />
+                    <element signature="e#611#745#0" />
+                    <element signature="e#801#832#0" />
+                    <element signature="e#876#880#0" />
+                    <element signature="e#932#1788#0" />
+                    <element signature="e#1827#1831#0" />
                   </folding>
                 </state>
               </provider>
@@ -90,8 +107,43 @@
           <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="35" column="116" selection-start-line="35" selection-start-column="116" selection-end-line="35" selection-end-column="116" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="23" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#12#0" expanded="true" />
+                    <element signature="e#612#746#0" />
+                    <element signature="e#802#833#0" />
+                    <element signature="e#877#881#0" />
+                    <element signature="e#933#1751#0" />
+                    <element signature="e#1790#1794#0" />
+                    <element signature="e#1895#2203#0" />
+                    <element signature="e#2247#2628#0" />
+                    <element signature="e#2696#2895#0" />
+                    <element signature="e#2934#4954#0" />
+                    <element signature="e#3053#3727#0" />
+                    <element signature="e#3110#3363#0" />
+                    <element signature="e#3398#3620#0" />
+                    <element signature="e#3754#4426#0" />
+                    <element signature="e#3810#4063#0" />
+                    <element signature="e#4098#4320#0" />
+                    <element signature="e#5053#5156#0" />
+                    <element signature="e#5200#5391#0" />
+                    <element signature="e#5459#5505#0" />
+                    <element signature="e#5544#6973#0" />
+                    <element signature="e#5682#6013#0" />
+                    <element signature="e#5796#6013#0" />
+                    <element signature="e#6040#6343#0" />
+                    <element signature="e#6157#6343#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/trialmaker.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="333">
+                  <caret line="61" column="51" lean-forward="true" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
@@ -201,7 +253,9 @@
         <option value="$PROJECT_DIR$/renderer.py" />
         <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
+        <option value="$PROJECT_DIR$/DecisionMaker.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
+        <option value="$PROJECT_DIR$/decision_maker.py" />
       </list>
     </option>
   </component>
@@ -687,9 +741,9 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49840087" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.54317695" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.45682302" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.45682302" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3065032" weight="0.32881" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49144635" visible="true" weight="0.14818764" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49144635" visible="true" weight="0.14818764" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
@@ -721,37 +775,38 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5085537" side_tool="true" weight="0.14498934" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32881" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3065032" weight="0.32881" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.5426439" side_tool="true" visible="true" weight="0.3361169" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
-      <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
+      <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" visible="true" weight="0.21215352" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -907,13 +962,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/backends/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/site-packages/psychopy/visual/backends/pygamebackend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -949,13 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="176" selection-start-line="176" selection-end-line="176" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1033">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -1230,16 +1271,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/renderer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#17#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python36-32/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1267,10 +1298,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="61" column="51" lean-forward="true" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/renderer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <element signature="e#17#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="35" column="116" selection-start-line="35" selection-start-column="116" selection-end-line="35" selection-end-column="116" />
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#612#746#0" />
+            <element signature="e#802#833#0" />
+            <element signature="e#877#881#0" />
+            <element signature="e#933#1751#0" />
+            <element signature="e#1790#1794#0" />
+            <element signature="e#1895#2203#0" />
+            <element signature="e#2247#2628#0" />
+            <element signature="e#2696#2895#0" />
+            <element signature="e#2934#4954#0" />
+            <element signature="e#3053#3727#0" />
+            <element signature="e#3110#3363#0" />
+            <element signature="e#3398#3620#0" />
+            <element signature="e#3754#4426#0" />
+            <element signature="e#3810#4063#0" />
+            <element signature="e#4098#4320#0" />
+            <element signature="e#5053#5156#0" />
+            <element signature="e#5200#5391#0" />
+            <element signature="e#5459#5505#0" />
+            <element signature="e#5544#6973#0" />
+            <element signature="e#5682#6013#0" />
+            <element signature="e#5796#6013#0" />
+            <element signature="e#6040#6343#0" />
+            <element signature="e#6157#6343#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#611#745#0" />
+            <element signature="e#801#832#0" />
+            <element signature="e#876#880#0" />
+            <element signature="e#932#1788#0" />
+            <element signature="e#1827#1831#0" />
+          </folding>
         </state>
       </provider>
     </entry>
