@@ -20,6 +20,7 @@ class DecisionMaker:
         self.reset_maker()
         pass
 
+    @abstractmethod
     def get_vector_values(self):
         return self.within_stair_vector
 

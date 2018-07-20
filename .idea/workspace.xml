@@ -4,7 +4,6 @@
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_maker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,12 +40,10 @@
           <file leaf-file-name="decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+                <state relative-caret-position="221">
+                  <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
-                    <element signature="e#611#745#0" />
-                    <element signature="e#801#832#0" />
                     <element signature="e#876#880#0" />
                   </folding>
                 </state>
@@ -184,8 +181,8 @@
         <option value="$PROJECT_DIR$/DecisionMaker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/static_decision_maker.py" />
-        <option value="$PROJECT_DIR$/decision_maker.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
+        <option value="$PROJECT_DIR$/decision_maker.py" />
       </list>
     </option>
   </component>
@@ -306,13 +303,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00185" summary="Added GraphMakerProcess to call with the process from the main_gui.">
-      <created>1530869668758</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1530869668758</updated>
     </task>
     <task id="LOCAL-00186" summary="Added the call from the main gio.">
       <created>1530869748765</created>
@@ -650,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532081478077</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <task id="LOCAL-00234" summary="Make some function abstractmethods.">
+      <created>1532081639833</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1532081639833</updated>
+    </task>
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TodoView">
@@ -772,7 +769,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add users list to the users combobox with the init function of the combobox." />
     <MESSAGE value="Added user_running_experiment_name for the experiment data attributes." />
     <MESSAGE value="Linked the selected user name from the gui to the control loop throw the experiment data parameter." />
     <MESSAGE value="Make the dir with the belong user name in the path if not exists and save in it." />
@@ -797,7 +793,8 @@
     <MESSAGE value="Delete unnecessary function or union attributes to the base class." />
     <MESSAGE value="Implement get_vector_values function for the static maker&#10;Add attribute for the trial maker with the data of the current type of experiment(withinstair, statics, etc........)" />
     <MESSAGE value="rename reset_within_maket to reset_maker." />
-    <option name="LAST_COMMIT_MESSAGE" value="rename reset_within_maket to reset_maker." />
+    <MESSAGE value="Make some function abstractmethods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make some function abstractmethods." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1253,19 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#611#745#0" />
-            <element signature="e#801#832#0" />
-            <element signature="e#876#880#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1289,6 +1273,17 @@
             <element signature="e#5796#6013#0" />
             <element signature="e#6040#6343#0" />
             <element signature="e#6157#6343#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#876#880#0" />
           </folding>
         </state>
       </provider>
