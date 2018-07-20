@@ -6,9 +6,6 @@ from decision_maker import DecisionMaker
 class WithinStairDecisionMaker(DecisionMaker):
 
     def __init__(self):
-        self.experiment_data = None  # type: ExperimentData
-        self.param_attributes = None  # type: Dict[Any, Any]
-        self.static_parameters_attributes = None  # type: List[Any]
         self.within_stair_vector = None  # type: list
         self.within_stair_attribute = None  # type: Any
         pass
@@ -21,7 +18,7 @@ class WithinStairDecisionMaker(DecisionMaker):
         self.reset_within_maker()
         pass
 
-    def get_within_stair_vector_values(self):
+    def get_vector_values(self):
         return self.within_stair_vector
 
     def reset_within_maker(self):
