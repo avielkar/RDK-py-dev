@@ -25,4 +25,9 @@ class StaticDecisionMaker(DecisionMaker):
         pass
 
     def current_trial(self):
+        current_trial_data = dict()
+        for param_attributes in self.param_attributes:
+            current_trial_data[param_attributes['param_name']] = param_attributes['value']
+
+        return current_trial_data
         pass

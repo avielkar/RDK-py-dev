@@ -24,9 +24,6 @@ class DecisionMaker:
     def get_vector_values(self):
         return self.within_stair_vector
 
-    def reset_within_maker(self):
-        pass
-
     @abstractmethod
     def current_trial(self):
         pass
