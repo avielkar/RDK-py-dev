@@ -5,9 +5,10 @@ from experimentdata import ExperimentData
 class TrialMaker:
     def __init__(self):
         self._attributes = None  # type: Dict[Any, Any]
-        self._experiment_data = None # type: ExperimentData
+        self._experiment_data = None  # type: ExperimentData
         self.trial_number = 0
         self.within_stair_decision_maker = None  # type: WithinStairDecisionMaker
+        self.experiment_type = None  # type:str
         pass
 
     def current_trial(self):
@@ -44,15 +45,15 @@ class TrialMaker:
         self._attributes = attributes
         self.experiment_data = experiment_data
         self.trial_number = 0
-        experiment_type = self.check_experiment_type()
-        if experiment_type == 'withinstair':
+        self.experiment_type = self.check_experiment_type()
+        if self.experiment_type == 'withinstair':
             self.within_stair_decision_maker = SimpleWithinStairDecisionMaker()
             self.within_stair_decision_maker.set_attributes(
                 param_attributes=self._attributes,
                 experiment_data=experiment_data)
-        elif experiment_type == 'varying':
+        elif self.experiment_type == 'varying':
             pass
-        elif experiment_type == 'statics':
+        elif self.experiment_type == 'statics':
             pass
         else:
             return False

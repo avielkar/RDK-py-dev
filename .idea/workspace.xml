@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_maker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/static_decision_maker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/trialmaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/trialmaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/withinstair_decision_maker.py" beforeDir="false" afterPath="$PROJECT_DIR$/withinstair_decision_maker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,37 +35,13 @@
     <favorites_list name="RDK-py-dev" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49614793">
+    <splitter split-orientation="horizontal" split-proportion="0.4612015">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controlloop.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="148" selection-start-line="148" selection-end-line="148" />
-                  <folding>
-                    <element signature="e#17#28#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/renderer.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="196">
-                  <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#17#54#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="decision_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
+                <state relative-caret-position="289">
                   <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#30#0" expanded="true" />
@@ -83,8 +57,8 @@
           <file leaf-file-name="static_decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+                <state relative-caret-position="238">
+                  <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                     <element signature="e#540#674#0" />
@@ -95,36 +69,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wrapping_dot_stim.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wrapping_dot_stim.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1105">
-                  <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="68" selection-end-column="64" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="318" column="21" selection-start-line="318" selection-start-column="21" selection-end-line="318" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#16#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="withinstair_decision_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="521">
-                  <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+                <state relative-caret-position="232">
+                  <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                     <element signature="e#612#746#0" />
@@ -152,11 +105,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
+                <state relative-caret-position="231">
+                  <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -218,7 +171,6 @@
         <option value="$PROJECT_DIR$/tests/main_gui_tkinter_test.py" />
         <option value="$PROJECT_DIR$/trialdata.py" />
         <option value="$PROJECT_DIR$/main_gui.py" />
-        <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/graph_maker_process.py" />
         <option value="$PROJECT_DIR$/init_rdk.py" />
         <option value="$PROJECT_DIR$/graph_maker.py" />
@@ -234,6 +186,7 @@
         <option value="$PROJECT_DIR$/DecisionMaker.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
         <option value="$PROJECT_DIR$/decision_maker.py" />
+        <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/static_decision_maker.py" />
       </list>
     </option>
@@ -355,13 +308,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00182" summary="Adding queue to the control_loop for sendinfg command to the graph_maker with the commands.">
-      <created>1530865463990</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1530865463991</updated>
     </task>
     <task id="LOCAL-00183" summary="Add listening_function_thread logic for the graph_maker.">
       <created>1530866263371</created>
@@ -699,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532075441356</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="Delete unnecessary function or union attributes to the base class.">
+      <created>1532080809895</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1532080809895</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TodoView">
@@ -719,16 +672,16 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49840087" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.32881" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.45628998" weight="0.3361169" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.5442431" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.45575693" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3065032" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49144635" visible="true" weight="0.14818764" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520257" visible="true" weight="0.32881" />
-      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49520257" weight="0.32881" />
+      <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="2" sideWeight="0.5085537" side_tool="true" weight="0.14498934" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4792111" weight="0.32881" />
@@ -821,7 +774,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Names in the saved mat file cannot include ' ' character , so add '_' instead." />
     <MESSAGE value="Make code cleaner." />
     <MESSAGE value="Added the combobox with label for the user that is running the experiment.&#10;also, added function for event and for init the combobox with no logic." />
     <MESSAGE value="Add users list to the users combobox with the init function of the combobox." />
@@ -846,7 +798,8 @@
     <MESSAGE value="Remove unnecessary variable." />
     <MESSAGE value="Add StaticDecisionMaker class." />
     <MESSAGE value="Make inheritance from DecisionMaker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Make inheritance from DecisionMaker." />
+    <MESSAGE value="Delete unnecessary function or union attributes to the base class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete unnecessary function or union attributes to the base class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1280,44 +1233,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trialmaker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="61" column="55" selection-start-line="61" selection-start-column="55" selection-end-line="61" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#611#745#0" />
-            <element signature="e#801#832#0" />
-            <element signature="e#876#880#0" />
-            <element signature="e#1827#1831#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#540#674#0" />
-            <element signature="e#805#809#0" />
-            <element signature="e#1756#1760#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/withinstair_decision_maker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="232">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
             <element signature="e#612#746#0" />
@@ -1340,6 +1259,40 @@
             <element signature="e#5796#6013#0" />
             <element signature="e#6040#6343#0" />
             <element signature="e#6157#6343#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trialmaker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#611#745#0" />
+            <element signature="e#801#832#0" />
+            <element signature="e#876#880#0" />
+            <element signature="e#1827#1831#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#540#674#0" />
+            <element signature="e#805#809#0" />
+            <element signature="e#1756#1760#0" />
           </folding>
         </state>
       </provider>
