@@ -67,7 +67,8 @@ class Renderer:
                                                        eval(self.data['Color'])[2],
                                                        ]),
                                            dir=self.convert_to_psycho_direction(self.data['Direction']),
-                                           nDots=self.data['NumberOfDots'],
+                                           nDots=self.density_to_number_of_dots(self.data['DotsDensity'],
+                                                                                self.data['FieldSize']),
                                            fieldShape=self.data['FieldShape'],
                                            fieldPos=[eval(self.data['FieldPosition'])[0],
                                                      eval(self.data['FieldPosition'])[1]],
@@ -102,9 +103,9 @@ class Renderer:
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
 
-    def density_to_number_of_dots(self, dots_density, units, field_size):
-        if units == 'cm':
-            number_of_dots = dots_density * field_size**2/2
+    def density_to_number_of_dots(self, dots_density, field_size):
+        # todo: check here if a caculation of the field size is also correct for the degree dimension.
+        return dots_density * field_size ** 2 / 2
         pass
 
     def convert_to_psycho_direction(self, direction):

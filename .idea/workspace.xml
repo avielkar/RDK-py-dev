@@ -86,8 +86,8 @@
           <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="106" column="59" lean-forward="true" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
+                <state relative-caret-position="272">
+                  <caret line="70" column="104" lean-forward="true" selection-start-line="70" selection-start-column="104" selection-end-line="70" selection-end-column="104" />
                   <folding>
                     <element signature="e#189#1080#0" />
                     <element signature="e#277#955#0" />
@@ -95,7 +95,6 @@
                     <element signature="e#1746#1766#0" />
                     <element signature="e#1772#1882#0" />
                     <element signature="e#1982#2068#0" />
-                    <element signature="e#2106#4728#0" />
                     <element signature="e#2307#2561#0" />
                     <element signature="e#2876#3003#0" />
                     <element signature="e#3990#4360#0" />
@@ -378,13 +377,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00192" summary="Add logic for the save protocol event.">
-      <created>1530887474737</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1530887474737</updated>
     </task>
     <task id="LOCAL-00193" summary="Save the data_dict in the write function to dataframe and write it to the excel sheet.">
       <created>1530888097149</created>
@@ -722,7 +714,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532100884791</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="Add logic for the density_to_number_of_dots for the cm units.">
+      <created>1532101149022</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1532101149022</updated>
+    </task>
+    <option name="localTasksCounter" value="242" />
     <servers />
   </component>
   <component name="TodoView">
@@ -827,7 +826,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add monitor named 'Dell' with 48 cm distance." />
     <MESSAGE value="Make the window name as 'testwindow' - works - nned to see what avout the dell window." />
     <MESSAGE value="Make the monitor declaration and usage cleaner." />
     <MESSAGE value="Added to the init_window the units and the distance2screen parameters." />
@@ -852,7 +850,8 @@
     <MESSAGE value="Convert the scalar in the static_maker to a numpy.array" />
     <MESSAGE value="Add the correct conversion for the DotsDensity parameter." />
     <MESSAGE value="Added method density_to_number_of_dots for converting the parameters to the match number of dots." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added method density_to_number_of_dots for converting the parameters to the match number of dots." />
+    <MESSAGE value="Add logic for the density_to_number_of_dots for the cm units." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add logic for the density_to_number_of_dots for the cm units." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1338,8 +1337,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="106" column="59" lean-forward="true" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
+        <state relative-caret-position="272">
+          <caret line="70" column="104" lean-forward="true" selection-start-line="70" selection-start-column="104" selection-end-line="70" selection-end-column="104" />
           <folding>
             <element signature="e#189#1080#0" />
             <element signature="e#277#955#0" />
@@ -1347,7 +1346,6 @@
             <element signature="e#1746#1766#0" />
             <element signature="e#1772#1882#0" />
             <element signature="e#1982#2068#0" />
-            <element signature="e#2106#4728#0" />
             <element signature="e#2307#2561#0" />
             <element signature="e#2876#3003#0" />
             <element signature="e#3990#4360#0" />
