@@ -14,6 +14,7 @@ from pygame.locals import *
 from experimentdata import ExperimentData
 import queue
 import multiprocessing
+import winsound
 
 
 class ControlLoop:
@@ -58,7 +59,8 @@ class ControlLoop:
                                        distance2screen=float(self._attributes['Distance2Screen']['value']))
             self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
-            self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('reset_graph',
+                                                self._trial_maker.get_trials_scala_values()))  # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment or self.stop_experiment:
@@ -132,6 +134,9 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
+            freq = 2500
+            duration = 10000
+            winsound.Beep(freq, duration)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
