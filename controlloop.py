@@ -14,6 +14,7 @@ from pygame.locals import *
 from experimentdata import ExperimentData
 import queue
 import multiprocessing
+import winsound
 
 
 class ControlLoop:
@@ -58,7 +59,8 @@ class ControlLoop:
                                        distance2screen=float(self._attributes['Distance2Screen']['value']))
             self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
-            self.graph_maker_command_queue.put(('reset_graph', self._trial_maker.get_trials_scala_values()))            # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
+            self.graph_maker_command_queue.put(('reset_graph',
+                                                self._trial_maker.get_trials_scala_values()))  # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment or self.stop_experiment:
@@ -88,6 +90,7 @@ class ControlLoop:
     def wait_start_key_response(self):
         print(self._current_trial_data)
 
+        self.make_sound(30000, 50)
         self._renderer.add_text_to_screen('Press space to start the trial')
         print('waiting to start response...')
 
@@ -111,6 +114,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
+            self.make_sound(2500, 50)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
@@ -132,6 +136,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
+            self.make_sound(2500, 50)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
@@ -172,3 +177,7 @@ class ControlLoop:
                     self.start(attributes=attributes,
                                experiment_data=experiment_data)
             time.sleep(0.1)
+
+    def make_sound(self, freq, duration):
+        winsound.Beep(freq, duration)
+        pass
