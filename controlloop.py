@@ -113,6 +113,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
+            self.make_sound(2500, 50)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
