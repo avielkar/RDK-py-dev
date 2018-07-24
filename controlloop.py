@@ -90,6 +90,7 @@ class ControlLoop:
     def wait_start_key_response(self):
         print(self._current_trial_data)
 
+        self.make_sound(30000, 50)
         self._renderer.add_text_to_screen('Press space to start the trial')
         print('waiting to start response...')
 
