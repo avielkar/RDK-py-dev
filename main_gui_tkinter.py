@@ -125,7 +125,7 @@ class MainGuiTkinter:
 
         # backword error probability region.
         self.label_backward_error_probability = Label(master=self.root,
-                                                      text='#b.e.p')
+                                                      text='#P.Down')
         self.label_backward_error_probability.place(relx=0.8,
                                                     rely=0.15)
         self.entry_backward_error_probability = Entry(master=self.root)
@@ -134,7 +134,7 @@ class MainGuiTkinter:
 
         # forward rightward probability.
         self.label_forward_rightward_probability = Label(master=self.root,
-                                                         text='#f.r.p')
+                                                         text='#P.Up')
         self.label_forward_rightward_probability.place(relx=0.8,
                                                        rely=0.2)
         self.entry_forward_rightward_probability = Entry(master=self.root)
