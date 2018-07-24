@@ -95,7 +95,6 @@ class Renderer:
             dot_patch.draw()
             if self.experiment_data.draw_fixation_point:
                 fixation_point_stim.draw()
-            message.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
 
