@@ -134,9 +134,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
-            freq = 2500
-            duration = 10000
-            winsound.Beep(freq, duration)
+            self.make_sound(2500, 50)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
@@ -177,3 +175,7 @@ class ControlLoop:
                     self.start(attributes=attributes,
                                experiment_data=experiment_data)
             time.sleep(0.1)
+
+    def make_sound(self, freq, duration):
+        winsound.Beep(freq, duration)
+        pass

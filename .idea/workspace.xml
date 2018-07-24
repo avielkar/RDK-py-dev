@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd36533-2233-4b17-bfa0-e5bd224e0842" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/renderer.py" beforeDir="false" afterPath="$PROJECT_DIR$/renderer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlloop.py" beforeDir="false" afterPath="$PROJECT_DIR$/controlloop.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +14,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/RDK_py_dev$main_gui_tkinter.coverage" NAME="main_gui_tkinter Coverage Results" MODIFIED="1528737528467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1532086852681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/RDK_py_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1532448118142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -36,16 +37,16 @@
     <splitter split-orientation="horizontal" split-proportion="0.4612015">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="decision_maker.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="decision_maker.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                <state relative-caret-position="101">
+                  <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="static_decision_maker.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="static_decision_maker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/static_decision_maker.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="459">
@@ -57,36 +58,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_base.py" pinned="false" current-in-tab="false">
-            <entry file="file://C:/Python36-32/Lib/site-packages/matplotlib/axes/_base.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="52445">
-                  <caret line="3123" selection-start-line="3123" selection-end-line="3123" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3043">
-                  <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
-                  <folding>
-                    <element signature="e#16#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="renderer.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/renderer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+                <state relative-caret-position="214">
+                  <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
                   <folding>
                     <element signature="e#189#1080#0" />
                     <element signature="e#277#955#0" />
@@ -100,14 +80,41 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2907">
-                  <caret line="171" selection-start-line="171" selection-end-line="171" />
+                <state relative-caret-position="336">
+                  <caret line="136" column="38" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
+                    <element signature="e#558#1514#0" />
+                    <element signature="e#1574#3465#0" />
+                    <element signature="e#2086#2370#0" />
+                    <element signature="e#2662#3223#0" />
+                    <element signature="e#2727#2777#0" />
+                    <element signature="e#3233#3289#0" />
+                    <element signature="e#3514#3861#0" />
+                    <element signature="e#3906#4604#0" />
+                    <element signature="e#4122#4408#0" />
+                    <element signature="e#4303#4378#0" />
+                    <element signature="e#5075#5145#0" />
+                    <element signature="e#5423#5940#0" />
+                    <element signature="e#5989#6420#0" />
+                    <element signature="e#6480#6510#0" />
+                    <element signature="e#6554#6961#0" />
+                    <element signature="e#6598#6961#0" />
+                    <element signature="e#6663#6933#0" />
+                    <element signature="e#6779#6933#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="threading.py" pinned="false" current-in-tab="false">
+            <entry file="file://C:/Python36-32/Lib/threading.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-3748">
+                  <caret line="827" column="8" selection-start-line="827" selection-start-column="8" selection-end-line="827" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -115,10 +122,22 @@
           <file leaf-file-name="trialmaker.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/trialmaker.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
+                <state relative-caret-position="115">
                   <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_gui_tkinter.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="567">
+                  <caret line="176" column="17" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#16#25#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -245,11 +264,11 @@
         <option value="$PROJECT_DIR$/main_gui_tkinter.py" />
         <option value="$PROJECT_DIR$/DecisionMaker.py" />
         <option value="$PROJECT_DIR$/withinstair_decision_maker.py" />
-        <option value="$PROJECT_DIR$/controlloop.py" />
         <option value="$PROJECT_DIR$/decision_maker.py" />
         <option value="$PROJECT_DIR$/static_decision_maker.py" />
         <option value="$PROJECT_DIR$/trialmaker.py" />
         <option value="$PROJECT_DIR$/renderer.py" />
+        <option value="$PROJECT_DIR$/controlloop.py" />
       </list>
     </option>
   </component>
@@ -263,10 +282,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1852" />
-    <option name="y" value="-540" />
-    <option name="width" value="346" />
-    <option name="height" value="171" />
+    <option name="x" value="1908" />
+    <option name="y" value="-1137" />
+    <option name="width" value="767" />
+    <option name="height" value="431" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -370,20 +389,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00193" summary="Save the data_dict in the write function to dataframe and write it to the excel sheet.">
-      <created>1530888097149</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1530888097149</updated>
-    </task>
-    <task id="LOCAL-00194" summary="Make the logic of the write_function works and save the data good.">
-      <created>1530900652891</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1530900652891</updated>
     </task>
     <task id="LOCAL-00195" summary="Add the path parameter from the function instead the const path (that was for testing).">
       <created>1530900746772</created>
@@ -714,7 +719,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532101149022</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="Change the names of b.e.p and f.r.p to P.Down and P.Up.">
+      <created>1532443664207</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1532443664207</updated>
+    </task>
+    <task id="LOCAL-00243" summary="Adding sound to the confidence response stage when the user make a response.">
+      <created>1532444123392</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1532444123392</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TodoView">
@@ -734,8 +753,8 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49840087" weight="0.32881" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.5426439" side_tool="true" visible="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.45735607" weight="0.3361169" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.54371" side_tool="true" visible="true" weight="0.3361169" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.45628998" visible="true" weight="0.3361169" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.3065032" weight="0.32881" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49144635" visible="true" weight="0.14978679" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
@@ -745,7 +764,7 @@
       <window_info anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48329854" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info id="Favorites" order="2" sideWeight="0.5085537" side_tool="true" weight="0.14498934" />
-      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4792111" weight="0.32881" />
+      <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.47867805" weight="0.32881" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.4978678" weight="0.32881" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.4792111" weight="0.32881" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -774,32 +793,32 @@
       <window_info active="true" anchor="bottom" id="Python Console" order="8" sideWeight="0.5426439" side_tool="true" visible="true" weight="0.3361169" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
+      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.46588486" visible="true" weight="0.3361169" />
-      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="7" />
       <window_info id="Structure" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="3" sideWeight="0.4989339" weight="0.32881" />
       <window_info anchor="right" id="R Graphics" order="4" weight="0.32995737" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="right" id="R Packages" order="3" weight="0.32995737" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" x="0" y="0" width="434" height="896" id="Documentation" order="8" sideWeight="0.5141509" side_tool="true" weight="0.21215352" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49635416" weight="0.32925585" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18230277" />
       <window_info anchor="bottom" id="Debug" order="7" sideWeight="0.48667377" weight="0.32881" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49947917" weight="0.32881" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53411514" side_tool="true" weight="0.3361169" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32925585" />
       <window_info active="true" anchor="right" x="1659" y="-696" width="398" height="312" id="SciView" order="6" sideWeight="0.48584905" visible="true" weight="0.21215352" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49840087" weight="0.32881" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49200428" weight="0.3434238" />
+      <window_info id="Favorites" order="1" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -835,8 +854,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Make the window name as 'testwindow' - works - nned to see what avout the dell window." />
-    <MESSAGE value="Make the monitor declaration and usage cleaner." />
     <MESSAGE value="Added to the init_window the units and the distance2screen parameters." />
     <MESSAGE value="Convert the distance to float instance." />
     <MESSAGE value="Change the screen render width." />
@@ -860,7 +877,9 @@
     <MESSAGE value="Add the correct conversion for the DotsDensity parameter." />
     <MESSAGE value="Added method density_to_number_of_dots for converting the parameters to the match number of dots." />
     <MESSAGE value="Add logic for the density_to_number_of_dots for the cm units." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logic for the density_to_number_of_dots for the cm units." />
+    <MESSAGE value="Change the names of b.e.p and f.r.p to P.Down and P.Up." />
+    <MESSAGE value="Adding sound to the confidence response stage when the user make a response." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding sound to the confidence response stage when the user make a response." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -882,7 +901,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controlloop.py</url>
-          <line>171</line>
+          <line>174</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -901,7 +920,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="216" />
+      <option name="time" value="217" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1231,13 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36-32/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="862" column="12" lean-forward="true" selection-start-line="862" selection-start-column="12" selection-end-line="862" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/response_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1266,23 +1278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52445">
           <caret line="3123" selection-start-line="3123" selection-end-line="3123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controlloop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-          <folding>
-            <element signature="e#17#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/decision_maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1324,19 +1319,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3043">
-          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="8" />
-          <folding>
-            <element signature="e#16#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trialmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="115">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -1346,8 +1331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renderer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+        <state relative-caret-position="214">
+          <caret line="97" column="47" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
           <folding>
             <element signature="e#189#1080#0" />
             <element signature="e#277#955#0" />
@@ -1356,6 +1341,58 @@
             <element signature="e#1772#1882#0" />
             <element signature="e#1982#2068#0" />
             <element signature="e#2307#2561#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_gui_tkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="176" column="17" selection-start-line="176" selection-start-column="17" selection-end-line="176" selection-end-column="17" />
+          <folding>
+            <element signature="e#16#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decision_maker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3748">
+          <caret line="827" column="8" selection-start-line="827" selection-start-column="8" selection-end-line="827" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlloop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="136" column="38" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
+          <folding>
+            <element signature="e#17#28#0" expanded="true" />
+            <element signature="e#558#1514#0" />
+            <element signature="e#1574#3465#0" />
+            <element signature="e#2086#2370#0" />
+            <element signature="e#2662#3223#0" />
+            <element signature="e#2727#2777#0" />
+            <element signature="e#3233#3289#0" />
+            <element signature="e#3514#3861#0" />
+            <element signature="e#3906#4604#0" />
+            <element signature="e#4122#4408#0" />
+            <element signature="e#4303#4378#0" />
+            <element signature="e#5075#5145#0" />
+            <element signature="e#5423#5940#0" />
+            <element signature="e#5989#6420#0" />
+            <element signature="e#6480#6510#0" />
+            <element signature="e#6554#6961#0" />
+            <element signature="e#6598#6961#0" />
+            <element signature="e#6663#6933#0" />
+            <element signature="e#6779#6933#0" />
           </folding>
         </state>
       </provider>
