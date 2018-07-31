@@ -37,8 +37,10 @@ class WithinStairDecisionMaker(DecisionMaker):
         within_stair_low_val = self.within_stair_attribute['minvalue']
         within_stair_high_value = self.within_stair_attribute['maxvalue']
         within_stair_jumping = self.within_stair_attribute['jumping']
+        # add the within_stair_jumping value for the high_value because the numpy arrange function exclude tha high
+        # value.
         within_vector = numpy.arange(float(within_stair_low_val),
-                                     float(within_stair_high_value),
+                                     float(within_stair_high_value) + float(within_stair_jumping),
                                      float(within_stair_jumping))
         return within_vector
 
