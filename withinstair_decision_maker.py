@@ -33,15 +33,23 @@ class WithinStairDecisionMaker(DecisionMaker):
                 filter(lambda x: self.param_attributes[x]['paramtype'] == 'withinstair', self.param_attributes.keys()))[
                 0]]
         self.static_parameters_attributes = (
-            list(filter(lambda attributes: attributes['paramtype'] == 'static' or attributes['paramtype'] == 'const', self.param_attributes.values())))
+            list(filter(lambda attributes: attributes['paramtype'] == 'static' or attributes['paramtype'] == 'const',
+                        self.param_attributes.values())))
         within_stair_low_val = self.within_stair_attribute['minvalue']
         within_stair_high_value = self.within_stair_attribute['maxvalue']
-        within_stair_jumping = self.within_stair_attribute['jumping']
         # add the within_stair_jumping value for the high_value because the numpy arrange function exclude tha high
         # value.
-        within_vector = numpy.arange(float(within_stair_low_val),
-                                     float(within_stair_high_value) + float(within_stair_jumping),
-                                     float(within_stair_jumping))
+        if self.within_stair_attribute['mode'] == 'normal':
+            within_stair_jumping = self.within_stair_attribute['jumping']
+            within_vector = numpy.arange(float(within_stair_low_val),
+                                         float(within_stair_high_value) + float(within_stair_jumping),
+                                         float(within_stair_jumping))
+        elif self.within_stair_attribute['mode'] == 'log':
+            within_stair_mult = self.within_stair_attribute['mult']
+            within_vector = create_log_vector(float(within_stair_low_val),
+                                              float(within_stair_high_value),
+                                              float(within_stair_mult))
+
         return within_vector
 
     @abstractmethod
@@ -150,3 +158,15 @@ class SimpleWithinStairDecisionMaker(WithinStairDecisionMaker):
         self.current_trial_attributes = current_trial_data
 
         return current_trial_data
+
+
+def create_log_vector(low_bound, high_bound, multiplier):
+    space_vector = list()
+    # should contains the high value.
+    while high_bound >= low_bound:
+        space_vector.append(high_bound)
+        high_bound *= multiplier
+
+    # the list should be returned from the low to the high (but contains the high value)
+    space_vector.reverse()
+    return numpy.array(space_vector)
