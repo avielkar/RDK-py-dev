@@ -201,7 +201,7 @@ class MainGuiTkinter:
                 title_label = Label(master=self.root,
                                     text=title)
                 title_label.place(relx=rel_x[0], rely=rel_y[0])
-                rel_x[0] += 0.1
+                rel_x[0] += 0.08
 
         rel_x[0] = 0.0
         rel_y[0] += 0.04
@@ -210,10 +210,11 @@ class MainGuiTkinter:
         for key_param_name in data_dict:
             param_label_name = Label(master=self.root,
                                      name='label_' + key_param_name,
-                                     text=key_param_name)
+                                     text=key_param_name,
+                                     width=14)
             param_label_name.place(relx=rel_x[0], rely=rel_y[0])
             self.dynamic_controls_dict['label_' + key_param_name] = param_label_name
-            rel_x[0] += 0.1
+            rel_x[0] += 0.08
             self.dynamic_controls_dict['label_' + key_param_name].bind('<Enter>', self.show_param_label_tooltip)
             self.dynamic_controls_dict['label_' + key_param_name].bind('<Leave>', self.hide_param_label_tooltip)
 
@@ -225,7 +226,8 @@ class MainGuiTkinter:
                 dynamic_entry_name = key_param_attribute + '_' + key_param_name
                 if key_param_attribute == 'paramtype':
                     param_combobox = tkinter.ttk.Combobox(master=self.root,
-                                                          name=dynamic_entry_name)
+                                                          name=dynamic_entry_name,
+                                                          width=14)
                     param_combobox['values'] = ['static', 'choice', 'constvec', 'acrosstair', 'withinstair', 'const']
                     param_combobox.place(relx=rel_x[0], rely=rel_y[0])
                     param_combobox.set(data_dict[key_param_name][key_param_attribute])
@@ -234,13 +236,14 @@ class MainGuiTkinter:
                                                                         self.on_dynamic_combobox_item_selected)
                 else:
                     param_entry_value = Entry(master=self.root,
-                                              name=dynamic_entry_name)
+                                              name=dynamic_entry_name,
+                                              width=14)
                     param_entry_value.insert(0, data_dict[key_param_name][key_param_attribute])
                     param_entry_value.place(relx=rel_x[0], rely=rel_y[0])
                     self.dynamic_controls_dict[dynamic_entry_name] = param_entry_value
                     self.dynamic_controls_dict[dynamic_entry_name].bind('<Leave>', self.on_dynamic_entry_leave)
 
-                rel_x[0] += 0.1
+                rel_x[0] += 0.08
 
             rel_x[0] = 0.0
             rel_y[0] += 0.04
