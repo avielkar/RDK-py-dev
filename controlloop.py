@@ -20,7 +20,7 @@ import numpy as np
 
 ANSWER_SOUND = 1000
 START_SOUND = 500
-TIMEOUT_SOUND = 1000
+TIMEOUT_SOUND = 1500
 
 
 class ControlLoop:

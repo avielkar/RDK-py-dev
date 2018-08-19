@@ -61,8 +61,8 @@
           <file leaf-file-name="controlloop.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/controlloop.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
                   <folding>
                     <element signature="e#17#28#0" expanded="true" />
                     <element signature="e#1590#3519#0" />
@@ -333,13 +333,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527878947232</updated>
-    </task>
-    <task id="LOCAL-00200" summary="Fix spelling error.">
-      <created>1531073235909</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1531073235909</updated>
     </task>
     <task id="LOCAL-00201" summary="Adding to_string function describes all parameters of the experiment_data class.">
       <created>1531074429530</created>
@@ -677,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534706210245</updated>
     </task>
-    <option name="localTasksCounter" value="249" />
+    <task id="LOCAL-00249" summary="Replace the functions also.">
+      <created>1534706319620</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1534706319620</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TodoView">
@@ -798,7 +798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added stop button with logic." />
     <MESSAGE value="Added stop_experiment attribute to the control loop different from the exit_experiment." />
     <MESSAGE value="Disale the stop button at brgin." />
     <MESSAGE value="Added abstracted DecisionMaker class." />
@@ -823,7 +822,8 @@
     <MESSAGE value="Make the sound in constant variables and with pleasured sound." />
     <MESSAGE value="Mae constants and remove redundant lines." />
     <MESSAGE value="Use sounddevice instead of winsound (it is not blocking)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use sounddevice instead of winsound (it is not blocking)" />
+    <MESSAGE value="Replace the functions also." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace the functions also." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1295,8 +1295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlloop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
+        <state relative-caret-position="374">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
             <element signature="e#1590#3519#0" />
