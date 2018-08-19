@@ -7,8 +7,6 @@ from trialmaker import TrialMaker
 from save_data_maker import SaveDataMaker
 from response_analyzer import ResponseAnalyzer
 from graph_maker import GraphMaker
-import tkinter.messagebox
-import psychopy.event
 import pygame
 from pygame.locals import *
 from experimentdata import ExperimentData
@@ -16,8 +14,9 @@ import queue
 import multiprocessing
 import winsound
 
-ANSWER_SOUND = 3000
-START_SOUND = 1000
+ANSWER_SOUND = 1000
+START_SOUND = 500
+TIMEOUT_SOUND = 1000
 
 
 class ControlLoop:
@@ -120,6 +119,7 @@ class ControlLoop:
             self.make_sound(ANSWER_SOUND, 50)
             print('pressed {key}'.format(key=response))
         else:
+            self.make_sound(TIMEOUT_SOUND, 50)
             print('no response')
 
         self._current_trial_data['Response'] = response
@@ -142,6 +142,7 @@ class ControlLoop:
             self.make_sound(ANSWER_SOUND, 50)
             print('pressed {key}'.format(key=response))
         else:
+            self.make_sound(TIMEOUT_SOUND, 50)
             print('no response')
 
         self._current_trial_data['ConfidenceResponse'] = response
