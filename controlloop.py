@@ -16,6 +16,9 @@ import queue
 import multiprocessing
 import winsound
 
+ANSWER_SOUND = 3000
+START_SOUND = 1000
+
 
 class ControlLoop:
     exit_experiment = None  # type:bool
@@ -90,7 +93,7 @@ class ControlLoop:
     def wait_start_key_response(self):
         print(self._current_trial_data)
 
-        self.make_sound(30000, 50)
+        self.make_sound(START_SOUND, 50)
         self._renderer.add_text_to_screen('Press space to start the trial')
         print('waiting to start response...')
 
@@ -114,7 +117,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
-            self.make_sound(2500, 50)
+            self.make_sound(ANSWER_SOUND, 50)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
@@ -136,7 +139,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
-            self.make_sound(2500, 50)
+            self.make_sound(ANSWER_SOUND, 50)
             print('pressed {key}'.format(key=response))
         else:
             print('no response')
