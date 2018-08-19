@@ -102,7 +102,7 @@ class ControlLoop:
         print(self._current_trial_data)
 
         self.make_sound(self.start_wave)
-        self._renderer.add_text_to_screen('Press space to start the trial')
+        # self._renderer.add_text_to_screen('Press space to start the trial')
         print('waiting to start response...')
 
         pygame.event.clear()
