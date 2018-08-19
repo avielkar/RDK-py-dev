@@ -2,6 +2,9 @@
 
 import time
 from threading import Thread
+
+from numpy.core.multiarray import ndarray
+
 from renderer import Renderer
 from trialmaker import TrialMaker
 from save_data_maker import SaveDataMaker
@@ -12,7 +15,8 @@ from pygame.locals import *
 from experimentdata import ExperimentData
 import queue
 import multiprocessing
-import winsound
+import sounddevice as sd
+import numpy as np
 
 ANSWER_SOUND = 1000
 START_SOUND = 500
@@ -21,6 +25,10 @@ TIMEOUT_SOUND = 1000
 
 class ControlLoop:
     exit_experiment = None  # type:bool
+
+    start_wave = None  # type: ndarray
+    answer_wave = None  # type: ndarray
+    timeout_wave = None  # type: ndarray
 
     def __init__(self, gui_queue, control_loop_queue, graph_maker_queue):
         self._numOfTrials = None  # type: Integer
@@ -33,6 +41,7 @@ class ControlLoop:
         self._current_trial_data = None  # type: Dict[String, Any]
         self._response_analyzer = ResponseAnalyzer()
         self._graph_maker = GraphMaker()
+        self.init_sounds_wave()
         self.exit_experiment = False
         self.stop_experiment = False
         self.gui_queue = gui_queue  # type:queue.Queue
@@ -181,6 +190,34 @@ class ControlLoop:
                     self.start(attributes=attributes,
                                experiment_data=experiment_data)
             time.sleep(0.1)
+
+    def init_sounds_wave(self):
+        sd.default.samplerate = 44100
+        time = 0.2
+
+        frequency = START_SOUND
+        # Generate time of samples between 0 and two seconds
+        samples = np.arange(44100 * time) / 44100.0
+        # Recall that a sinusoidal wave of frequency f has formula w(t) = A*sin(2*pi*f*t)
+        wave = 10000 * np.sin(2 * np.pi * frequency * samples)
+        # Convert it to wav format (16 bits)
+        self.start_wave = np.array(wave, dtype=np.int16)
+
+        frequency = ANSWER_SOUND
+        # Generate time of samples between 0 and two seconds
+        samples = np.arange(44100 * time) / 44100.0
+        # Recall that a sinusoidal wave of frequency f has formula w(t) = A*sin(2*pi*f*t)
+        wave = 10000 * np.sin(2 * np.pi * frequency * samples)
+        # Convert it to wav format (16 bits)
+        self.answer_wave = np.array(wave, dtype=np.int16)
+
+        frequency = TIMEOUT_SOUND
+        # Generate time of samples between 0 and two seconds
+        samples = np.arange(44100 * time) / 44100.0
+        # Recall that a sinusoidal wave of frequency f has formula w(t) = A*sin(2*pi*f*t)
+        wave = 10000 * np.sin(2 * np.pi * frequency * samples)
+        # Convert it to wav format (16 bits)
+        self.timeout_wave = np.array(wave, dtype=np.int16)
 
     def make_sound(self, freq, duration):
         winsound.Beep(freq, duration)
