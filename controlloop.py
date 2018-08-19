@@ -101,7 +101,7 @@ class ControlLoop:
     def wait_start_key_response(self):
         print(self._current_trial_data)
 
-        self.make_sound(START_SOUND, 50)
+        self.make_sound(self.start_wave, 50)
         self._renderer.add_text_to_screen('Press space to start the trial')
         print('waiting to start response...')
 
@@ -125,10 +125,10 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
-            self.make_sound(ANSWER_SOUND, 50)
+            self.make_sound(self.answer_wave, 50)
             print('pressed {key}'.format(key=response))
         else:
-            self.make_sound(TIMEOUT_SOUND, 50)
+            self.make_sound(self.timeout_wave, 50)
             print('no response')
 
         self._current_trial_data['Response'] = response
@@ -148,7 +148,7 @@ class ControlLoop:
             time.sleep(0.001)
 
         if response is not 'none':
-            self.make_sound(ANSWER_SOUND, 50)
+            self.make_sound(self.answer_wave, 50)
             print('pressed {key}'.format(key=response))
         else:
             self.make_sound(TIMEOUT_SOUND, 50)
@@ -219,6 +219,6 @@ class ControlLoop:
         # Convert it to wav format (16 bits)
         self.timeout_wave = np.array(wave, dtype=np.int16)
 
-    def make_sound(self, freq, duration):
-        winsound.Beep(freq, duration)
+    def make_sound(self, sound_type):
+        sd.play(sound_type, blocking=False)
         pass
