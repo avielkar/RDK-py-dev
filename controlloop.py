@@ -128,7 +128,7 @@ class ControlLoop:
             self.make_sound(self.answer_wave)
             print('pressed {key}'.format(key=response))
         else:
-            self.make_sound(self.timeout_wave, 50)
+            self.make_sound(self.timeout_wave)
             print('no response')
 
         self._current_trial_data['Response'] = response
