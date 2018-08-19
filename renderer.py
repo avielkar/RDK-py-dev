@@ -114,6 +114,15 @@ class Renderer:
             return -direction - 270
 
     def clean_screen(self):
+        if self.experiment_data.draw_fixation_point:
+            fixation_point_stim = visual.Circle(win=self._my_win,
+                                                radius=0.01,
+                                                edges=32,
+                                                pos=[0, 0],
+                                                lineColor=[0, 1, 0],
+                                                fillColor=[0, 1, 0])
+            fixation_point_stim.draw()
+
         self._my_win.flip()
 
     def add_text_to_screen(self, text):
