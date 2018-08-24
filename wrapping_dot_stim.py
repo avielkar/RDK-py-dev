@@ -209,8 +209,6 @@ class WrappingDotStim(visual.DotStim):
         if self.fieldShape == 'circle':
             self.nDots = self.circlesNDots
 
-        print('a')
-
         # update the pixel XY coordinates
         self._updateVertices()
 
