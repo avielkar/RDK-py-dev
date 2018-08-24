@@ -8,9 +8,8 @@ class WrappingDotStim(visual.DotStim):
     density: object
     _dotsXYBackUp: object
     circlesNDots: object
-    _dotsXYBackUp:numpy.array
-
-    RATE = 1
+    _dotsXYBackUp: numpy.array
+    rateCircleToSquare = 1
 
     def __init__(self,
                  win,
@@ -36,18 +35,20 @@ class WrappingDotStim(visual.DotStim):
                  name=None,
                  autoLog=None):
         self.density = density
-        self.circlesNDots = int (self.density_to_number_of_dots(density, fieldSize))
-
+        self.circlesNDots = int(self.density_to_number_of_dots(density, fieldSize))
         self.circle_squared_field_size = fieldSize
+
         if fieldShape == 'circle':  # make more dots than we need and only use those that are within circle
             # the size if fake for the calculation of updatesXY.
             fieldSize *= 2
-            self.RATE = 16
+            # the rate should be greater in order to catch the needed point in the circle
+            self.rateCircleToSquare = 16
 
         visual.DotStim.__init__(self,
                                 win=win,
                                 units=units,
-                                nDots=int (self.RATE * self.density_to_number_of_dots(density, self.circle_squared_field_size)),
+                                nDots=int(self.rateCircleToSquare * self.density_to_number_of_dots(density,
+                                                                                                   self.circle_squared_field_size)),
                                 coherence=coherence,
                                 fieldPos=fieldPos,
                                 fieldSize=fieldSize,
@@ -78,32 +79,27 @@ class WrappingDotStim(visual.DotStim):
 
             dots_in_circle = 0
 
-            while dots_in_circle  < int(nDots / self.RATE):
+            while dots_in_circle < int(nDots / self.rateCircleToSquare):
                 self._newDots = numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0,
-                                         self.fieldSize[0] / 2.0,
-                                         [nDots , 2]))
+                                                                 self.fieldSize[0] / 2.0,
+                                                                 [nDots, 2]))
                 self._dotsXYBackUp = numpy.copy(self._newDots)
 
                 filtered_dots = self._newDots[
                     numpy.hypot(self._newDots[:, 0], self._newDots[:, 1]) < self.circle_squared_field_size / 2]
                 dots_in_circle = len(filtered_dots)
 
-
-            # return filtered_dots[0:nDots+1:1]
-
-            # self.nDots = int(self.nDots / 16)
             return filtered_dots[0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
 
         else:
             return numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0, self.fieldSize[0] / 2.0, [nDots, 2]))
 
-    def _newDotsXY2(self, nDots):
+    def newDotsXYCircle(self, nDots):
         dots_in_circle = 0
         while dots_in_circle * 15 < nDots:
             self._newDots = numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0,
                                                              self.fieldSize[0] / 2.0,
-                                                             [nDots * self.RATE, 2]))
-            #self._dotsXYBackUp = numpy.copy(self._newDots)
+                                                             [nDots * self.rateCircleToSquare, 2]))
 
             filtered_dots = self._newDots[
                 numpy.hypot(self._newDots[:, 0], self._newDots[:, 1]) < self.circle_squared_field_size / 2]
@@ -119,7 +115,7 @@ class WrappingDotStim(visual.DotStim):
         """
 
         if self.fieldShape == 'circle':
-            self.nDots = self.circlesNDots * self.RATE
+            self.nDots = self.circlesNDots * self.rateCircleToSquare
         else:
             self._dotsXYBackUp = self._dotsXY
 
@@ -144,52 +140,55 @@ class WrappingDotStim(visual.DotStim):
             self._dotsDir[~self._signalDots] = numpy.random.rand((~self._signalDots).sum()) * pi * 2
             # then update all positions from dir*speed
             self._dotsXYBackUp[:, 0] += self.speed * numpy.reshape(numpy.cos(self._dotsDir), (self.nDots,))
-            self._dotsXYBackUp[:, 1] += self.speed * numpy.reshape(numpy.sin(self._dotsDir), (self.nDots,))  # 0 radians=East!
+            self._dotsXYBackUp[:, 1] += self.speed * numpy.reshape(numpy.sin(self._dotsDir),
+                                                                   (self.nDots,))  # 0 radians=East!
         elif self.noiseDots == 'direction':
             # simply use the stored directions to update position
             self._dotsXYBackUp[:, 0] += self.speed * numpy.reshape(numpy.cos(self._dotsDir), (self.nDots,))
-            self._dotsXYBackUp[:, 1] += self.speed * numpy.reshape(numpy.sin(self._dotsDir), (self.nDots,))  # 0 radians=East!
+            self._dotsXYBackUp[:, 1] += self.speed * numpy.reshape(numpy.sin(self._dotsDir),
+                                                                   (self.nDots,))  # 0 radians=East!
         elif self.noiseDots == 'position':
             # update signal dots
-            self._dotsXYBackUp[self._signalDots, 0] += self.speed * numpy.reshape(numpy.cos(self._dotsDir[self._signalDots]),
-                                                                            (self._signalDots.sum(),))
-            self._dotsXYBackUp[self._signalDots, 1] += self.speed * numpy.reshape(numpy.sin(self._dotsDir[self._signalDots]),
-                                                                            (
-                                                                            self._signalDots.sum(),))  # 0 radians=East!
+            self._dotsXYBackUp[self._signalDots, 0] += self.speed * numpy.reshape(
+                numpy.cos(self._dotsDir[self._signalDots]),
+                (self._signalDots.sum(),))
+            self._dotsXYBackUp[self._signalDots, 1] += self.speed * numpy.reshape(
+                numpy.sin(self._dotsDir[self._signalDots]),
+                (
+                    self._signalDots.sum(),))  # 0 radians=East!
             # update noise dots
             dead = dead + (~self._signalDots)  # just create new ones
         # handle boundaries of the field
         if self.fieldShape in [None, 'square', 'sqr', 'circle']:
             self._dotsXYBackUp[(self._dotsXYBackUp[:, 0] > (self.fieldSize[0] / 2.0)),
-                         0] = numpy.subtract(numpy.mod((self._dotsXYBackUp[(self._dotsXYBackUp[:,
-                                                                      0] > (self.fieldSize[0] / 2.0)), 0]),
-                                                       (self.fieldSize[0] / 2.0)),
-                                             (self.fieldSize[0] / 2.0))
+                               0] = numpy.subtract(numpy.mod((self._dotsXYBackUp[(self._dotsXYBackUp[:,
+                                                                                  0] > (self.fieldSize[0] / 2.0)), 0]),
+                                                             (self.fieldSize[0] / 2.0)),
+                                                   (self.fieldSize[0] / 2.0))
             self._dotsXYBackUp[(self._dotsXYBackUp[:, 1] > (self.fieldSize[1] / 2.0)),
-                         1] = numpy.subtract(numpy.mod((self._dotsXYBackUp[(self._dotsXYBackUp[:,
-                                                                      1] > (self.fieldSize[1] / 2.0)), 1]),
-                                                       (self.fieldSize[1] / 2.0)),
-                                             (self.fieldSize[1] / 2.0))
+                               1] = numpy.subtract(numpy.mod((self._dotsXYBackUp[(self._dotsXYBackUp[:,
+                                                                                  1] > (self.fieldSize[1] / 2.0)), 1]),
+                                                             (self.fieldSize[1] / 2.0)),
+                                                   (self.fieldSize[1] / 2.0))
             self._dotsXYBackUp[(self._dotsXYBackUp[:, 0] < -(self.fieldSize[0] / 2.0)),
-                         0] = numpy.mod(self._dotsXYBackUp[(self._dotsXYBackUp[:, 0] < -(self.fieldSize[0] /
-                                                                             2.0)), 0], (self.fieldSize[0] / 2.0))
+                               0] = numpy.mod(self._dotsXYBackUp[(self._dotsXYBackUp[:, 0] < -(self.fieldSize[0] /
+                                                                                               2.0)), 0],
+                                              (self.fieldSize[0] / 2.0))
             self._dotsXYBackUp[(self._dotsXYBackUp[:, 1] < -(self.fieldSize[1] / 2.0)),
-                         1] = numpy.mod(self._dotsXYBackUp[(self._dotsXYBackUp[:, 1] < -(self.fieldSize[1] /
-                                                                             2.0)), 1], (self.fieldSize[1] / 2.0))
-
+                               1] = numpy.mod(self._dotsXYBackUp[(self._dotsXYBackUp[:, 1] < -(self.fieldSize[1] /
+                                                                                               2.0)), 1],
+                                              (self.fieldSize[1] / 2.0))
 
         if self.fieldShape == 'circle':
             # add out-of-bounds to those that need replacing
             # update any dead dots
             if sum(dead):
-                self._dotsXYBackUp[dead, :] = self._newDotsXY2(sum(dead))
-
+                self._dotsXYBackUp[dead, :] = self.newDotsXYCircle(sum(dead))
 
             # transform to a normalised circle (radius = 1 all around) then to polar coords to check
-            # self._dotsXYBackUp = numpy.copy(self._dotsXY)
             ccc = self._dotsXYBackUp[numpy.hypot \
-                                            (self._dotsXYBackUp[:, 0],
-                                             self._dotsXYBackUp[:, 1]) < self.circle_squared_field_size / 2]
+                                         (self._dotsXYBackUp[:, 0],
+                                          self._dotsXYBackUp[:, 1]) < self.circle_squared_field_size / 2]
 
             print(len(ccc))
 
@@ -198,7 +197,7 @@ class WrappingDotStim(visual.DotStim):
             print(self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1)
 
             ccc = ccc[
-                           0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
+                  0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
 
             self._dotsXY[:] = ccc[:]
 
