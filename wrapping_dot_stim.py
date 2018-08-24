@@ -8,8 +8,9 @@ class WrappingDotStim(visual.DotStim):
     density: object
     _dotsXYBackUp: object
     circlesNDots: object
+    _dotsXYBackUp:numpy.array
 
-    RATE = 8
+    RATE = 1
 
     def __init__(self,
                  win,
@@ -37,15 +38,16 @@ class WrappingDotStim(visual.DotStim):
         self.density = density
         self.circlesNDots = int (self.density_to_number_of_dots(density, fieldSize))
 
+        self.circle_squared_field_size = fieldSize
         if fieldShape == 'circle':  # make more dots than we need and only use those that are within circle
-            self.circle_squared_field_size = fieldSize
             # the size if fake for the calculation of updatesXY.
             fieldSize *= 2
+            self.RATE = 16
 
         visual.DotStim.__init__(self,
                                 win=win,
                                 units=units,
-                                nDots=int (16 * self.density_to_number_of_dots(density, self.circle_squared_field_size)),
+                                nDots=int (self.RATE * self.density_to_number_of_dots(density, self.circle_squared_field_size)),
                                 coherence=coherence,
                                 fieldPos=fieldPos,
                                 fieldSize=fieldSize,
@@ -76,7 +78,7 @@ class WrappingDotStim(visual.DotStim):
 
             dots_in_circle = 0
 
-            while dots_in_circle  < int(nDots / 16):
+            while dots_in_circle  < int(nDots / self.RATE):
                 self._newDots = numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0,
                                          self.fieldSize[0] / 2.0,
                                          [nDots , 2]))
@@ -100,7 +102,7 @@ class WrappingDotStim(visual.DotStim):
         while dots_in_circle * 15 < nDots:
             self._newDots = numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0,
                                                              self.fieldSize[0] / 2.0,
-                                                             [nDots * 16, 2]))
+                                                             [nDots * self.RATE, 2]))
             #self._dotsXYBackUp = numpy.copy(self._newDots)
 
             filtered_dots = self._newDots[
@@ -116,7 +118,10 @@ class WrappingDotStim(visual.DotStim):
         """Find dead dots, update positions, get new positions for dead and out-of-bounds 
         """
 
-        self.nDots = self.circlesNDots * 16
+        if self.fieldShape == 'circle':
+            self.nDots = self.circlesNDots * self.RATE
+        else:
+            self._dotsXYBackUp = self._dotsXY
 
         # renew dead dots
         if self.dotLife > 0:  # if less than zero ignore it
@@ -172,12 +177,14 @@ class WrappingDotStim(visual.DotStim):
                          1] = numpy.mod(self._dotsXYBackUp[(self._dotsXYBackUp[:, 1] < -(self.fieldSize[1] /
                                                                              2.0)), 1], (self.fieldSize[1] / 2.0))
 
-        # add out-of-bounds to those that need replacing
-        # update any dead dots
-        if sum(dead):
-            self._dotsXYBackUp[dead, :] = self._newDotsXY2(sum(dead))
 
         if self.fieldShape == 'circle':
+            # add out-of-bounds to those that need replacing
+            # update any dead dots
+            if sum(dead):
+                self._dotsXYBackUp[dead, :] = self._newDotsXY2(sum(dead))
+
+
             # transform to a normalised circle (radius = 1 all around) then to polar coords to check
             # self._dotsXYBackUp = numpy.copy(self._dotsXY)
             ccc = self._dotsXYBackUp[numpy.hypot \
@@ -195,7 +202,15 @@ class WrappingDotStim(visual.DotStim):
 
             self._dotsXY[:] = ccc[:]
 
-        self.nDots = self.circlesNDots
+        else:
+            # add out-of-bounds to those that need replacing
+            # update any dead dots
+            if sum(dead):
+                self._dotsXYBackUp[dead, :] = self._newDotsXY(sum(dead))
+                self._dotsXY[:] = self._dotsXYBackUp[:]
+
+        if self.fieldShape == 'circle':
+            self.nDots = self.circlesNDots
 
         print('a')
 
