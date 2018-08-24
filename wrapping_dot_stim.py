@@ -35,7 +35,7 @@ class WrappingDotStim(visual.DotStim):
                  name=None,
                  autoLog=None):
         self.density = density
-        self.circlesNDots = int(self.density_to_number_of_dots(density, fieldSize))
+        self.circlesNDots = int(self.density_to_number_of_dots(density, fieldSize, 'circle'))
         self.circle_squared_field_size = fieldSize
 
         if fieldShape == 'circle':  # make more dots than we need and only use those that are within circle
@@ -48,7 +48,8 @@ class WrappingDotStim(visual.DotStim):
                                 win=win,
                                 units=units,
                                 nDots=int(self.rate_circle_to_square * self.density_to_number_of_dots(density,
-                                                                                                      self.circle_squared_field_size)),
+                                                                                                      self.circle_squared_field_size,
+                                                                                                      'sqr')),
                                 coherence=coherence,
                                 fieldPos=fieldPos,
                                 fieldSize=fieldSize,
@@ -88,7 +89,9 @@ class WrappingDotStim(visual.DotStim):
                     numpy.hypot(self._newDots[:, 0], self._newDots[:, 1]) < self.circle_squared_field_size / 2]
                 dots_in_circle = len(filtered_dots)
 
-            return filtered_dots[0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
+            return filtered_dots[0:self.density_to_number_of_dots(self.density,
+                                                                  self.circle_squared_field_size,
+                                                                  'circle') + 1:1]
 
         else:
             return numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0, self.fieldSize[0] / 2.0, [nDots, 2]))
@@ -190,7 +193,9 @@ class WrappingDotStim(visual.DotStim):
                                           self._dotsXYBackUp[:, 1]) < self.circle_squared_field_size / 2]
 
             filterd_dots_in_circle = filterd_dots_in_circle[
-                  0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
+                  0:self.density_to_number_of_dots(self.density,
+                                                   self.circle_squared_field_size,
+                                                   'circle') + 1:1]
 
             self._dotsXY[:] = filterd_dots_in_circle[:]
 
@@ -209,8 +214,11 @@ class WrappingDotStim(visual.DotStim):
         # update the pixel XY coordinates
         self._updateVertices()
 
-    def density_to_number_of_dots(self, dots_density, field_size):
+    def density_to_number_of_dots(self, dots_density, field_size, type):
         # todo: check here if a caculation of the field size is also correct for the degree dimension.
         # todo: check here if the numer of dots should be different for type of 'circle'.
-        return int(dots_density * field_size ** 2 / 2)
+        if type == 'circle':
+            return int(dots_density * field_size ** 2 / 2)
+        elif type == 'sqr':
+            return int(dots_density * pi * field_size ** 2)
         pass
