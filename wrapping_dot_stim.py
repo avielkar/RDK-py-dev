@@ -9,7 +9,7 @@ class WrappingDotStim(visual.DotStim):
     _dotsXYBackUp: object
     circlesNDots: object
     _dotsXYBackUp: numpy.array
-    rateCircleToSquare = 1
+    rate_circle_to_square = 1
 
     def __init__(self,
                  win,
@@ -42,13 +42,13 @@ class WrappingDotStim(visual.DotStim):
             # the size if fake for the calculation of updatesXY.
             fieldSize *= 2
             # the rate should be greater in order to catch the needed point in the circle
-            self.rateCircleToSquare = 16
+            self.rate_circle_to_square = 16
 
         visual.DotStim.__init__(self,
                                 win=win,
                                 units=units,
-                                nDots=int(self.rateCircleToSquare * self.density_to_number_of_dots(density,
-                                                                                                   self.circle_squared_field_size)),
+                                nDots=int(self.rate_circle_to_square * self.density_to_number_of_dots(density,
+                                                                                                      self.circle_squared_field_size)),
                                 coherence=coherence,
                                 fieldPos=fieldPos,
                                 fieldSize=fieldSize,
@@ -79,7 +79,7 @@ class WrappingDotStim(visual.DotStim):
 
             dots_in_circle = 0
 
-            while dots_in_circle < int(nDots / self.rateCircleToSquare):
+            while dots_in_circle < int(nDots / self.rate_circle_to_square):
                 self._newDots = numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0,
                                                                  self.fieldSize[0] / 2.0,
                                                                  [nDots, 2]))
@@ -99,7 +99,7 @@ class WrappingDotStim(visual.DotStim):
         while dots_in_circle * 15 < nDots:
             self._newDots = numpy.array(numpy.random.uniform(-self.fieldSize[0] / 2.0,
                                                              self.fieldSize[0] / 2.0,
-                                                             [nDots * self.rateCircleToSquare, 2]))
+                                                             [nDots * self.rate_circle_to_square, 2]))
 
             filtered_dots = self._newDots[
                 numpy.hypot(self._newDots[:, 0], self._newDots[:, 1]) < self.circle_squared_field_size / 2]
@@ -115,7 +115,7 @@ class WrappingDotStim(visual.DotStim):
         """
 
         if self.fieldShape == 'circle':
-            self.nDots = self.circlesNDots * self.rateCircleToSquare
+            self.nDots = self.circlesNDots * self.rate_circle_to_square
         else:
             self._dotsXYBackUp = self._dotsXY
 
@@ -186,20 +186,20 @@ class WrappingDotStim(visual.DotStim):
                 self._dotsXYBackUp[dead, :] = self.newDotsXYCircle(sum(dead))
 
             # transform to a normalised circle (radius = 1 all around) then to polar coords to check
-            ccc = self._dotsXYBackUp[numpy.hypot \
+            filterd_dots_in_circle = self._dotsXYBackUp[numpy.hypot \
                                          (self._dotsXYBackUp[:, 0],
                                           self._dotsXYBackUp[:, 1]) < self.circle_squared_field_size / 2]
 
-            print(len(ccc))
+            print(len(filterd_dots_in_circle))
 
             print(len(self._dotsXY))
 
             print(self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1)
 
-            ccc = ccc[
+            filterd_dots_in_circle = filterd_dots_in_circle[
                   0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
 
-            self._dotsXY[:] = ccc[:]
+            self._dotsXY[:] = filterd_dots_in_circle[:]
 
         else:
             # add out-of-bounds to those that need replacing
