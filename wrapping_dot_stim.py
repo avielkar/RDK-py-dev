@@ -75,7 +75,6 @@ class WrappingDotStim(visual.DotStim):
             usage::
             dots = self._newDots(nDots) """
         if self.fieldShape == 'circle':  # make more dots than we need and only use those that are within circle
-            # self.circled_square_num_of_dots = self.density_to_number_of_dots(self.density, self.fieldSize[0])
 
             dots_in_circle = 0
 
@@ -189,12 +188,6 @@ class WrappingDotStim(visual.DotStim):
             filterd_dots_in_circle = self._dotsXYBackUp[numpy.hypot \
                                          (self._dotsXYBackUp[:, 0],
                                           self._dotsXYBackUp[:, 1]) < self.circle_squared_field_size / 2]
-
-            print(len(filterd_dots_in_circle))
-
-            print(len(self._dotsXY))
-
-            print(self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1)
 
             filterd_dots_in_circle = filterd_dots_in_circle[
                   0:self.density_to_number_of_dots(self.density, self.circle_squared_field_size) + 1:1]
