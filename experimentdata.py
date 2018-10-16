@@ -6,6 +6,8 @@ class ExperimentData:
     enable_confidence_choice = None  # type:bool
     draw_fixation_point = None  # type:bool
     user_running_experiment_name = None  # type: str
+    screen_width = None  # type: float
+    screen_height = None  # type: float
 
     # todo: change all attributes to a list of dictionary.
 
@@ -16,7 +18,9 @@ class ExperimentData:
                  forward_rightward_probability=None,
                  enable_confidence_choice=None,
                  draw_fixation_point=None,
-                 user_running_experiment_name=None):
+                 user_running_experiment_name=None,
+                 screen_width=1920,
+                 screen_height=1080):
         self.num_of_repetitions = num_of_repetitions
         self.num_of_trials = num_of_trials
         self.backward_error_probability = backward_error_probability
@@ -24,6 +28,8 @@ class ExperimentData:
         self.enable_confidence_choice = enable_confidence_choice
         self.draw_fixation_point = draw_fixation_point
         self.user_running_experiment_name = user_running_experiment_name
+        self.screen_width = screen_width
+        self.screen_height = screen_height
         pass
 
     def to_string(self):

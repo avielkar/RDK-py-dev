@@ -53,12 +53,35 @@ class MainGuiTkinter:
         self.control_loop_queue = queue.Queue()
         self.graph_maker_command_queue = graph_maker_command_queue
         self.btn_save_protocol = None  # type: Button
+        self.label_screen_height_size = None  # type:Label
+        self.label_screen_width_size = None  # type:Label
+        self.entry_screen_width_size = None  # type: Button
+        self.entry_screen_height_size = None  # type: Button
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
         self.combo_box_protocol_update()
 
     def init_gui_controllers(self):
+        # screen size region.
+        self.label_screen_width_size = Label(master=self.root,
+                                             text='ScreenWidth (pixels)')
+        self.label_screen_width_size.place(relx=0.0,
+                                           rely=0.0)
+        self.entry_screen_width_size = Entry(master=self.root)
+        self.entry_screen_width_size.insert(0,1920)
+        self.entry_screen_width_size.place(relx=0.09,
+                                           rely=0.0)
+
+        self.label_screen_height_size = Label(master=self.root,
+                                              text='ScreenHeight (pixels)')
+        self.label_screen_height_size.place(relx=0.0,
+                                            rely=0.05)
+        self.entry_screen_height_size = Entry(master=self.root)
+        self.entry_screen_height_size.place(relx=0.09,
+                                            rely=0.05)
+        self.entry_screen_height_size.insert(0,1080)
+
         # choose folder region.
         self.label_choose_folder = Label(master=self.root,
                                          text='Choose folder')
@@ -383,7 +406,9 @@ class MainGuiTkinter:
                                              self.entry_forward_rightward_probability.get()),
                                          enable_confidence_choice=self.confidence_choice_value.get(),
                                          draw_fixation_point=self.draw_fixation_point_value.get(),
-                                         user_running_experiment_name=self.combobox_user_name_list.get())
+                                         user_running_experiment_name=self.combobox_user_name_list.get(),
+                                         screen_width=self.entry_screen_width_size.get(),
+                                         screen_height=self.entry_screen_height_size.get())
         command = 'start'
         command_data = (self.parameters_attributes_dictionary, experiment_data)
         data = (command, command_data)

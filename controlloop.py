@@ -67,7 +67,9 @@ class ControlLoop:
 
         if not self._renderer.is_initialized:
             self._renderer.init_window(units=self._attributes['Units']['value'],
-                                       distance2screen=float(self._attributes['Distance2Screen']['value']))
+                                       distance2screen=float(self._attributes['Distance2Screen']['value']),
+                                       width=self.experiment_data.screen_width,
+                                       height = self.experiment_data.screen_height)
             self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
             self.graph_maker_command_queue.put(('reset_graph',
