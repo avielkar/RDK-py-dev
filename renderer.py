@@ -35,11 +35,11 @@ class Renderer:
         self.experiment_data = None  # type: ExperimentData
         pass
 
-    def init_window(self, units, distance2screen):
+    def init_window(self, units, distance2screen, width, height):
         my_monitor = monitors.Monitor(name='testMonitor',
                                       distance=distance2screen)
 
-        self._my_win = visual.Window(size=(800, 800),
+        self._my_win = visual.Window(size=(width, height),
                                      monitor=my_monitor,
                                      color='black',
                                      fullscr=False,
