@@ -28,13 +28,13 @@ class ExperimentData:
 
     def to_string(self):
         return (
-                'num_of_repetitions : {num_of_repetitions}' + '\r\n' +
-                'num_of_trials : {num_of_trials}' + '\r\n' +
-                'backward_error_probability : {backward_error_probability}' + '\r\n' +
-                'forward_rightward_probability : {forward_rightward_probability}' + '\r\n' +
-                'enable_confidence_choice : {enable_confidence_choice}' + '\r\n' +
-                'draw_fixation_point : {draw_fixation_point}' + '\r\n' +
-                'user_running_experiment_name : {user_running_experiment_name}' + '\r\n'
+                'num_of_repetitions : {num_of_repetitions}' + '\n' +
+                'num_of_trials : {num_of_trials}' + '\n' +
+                'backward_error_probability : {backward_error_probability}' + '\n' +
+                'forward_rightward_probability : {forward_rightward_probability}' + '\n' +
+                'enable_confidence_choice : {enable_confidence_choice}' + '\n' +
+                'draw_fixation_point : {draw_fixation_point}' + '\n' +
+                'user_running_experiment_name : {user_running_experiment_name}' + '\n'
         ).format(
             num_of_repetitions=self.num_of_repetitions,
             num_of_trials=self.num_of_trials,
