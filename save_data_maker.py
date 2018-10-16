@@ -29,12 +29,12 @@ class SaveDataMaker:
 
     def save_trial_data_to_file(self, trial_data, experiment_data):
         # add the trial number as the first line.
-        self.current_saved_file.write('Trial# {trial_number}\r\n'.format(trial_number=trial_data['Trial#']))
+        self.current_saved_file.write('Trial:{trial_number}\r\n'.format(trial_number=trial_data['Trial#']))
 
         # loop over all keys and values.
         for (key, value) in trial_data.items():
             if key != 'Trial#':
-                self.current_saved_file.write('{key} : {value}\r\n'.format(key=key, value=value))
+                self.current_saved_file.write('{key}:{value}\r\n'.format(key=key, value=value))
 
         # loop over all experiment_data
         self.current_saved_file.write(experiment_data.to_string())
