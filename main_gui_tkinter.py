@@ -69,6 +69,7 @@ class MainGuiTkinter:
         self.label_screen_width_size.place(relx=0.0,
                                            rely=0.0)
         self.entry_screen_width_size = Entry(master=self.root)
+        self.entry_screen_width_size.insert(0,1920)
         self.entry_screen_width_size.place(relx=0.09,
                                            rely=0.0)
 
@@ -79,6 +80,7 @@ class MainGuiTkinter:
         self.entry_screen_height_size = Entry(master=self.root)
         self.entry_screen_height_size.place(relx=0.09,
                                             rely=0.05)
+        self.entry_screen_height_size.insert(0,1080)
 
         # choose folder region.
         self.label_choose_folder = Label(master=self.root,
