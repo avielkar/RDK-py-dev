@@ -39,9 +39,6 @@ class SaveDataMaker:
         # loop over all experiment_data
         self.current_saved_file.write(experiment_data.to_string())
 
-        # new line for spacing with the next trial data.
-        self.current_saved_file.write('\r\n')
-
         loaded_dict = dict()
         if trial_data['Trial#'] > 1:
             loaded_dict = mfp.loadmat(self.directory_path +
