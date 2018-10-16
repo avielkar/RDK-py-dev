@@ -6,6 +6,8 @@ class ExperimentData:
     enable_confidence_choice = None  # type:bool
     draw_fixation_point = None  # type:bool
     user_running_experiment_name = None  # type: str
+    screen_width = None  # type: float
+    screen_width = None  # type: float
 
     # todo: change all attributes to a list of dictionary.
 
