@@ -2,6 +2,8 @@
 
 import time
 from threading import Thread
+import win32process
+import win32api
 
 from numpy.core.multiarray import ndarray
 
@@ -52,6 +54,8 @@ class ControlLoop:
         self.main_loop_thread.start()
 
     def start(self, attributes, experiment_data):
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_NORMAL)
+
         self._attributes = attributes
 
         self.experiment_data = experiment_data
@@ -74,6 +78,8 @@ class ControlLoop:
         else:
             self.graph_maker_command_queue.put(('reset_graph',
                                                 self._trial_maker.get_trials_scala_values()))  # self._graph_maker.reset_graph(self._trial_maker.get_trials_scala_values())
+
+        self.stop_experiment = False
 
         for trialNum in range(self.experiment_data.num_of_trials):
             if self.exit_experiment or self.stop_experiment:
@@ -184,6 +190,9 @@ class ControlLoop:
         time.sleep(sleep_time_seconds)
 
     def listening_function(self):
+        # set the current thread to be the highest due to the vestibular real time processing.
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_LOWEST)
+
         while not self.exit_experiment:
             if not self.control_loop_commands_queue.empty():
                 (command, data) = self.control_loop_commands_queue.get()
@@ -191,7 +200,7 @@ class ControlLoop:
                     (attributes, experiment_data) = data
                     self.start(attributes=attributes,
                                experiment_data=experiment_data)
-            time.sleep(0.1)
+            time.sleep(0.5)
 
     def init_sounds_wave(self):
         sd.default.samplerate = 44100
