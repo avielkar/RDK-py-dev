@@ -1,4 +1,6 @@
 # coding: utf-8
+import win32api
+import win32process
 
 from psychopy import visual, monitors
 
@@ -33,6 +35,8 @@ class Renderer:
         }
         self.data = None  # type: Dict[String, Any]
         self.experiment_data = None  # type: ExperimentData
+
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_HIGHEST)
         pass
 
     def init_window(self, units, distance2screen, width, height):
@@ -43,7 +47,7 @@ class Renderer:
                                      monitor=my_monitor,
                                      color='black',
                                      fullscr=False,
-                                     allowGUI=False,
+                                     allowGUI=True,
                                      bitsMode=None,
                                      units=units,
                                      winType='pygame')
@@ -59,6 +63,8 @@ class Renderer:
         self.experiment_data = experiment_data
 
     def render(self, data):
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_HIGHEST)
+
         self.data = data
         dot_patch = visual.WrappingDotStim(win=self._my_win,
                                            units=self.data['Units'],

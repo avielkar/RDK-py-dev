@@ -1,3 +1,6 @@
+import win32api
+import win32process
+
 import matplotlib.pyplot as pyplot
 import numpy as np
 import queue
@@ -11,6 +14,7 @@ class GraphMaker:
         self._y_values = None  # type: list[int]
         self._y_trials_count = None  # type: list[int]
         self._y_trials_correct_response_count = None  # type: list[int]
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_LOWEST)
         pass
 
     def init_graph(self, scala_values):
@@ -70,6 +74,7 @@ class GraphMaker:
         pass
 
     def listening_function_thread(self , control_loop_queue):
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_LOWEST)
         while True:
             if not control_loop_queue.empty():
                 (command_function , command_data) = control_loop_queue.get()
@@ -80,5 +85,5 @@ class GraphMaker:
                 elif command_function == 'init_graph':
                     self.init_graph(command_data)
             pyplot.pause(0.1)
-            time.sleep(0.1)
+            time.sleep(0.5)
         pass

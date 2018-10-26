@@ -3,6 +3,8 @@ import os
 
 import tkinter
 import tkinter.ttk
+import win32api
+import win32process
 from tkinter import Tk, Toplevel, Label, Checkbutton, BooleanVar, Entry, Button
 from tkinter import Label, Button, Entry
 import tkinter.filedialog
@@ -57,6 +59,8 @@ class MainGuiTkinter:
         self.label_screen_width_size = None  # type:Label
         self.entry_screen_width_size = None  # type: Button
         self.entry_screen_height_size = None  # type: Button
+
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_NORMAL)
 
     def btn_choose_folder_clicked(self):
         self.protocol_root_dir = tkinter.filedialog.askdirectory()
@@ -416,7 +420,7 @@ class MainGuiTkinter:
 
     def after_function(self):
         # print('aaa')
-
+        win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_LOWEST)
         while not self.gui_queue.empty():
             name_status = self.gui_queue.get()
             if name_status[0] == 'enable_start_btn':
