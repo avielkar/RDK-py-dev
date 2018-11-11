@@ -83,8 +83,10 @@ class Renderer:
                                            signalDots=self.data['SignalDots'],
                                            # are the signal dots the 'same' on each frame? (see Scase et al)
                                            noiseDots=self.data['NoiseDots'],
-                                           # do the noise dots follow random- 'walk', 'direction', or 'position'
-                                           speed=self.data['Speed'],
+                                           # do the noise dots follow random- 'walk', 'direction', or 'position' the
+                                           # speed in the wrappingDotStim is per frame but in the user input it is in
+                                           # seconds.
+                                           speed=self.data['Speed']/self.data['RenderFrequency'],
                                            coherence=self.data['Coherence'])
 
         if self.experiment_data.draw_fixation_point:
