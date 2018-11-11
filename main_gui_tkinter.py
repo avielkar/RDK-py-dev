@@ -156,7 +156,7 @@ class MainGuiTkinter:
         self.label_backward_error_probability.place(relx=0.8,
                                                     rely=0.15)
         self.entry_backward_error_probability = Entry(master=self.root)
-        self.entry_backward_error_probability.insert(0, 1)
+        self.entry_backward_error_probability.insert(0, 0.8)
         self.entry_backward_error_probability.place(relx=0.85, rely=0.15)
 
         # forward rightward probability.
@@ -165,7 +165,7 @@ class MainGuiTkinter:
         self.label_forward_rightward_probability.place(relx=0.8,
                                                        rely=0.2)
         self.entry_forward_rightward_probability = Entry(master=self.root)
-        self.entry_forward_rightward_probability.insert(0, 1)
+        self.entry_forward_rightward_probability.insert(0, 0.3)
         self.entry_forward_rightward_probability.place(relx=0.85, rely=0.2)
 
         # checkbox confidence region.
