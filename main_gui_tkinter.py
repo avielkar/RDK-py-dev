@@ -364,7 +364,7 @@ class MainGuiTkinter:
         pass
 
     def combobox_user_name_list_initialize(self):
-        self.combobox_user_name_list['values'] = ['Avi', 'Adam', 'Orly']
+        self.combobox_user_name_list['values'] = ['Orly', 'Avi',  'NoName']
         pass
 
     def show_message_box(self, message):
