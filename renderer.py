@@ -1,6 +1,7 @@
 # coding: utf-8
 import win32api
 import win32process
+import math
 
 from psychopy import visual, monitors
 
@@ -66,28 +67,31 @@ class Renderer:
         win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_HIGHEST)
 
         self.data = data
-        dot_patch = visual.WrappingDotStim(win=self._my_win,
-                                           units=self.data['Units'],
-                                           color=list([eval(self.data['Color'])[0],
-                                                       eval(self.data['Color'])[1],
-                                                       eval(self.data['Color'])[2],
-                                                       ]),
-                                           dir=self.convert_to_psycho_direction(self.data['Direction']),
-                                           density=self.data['DotsDensity'],
-                                           fieldShape=self.data['FieldShape'],
-                                           fieldPos=[eval(self.data['FieldPosition'])[0],
-                                                     eval(self.data['FieldPosition'])[1]],
-                                           fieldSize=self.data['FieldSize'],
-                                           dotLife=self.data['DotLife'],
-                                           # number of frames for each dot to be drawn
-                                           signalDots=self.data['SignalDots'],
-                                           # are the signal dots the 'same' on each frame? (see Scase et al)
-                                           noiseDots=self.data['NoiseDots'],
-                                           # do the noise dots follow random- 'walk', 'direction', or 'position' the
-                                           # speed in the wrappingDotStim is per frame but in the user input it is in
-                                           # seconds.
-                                           speed=self.data['Speed']/self.data['RenderFrequency'],
-                                           coherence=self.data['Coherence'])
+        dot_patch = visual.WrappingDotStimOriginal(win=self._my_win,
+                                                   units=self.data['Units'],
+                                                   color=list([eval(self.data['Color'])[0],
+                                                               eval(self.data['Color'])[1],
+                                                               eval(self.data['Color'])[2],
+                                                               ]),
+                                                   dir=self.convert_to_psycho_direction(self.data['Direction']),
+                                                   # density=self.data['DotsDensity'],
+                                                   nDots=self.density_to_number_of_dots(self.data['DotsDensity'],
+                                                                                        self.data['FieldSize'],
+                                                                                        self.data['FieldShape']),
+                                                   fieldShape=self.data['FieldShape'],
+                                                   fieldPos=[eval(self.data['FieldPosition'])[0],
+                                                             eval(self.data['FieldPosition'])[1]],
+                                                   fieldSize=self.data['FieldSize'],
+                                                   dotLife=self.data['DotLife'],
+                                                   # number of frames for each dot to be drawn
+                                                   signalDots=self.data['SignalDots'],
+                                                   # are the signal dots the 'same' on each frame? (see Scase et al)
+                                                   noiseDots=self.data['NoiseDots'],
+                                                   # do the noise dots follow random- 'walk', 'direction', or 'position' the
+                                                   # speed in the wrappingDotStim is per frame but in the user input it is in
+                                                   # seconds.
+                                                   speed=self.data['Speed'] / self.data['RenderFrequency'],
+                                                   coherence=self.data['Coherence'])
 
         if self.experiment_data.draw_fixation_point:
             fixation_point_stim = visual.Circle(win=self._my_win,
@@ -104,11 +108,6 @@ class Renderer:
                 fixation_point_stim.draw()
             self._my_win.flip()  # redraw the buffer
             time.sleep((1 / self.data['RenderFrequency']))
-
-    def density_to_number_of_dots(self, dots_density, field_size):
-        # todo: check here if a caculation of the field size is also correct for the degree dimension.
-        return int(dots_density * field_size ** 2 / 2)
-        pass
 
     def convert_to_psycho_direction(self, direction):
         if 90 >= direction >= 0:
@@ -140,3 +139,12 @@ class Renderer:
         message.draw()
 
         self._my_win.flip(clearBuffer=False)
+
+    def density_to_number_of_dots(self, dots_density, field_size, type):
+        # todo: check here if a caculation of the field size is also correct for the degree dimension.
+        # todo: check here if the numer of dots should be different for type of 'circle'.
+        if type == 'circle':
+            return int(dots_density * field_size ** 2 / 2)
+        elif type == 'sqr':
+            return int(dots_density * math.pi * field_size ** 2)
+        pass
