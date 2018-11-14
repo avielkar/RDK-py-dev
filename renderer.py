@@ -141,10 +141,10 @@ class Renderer:
         self._my_win.flip(clearBuffer=False)
 
     def density_to_number_of_dots(self, dots_density, field_size, type):
-        # todo: check here if a caculation of the field size is also correct for the degree dimension.
-        # todo: check here if the numer of dots should be different for type of 'circle'.
+        # todo: check here if a calculation of the field size is also correct for the degree dimension.
+        # todo: check here if the number of dots should be different for type of 'circle'.
         if type == 'circle':
-            return int(dots_density * field_size ** 2 / 2)
-        elif type == 'sqr':
             return int(dots_density * math.pi * field_size ** 2)
+        elif type == 'sqr':
+            return int(dots_density * field_size ** 2)
         pass
