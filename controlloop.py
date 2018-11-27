@@ -73,7 +73,7 @@ class ControlLoop:
             self._renderer.init_window(units=self._attributes['Units']['value'],
                                        distance2screen=float(self._attributes['Distance2Screen']['value']),
                                        width=self.experiment_data.screen_width,
-                                       height = self.experiment_data.screen_height)
+                                       height=self.experiment_data.screen_height)
             self.graph_maker_command_queue.put(('init_graph', self._trial_maker.get_trials_scala_values()))
         else:
             self.graph_maker_command_queue.put(('reset_graph',
@@ -115,7 +115,7 @@ class ControlLoop:
 
         pygame.event.clear()
         event = pygame.event.poll()
-        while (event.type != KEYDOWN and event.type != KEYUP) or event.key != K_SPACE:
+        while (event.type != KEYDOWN and event.type != KEYUP) or event.key != K_KP5:
             event = pygame.event.poll()
 
     def response_time_stage(self):
