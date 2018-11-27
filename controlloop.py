@@ -115,7 +115,7 @@ class ControlLoop:
 
         pygame.event.clear()
         event = pygame.event.poll()
-        while (event.type != KEYDOWN and event.type != KEYUP) or (event.key != K_KP5 or event.key != K_SPACE):
+        while (event.type != KEYDOWN and event.type != KEYUP) or (event.key != K_KP5 and event.key != K_SPACE):
             event = pygame.event.poll()
 
     def response_time_stage(self):
