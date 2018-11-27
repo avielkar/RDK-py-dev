@@ -115,7 +115,7 @@ class ControlLoop:
 
         pygame.event.clear()
         event = pygame.event.poll()
-        while (event.type != KEYDOWN and event.type != KEYUP) or event.key != K_KP5:
+        while (event.type != KEYDOWN and event.type != KEYUP) or (event.key != K_KP5 and event.key != K_SPACE):
             event = pygame.event.poll()
 
     def response_time_stage(self):
@@ -127,8 +127,9 @@ class ControlLoop:
         while time.time() - start_time < self._current_trial_data['ResponseTime']:
             event = pygame.event.poll()
             if ((event.type == KEYDOWN or event.type == KEYUP) \
-                    and (event.key == K_KP4 or event.key == K_KP6)):
-                response = 'left' if event.key == K_KP4 else 'right'
+                    and (event.key == K_KP4 or event.key == K_KP6
+                         or event.key == K_LEFT or event.key == K_RIGHT)):
+                response = 'left' if (event.key == K_KP4 or event.key == K_LEFT) else 'right'
                 break
             time.sleep(0.001)
 
@@ -150,8 +151,9 @@ class ControlLoop:
         while time.time() - start_time < self._current_trial_data['ConfidenceResponseTime']:
             event = pygame.event.poll()
             if ((event.type == KEYDOWN or event.type == KEYUP) \
-                    and (event.key == K_KP8 or event.key == K_KP2)):
-                response = 'up' if event.key == K_KP8 else 'down'
+                    and (event.key == K_KP8 or event.key == K_KP2
+                         or event.key == K_DOWN or event.key == K_UP)):
+                response = 'up' if (event.key == K_KP8 or event.key == K_UP) else 'down'
                 break
             time.sleep(0.001)
 
