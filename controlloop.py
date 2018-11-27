@@ -127,7 +127,7 @@ class ControlLoop:
         while time.time() - start_time < self._current_trial_data['ResponseTime']:
             event = pygame.event.poll()
             if ((event.type == KEYDOWN or event.type == KEYUP) \
-                    and (event.key == K_LEFT or event.key == K_RIGHT)):
+                    and (event.key == K_KP5 or event.key == K_KP6)):
                 response = 'left' if event.key == K_LEFT else 'right'
                 break
             time.sleep(0.001)
