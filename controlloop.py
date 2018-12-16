@@ -52,6 +52,7 @@ class ControlLoop:
         self.main_loop_thread = Thread(target=self.listening_function,
                                        args=())
         self.main_loop_thread.start()
+        self.start_trial_timing = 0
 
     def start(self, attributes, experiment_data):
         win32process.SetThreadPriority(win32api.GetCurrentThread(), win32process.THREAD_PRIORITY_NORMAL)
@@ -110,6 +111,7 @@ class ControlLoop:
         print(self._current_trial_data)
 
         self.make_sound(self.start_wave)
+        self.start_trial_timing = time.time()
         # self._renderer.add_text_to_screen('Press space to start the trial')
         print('waiting to start response...')
 
@@ -117,6 +119,8 @@ class ControlLoop:
         event = pygame.event.poll()
         while (event.type != KEYDOWN and event.type != KEYUP) or (event.key != K_KP5 and event.key != K_SPACE):
             event = pygame.event.poll()
+
+        self._current_trial_data['StartPressTime'] = time.time() - self.start_trial_timing
 
     def response_time_stage(self):
         response = 'none'
@@ -130,6 +134,7 @@ class ControlLoop:
                     and (event.key == K_KP4 or event.key == K_KP6
                          or event.key == K_LEFT or event.key == K_RIGHT)):
                 response = 'left' if (event.key == K_KP4 or event.key == K_LEFT) else 'right'
+                self._current_trial_data['ResponsePressTime'] = time.time() - self.start_trial_timing
                 break
             time.sleep(0.001)
 
@@ -137,6 +142,7 @@ class ControlLoop:
             self.make_sound(self.answer_wave)
             print('pressed {key}'.format(key=response))
         else:
+            self._current_trial_data['ResponsePressTime'] = -1
             self.make_sound(self.timeout_wave)
             print('no response')
 
@@ -154,6 +160,7 @@ class ControlLoop:
                     and (event.key == K_KP8 or event.key == K_KP2
                          or event.key == K_DOWN or event.key == K_UP)):
                 response = 'up' if (event.key == K_KP8 or event.key == K_UP) else 'down'
+                self._current_trial_data['ConfidenceResponsePressTime'] = time.time() - self.start_trial_timing
                 break
             time.sleep(0.001)
 
@@ -161,6 +168,7 @@ class ControlLoop:
             self.make_sound(self.answer_wave)
             print('pressed {key}'.format(key=response))
         else:
+            self._current_trial_data['ConfidenceResponsePressTime'] = -1
             self.make_sound(TIMEOUT_SOUND)
             print('no response')
 
